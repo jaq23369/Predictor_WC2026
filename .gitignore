@@ -1,0 +1,13 @@
+.venv/
+.env
+__pycache__/
+*.pyc
+.DS_Store
+frontend/node_modules/
+frontend/dist/
+data/api_cache/
+
+# Archivos grandes de Transfermarkt
+data/raw/Football Data from Transfermarkt/game_events.csv
+data/raw/Football Data from Transfermarkt/game_lineups.csv
+data/raw/Football Data from Transfermarkt/appearances.csv
