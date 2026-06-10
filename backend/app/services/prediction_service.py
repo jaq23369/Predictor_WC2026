@@ -25,6 +25,19 @@ FOOTBALL_DATA_MATCHES_PATH = PROCESSED_DIR / "football_data_wc_2026_matches.csv"
 FOOTBALL_DATA_TEAMS_PATH = PROCESSED_DIR / "football_data_wc_2026_teams.csv"
 FOOTBALL_DATA_STANDINGS_PATH = PROCESSED_DIR / "football_data_wc_2026_standings.csv"
 TRANSFERMARKT_VALUES_PATH = PROCESSED_DIR / "transfermarkt_national_team_values.csv"
+SQUADS_PATH = PROCESSED_DIR / "world_cup_2026_squads_enriched.csv"
+SQUAD_SUMMARY_PATH = PROCESSED_DIR / "world_cup_2026_squad_summary.csv"
+THESPORTSDB_TEAM_MAPPING_PATH = PROCESSED_DIR / "thesportsdb_team_mapping.csv"
+THESPORTSDB_PLAYERS_PATH = PROCESSED_DIR / "thesportsdb_players.csv"
+THESPORTSDB_EVENTS_PATH = PROCESSED_DIR / "thesportsdb_events.csv"
+THESPORTSDB_RECENT_FORM_PATH = PROCESSED_DIR / "thesportsdb_recent_form.csv"
+THESPORTSDB_RECENT_MATCH_STATS_PATH = PROCESSED_DIR / "thesportsdb_recent_match_stats.csv"
+THESPORTSDB_COVERAGE_PATH = PROCESSED_DIR / "thesportsdb_coverage.csv"
+API_FOOTBALL_TEAM_MAPPING_PATH = PROCESSED_DIR / "api_football_team_mapping.csv"
+API_FOOTBALL_FIXTURES_PATH = PROCESSED_DIR / "api_football_fixtures.csv"
+API_FOOTBALL_FIXTURE_STATISTICS_PATH = PROCESSED_DIR / "api_football_fixture_statistics.csv"
+API_FOOTBALL_TEAM_MATCH_STATS_PATH = PROCESSED_DIR / "api_football_team_match_stats.csv"
+API_FOOTBALL_COVERAGE_PATH = PROCESSED_DIR / "api_football_coverage.csv"
 CLASSIFICATION_MODEL_PATH = ARTIFACTS_DIR / "classification_model.pkl"
 SCORE_MODEL_PATH = ARTIFACTS_DIR / "poisson_score_model.pkl"
 
@@ -36,15 +49,24 @@ TARGET_LABELS = {
 
 TEAM_ALIASES = {
     "Democratic Republic of Congo": "DR Congo",
+    "Democratic Republic of the Congo": "DR Congo",
     "Congo DR": "DR Congo",
     "Zaire": "DR Congo",
     "Zaïre": "DR Congo",
     "USA": "United States",
+    "United States of America": "United States",
     "Korea Republic": "South Korea",
+    "Republic of Korea": "South Korea",
     "IR Iran": "Iran",
+    "Islamic Republic of Iran": "Iran",
     "Ivory Coast": "Côte d'Ivoire",
     "Cote d'Ivoire": "Côte d'Ivoire",
     "Czech Republic": "Czechia",
+    "Bosnia-Herzegovina": "Bosnia and Herzegovina",
+    "Cape Verde Islands": "Cape Verde",
+    "Cabo Verde": "Cape Verde",
+    "Turkiye": "Turkey",
+    "Türkiye": "Turkey",
 }
 
 
@@ -308,6 +330,181 @@ class PredictionService:
 
     def transfermarkt_national_team_values(self) -> list[dict[str, str]]:
         return read_optional_csv(TRANSFERMARKT_VALUES_PATH)
+
+    def world_cup_2026_squads(self) -> list[dict[str, str]]:
+        return read_optional_csv(SQUADS_PATH)
+
+    def world_cup_2026_squad_summary(self) -> list[dict[str, str]]:
+        return read_optional_csv(SQUAD_SUMMARY_PATH)
+
+    def thesportsdb_team_mapping(self) -> list[dict[str, str]]:
+        return read_optional_csv(THESPORTSDB_TEAM_MAPPING_PATH)
+
+    def thesportsdb_players(self) -> list[dict[str, str]]:
+        return read_optional_csv(THESPORTSDB_PLAYERS_PATH)
+
+    def thesportsdb_events(self) -> list[dict[str, str]]:
+        return read_optional_csv(THESPORTSDB_EVENTS_PATH)
+
+    def thesportsdb_recent_form(self) -> list[dict[str, str]]:
+        return read_optional_csv(THESPORTSDB_RECENT_FORM_PATH)
+
+    def thesportsdb_recent_match_stats(self) -> list[dict[str, str]]:
+        return read_optional_csv(THESPORTSDB_RECENT_MATCH_STATS_PATH)
+
+    def thesportsdb_coverage(self) -> list[dict[str, str]]:
+        return read_optional_csv(THESPORTSDB_COVERAGE_PATH)
+
+    def api_football_team_mapping(self) -> list[dict[str, str]]:
+        return read_optional_csv(API_FOOTBALL_TEAM_MAPPING_PATH)
+
+    def api_football_fixtures(self) -> list[dict[str, str]]:
+        return read_optional_csv(API_FOOTBALL_FIXTURES_PATH)
+
+    def api_football_fixture_statistics(self) -> list[dict[str, str]]:
+        return read_optional_csv(API_FOOTBALL_FIXTURE_STATISTICS_PATH)
+
+    def api_football_team_match_stats(self) -> list[dict[str, str]]:
+        return read_optional_csv(API_FOOTBALL_TEAM_MATCH_STATS_PATH)
+
+    def api_football_coverage(self) -> list[dict[str, str]]:
+        return read_optional_csv(API_FOOTBALL_COVERAGE_PATH)
+
+    def world_cup_2026_simulation(self) -> dict[str, Any]:
+        predictions = self.world_cup_2026_predictions()
+        matches = self.football_data_world_cup_matches()
+        group_by_pair = {
+            (normalize_name(match["home_team"]), normalize_name(match["away_team"])): match["group"].replace("GROUP_", "Grupo ")
+            for match in matches
+            if match.get("group")
+        }
+
+        table: dict[str, dict[str, dict[str, float | str]]] = defaultdict(dict)
+        for row in predictions:
+            group = group_by_pair.get((row["home_team"], row["away_team"]), "Grupo pendiente")
+            home = row["home_team"]
+            away = row["away_team"]
+            home_win = float(row["home_win_probability"]) / 100
+            draw = float(row["draw_probability"]) / 100
+            away_win = float(row["away_win_probability"]) / 100
+            home_xg = float(row["home_expected_goals"])
+            away_xg = float(row["away_expected_goals"])
+
+            for team in (home, away):
+                table[group].setdefault(
+                    team,
+                    {
+                        "team": team,
+                        "expected_points": 0.0,
+                        "expected_goals_for": 0.0,
+                        "expected_goals_against": 0.0,
+                    },
+                )
+
+            table[group][home]["expected_points"] = float(table[group][home]["expected_points"]) + 3 * home_win + draw
+            table[group][away]["expected_points"] = float(table[group][away]["expected_points"]) + 3 * away_win + draw
+            table[group][home]["expected_goals_for"] = float(table[group][home]["expected_goals_for"]) + home_xg
+            table[group][home]["expected_goals_against"] = float(table[group][home]["expected_goals_against"]) + away_xg
+            table[group][away]["expected_goals_for"] = float(table[group][away]["expected_goals_for"]) + away_xg
+            table[group][away]["expected_goals_against"] = float(table[group][away]["expected_goals_against"]) + home_xg
+
+        groups = []
+        third_places = []
+        qualifiers = []
+        for group, teams in sorted(table.items()):
+            standings = sorted(
+                teams.values(),
+                key=lambda item: (
+                    float(item["expected_points"]),
+                    float(item["expected_goals_for"]) - float(item["expected_goals_against"]),
+                    float(item["expected_goals_for"]),
+                ),
+                reverse=True,
+            )
+            formatted = []
+            for index, item in enumerate(standings, start=1):
+                row = {
+                    "position": index,
+                    "team": str(item["team"]),
+                    "expected_points": round(float(item["expected_points"]), 2),
+                    "expected_goal_difference": round(
+                        float(item["expected_goals_for"]) - float(item["expected_goals_against"]), 2
+                    ),
+                    "expected_goals_for": round(float(item["expected_goals_for"]), 2),
+                    "expected_goals_against": round(float(item["expected_goals_against"]), 2),
+                }
+                formatted.append(row)
+                if index <= 2:
+                    qualifiers.append(row)
+                elif index == 3:
+                    third_places.append(row)
+            groups.append({"group": group, "standings": formatted})
+
+        best_thirds = sorted(
+            third_places,
+            key=lambda item: (
+                float(item["expected_points"]),
+                float(item["expected_goal_difference"]),
+                float(item["expected_goals_for"]),
+            ),
+            reverse=True,
+        )[:8]
+        qualifiers.extend(best_thirds)
+
+        seeded = sorted(
+            qualifiers,
+            key=lambda item: (
+                float(item["expected_points"]),
+                float(item["expected_goal_difference"]),
+                float(item["expected_goals_for"]),
+            ),
+            reverse=True,
+        )
+
+        rounds = []
+        current = [item["team"] for item in seeded[:32]]
+        round_names = ["Last 32", "Last 16", "Quarter-finals", "Semi-finals", "Final"]
+        for round_name in round_names:
+            pairings = []
+            winners = []
+            for i in range(len(current) // 2):
+                team_a = current[i]
+                team_b = current[-(i + 1)]
+                prediction = self.predict_match(
+                    str(team_a),
+                    str(team_b),
+                    match_date="2026-07-01",
+                    neutral=1,
+                    team_a_is_home=0,
+                )
+                probs = prediction["probabilities"]
+                winner = str(team_a) if probs["team_a_win"] >= probs["team_b_win"] else str(team_b)
+                if probs["draw"] > max(probs["team_a_win"], probs["team_b_win"]):
+                    winner = str(team_a) if prediction["expected_goals"]["team_a"] >= prediction["expected_goals"]["team_b"] else str(team_b)
+                winners.append(winner)
+                pairings.append(
+                    {
+                        "team_a": team_a,
+                        "team_b": team_b,
+                        "winner": winner,
+                        "team_a_win": probs["team_a_win"],
+                        "draw": probs["draw"],
+                        "team_b_win": probs["team_b_win"],
+                        "top_score": prediction["top_scorelines"][0]["score"],
+                    }
+                )
+            rounds.append({"round": round_name, "matches": pairings})
+            current = winners
+            if len(current) == 1:
+                break
+
+        return {
+            "groups": groups,
+            "best_thirds": best_thirds,
+            "qualifiers": seeded[:32],
+            "bracket": rounds,
+            "projected_champion": current[0] if current else "",
+        }
 
     def _history_before(self, team: str, match_date: date) -> list[dict[str, Any]]:
         return [match for match in self.team_history.get(team, []) if match["date"] < match_date]

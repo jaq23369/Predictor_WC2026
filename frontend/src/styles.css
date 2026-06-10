@@ -47,9 +47,14 @@ button {
 .top-panel,
 .predictor-panel,
 .result-panel,
+.match-detail-section,
 .scorelines-section,
 .phases-section,
-.fixtures-section {
+.fixtures-section,
+.simulation-section,
+.analysis-section,
+.squad-panel,
+.team-fixtures-panel {
   background: rgba(255, 253, 248, 0.96);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -140,6 +145,37 @@ h3 {
   font-weight: 700;
 }
 
+.top-nav {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 253, 248, 0.92);
+  box-shadow: var(--shadow);
+}
+
+.nav-button {
+  min-height: 42px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 16px;
+  font-weight: 800;
+}
+
+.nav-button.active {
+  border-color: #c8dccd;
+  background: #e8f0e8;
+  color: var(--green-dark);
+}
+
 .notice {
   display: flex;
   align-items: center;
@@ -161,9 +197,14 @@ h3 {
 
 .predictor-panel,
 .result-panel,
+.match-detail-section,
 .scorelines-section,
 .phases-section,
-.fixtures-section {
+.fixtures-section,
+.simulation-section,
+.analysis-section,
+.squad-panel,
+.team-fixtures-panel {
   padding: 22px;
 }
 
@@ -173,6 +214,10 @@ h3 {
   justify-content: space-between;
   gap: 16px;
   margin-bottom: 18px;
+}
+
+.section-heading.compact {
+  margin-bottom: 12px;
 }
 
 .icon-button {
@@ -341,9 +386,214 @@ input {
   font-size: 1.2rem;
 }
 
+.match-probability-board {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(120px, 0.42fr) minmax(0, 1fr);
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.team-probability-card,
+.draw-probability-card {
+  min-height: 112px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+}
+
+.team-probability-card.home {
+  background: linear-gradient(135deg, rgba(47, 111, 85, 0.16), #fff);
+}
+
+.team-probability-card.away {
+  background: linear-gradient(135deg, rgba(49, 95, 131, 0.16), #fff);
+}
+
+.team-probability-card span,
+.draw-probability-card span {
+  display: block;
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.team-probability-card strong,
+.draw-probability-card strong {
+  display: block;
+  margin-top: 4px;
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  line-height: 1;
+}
+
+.draw-probability-card {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(164, 111, 45, 0.16), #fff);
+}
+
+.match-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.metric-comparison-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.metric-comparison-card > span {
+  grid-column: 1 / -1;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.metric-comparison-card div {
+  min-width: 0;
+  display: grid;
+  gap: 2px;
+}
+
+.metric-comparison-card div:last-child {
+  justify-items: end;
+  text-align: right;
+}
+
+.metric-comparison-card strong {
+  font-size: 1.22rem;
+}
+
+.metric-comparison-card small {
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.lineups-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.lineup-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(rgba(31, 81, 62, 0.86), rgba(31, 81, 62, 0.9)),
+    repeating-linear-gradient(0deg, transparent 0 58px, rgba(255, 255, 255, 0.12) 58px 60px);
+  color: #fff;
+  min-height: 420px;
+  padding: 14px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 12px;
+}
+
+.lineup-card.away {
+  background:
+    linear-gradient(rgba(49, 95, 131, 0.88), rgba(49, 95, 131, 0.92)),
+    repeating-linear-gradient(0deg, transparent 0 58px, rgba(255, 255, 255, 0.12) 58px 60px);
+}
+
+.lineup-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lineup-header .team-crest,
+.lineup-header .crest-fallback {
+  width: 46px;
+  height: 46px;
+}
+
+.lineup-header span {
+  display: block;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.pitch-lines {
+  min-height: 328px;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  border-radius: 8px;
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.pitch-line {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.player-bubble {
+  width: min(108px, 30%);
+  min-width: 78px;
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+  text-align: center;
+}
+
+.player-bubble span {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--green-dark);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  font-size: 0.72rem;
+  font-weight: 900;
+}
+
+.lineup-card.away .player-bubble span {
+  color: var(--blue);
+}
+
+.player-bubble strong {
+  max-width: 100%;
+  color: #fff;
+  font-size: 0.72rem;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.empty-lineup {
+  min-height: 328px;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.82);
+  padding: 18px;
+}
+
 .scorelines-section,
+.match-detail-section,
 .phases-section,
-.fixtures-section {
+.fixtures-section,
+.simulation-section,
+.analysis-section {
   margin-bottom: 18px;
 }
 
@@ -556,15 +806,284 @@ input {
   text-align: right;
 }
 
+.simulation-hero,
+.team-overview {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f6f1e8;
+  margin-bottom: 18px;
+}
+
+.simulation-hero > div:first-child {
+  max-width: 520px;
+}
+
+.simulation-hero span,
+.team-identity span {
+  color: var(--muted);
+}
+
+.simulation-hero strong {
+  display: block;
+  margin: 5px 0;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  line-height: 1;
+}
+
+.simulation-hero p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.simulation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.standings-card,
+.bracket-match {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  padding: 14px;
+}
+
+.standings-card h3,
+.round-column h3,
+.position-group h4 {
+  margin: 0 0 10px;
+}
+
+.standings-table {
+  display: grid;
+  gap: 6px;
+}
+
+.standing-row {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) auto auto;
+  gap: 8px;
+  align-items: center;
+  border-radius: 8px;
+  background: #f8f6f0;
+  padding: 9px;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.standing-row strong {
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+.standing-row.qualifies {
+  background: #e8f0e8;
+  color: var(--green-dark);
+}
+
+.standing-row.third {
+  background: #f4ead9;
+  color: #83591f;
+}
+
+.bracket-section {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(180px, 1fr));
+  gap: 14px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.round-column {
+  min-width: 180px;
+  display: grid;
+  align-content: start;
+  gap: 10px;
+}
+
+.bracket-match {
+  display: grid;
+  gap: 8px;
+}
+
+.bracket-match > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.bracket-match span,
+.bracket-match p {
+  color: var(--muted);
+}
+
+.bracket-match p {
+  margin: 2px 0 0;
+  font-size: 0.86rem;
+}
+
+.team-picker {
+  width: min(280px, 100%);
+}
+
+.team-overview {
+  align-items: center;
+}
+
+.team-identity {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.team-crest,
+.crest-fallback {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: #fff;
+  object-fit: contain;
+  padding: 8px;
+  flex: 0 0 auto;
+}
+
+.crest-fallback {
+  display: grid;
+  place-items: center;
+  color: var(--green-dark);
+  font-weight: 900;
+}
+
+.analysis-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.analysis-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.75fr);
+  gap: 18px;
+}
+
+.position-group {
+  margin-top: 16px;
+}
+
+.position-group:first-of-type {
+  margin-top: 0;
+}
+
+.player-list,
+.team-fixture-list {
+  display: grid;
+  gap: 8px;
+}
+
+.player-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(160px, 0.75fr);
+  gap: 12px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  padding: 11px;
+}
+
+.player-row div {
+  min-width: 0;
+  display: grid;
+  gap: 3px;
+}
+
+.player-row div:last-child {
+  justify-items: end;
+  text-align: right;
+}
+
+.player-row span {
+  color: var(--muted);
+  font-size: 0.84rem;
+  overflow-wrap: anywhere;
+}
+
+.team-fixture-card {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+  padding: 13px;
+  display: grid;
+  gap: 10px;
+  text-align: left;
+}
+
+.team-fixture-card:hover {
+  background: #fbfaf6;
+}
+
+.team-fixture-card div:first-child {
+  display: grid;
+  gap: 4px;
+}
+
+.team-fixture-card span,
+.team-fixture-card p {
+  color: var(--muted);
+}
+
+.team-fixture-card p {
+  margin: 0;
+  font-size: 0.88rem;
+}
+
+.fixture-probability-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.fixture-probability-summary span {
+  border-radius: 8px;
+  background: #f2eee5;
+  padding: 7px 5px;
+  text-align: center;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
 @media (max-width: 900px) {
   .dashboard-grid,
-  .phase-detail {
+  .phase-detail,
+  .simulation-hero,
+  .team-overview,
+  .analysis-grid {
     grid-template-columns: 1fr;
     display: grid;
   }
 
+  .simulation-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .scoreline-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .match-probability-board,
+  .match-metrics-grid,
+  .lineups-grid {
+    grid-template-columns: 1fr;
   }
 
   .phase-tabs {
@@ -593,6 +1112,10 @@ input {
     justify-items: start;
     text-align: left;
   }
+
+  .analysis-stats {
+    justify-content: flex-start;
+  }
 }
 
 @media (max-width: 640px) {
@@ -605,6 +1128,11 @@ input {
     align-items: flex-start;
     flex-direction: column;
     padding: 18px;
+  }
+
+  .top-nav {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .brand-block {
@@ -632,6 +1160,15 @@ input {
     grid-template-columns: 1fr;
   }
 
+  .team-probability-card,
+  .draw-probability-card {
+    min-height: 92px;
+  }
+
+  .simulation-grid {
+    grid-template-columns: 1fr;
+  }
+
   .group-card-header {
     flex-direction: column;
   }
@@ -642,5 +1179,15 @@ input {
 
   .group-match-teams {
     grid-template-columns: 1fr;
+  }
+
+  .player-row,
+  .fixture-probability-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .player-row div:last-child {
+    justify-items: start;
+    text-align: left;
   }
 }

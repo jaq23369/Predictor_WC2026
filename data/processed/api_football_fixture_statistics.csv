@@ -1,0 +1,2321 @@
+fixture_id,date,api_football_team_id,team,opponent,stat,raw_stat,value
+1170218,2024-03-26T21:00:00+00:00,1532,Algeria,South Africa,shots_on_goal,Shots on Goal,7
+1170218,2024-03-26T21:00:00+00:00,1532,Algeria,South Africa,shots_off_goal,Shots off Goal,6
+1170218,2024-03-26T21:00:00+00:00,1532,Algeria,South Africa,total_shots,Total Shots,13
+1170218,2024-03-26T21:00:00+00:00,1532,Algeria,South Africa,blocked_shots,Blocked Shots,0
+1170218,2024-03-26T21:00:00+00:00,1532,Algeria,South Africa,shots_insidebox,Shots insidebox,8
+1170218,2024-03-26T21:00:00+00:00,1532,Algeria,South Africa,shots_outsidebox,Shots outsidebox,5
+1170218,2024-03-26T21:00:00+00:00,1532,Algeria,South Africa,fouls,Fouls,13
+1170218,2024-03-26T21:00:00+00:00,1532,Algeria,South Africa,corner_kicks,Corner Kicks,5
+1170218,2024-03-26T21:00:00+00:00,1532,Algeria,South Africa,offsides,Offsides,
+1170218,2024-03-26T21:00:00+00:00,1532,Algeria,South Africa,ball_possession,Ball Possession,47%
+1170218,2024-03-26T21:00:00+00:00,1532,Algeria,South Africa,yellow_cards,Yellow Cards,1
+1170218,2024-03-26T21:00:00+00:00,1532,Algeria,South Africa,red_cards,Red Cards,
+1170218,2024-03-26T21:00:00+00:00,1532,Algeria,South Africa,goalkeeper_saves,Goalkeeper Saves,2
+1170218,2024-03-26T21:00:00+00:00,1532,Algeria,South Africa,total_passes,Total passes,455
+1170218,2024-03-26T21:00:00+00:00,1532,Algeria,South Africa,passes_accurate,Passes accurate,394
+1170218,2024-03-26T21:00:00+00:00,1532,Algeria,South Africa,passes,Passes %,87%
+1170218,2024-03-26T21:00:00+00:00,1532,Algeria,South Africa,expected_goals,expected_goals,
+1170218,2024-03-26T21:00:00+00:00,1531,South Africa,Algeria,shots_on_goal,Shots on Goal,5
+1170218,2024-03-26T21:00:00+00:00,1531,South Africa,Algeria,shots_off_goal,Shots off Goal,5
+1170218,2024-03-26T21:00:00+00:00,1531,South Africa,Algeria,total_shots,Total Shots,12
+1170218,2024-03-26T21:00:00+00:00,1531,South Africa,Algeria,blocked_shots,Blocked Shots,2
+1170218,2024-03-26T21:00:00+00:00,1531,South Africa,Algeria,shots_insidebox,Shots insidebox,6
+1170218,2024-03-26T21:00:00+00:00,1531,South Africa,Algeria,shots_outsidebox,Shots outsidebox,6
+1170218,2024-03-26T21:00:00+00:00,1531,South Africa,Algeria,fouls,Fouls,11
+1170218,2024-03-26T21:00:00+00:00,1531,South Africa,Algeria,corner_kicks,Corner Kicks,3
+1170218,2024-03-26T21:00:00+00:00,1531,South Africa,Algeria,offsides,Offsides,
+1170218,2024-03-26T21:00:00+00:00,1531,South Africa,Algeria,ball_possession,Ball Possession,53%
+1170218,2024-03-26T21:00:00+00:00,1531,South Africa,Algeria,yellow_cards,Yellow Cards,2
+1170218,2024-03-26T21:00:00+00:00,1531,South Africa,Algeria,red_cards,Red Cards,
+1170218,2024-03-26T21:00:00+00:00,1531,South Africa,Algeria,goalkeeper_saves,Goalkeeper Saves,4
+1170218,2024-03-26T21:00:00+00:00,1531,South Africa,Algeria,total_passes,Total passes,526
+1170218,2024-03-26T21:00:00+00:00,1531,South Africa,Algeria,passes_accurate,Passes accurate,455
+1170218,2024-03-26T21:00:00+00:00,1531,South Africa,Algeria,passes,Passes %,87%
+1170218,2024-03-26T21:00:00+00:00,1531,South Africa,Algeria,expected_goals,expected_goals,
+1146307,2024-06-26T01:00:00+00:00,2383,Chile,Argentina,shots_on_goal,Shots on Goal,3
+1146307,2024-06-26T01:00:00+00:00,2383,Chile,Argentina,shots_off_goal,Shots off Goal,0
+1146307,2024-06-26T01:00:00+00:00,2383,Chile,Argentina,total_shots,Total Shots,3
+1146307,2024-06-26T01:00:00+00:00,2383,Chile,Argentina,blocked_shots,Blocked Shots,0
+1146307,2024-06-26T01:00:00+00:00,2383,Chile,Argentina,shots_insidebox,Shots insidebox,1
+1146307,2024-06-26T01:00:00+00:00,2383,Chile,Argentina,shots_outsidebox,Shots outsidebox,2
+1146307,2024-06-26T01:00:00+00:00,2383,Chile,Argentina,fouls,Fouls,12
+1146307,2024-06-26T01:00:00+00:00,2383,Chile,Argentina,corner_kicks,Corner Kicks,0
+1146307,2024-06-26T01:00:00+00:00,2383,Chile,Argentina,offsides,Offsides,1
+1146307,2024-06-26T01:00:00+00:00,2383,Chile,Argentina,ball_possession,Ball Possession,39%
+1146307,2024-06-26T01:00:00+00:00,2383,Chile,Argentina,yellow_cards,Yellow Cards,2
+1146307,2024-06-26T01:00:00+00:00,2383,Chile,Argentina,red_cards,Red Cards,
+1146307,2024-06-26T01:00:00+00:00,2383,Chile,Argentina,goalkeeper_saves,Goalkeeper Saves,8
+1146307,2024-06-26T01:00:00+00:00,2383,Chile,Argentina,total_passes,Total passes,355
+1146307,2024-06-26T01:00:00+00:00,2383,Chile,Argentina,passes_accurate,Passes accurate,273
+1146307,2024-06-26T01:00:00+00:00,2383,Chile,Argentina,passes,Passes %,77%
+1146307,2024-06-26T01:00:00+00:00,2383,Chile,Argentina,expected_goals,expected_goals,0.12
+1146307,2024-06-26T01:00:00+00:00,2383,Chile,Argentina,goals_prevented,goals_prevented,0.13
+1146307,2024-06-26T01:00:00+00:00,26,Argentina,Chile,shots_on_goal,Shots on Goal,9
+1146307,2024-06-26T01:00:00+00:00,26,Argentina,Chile,shots_off_goal,Shots off Goal,7
+1146307,2024-06-26T01:00:00+00:00,26,Argentina,Chile,total_shots,Total Shots,22
+1146307,2024-06-26T01:00:00+00:00,26,Argentina,Chile,blocked_shots,Blocked Shots,6
+1146307,2024-06-26T01:00:00+00:00,26,Argentina,Chile,shots_insidebox,Shots insidebox,14
+1146307,2024-06-26T01:00:00+00:00,26,Argentina,Chile,shots_outsidebox,Shots outsidebox,8
+1146307,2024-06-26T01:00:00+00:00,26,Argentina,Chile,fouls,Fouls,9
+1146307,2024-06-26T01:00:00+00:00,26,Argentina,Chile,corner_kicks,Corner Kicks,11
+1146307,2024-06-26T01:00:00+00:00,26,Argentina,Chile,offsides,Offsides,1
+1146307,2024-06-26T01:00:00+00:00,26,Argentina,Chile,ball_possession,Ball Possession,61%
+1146307,2024-06-26T01:00:00+00:00,26,Argentina,Chile,yellow_cards,Yellow Cards,0
+1146307,2024-06-26T01:00:00+00:00,26,Argentina,Chile,red_cards,Red Cards,
+1146307,2024-06-26T01:00:00+00:00,26,Argentina,Chile,goalkeeper_saves,Goalkeeper Saves,3
+1146307,2024-06-26T01:00:00+00:00,26,Argentina,Chile,total_passes,Total passes,551
+1146307,2024-06-26T01:00:00+00:00,26,Argentina,Chile,passes_accurate,Passes accurate,482
+1146307,2024-06-26T01:00:00+00:00,26,Argentina,Chile,passes,Passes %,87%
+1146307,2024-06-26T01:00:00+00:00,26,Argentina,Chile,expected_goals,expected_goals,2.72
+1146307,2024-06-26T01:00:00+00:00,26,Argentina,Chile,goals_prevented,goals_prevented,0.13
+1146313,2024-06-30T00:00:00+00:00,26,Argentina,Peru,shots_on_goal,Shots on Goal,6
+1146313,2024-06-30T00:00:00+00:00,26,Argentina,Peru,shots_off_goal,Shots off Goal,4
+1146313,2024-06-30T00:00:00+00:00,26,Argentina,Peru,total_shots,Total Shots,12
+1146313,2024-06-30T00:00:00+00:00,26,Argentina,Peru,blocked_shots,Blocked Shots,2
+1146313,2024-06-30T00:00:00+00:00,26,Argentina,Peru,shots_insidebox,Shots insidebox,10
+1146313,2024-06-30T00:00:00+00:00,26,Argentina,Peru,shots_outsidebox,Shots outsidebox,2
+1146313,2024-06-30T00:00:00+00:00,26,Argentina,Peru,fouls,Fouls,11
+1146313,2024-06-30T00:00:00+00:00,26,Argentina,Peru,corner_kicks,Corner Kicks,6
+1146313,2024-06-30T00:00:00+00:00,26,Argentina,Peru,offsides,Offsides,3
+1146313,2024-06-30T00:00:00+00:00,26,Argentina,Peru,ball_possession,Ball Possession,74%
+1146313,2024-06-30T00:00:00+00:00,26,Argentina,Peru,yellow_cards,Yellow Cards,1
+1146313,2024-06-30T00:00:00+00:00,26,Argentina,Peru,red_cards,Red Cards,
+1146313,2024-06-30T00:00:00+00:00,26,Argentina,Peru,goalkeeper_saves,Goalkeeper Saves,1
+1146313,2024-06-30T00:00:00+00:00,26,Argentina,Peru,total_passes,Total passes,627
+1146313,2024-06-30T00:00:00+00:00,26,Argentina,Peru,passes_accurate,Passes accurate,561
+1146313,2024-06-30T00:00:00+00:00,26,Argentina,Peru,passes,Passes %,89%
+1146313,2024-06-30T00:00:00+00:00,26,Argentina,Peru,expected_goals,expected_goals,2.29
+1146313,2024-06-30T00:00:00+00:00,26,Argentina,Peru,goals_prevented,goals_prevented,-0.89
+1146313,2024-06-30T00:00:00+00:00,30,Peru,Argentina,shots_on_goal,Shots on Goal,1
+1146313,2024-06-30T00:00:00+00:00,30,Peru,Argentina,shots_off_goal,Shots off Goal,3
+1146313,2024-06-30T00:00:00+00:00,30,Peru,Argentina,total_shots,Total Shots,6
+1146313,2024-06-30T00:00:00+00:00,30,Peru,Argentina,blocked_shots,Blocked Shots,2
+1146313,2024-06-30T00:00:00+00:00,30,Peru,Argentina,shots_insidebox,Shots insidebox,2
+1146313,2024-06-30T00:00:00+00:00,30,Peru,Argentina,shots_outsidebox,Shots outsidebox,4
+1146313,2024-06-30T00:00:00+00:00,30,Peru,Argentina,fouls,Fouls,20
+1146313,2024-06-30T00:00:00+00:00,30,Peru,Argentina,corner_kicks,Corner Kicks,3
+1146313,2024-06-30T00:00:00+00:00,30,Peru,Argentina,offsides,Offsides,1
+1146313,2024-06-30T00:00:00+00:00,30,Peru,Argentina,ball_possession,Ball Possession,26%
+1146313,2024-06-30T00:00:00+00:00,30,Peru,Argentina,yellow_cards,Yellow Cards,5
+1146313,2024-06-30T00:00:00+00:00,30,Peru,Argentina,red_cards,Red Cards,
+1146313,2024-06-30T00:00:00+00:00,30,Peru,Argentina,goalkeeper_saves,Goalkeeper Saves,4
+1146313,2024-06-30T00:00:00+00:00,30,Peru,Argentina,total_passes,Total passes,209
+1146313,2024-06-30T00:00:00+00:00,30,Peru,Argentina,passes_accurate,Passes accurate,150
+1146313,2024-06-30T00:00:00+00:00,30,Peru,Argentina,passes,Passes %,72%
+1146313,2024-06-30T00:00:00+00:00,30,Peru,Argentina,expected_goals,expected_goals,0.14
+1146313,2024-06-30T00:00:00+00:00,30,Peru,Argentina,goals_prevented,goals_prevented,-0.89
+1176913,2024-03-23T00:00:00+00:00,26,Argentina,El Salvador,shots_on_goal,Shots on Goal,14
+1176913,2024-03-23T00:00:00+00:00,26,Argentina,El Salvador,shots_off_goal,Shots off Goal,6
+1176913,2024-03-23T00:00:00+00:00,26,Argentina,El Salvador,total_shots,Total Shots,24
+1176913,2024-03-23T00:00:00+00:00,26,Argentina,El Salvador,blocked_shots,Blocked Shots,4
+1176913,2024-03-23T00:00:00+00:00,26,Argentina,El Salvador,shots_insidebox,Shots insidebox,16
+1176913,2024-03-23T00:00:00+00:00,26,Argentina,El Salvador,shots_outsidebox,Shots outsidebox,8
+1176913,2024-03-23T00:00:00+00:00,26,Argentina,El Salvador,fouls,Fouls,13
+1176913,2024-03-23T00:00:00+00:00,26,Argentina,El Salvador,corner_kicks,Corner Kicks,11
+1176913,2024-03-23T00:00:00+00:00,26,Argentina,El Salvador,offsides,Offsides,2
+1176913,2024-03-23T00:00:00+00:00,26,Argentina,El Salvador,ball_possession,Ball Possession,79%
+1176913,2024-03-23T00:00:00+00:00,26,Argentina,El Salvador,yellow_cards,Yellow Cards,0
+1176913,2024-03-23T00:00:00+00:00,26,Argentina,El Salvador,red_cards,Red Cards,
+1176913,2024-03-23T00:00:00+00:00,26,Argentina,El Salvador,goalkeeper_saves,Goalkeeper Saves,1
+1176913,2024-03-23T00:00:00+00:00,26,Argentina,El Salvador,total_passes,Total passes,922
+1176913,2024-03-23T00:00:00+00:00,26,Argentina,El Salvador,passes_accurate,Passes accurate,847
+1176913,2024-03-23T00:00:00+00:00,26,Argentina,El Salvador,passes,Passes %,92%
+1176913,2024-03-23T00:00:00+00:00,26,Argentina,El Salvador,expected_goals,expected_goals,
+1176913,2024-03-23T00:00:00+00:00,5159,El Salvador,Argentina,shots_on_goal,Shots on Goal,1
+1176913,2024-03-23T00:00:00+00:00,5159,El Salvador,Argentina,shots_off_goal,Shots off Goal,0
+1176913,2024-03-23T00:00:00+00:00,5159,El Salvador,Argentina,total_shots,Total Shots,2
+1176913,2024-03-23T00:00:00+00:00,5159,El Salvador,Argentina,blocked_shots,Blocked Shots,1
+1176913,2024-03-23T00:00:00+00:00,5159,El Salvador,Argentina,shots_insidebox,Shots insidebox,1
+1176913,2024-03-23T00:00:00+00:00,5159,El Salvador,Argentina,shots_outsidebox,Shots outsidebox,1
+1176913,2024-03-23T00:00:00+00:00,5159,El Salvador,Argentina,fouls,Fouls,10
+1176913,2024-03-23T00:00:00+00:00,5159,El Salvador,Argentina,corner_kicks,Corner Kicks,2
+1176913,2024-03-23T00:00:00+00:00,5159,El Salvador,Argentina,offsides,Offsides,0
+1176913,2024-03-23T00:00:00+00:00,5159,El Salvador,Argentina,ball_possession,Ball Possession,21%
+1176913,2024-03-23T00:00:00+00:00,5159,El Salvador,Argentina,yellow_cards,Yellow Cards,2
+1176913,2024-03-23T00:00:00+00:00,5159,El Salvador,Argentina,red_cards,Red Cards,
+1176913,2024-03-23T00:00:00+00:00,5159,El Salvador,Argentina,goalkeeper_saves,Goalkeeper Saves,10
+1176913,2024-03-23T00:00:00+00:00,5159,El Salvador,Argentina,total_passes,Total passes,237
+1176913,2024-03-23T00:00:00+00:00,5159,El Salvador,Argentina,passes_accurate,Passes accurate,169
+1176913,2024-03-23T00:00:00+00:00,5159,El Salvador,Argentina,passes,Passes %,71%
+1176913,2024-03-23T00:00:00+00:00,5159,El Salvador,Argentina,expected_goals,expected_goals,
+1176914,2024-03-27T02:50:00+00:00,26,Argentina,Costa Rica,shots_on_goal,Shots on Goal,12
+1176914,2024-03-27T02:50:00+00:00,26,Argentina,Costa Rica,shots_off_goal,Shots off Goal,6
+1176914,2024-03-27T02:50:00+00:00,26,Argentina,Costa Rica,total_shots,Total Shots,21
+1176914,2024-03-27T02:50:00+00:00,26,Argentina,Costa Rica,blocked_shots,Blocked Shots,3
+1176914,2024-03-27T02:50:00+00:00,26,Argentina,Costa Rica,shots_insidebox,Shots insidebox,16
+1176914,2024-03-27T02:50:00+00:00,26,Argentina,Costa Rica,shots_outsidebox,Shots outsidebox,5
+1176914,2024-03-27T02:50:00+00:00,26,Argentina,Costa Rica,fouls,Fouls,14
+1176914,2024-03-27T02:50:00+00:00,26,Argentina,Costa Rica,corner_kicks,Corner Kicks,6
+1176914,2024-03-27T02:50:00+00:00,26,Argentina,Costa Rica,offsides,Offsides,1
+1176914,2024-03-27T02:50:00+00:00,26,Argentina,Costa Rica,ball_possession,Ball Possession,74%
+1176914,2024-03-27T02:50:00+00:00,26,Argentina,Costa Rica,yellow_cards,Yellow Cards,1
+1176914,2024-03-27T02:50:00+00:00,26,Argentina,Costa Rica,red_cards,Red Cards,
+1176914,2024-03-27T02:50:00+00:00,26,Argentina,Costa Rica,goalkeeper_saves,Goalkeeper Saves,2
+1176914,2024-03-27T02:50:00+00:00,26,Argentina,Costa Rica,total_passes,Total passes,775
+1176914,2024-03-27T02:50:00+00:00,26,Argentina,Costa Rica,passes_accurate,Passes accurate,692
+1176914,2024-03-27T02:50:00+00:00,26,Argentina,Costa Rica,passes,Passes %,89%
+1176914,2024-03-27T02:50:00+00:00,26,Argentina,Costa Rica,expected_goals,expected_goals,
+1176914,2024-03-27T02:50:00+00:00,29,Costa Rica,Argentina,shots_on_goal,Shots on Goal,3
+1176914,2024-03-27T02:50:00+00:00,29,Costa Rica,Argentina,shots_off_goal,Shots off Goal,4
+1176914,2024-03-27T02:50:00+00:00,29,Costa Rica,Argentina,total_shots,Total Shots,7
+1176914,2024-03-27T02:50:00+00:00,29,Costa Rica,Argentina,blocked_shots,Blocked Shots,0
+1176914,2024-03-27T02:50:00+00:00,29,Costa Rica,Argentina,shots_insidebox,Shots insidebox,4
+1176914,2024-03-27T02:50:00+00:00,29,Costa Rica,Argentina,shots_outsidebox,Shots outsidebox,3
+1176914,2024-03-27T02:50:00+00:00,29,Costa Rica,Argentina,fouls,Fouls,20
+1176914,2024-03-27T02:50:00+00:00,29,Costa Rica,Argentina,corner_kicks,Corner Kicks,1
+1176914,2024-03-27T02:50:00+00:00,29,Costa Rica,Argentina,offsides,Offsides,0
+1176914,2024-03-27T02:50:00+00:00,29,Costa Rica,Argentina,ball_possession,Ball Possession,26%
+1176914,2024-03-27T02:50:00+00:00,29,Costa Rica,Argentina,yellow_cards,Yellow Cards,1
+1176914,2024-03-27T02:50:00+00:00,29,Costa Rica,Argentina,red_cards,Red Cards,
+1176914,2024-03-27T02:50:00+00:00,29,Costa Rica,Argentina,goalkeeper_saves,Goalkeeper Saves,7
+1176914,2024-03-27T02:50:00+00:00,29,Costa Rica,Argentina,total_passes,Total passes,275
+1176914,2024-03-27T02:50:00+00:00,29,Costa Rica,Argentina,passes_accurate,Passes accurate,199
+1176914,2024-03-27T02:50:00+00:00,29,Costa Rica,Argentina,passes,Passes %,72%
+1176914,2024-03-27T02:50:00+00:00,29,Costa Rica,Argentina,expected_goals,expected_goals,
+1189120,2024-06-21T00:00:00+00:00,26,Argentina,Canada,shots_on_goal,Shots on Goal,9
+1189120,2024-06-21T00:00:00+00:00,26,Argentina,Canada,shots_off_goal,Shots off Goal,7
+1189120,2024-06-21T00:00:00+00:00,26,Argentina,Canada,total_shots,Total Shots,19
+1189120,2024-06-21T00:00:00+00:00,26,Argentina,Canada,blocked_shots,Blocked Shots,3
+1189120,2024-06-21T00:00:00+00:00,26,Argentina,Canada,shots_insidebox,Shots insidebox,15
+1189120,2024-06-21T00:00:00+00:00,26,Argentina,Canada,shots_outsidebox,Shots outsidebox,4
+1189120,2024-06-21T00:00:00+00:00,26,Argentina,Canada,fouls,Fouls,15
+1189120,2024-06-21T00:00:00+00:00,26,Argentina,Canada,corner_kicks,Corner Kicks,7
+1189120,2024-06-21T00:00:00+00:00,26,Argentina,Canada,offsides,Offsides,1
+1189120,2024-06-21T00:00:00+00:00,26,Argentina,Canada,ball_possession,Ball Possession,64%
+1189120,2024-06-21T00:00:00+00:00,26,Argentina,Canada,yellow_cards,Yellow Cards,2
+1189120,2024-06-21T00:00:00+00:00,26,Argentina,Canada,red_cards,Red Cards,
+1189120,2024-06-21T00:00:00+00:00,26,Argentina,Canada,goalkeeper_saves,Goalkeeper Saves,2
+1189120,2024-06-21T00:00:00+00:00,26,Argentina,Canada,total_passes,Total passes,604
+1189120,2024-06-21T00:00:00+00:00,26,Argentina,Canada,passes_accurate,Passes accurate,547
+1189120,2024-06-21T00:00:00+00:00,26,Argentina,Canada,passes,Passes %,91%
+1189120,2024-06-21T00:00:00+00:00,26,Argentina,Canada,expected_goals,expected_goals,3.02
+1189120,2024-06-21T00:00:00+00:00,26,Argentina,Canada,goals_prevented,goals_prevented,0.95
+1189120,2024-06-21T00:00:00+00:00,5529,Canada,Argentina,shots_on_goal,Shots on Goal,2
+1189120,2024-06-21T00:00:00+00:00,5529,Canada,Argentina,shots_off_goal,Shots off Goal,4
+1189120,2024-06-21T00:00:00+00:00,5529,Canada,Argentina,total_shots,Total Shots,10
+1189120,2024-06-21T00:00:00+00:00,5529,Canada,Argentina,blocked_shots,Blocked Shots,4
+1189120,2024-06-21T00:00:00+00:00,5529,Canada,Argentina,shots_insidebox,Shots insidebox,6
+1189120,2024-06-21T00:00:00+00:00,5529,Canada,Argentina,shots_outsidebox,Shots outsidebox,4
+1189120,2024-06-21T00:00:00+00:00,5529,Canada,Argentina,fouls,Fouls,9
+1189120,2024-06-21T00:00:00+00:00,5529,Canada,Argentina,corner_kicks,Corner Kicks,4
+1189120,2024-06-21T00:00:00+00:00,5529,Canada,Argentina,offsides,Offsides,1
+1189120,2024-06-21T00:00:00+00:00,5529,Canada,Argentina,ball_possession,Ball Possession,36%
+1189120,2024-06-21T00:00:00+00:00,5529,Canada,Argentina,yellow_cards,Yellow Cards,2
+1189120,2024-06-21T00:00:00+00:00,5529,Canada,Argentina,red_cards,Red Cards,
+1189120,2024-06-21T00:00:00+00:00,5529,Canada,Argentina,goalkeeper_saves,Goalkeeper Saves,6
+1189120,2024-06-21T00:00:00+00:00,5529,Canada,Argentina,total_passes,Total passes,327
+1189120,2024-06-21T00:00:00+00:00,5529,Canada,Argentina,passes_accurate,Passes accurate,265
+1189120,2024-06-21T00:00:00+00:00,5529,Canada,Argentina,passes,Passes %,81%
+1189120,2024-06-21T00:00:00+00:00,5529,Canada,Argentina,expected_goals,expected_goals,1.16
+1189120,2024-06-21T00:00:00+00:00,5529,Canada,Argentina,goals_prevented,goals_prevented,0.95
+1193462,2024-06-09T23:00:00+00:00,26,Argentina,Ecuador,shots_on_goal,Shots on Goal,4
+1193462,2024-06-09T23:00:00+00:00,26,Argentina,Ecuador,shots_off_goal,Shots off Goal,5
+1193462,2024-06-09T23:00:00+00:00,26,Argentina,Ecuador,total_shots,Total Shots,11
+1193462,2024-06-09T23:00:00+00:00,26,Argentina,Ecuador,blocked_shots,Blocked Shots,2
+1193462,2024-06-09T23:00:00+00:00,26,Argentina,Ecuador,shots_insidebox,Shots insidebox,6
+1193462,2024-06-09T23:00:00+00:00,26,Argentina,Ecuador,shots_outsidebox,Shots outsidebox,5
+1193462,2024-06-09T23:00:00+00:00,26,Argentina,Ecuador,fouls,Fouls,15
+1193462,2024-06-09T23:00:00+00:00,26,Argentina,Ecuador,corner_kicks,Corner Kicks,3
+1193462,2024-06-09T23:00:00+00:00,26,Argentina,Ecuador,offsides,Offsides,2
+1193462,2024-06-09T23:00:00+00:00,26,Argentina,Ecuador,ball_possession,Ball Possession,65%
+1193462,2024-06-09T23:00:00+00:00,26,Argentina,Ecuador,yellow_cards,Yellow Cards,1
+1193462,2024-06-09T23:00:00+00:00,26,Argentina,Ecuador,red_cards,Red Cards,
+1193462,2024-06-09T23:00:00+00:00,26,Argentina,Ecuador,goalkeeper_saves,Goalkeeper Saves,0
+1193462,2024-06-09T23:00:00+00:00,26,Argentina,Ecuador,total_passes,Total passes,632
+1193462,2024-06-09T23:00:00+00:00,26,Argentina,Ecuador,passes_accurate,Passes accurate,567
+1193462,2024-06-09T23:00:00+00:00,26,Argentina,Ecuador,passes,Passes %,90%
+1193462,2024-06-09T23:00:00+00:00,26,Argentina,Ecuador,expected_goals,expected_goals,
+1193462,2024-06-09T23:00:00+00:00,26,Argentina,Ecuador,goals_prevented,goals_prevented,
+1193462,2024-06-09T23:00:00+00:00,2382,Ecuador,Argentina,shots_on_goal,Shots on Goal,0
+1193462,2024-06-09T23:00:00+00:00,2382,Ecuador,Argentina,shots_off_goal,Shots off Goal,4
+1193462,2024-06-09T23:00:00+00:00,2382,Ecuador,Argentina,total_shots,Total Shots,5
+1193462,2024-06-09T23:00:00+00:00,2382,Ecuador,Argentina,blocked_shots,Blocked Shots,1
+1193462,2024-06-09T23:00:00+00:00,2382,Ecuador,Argentina,shots_insidebox,Shots insidebox,3
+1193462,2024-06-09T23:00:00+00:00,2382,Ecuador,Argentina,shots_outsidebox,Shots outsidebox,2
+1193462,2024-06-09T23:00:00+00:00,2382,Ecuador,Argentina,fouls,Fouls,20
+1193462,2024-06-09T23:00:00+00:00,2382,Ecuador,Argentina,corner_kicks,Corner Kicks,2
+1193462,2024-06-09T23:00:00+00:00,2382,Ecuador,Argentina,offsides,Offsides,1
+1193462,2024-06-09T23:00:00+00:00,2382,Ecuador,Argentina,ball_possession,Ball Possession,35%
+1193462,2024-06-09T23:00:00+00:00,2382,Ecuador,Argentina,yellow_cards,Yellow Cards,2
+1193462,2024-06-09T23:00:00+00:00,2382,Ecuador,Argentina,red_cards,Red Cards,
+1193462,2024-06-09T23:00:00+00:00,2382,Ecuador,Argentina,goalkeeper_saves,Goalkeeper Saves,3
+1193462,2024-06-09T23:00:00+00:00,2382,Ecuador,Argentina,total_passes,Total passes,343
+1193462,2024-06-09T23:00:00+00:00,2382,Ecuador,Argentina,passes_accurate,Passes accurate,281
+1193462,2024-06-09T23:00:00+00:00,2382,Ecuador,Argentina,passes,Passes %,82%
+1193462,2024-06-09T23:00:00+00:00,2382,Ecuador,Argentina,expected_goals,expected_goals,
+1193462,2024-06-09T23:00:00+00:00,2382,Ecuador,Argentina,goals_prevented,goals_prevented,
+1219957,2024-07-05T01:00:00+00:00,26,Argentina,Ecuador,shots_on_goal,Shots on Goal,2
+1219957,2024-07-05T01:00:00+00:00,26,Argentina,Ecuador,shots_off_goal,Shots off Goal,4
+1219957,2024-07-05T01:00:00+00:00,26,Argentina,Ecuador,total_shots,Total Shots,8
+1219957,2024-07-05T01:00:00+00:00,26,Argentina,Ecuador,blocked_shots,Blocked Shots,2
+1219957,2024-07-05T01:00:00+00:00,26,Argentina,Ecuador,shots_insidebox,Shots insidebox,8
+1219957,2024-07-05T01:00:00+00:00,26,Argentina,Ecuador,shots_outsidebox,Shots outsidebox,0
+1219957,2024-07-05T01:00:00+00:00,26,Argentina,Ecuador,fouls,Fouls,13
+1219957,2024-07-05T01:00:00+00:00,26,Argentina,Ecuador,corner_kicks,Corner Kicks,2
+1219957,2024-07-05T01:00:00+00:00,26,Argentina,Ecuador,offsides,Offsides,2
+1219957,2024-07-05T01:00:00+00:00,26,Argentina,Ecuador,ball_possession,Ball Possession,51%
+1219957,2024-07-05T01:00:00+00:00,26,Argentina,Ecuador,yellow_cards,Yellow Cards,2
+1219957,2024-07-05T01:00:00+00:00,26,Argentina,Ecuador,red_cards,Red Cards,
+1219957,2024-07-05T01:00:00+00:00,26,Argentina,Ecuador,goalkeeper_saves,Goalkeeper Saves,1
+1219957,2024-07-05T01:00:00+00:00,26,Argentina,Ecuador,total_passes,Total passes,374
+1219957,2024-07-05T01:00:00+00:00,26,Argentina,Ecuador,passes_accurate,Passes accurate,310
+1219957,2024-07-05T01:00:00+00:00,26,Argentina,Ecuador,passes,Passes %,83%
+1219957,2024-07-05T01:00:00+00:00,26,Argentina,Ecuador,expected_goals,expected_goals,0.87
+1219957,2024-07-05T01:00:00+00:00,26,Argentina,Ecuador,goals_prevented,goals_prevented,-0.67
+1219957,2024-07-05T01:00:00+00:00,2382,Ecuador,Argentina,shots_on_goal,Shots on Goal,2
+1219957,2024-07-05T01:00:00+00:00,2382,Ecuador,Argentina,shots_off_goal,Shots off Goal,5
+1219957,2024-07-05T01:00:00+00:00,2382,Ecuador,Argentina,total_shots,Total Shots,9
+1219957,2024-07-05T01:00:00+00:00,2382,Ecuador,Argentina,blocked_shots,Blocked Shots,2
+1219957,2024-07-05T01:00:00+00:00,2382,Ecuador,Argentina,shots_insidebox,Shots insidebox,8
+1219957,2024-07-05T01:00:00+00:00,2382,Ecuador,Argentina,shots_outsidebox,Shots outsidebox,1
+1219957,2024-07-05T01:00:00+00:00,2382,Ecuador,Argentina,fouls,Fouls,14
+1219957,2024-07-05T01:00:00+00:00,2382,Ecuador,Argentina,corner_kicks,Corner Kicks,5
+1219957,2024-07-05T01:00:00+00:00,2382,Ecuador,Argentina,offsides,Offsides,1
+1219957,2024-07-05T01:00:00+00:00,2382,Ecuador,Argentina,ball_possession,Ball Possession,49%
+1219957,2024-07-05T01:00:00+00:00,2382,Ecuador,Argentina,yellow_cards,Yellow Cards,2
+1219957,2024-07-05T01:00:00+00:00,2382,Ecuador,Argentina,red_cards,Red Cards,
+1219957,2024-07-05T01:00:00+00:00,2382,Ecuador,Argentina,goalkeeper_saves,Goalkeeper Saves,1
+1219957,2024-07-05T01:00:00+00:00,2382,Ecuador,Argentina,total_passes,Total passes,355
+1219957,2024-07-05T01:00:00+00:00,2382,Ecuador,Argentina,passes_accurate,Passes accurate,289
+1219957,2024-07-05T01:00:00+00:00,2382,Ecuador,Argentina,passes,Passes %,81%
+1219957,2024-07-05T01:00:00+00:00,2382,Ecuador,Argentina,expected_goals,expected_goals,1.73
+1219957,2024-07-05T01:00:00+00:00,2382,Ecuador,Argentina,goals_prevented,goals_prevented,-0.67
+1227537,2024-07-10T00:00:00+00:00,26,Argentina,Canada,shots_on_goal,Shots on Goal,3
+1227537,2024-07-10T00:00:00+00:00,26,Argentina,Canada,shots_off_goal,Shots off Goal,6
+1227537,2024-07-10T00:00:00+00:00,26,Argentina,Canada,total_shots,Total Shots,11
+1227537,2024-07-10T00:00:00+00:00,26,Argentina,Canada,blocked_shots,Blocked Shots,2
+1227537,2024-07-10T00:00:00+00:00,26,Argentina,Canada,shots_insidebox,Shots insidebox,7
+1227537,2024-07-10T00:00:00+00:00,26,Argentina,Canada,shots_outsidebox,Shots outsidebox,4
+1227537,2024-07-10T00:00:00+00:00,26,Argentina,Canada,fouls,Fouls,5
+1227537,2024-07-10T00:00:00+00:00,26,Argentina,Canada,corner_kicks,Corner Kicks,2
+1227537,2024-07-10T00:00:00+00:00,26,Argentina,Canada,offsides,Offsides,2
+1227537,2024-07-10T00:00:00+00:00,26,Argentina,Canada,ball_possession,Ball Possession,51%
+1227537,2024-07-10T00:00:00+00:00,26,Argentina,Canada,yellow_cards,Yellow Cards,1
+1227537,2024-07-10T00:00:00+00:00,26,Argentina,Canada,red_cards,Red Cards,
+1227537,2024-07-10T00:00:00+00:00,26,Argentina,Canada,goalkeeper_saves,Goalkeeper Saves,2
+1227537,2024-07-10T00:00:00+00:00,26,Argentina,Canada,total_passes,Total passes,478
+1227537,2024-07-10T00:00:00+00:00,26,Argentina,Canada,passes_accurate,Passes accurate,406
+1227537,2024-07-10T00:00:00+00:00,26,Argentina,Canada,passes,Passes %,85%
+1227537,2024-07-10T00:00:00+00:00,26,Argentina,Canada,expected_goals,expected_goals,2.20
+1227537,2024-07-10T00:00:00+00:00,26,Argentina,Canada,goals_prevented,goals_prevented,-0.59
+1227537,2024-07-10T00:00:00+00:00,5529,Canada,Argentina,shots_on_goal,Shots on Goal,2
+1227537,2024-07-10T00:00:00+00:00,5529,Canada,Argentina,shots_off_goal,Shots off Goal,5
+1227537,2024-07-10T00:00:00+00:00,5529,Canada,Argentina,total_shots,Total Shots,9
+1227537,2024-07-10T00:00:00+00:00,5529,Canada,Argentina,blocked_shots,Blocked Shots,2
+1227537,2024-07-10T00:00:00+00:00,5529,Canada,Argentina,shots_insidebox,Shots insidebox,5
+1227537,2024-07-10T00:00:00+00:00,5529,Canada,Argentina,shots_outsidebox,Shots outsidebox,4
+1227537,2024-07-10T00:00:00+00:00,5529,Canada,Argentina,fouls,Fouls,15
+1227537,2024-07-10T00:00:00+00:00,5529,Canada,Argentina,corner_kicks,Corner Kicks,2
+1227537,2024-07-10T00:00:00+00:00,5529,Canada,Argentina,offsides,Offsides,0
+1227537,2024-07-10T00:00:00+00:00,5529,Canada,Argentina,ball_possession,Ball Possession,49%
+1227537,2024-07-10T00:00:00+00:00,5529,Canada,Argentina,yellow_cards,Yellow Cards,3
+1227537,2024-07-10T00:00:00+00:00,5529,Canada,Argentina,red_cards,Red Cards,
+1227537,2024-07-10T00:00:00+00:00,5529,Canada,Argentina,goalkeeper_saves,Goalkeeper Saves,1
+1227537,2024-07-10T00:00:00+00:00,5529,Canada,Argentina,total_passes,Total passes,458
+1227537,2024-07-10T00:00:00+00:00,5529,Canada,Argentina,passes_accurate,Passes accurate,395
+1227537,2024-07-10T00:00:00+00:00,5529,Canada,Argentina,passes,Passes %,86%
+1227537,2024-07-10T00:00:00+00:00,5529,Canada,Argentina,expected_goals,expected_goals,0.78
+1227537,2024-07-10T00:00:00+00:00,5529,Canada,Argentina,goals_prevented,goals_prevented,-0.59
+1234030,2024-07-15T00:30:00+00:00,26,Argentina,Colombia,shots_on_goal,Shots on Goal,6
+1234030,2024-07-15T00:30:00+00:00,26,Argentina,Colombia,shots_off_goal,Shots off Goal,4
+1234030,2024-07-15T00:30:00+00:00,26,Argentina,Colombia,total_shots,Total Shots,11
+1234030,2024-07-15T00:30:00+00:00,26,Argentina,Colombia,blocked_shots,Blocked Shots,1
+1234030,2024-07-15T00:30:00+00:00,26,Argentina,Colombia,shots_insidebox,Shots insidebox,10
+1234030,2024-07-15T00:30:00+00:00,26,Argentina,Colombia,shots_outsidebox,Shots outsidebox,1
+1234030,2024-07-15T00:30:00+00:00,26,Argentina,Colombia,fouls,Fouls,8
+1234030,2024-07-15T00:30:00+00:00,26,Argentina,Colombia,corner_kicks,Corner Kicks,4
+1234030,2024-07-15T00:30:00+00:00,26,Argentina,Colombia,offsides,Offsides,2
+1234030,2024-07-15T00:30:00+00:00,26,Argentina,Colombia,ball_possession,Ball Possession,45%
+1234030,2024-07-15T00:30:00+00:00,26,Argentina,Colombia,yellow_cards,Yellow Cards,2
+1234030,2024-07-15T00:30:00+00:00,26,Argentina,Colombia,red_cards,Red Cards,
+1234030,2024-07-15T00:30:00+00:00,26,Argentina,Colombia,goalkeeper_saves,Goalkeeper Saves,4
+1234030,2024-07-15T00:30:00+00:00,26,Argentina,Colombia,total_passes,Total passes,474
+1234030,2024-07-15T00:30:00+00:00,26,Argentina,Colombia,passes_accurate,Passes accurate,391
+1234030,2024-07-15T00:30:00+00:00,26,Argentina,Colombia,passes,Passes %,82%
+1234030,2024-07-15T00:30:00+00:00,26,Argentina,Colombia,expected_goals,expected_goals,1.04
+1234030,2024-07-15T00:30:00+00:00,26,Argentina,Colombia,goals_prevented,goals_prevented,0.04
+1234030,2024-07-15T00:30:00+00:00,8,Colombia,Argentina,shots_on_goal,Shots on Goal,4
+1234030,2024-07-15T00:30:00+00:00,8,Colombia,Argentina,shots_off_goal,Shots off Goal,8
+1234030,2024-07-15T00:30:00+00:00,8,Colombia,Argentina,total_shots,Total Shots,19
+1234030,2024-07-15T00:30:00+00:00,8,Colombia,Argentina,blocked_shots,Blocked Shots,7
+1234030,2024-07-15T00:30:00+00:00,8,Colombia,Argentina,shots_insidebox,Shots insidebox,10
+1234030,2024-07-15T00:30:00+00:00,8,Colombia,Argentina,shots_outsidebox,Shots outsidebox,9
+1234030,2024-07-15T00:30:00+00:00,8,Colombia,Argentina,fouls,Fouls,18
+1234030,2024-07-15T00:30:00+00:00,8,Colombia,Argentina,corner_kicks,Corner Kicks,7
+1234030,2024-07-15T00:30:00+00:00,8,Colombia,Argentina,offsides,Offsides,1
+1234030,2024-07-15T00:30:00+00:00,8,Colombia,Argentina,ball_possession,Ball Possession,55%
+1234030,2024-07-15T00:30:00+00:00,8,Colombia,Argentina,yellow_cards,Yellow Cards,2
+1234030,2024-07-15T00:30:00+00:00,8,Colombia,Argentina,red_cards,Red Cards,
+1234030,2024-07-15T00:30:00+00:00,8,Colombia,Argentina,goalkeeper_saves,Goalkeeper Saves,5
+1234030,2024-07-15T00:30:00+00:00,8,Colombia,Argentina,total_passes,Total passes,602
+1234030,2024-07-15T00:30:00+00:00,8,Colombia,Argentina,passes_accurate,Passes accurate,515
+1234030,2024-07-15T00:30:00+00:00,8,Colombia,Argentina,passes,Passes %,86%
+1234030,2024-07-15T00:30:00+00:00,8,Colombia,Argentina,expected_goals,expected_goals,1.02
+1234030,2024-07-15T00:30:00+00:00,8,Colombia,Argentina,goals_prevented,goals_prevented,0.04
+1155242,2024-01-06T14:00:00+00:00,1547,Bahrain,Australia,shots_on_goal,Shots on Goal,1
+1155242,2024-01-06T14:00:00+00:00,1547,Bahrain,Australia,shots_off_goal,Shots off Goal,4
+1155242,2024-01-06T14:00:00+00:00,1547,Bahrain,Australia,total_shots,Total Shots,5
+1155242,2024-01-06T14:00:00+00:00,1547,Bahrain,Australia,blocked_shots,Blocked Shots,0
+1155242,2024-01-06T14:00:00+00:00,1547,Bahrain,Australia,shots_insidebox,Shots insidebox,1
+1155242,2024-01-06T14:00:00+00:00,1547,Bahrain,Australia,shots_outsidebox,Shots outsidebox,4
+1155242,2024-01-06T14:00:00+00:00,1547,Bahrain,Australia,fouls,Fouls,7
+1155242,2024-01-06T14:00:00+00:00,1547,Bahrain,Australia,corner_kicks,Corner Kicks,1
+1155242,2024-01-06T14:00:00+00:00,1547,Bahrain,Australia,offsides,Offsides,1
+1155242,2024-01-06T14:00:00+00:00,1547,Bahrain,Australia,ball_possession,Ball Possession,41%
+1155242,2024-01-06T14:00:00+00:00,1547,Bahrain,Australia,yellow_cards,Yellow Cards,1
+1155242,2024-01-06T14:00:00+00:00,1547,Bahrain,Australia,red_cards,Red Cards,
+1155242,2024-01-06T14:00:00+00:00,1547,Bahrain,Australia,goalkeeper_saves,Goalkeeper Saves,2
+1155242,2024-01-06T14:00:00+00:00,1547,Bahrain,Australia,total_passes,Total passes,425
+1155242,2024-01-06T14:00:00+00:00,1547,Bahrain,Australia,passes_accurate,Passes accurate,341
+1155242,2024-01-06T14:00:00+00:00,1547,Bahrain,Australia,passes,Passes %,80%
+1155242,2024-01-06T14:00:00+00:00,1547,Bahrain,Australia,expected_goals,expected_goals,
+1155242,2024-01-06T14:00:00+00:00,20,Australia,Bahrain,shots_on_goal,Shots on Goal,3
+1155242,2024-01-06T14:00:00+00:00,20,Australia,Bahrain,shots_off_goal,Shots off Goal,3
+1155242,2024-01-06T14:00:00+00:00,20,Australia,Bahrain,total_shots,Total Shots,7
+1155242,2024-01-06T14:00:00+00:00,20,Australia,Bahrain,blocked_shots,Blocked Shots,1
+1155242,2024-01-06T14:00:00+00:00,20,Australia,Bahrain,shots_insidebox,Shots insidebox,5
+1155242,2024-01-06T14:00:00+00:00,20,Australia,Bahrain,shots_outsidebox,Shots outsidebox,2
+1155242,2024-01-06T14:00:00+00:00,20,Australia,Bahrain,fouls,Fouls,18
+1155242,2024-01-06T14:00:00+00:00,20,Australia,Bahrain,corner_kicks,Corner Kicks,3
+1155242,2024-01-06T14:00:00+00:00,20,Australia,Bahrain,offsides,Offsides,3
+1155242,2024-01-06T14:00:00+00:00,20,Australia,Bahrain,ball_possession,Ball Possession,59%
+1155242,2024-01-06T14:00:00+00:00,20,Australia,Bahrain,yellow_cards,Yellow Cards,1
+1155242,2024-01-06T14:00:00+00:00,20,Australia,Bahrain,red_cards,Red Cards,
+1155242,2024-01-06T14:00:00+00:00,20,Australia,Bahrain,goalkeeper_saves,Goalkeeper Saves,1
+1155242,2024-01-06T14:00:00+00:00,20,Australia,Bahrain,total_passes,Total passes,598
+1155242,2024-01-06T14:00:00+00:00,20,Australia,Bahrain,passes_accurate,Passes accurate,531
+1155242,2024-01-06T14:00:00+00:00,20,Australia,Bahrain,passes,Passes %,89%
+1155242,2024-01-06T14:00:00+00:00,20,Australia,Bahrain,expected_goals,expected_goals,
+1145515,2024-06-17T19:00:00+00:00,775,Austria,France,shots_on_goal,Shots on Goal,3
+1145515,2024-06-17T19:00:00+00:00,775,Austria,France,shots_off_goal,Shots off Goal,2
+1145515,2024-06-17T19:00:00+00:00,775,Austria,France,total_shots,Total Shots,6
+1145515,2024-06-17T19:00:00+00:00,775,Austria,France,blocked_shots,Blocked Shots,1
+1145515,2024-06-17T19:00:00+00:00,775,Austria,France,shots_insidebox,Shots insidebox,4
+1145515,2024-06-17T19:00:00+00:00,775,Austria,France,shots_outsidebox,Shots outsidebox,2
+1145515,2024-06-17T19:00:00+00:00,775,Austria,France,fouls,Fouls,18
+1145515,2024-06-17T19:00:00+00:00,775,Austria,France,corner_kicks,Corner Kicks,6
+1145515,2024-06-17T19:00:00+00:00,775,Austria,France,offsides,Offsides,0
+1145515,2024-06-17T19:00:00+00:00,775,Austria,France,ball_possession,Ball Possession,52%
+1145515,2024-06-17T19:00:00+00:00,775,Austria,France,yellow_cards,Yellow Cards,5
+1145515,2024-06-17T19:00:00+00:00,775,Austria,France,red_cards,Red Cards,
+1145515,2024-06-17T19:00:00+00:00,775,Austria,France,goalkeeper_saves,Goalkeeper Saves,3
+1145515,2024-06-17T19:00:00+00:00,775,Austria,France,total_passes,Total passes,476
+1145515,2024-06-17T19:00:00+00:00,775,Austria,France,passes_accurate,Passes accurate,401
+1145515,2024-06-17T19:00:00+00:00,775,Austria,France,passes,Passes %,84%
+1145515,2024-06-17T19:00:00+00:00,775,Austria,France,expected_goals,expected_goals,0.76
+1145515,2024-06-17T19:00:00+00:00,775,Austria,France,goals_prevented,goals_prevented,1.50
+1145515,2024-06-17T19:00:00+00:00,2,France,Austria,shots_on_goal,Shots on Goal,3
+1145515,2024-06-17T19:00:00+00:00,2,France,Austria,shots_off_goal,Shots off Goal,6
+1145515,2024-06-17T19:00:00+00:00,2,France,Austria,total_shots,Total Shots,14
+1145515,2024-06-17T19:00:00+00:00,2,France,Austria,blocked_shots,Blocked Shots,5
+1145515,2024-06-17T19:00:00+00:00,2,France,Austria,shots_insidebox,Shots insidebox,12
+1145515,2024-06-17T19:00:00+00:00,2,France,Austria,shots_outsidebox,Shots outsidebox,2
+1145515,2024-06-17T19:00:00+00:00,2,France,Austria,fouls,Fouls,11
+1145515,2024-06-17T19:00:00+00:00,2,France,Austria,corner_kicks,Corner Kicks,2
+1145515,2024-06-17T19:00:00+00:00,2,France,Austria,offsides,Offsides,1
+1145515,2024-06-17T19:00:00+00:00,2,France,Austria,ball_possession,Ball Possession,48%
+1145515,2024-06-17T19:00:00+00:00,2,France,Austria,yellow_cards,Yellow Cards,2
+1145515,2024-06-17T19:00:00+00:00,2,France,Austria,red_cards,Red Cards,
+1145515,2024-06-17T19:00:00+00:00,2,France,Austria,goalkeeper_saves,Goalkeeper Saves,3
+1145515,2024-06-17T19:00:00+00:00,2,France,Austria,total_passes,Total passes,453
+1145515,2024-06-17T19:00:00+00:00,2,France,Austria,passes_accurate,Passes accurate,390
+1145515,2024-06-17T19:00:00+00:00,2,France,Austria,passes,Passes %,86%
+1145515,2024-06-17T19:00:00+00:00,2,France,Austria,expected_goals,expected_goals,2.13
+1145515,2024-06-17T19:00:00+00:00,2,France,Austria,goals_prevented,goals_prevented,1.50
+1145533,2024-06-25T16:00:00+00:00,1118,Netherlands,Austria,shots_on_goal,Shots on Goal,2
+1145533,2024-06-25T16:00:00+00:00,1118,Netherlands,Austria,shots_off_goal,Shots off Goal,6
+1145533,2024-06-25T16:00:00+00:00,1118,Netherlands,Austria,total_shots,Total Shots,11
+1145533,2024-06-25T16:00:00+00:00,1118,Netherlands,Austria,blocked_shots,Blocked Shots,3
+1145533,2024-06-25T16:00:00+00:00,1118,Netherlands,Austria,shots_insidebox,Shots insidebox,9
+1145533,2024-06-25T16:00:00+00:00,1118,Netherlands,Austria,shots_outsidebox,Shots outsidebox,2
+1145533,2024-06-25T16:00:00+00:00,1118,Netherlands,Austria,fouls,Fouls,10
+1145533,2024-06-25T16:00:00+00:00,1118,Netherlands,Austria,corner_kicks,Corner Kicks,5
+1145533,2024-06-25T16:00:00+00:00,1118,Netherlands,Austria,offsides,Offsides,1
+1145533,2024-06-25T16:00:00+00:00,1118,Netherlands,Austria,ball_possession,Ball Possession,52%
+1145533,2024-06-25T16:00:00+00:00,1118,Netherlands,Austria,yellow_cards,Yellow Cards,0
+1145533,2024-06-25T16:00:00+00:00,1118,Netherlands,Austria,red_cards,Red Cards,
+1145533,2024-06-25T16:00:00+00:00,1118,Netherlands,Austria,goalkeeper_saves,Goalkeeper Saves,3
+1145533,2024-06-25T16:00:00+00:00,1118,Netherlands,Austria,total_passes,Total passes,428
+1145533,2024-06-25T16:00:00+00:00,1118,Netherlands,Austria,passes_accurate,Passes accurate,358
+1145533,2024-06-25T16:00:00+00:00,1118,Netherlands,Austria,passes,Passes %,84%
+1145533,2024-06-25T16:00:00+00:00,1118,Netherlands,Austria,expected_goals,expected_goals,1.73
+1145533,2024-06-25T16:00:00+00:00,1118,Netherlands,Austria,goals_prevented,goals_prevented,-0.67
+1145533,2024-06-25T16:00:00+00:00,775,Austria,Netherlands,shots_on_goal,Shots on Goal,5
+1145533,2024-06-25T16:00:00+00:00,775,Austria,Netherlands,shots_off_goal,Shots off Goal,1
+1145533,2024-06-25T16:00:00+00:00,775,Austria,Netherlands,total_shots,Total Shots,9
+1145533,2024-06-25T16:00:00+00:00,775,Austria,Netherlands,blocked_shots,Blocked Shots,3
+1145533,2024-06-25T16:00:00+00:00,775,Austria,Netherlands,shots_insidebox,Shots insidebox,5
+1145533,2024-06-25T16:00:00+00:00,775,Austria,Netherlands,shots_outsidebox,Shots outsidebox,4
+1145533,2024-06-25T16:00:00+00:00,775,Austria,Netherlands,fouls,Fouls,16
+1145533,2024-06-25T16:00:00+00:00,775,Austria,Netherlands,corner_kicks,Corner Kicks,2
+1145533,2024-06-25T16:00:00+00:00,775,Austria,Netherlands,offsides,Offsides,1
+1145533,2024-06-25T16:00:00+00:00,775,Austria,Netherlands,ball_possession,Ball Possession,48%
+1145533,2024-06-25T16:00:00+00:00,775,Austria,Netherlands,yellow_cards,Yellow Cards,3
+1145533,2024-06-25T16:00:00+00:00,775,Austria,Netherlands,red_cards,Red Cards,
+1145533,2024-06-25T16:00:00+00:00,775,Austria,Netherlands,goalkeeper_saves,Goalkeeper Saves,0
+1145533,2024-06-25T16:00:00+00:00,775,Austria,Netherlands,total_passes,Total passes,404
+1145533,2024-06-25T16:00:00+00:00,775,Austria,Netherlands,passes_accurate,Passes accurate,317
+1145533,2024-06-25T16:00:00+00:00,775,Austria,Netherlands,passes,Passes %,78%
+1145533,2024-06-25T16:00:00+00:00,775,Austria,Netherlands,expected_goals,expected_goals,0.95
+1145533,2024-06-25T16:00:00+00:00,775,Austria,Netherlands,goals_prevented,goals_prevented,-0.67
+1155269,2024-03-23T17:00:00+00:00,773,Slovakia,Austria,shots_on_goal,Shots on Goal,2
+1155269,2024-03-23T17:00:00+00:00,773,Slovakia,Austria,shots_off_goal,Shots off Goal,6
+1155269,2024-03-23T17:00:00+00:00,773,Slovakia,Austria,total_shots,Total Shots,13
+1155269,2024-03-23T17:00:00+00:00,773,Slovakia,Austria,blocked_shots,Blocked Shots,5
+1155269,2024-03-23T17:00:00+00:00,773,Slovakia,Austria,shots_insidebox,Shots insidebox,6
+1155269,2024-03-23T17:00:00+00:00,773,Slovakia,Austria,shots_outsidebox,Shots outsidebox,7
+1155269,2024-03-23T17:00:00+00:00,773,Slovakia,Austria,fouls,Fouls,12
+1155269,2024-03-23T17:00:00+00:00,773,Slovakia,Austria,corner_kicks,Corner Kicks,1
+1155269,2024-03-23T17:00:00+00:00,773,Slovakia,Austria,offsides,Offsides,1
+1155269,2024-03-23T17:00:00+00:00,773,Slovakia,Austria,ball_possession,Ball Possession,47%
+1155269,2024-03-23T17:00:00+00:00,773,Slovakia,Austria,yellow_cards,Yellow Cards,0
+1155269,2024-03-23T17:00:00+00:00,773,Slovakia,Austria,red_cards,Red Cards,
+1155269,2024-03-23T17:00:00+00:00,773,Slovakia,Austria,goalkeeper_saves,Goalkeeper Saves,2
+1155269,2024-03-23T17:00:00+00:00,773,Slovakia,Austria,total_passes,Total passes,442
+1155269,2024-03-23T17:00:00+00:00,773,Slovakia,Austria,passes_accurate,Passes accurate,381
+1155269,2024-03-23T17:00:00+00:00,773,Slovakia,Austria,passes,Passes %,86%
+1155269,2024-03-23T17:00:00+00:00,773,Slovakia,Austria,expected_goals,expected_goals,
+1155269,2024-03-23T17:00:00+00:00,775,Austria,Slovakia,shots_on_goal,Shots on Goal,5
+1155269,2024-03-23T17:00:00+00:00,775,Austria,Slovakia,shots_off_goal,Shots off Goal,2
+1155269,2024-03-23T17:00:00+00:00,775,Austria,Slovakia,total_shots,Total Shots,9
+1155269,2024-03-23T17:00:00+00:00,775,Austria,Slovakia,blocked_shots,Blocked Shots,2
+1155269,2024-03-23T17:00:00+00:00,775,Austria,Slovakia,shots_insidebox,Shots insidebox,5
+1155269,2024-03-23T17:00:00+00:00,775,Austria,Slovakia,shots_outsidebox,Shots outsidebox,4
+1155269,2024-03-23T17:00:00+00:00,775,Austria,Slovakia,fouls,Fouls,14
+1155269,2024-03-23T17:00:00+00:00,775,Austria,Slovakia,corner_kicks,Corner Kicks,6
+1155269,2024-03-23T17:00:00+00:00,775,Austria,Slovakia,offsides,Offsides,0
+1155269,2024-03-23T17:00:00+00:00,775,Austria,Slovakia,ball_possession,Ball Possession,53%
+1155269,2024-03-23T17:00:00+00:00,775,Austria,Slovakia,yellow_cards,Yellow Cards,1
+1155269,2024-03-23T17:00:00+00:00,775,Austria,Slovakia,red_cards,Red Cards,
+1155269,2024-03-23T17:00:00+00:00,775,Austria,Slovakia,goalkeeper_saves,Goalkeeper Saves,2
+1155269,2024-03-23T17:00:00+00:00,775,Austria,Slovakia,total_passes,Total passes,501
+1155269,2024-03-23T17:00:00+00:00,775,Austria,Slovakia,passes_accurate,Passes accurate,413
+1155269,2024-03-23T17:00:00+00:00,775,Austria,Slovakia,passes,Passes %,82%
+1155269,2024-03-23T17:00:00+00:00,775,Austria,Slovakia,expected_goals,expected_goals,
+1172362,2024-03-26T19:45:00+00:00,775,Austria,Türkiye,shots_on_goal,Shots on Goal,9
+1172362,2024-03-26T19:45:00+00:00,775,Austria,Türkiye,shots_off_goal,Shots off Goal,3
+1172362,2024-03-26T19:45:00+00:00,775,Austria,Türkiye,total_shots,Total Shots,13
+1172362,2024-03-26T19:45:00+00:00,775,Austria,Türkiye,blocked_shots,Blocked Shots,1
+1172362,2024-03-26T19:45:00+00:00,775,Austria,Türkiye,shots_insidebox,Shots insidebox,11
+1172362,2024-03-26T19:45:00+00:00,775,Austria,Türkiye,shots_outsidebox,Shots outsidebox,2
+1172362,2024-03-26T19:45:00+00:00,775,Austria,Türkiye,fouls,Fouls,15
+1172362,2024-03-26T19:45:00+00:00,775,Austria,Türkiye,corner_kicks,Corner Kicks,4
+1172362,2024-03-26T19:45:00+00:00,775,Austria,Türkiye,offsides,Offsides,1
+1172362,2024-03-26T19:45:00+00:00,775,Austria,Türkiye,ball_possession,Ball Possession,55%
+1172362,2024-03-26T19:45:00+00:00,775,Austria,Türkiye,yellow_cards,Yellow Cards,2
+1172362,2024-03-26T19:45:00+00:00,775,Austria,Türkiye,red_cards,Red Cards,
+1172362,2024-03-26T19:45:00+00:00,775,Austria,Türkiye,goalkeeper_saves,Goalkeeper Saves,2
+1172362,2024-03-26T19:45:00+00:00,775,Austria,Türkiye,total_passes,Total passes,428
+1172362,2024-03-26T19:45:00+00:00,775,Austria,Türkiye,passes_accurate,Passes accurate,362
+1172362,2024-03-26T19:45:00+00:00,775,Austria,Türkiye,passes,Passes %,85%
+1172362,2024-03-26T19:45:00+00:00,775,Austria,Türkiye,expected_goals,expected_goals,
+1172362,2024-03-26T19:45:00+00:00,777,Türkiye,Austria,shots_on_goal,Shots on Goal,3
+1172362,2024-03-26T19:45:00+00:00,777,Türkiye,Austria,shots_off_goal,Shots off Goal,7
+1172362,2024-03-26T19:45:00+00:00,777,Türkiye,Austria,total_shots,Total Shots,12
+1172362,2024-03-26T19:45:00+00:00,777,Türkiye,Austria,blocked_shots,Blocked Shots,2
+1172362,2024-03-26T19:45:00+00:00,777,Türkiye,Austria,shots_insidebox,Shots insidebox,8
+1172362,2024-03-26T19:45:00+00:00,777,Türkiye,Austria,shots_outsidebox,Shots outsidebox,4
+1172362,2024-03-26T19:45:00+00:00,777,Türkiye,Austria,fouls,Fouls,9
+1172362,2024-03-26T19:45:00+00:00,777,Türkiye,Austria,corner_kicks,Corner Kicks,2
+1172362,2024-03-26T19:45:00+00:00,777,Türkiye,Austria,offsides,Offsides,2
+1172362,2024-03-26T19:45:00+00:00,777,Türkiye,Austria,ball_possession,Ball Possession,45%
+1172362,2024-03-26T19:45:00+00:00,777,Türkiye,Austria,yellow_cards,Yellow Cards,3
+1172362,2024-03-26T19:45:00+00:00,777,Türkiye,Austria,red_cards,Red Cards,
+1172362,2024-03-26T19:45:00+00:00,777,Türkiye,Austria,goalkeeper_saves,Goalkeeper Saves,3
+1172362,2024-03-26T19:45:00+00:00,777,Türkiye,Austria,total_passes,Total passes,364
+1172362,2024-03-26T19:45:00+00:00,777,Türkiye,Austria,passes_accurate,Passes accurate,300
+1172362,2024-03-26T19:45:00+00:00,777,Türkiye,Austria,passes,Passes %,82%
+1172362,2024-03-26T19:45:00+00:00,777,Türkiye,Austria,expected_goals,expected_goals,
+1172892,2024-09-06T18:45:00+00:00,1091,Slovenia,Austria,shots_on_goal,Shots on Goal,1
+1172892,2024-09-06T18:45:00+00:00,1091,Slovenia,Austria,shots_off_goal,Shots off Goal,4
+1172892,2024-09-06T18:45:00+00:00,1091,Slovenia,Austria,total_shots,Total Shots,8
+1172892,2024-09-06T18:45:00+00:00,1091,Slovenia,Austria,blocked_shots,Blocked Shots,3
+1172892,2024-09-06T18:45:00+00:00,1091,Slovenia,Austria,shots_insidebox,Shots insidebox,5
+1172892,2024-09-06T18:45:00+00:00,1091,Slovenia,Austria,shots_outsidebox,Shots outsidebox,3
+1172892,2024-09-06T18:45:00+00:00,1091,Slovenia,Austria,fouls,Fouls,9
+1172892,2024-09-06T18:45:00+00:00,1091,Slovenia,Austria,corner_kicks,Corner Kicks,4
+1172892,2024-09-06T18:45:00+00:00,1091,Slovenia,Austria,offsides,Offsides,0
+1172892,2024-09-06T18:45:00+00:00,1091,Slovenia,Austria,ball_possession,Ball Possession,37%
+1172892,2024-09-06T18:45:00+00:00,1091,Slovenia,Austria,yellow_cards,Yellow Cards,2
+1172892,2024-09-06T18:45:00+00:00,1091,Slovenia,Austria,red_cards,Red Cards,
+1172892,2024-09-06T18:45:00+00:00,1091,Slovenia,Austria,goalkeeper_saves,Goalkeeper Saves,3
+1172892,2024-09-06T18:45:00+00:00,1091,Slovenia,Austria,total_passes,Total passes,314
+1172892,2024-09-06T18:45:00+00:00,1091,Slovenia,Austria,passes_accurate,Passes accurate,230
+1172892,2024-09-06T18:45:00+00:00,1091,Slovenia,Austria,passes,Passes %,73%
+1172892,2024-09-06T18:45:00+00:00,1091,Slovenia,Austria,expected_goals,expected_goals,
+1172892,2024-09-06T18:45:00+00:00,1091,Slovenia,Austria,goals_prevented,goals_prevented,
+1172892,2024-09-06T18:45:00+00:00,775,Austria,Slovenia,shots_on_goal,Shots on Goal,4
+1172892,2024-09-06T18:45:00+00:00,775,Austria,Slovenia,shots_off_goal,Shots off Goal,5
+1172892,2024-09-06T18:45:00+00:00,775,Austria,Slovenia,total_shots,Total Shots,11
+1172892,2024-09-06T18:45:00+00:00,775,Austria,Slovenia,blocked_shots,Blocked Shots,2
+1172892,2024-09-06T18:45:00+00:00,775,Austria,Slovenia,shots_insidebox,Shots insidebox,7
+1172892,2024-09-06T18:45:00+00:00,775,Austria,Slovenia,shots_outsidebox,Shots outsidebox,4
+1172892,2024-09-06T18:45:00+00:00,775,Austria,Slovenia,fouls,Fouls,18
+1172892,2024-09-06T18:45:00+00:00,775,Austria,Slovenia,corner_kicks,Corner Kicks,7
+1172892,2024-09-06T18:45:00+00:00,775,Austria,Slovenia,offsides,Offsides,1
+1172892,2024-09-06T18:45:00+00:00,775,Austria,Slovenia,ball_possession,Ball Possession,63%
+1172892,2024-09-06T18:45:00+00:00,775,Austria,Slovenia,yellow_cards,Yellow Cards,4
+1172892,2024-09-06T18:45:00+00:00,775,Austria,Slovenia,red_cards,Red Cards,
+1172892,2024-09-06T18:45:00+00:00,775,Austria,Slovenia,goalkeeper_saves,Goalkeeper Saves,0
+1172892,2024-09-06T18:45:00+00:00,775,Austria,Slovenia,total_passes,Total passes,524
+1172892,2024-09-06T18:45:00+00:00,775,Austria,Slovenia,passes_accurate,Passes accurate,438
+1172892,2024-09-06T18:45:00+00:00,775,Austria,Slovenia,passes,Passes %,84%
+1172892,2024-09-06T18:45:00+00:00,775,Austria,Slovenia,expected_goals,expected_goals,
+1172892,2024-09-06T18:45:00+00:00,775,Austria,Slovenia,goals_prevented,goals_prevented,
+1172899,2024-09-09T18:45:00+00:00,1090,Norway,Austria,shots_on_goal,Shots on Goal,4
+1172899,2024-09-09T18:45:00+00:00,1090,Norway,Austria,shots_off_goal,Shots off Goal,2
+1172899,2024-09-09T18:45:00+00:00,1090,Norway,Austria,total_shots,Total Shots,6
+1172899,2024-09-09T18:45:00+00:00,1090,Norway,Austria,blocked_shots,Blocked Shots,0
+1172899,2024-09-09T18:45:00+00:00,1090,Norway,Austria,shots_insidebox,Shots insidebox,5
+1172899,2024-09-09T18:45:00+00:00,1090,Norway,Austria,shots_outsidebox,Shots outsidebox,1
+1172899,2024-09-09T18:45:00+00:00,1090,Norway,Austria,fouls,Fouls,6
+1172899,2024-09-09T18:45:00+00:00,1090,Norway,Austria,corner_kicks,Corner Kicks,5
+1172899,2024-09-09T18:45:00+00:00,1090,Norway,Austria,offsides,Offsides,0
+1172899,2024-09-09T18:45:00+00:00,1090,Norway,Austria,ball_possession,Ball Possession,44%
+1172899,2024-09-09T18:45:00+00:00,1090,Norway,Austria,yellow_cards,Yellow Cards,0
+1172899,2024-09-09T18:45:00+00:00,1090,Norway,Austria,red_cards,Red Cards,
+1172899,2024-09-09T18:45:00+00:00,1090,Norway,Austria,goalkeeper_saves,Goalkeeper Saves,2
+1172899,2024-09-09T18:45:00+00:00,1090,Norway,Austria,total_passes,Total passes,412
+1172899,2024-09-09T18:45:00+00:00,1090,Norway,Austria,passes_accurate,Passes accurate,353
+1172899,2024-09-09T18:45:00+00:00,1090,Norway,Austria,passes,Passes %,86%
+1172899,2024-09-09T18:45:00+00:00,1090,Norway,Austria,expected_goals,expected_goals,
+1172899,2024-09-09T18:45:00+00:00,1090,Norway,Austria,goals_prevented,goals_prevented,
+1172899,2024-09-09T18:45:00+00:00,775,Austria,Norway,shots_on_goal,Shots on Goal,3
+1172899,2024-09-09T18:45:00+00:00,775,Austria,Norway,shots_off_goal,Shots off Goal,3
+1172899,2024-09-09T18:45:00+00:00,775,Austria,Norway,total_shots,Total Shots,9
+1172899,2024-09-09T18:45:00+00:00,775,Austria,Norway,blocked_shots,Blocked Shots,3
+1172899,2024-09-09T18:45:00+00:00,775,Austria,Norway,shots_insidebox,Shots insidebox,5
+1172899,2024-09-09T18:45:00+00:00,775,Austria,Norway,shots_outsidebox,Shots outsidebox,4
+1172899,2024-09-09T18:45:00+00:00,775,Austria,Norway,fouls,Fouls,8
+1172899,2024-09-09T18:45:00+00:00,775,Austria,Norway,corner_kicks,Corner Kicks,1
+1172899,2024-09-09T18:45:00+00:00,775,Austria,Norway,offsides,Offsides,1
+1172899,2024-09-09T18:45:00+00:00,775,Austria,Norway,ball_possession,Ball Possession,56%
+1172899,2024-09-09T18:45:00+00:00,775,Austria,Norway,yellow_cards,Yellow Cards,1
+1172899,2024-09-09T18:45:00+00:00,775,Austria,Norway,red_cards,Red Cards,
+1172899,2024-09-09T18:45:00+00:00,775,Austria,Norway,goalkeeper_saves,Goalkeeper Saves,2
+1172899,2024-09-09T18:45:00+00:00,775,Austria,Norway,total_passes,Total passes,529
+1172899,2024-09-09T18:45:00+00:00,775,Austria,Norway,passes_accurate,Passes accurate,445
+1172899,2024-09-09T18:45:00+00:00,775,Austria,Norway,passes,Passes %,84%
+1172899,2024-09-09T18:45:00+00:00,775,Austria,Norway,expected_goals,expected_goals,
+1172899,2024-09-09T18:45:00+00:00,775,Austria,Norway,goals_prevented,goals_prevented,
+1172909,2024-10-10T18:45:00+00:00,775,Austria,Kazakhstan,shots_on_goal,Shots on Goal,8
+1172909,2024-10-10T18:45:00+00:00,775,Austria,Kazakhstan,shots_off_goal,Shots off Goal,12
+1172909,2024-10-10T18:45:00+00:00,775,Austria,Kazakhstan,total_shots,Total Shots,29
+1172909,2024-10-10T18:45:00+00:00,775,Austria,Kazakhstan,blocked_shots,Blocked Shots,9
+1172909,2024-10-10T18:45:00+00:00,775,Austria,Kazakhstan,shots_insidebox,Shots insidebox,17
+1172909,2024-10-10T18:45:00+00:00,775,Austria,Kazakhstan,shots_outsidebox,Shots outsidebox,12
+1172909,2024-10-10T18:45:00+00:00,775,Austria,Kazakhstan,fouls,Fouls,9
+1172909,2024-10-10T18:45:00+00:00,775,Austria,Kazakhstan,corner_kicks,Corner Kicks,14
+1172909,2024-10-10T18:45:00+00:00,775,Austria,Kazakhstan,offsides,Offsides,1
+1172909,2024-10-10T18:45:00+00:00,775,Austria,Kazakhstan,ball_possession,Ball Possession,66%
+1172909,2024-10-10T18:45:00+00:00,775,Austria,Kazakhstan,yellow_cards,Yellow Cards,1
+1172909,2024-10-10T18:45:00+00:00,775,Austria,Kazakhstan,red_cards,Red Cards,
+1172909,2024-10-10T18:45:00+00:00,775,Austria,Kazakhstan,goalkeeper_saves,Goalkeeper Saves,1
+1172909,2024-10-10T18:45:00+00:00,775,Austria,Kazakhstan,total_passes,Total passes,584
+1172909,2024-10-10T18:45:00+00:00,775,Austria,Kazakhstan,passes_accurate,Passes accurate,490
+1172909,2024-10-10T18:45:00+00:00,775,Austria,Kazakhstan,passes,Passes %,84%
+1172909,2024-10-10T18:45:00+00:00,775,Austria,Kazakhstan,expected_goals,expected_goals,
+1172909,2024-10-10T18:45:00+00:00,775,Austria,Kazakhstan,goals_prevented,goals_prevented,
+1172909,2024-10-10T18:45:00+00:00,1095,Kazakhstan,Austria,shots_on_goal,Shots on Goal,1
+1172909,2024-10-10T18:45:00+00:00,1095,Kazakhstan,Austria,shots_off_goal,Shots off Goal,1
+1172909,2024-10-10T18:45:00+00:00,1095,Kazakhstan,Austria,total_shots,Total Shots,5
+1172909,2024-10-10T18:45:00+00:00,1095,Kazakhstan,Austria,blocked_shots,Blocked Shots,3
+1172909,2024-10-10T18:45:00+00:00,1095,Kazakhstan,Austria,shots_insidebox,Shots insidebox,2
+1172909,2024-10-10T18:45:00+00:00,1095,Kazakhstan,Austria,shots_outsidebox,Shots outsidebox,3
+1172909,2024-10-10T18:45:00+00:00,1095,Kazakhstan,Austria,fouls,Fouls,17
+1172909,2024-10-10T18:45:00+00:00,1095,Kazakhstan,Austria,corner_kicks,Corner Kicks,3
+1172909,2024-10-10T18:45:00+00:00,1095,Kazakhstan,Austria,offsides,Offsides,0
+1172909,2024-10-10T18:45:00+00:00,1095,Kazakhstan,Austria,ball_possession,Ball Possession,34%
+1172909,2024-10-10T18:45:00+00:00,1095,Kazakhstan,Austria,yellow_cards,Yellow Cards,3
+1172909,2024-10-10T18:45:00+00:00,1095,Kazakhstan,Austria,red_cards,Red Cards,
+1172909,2024-10-10T18:45:00+00:00,1095,Kazakhstan,Austria,goalkeeper_saves,Goalkeeper Saves,4
+1172909,2024-10-10T18:45:00+00:00,1095,Kazakhstan,Austria,total_passes,Total passes,309
+1172909,2024-10-10T18:45:00+00:00,1095,Kazakhstan,Austria,passes_accurate,Passes accurate,220
+1172909,2024-10-10T18:45:00+00:00,1095,Kazakhstan,Austria,passes,Passes %,71%
+1172909,2024-10-10T18:45:00+00:00,1095,Kazakhstan,Austria,expected_goals,expected_goals,
+1172909,2024-10-10T18:45:00+00:00,1095,Kazakhstan,Austria,goals_prevented,goals_prevented,
+1172918,2024-10-13T18:45:00+00:00,775,Austria,Norway,shots_on_goal,Shots on Goal,10
+1172918,2024-10-13T18:45:00+00:00,775,Austria,Norway,shots_off_goal,Shots off Goal,6
+1172918,2024-10-13T18:45:00+00:00,775,Austria,Norway,total_shots,Total Shots,16
+1172918,2024-10-13T18:45:00+00:00,775,Austria,Norway,blocked_shots,Blocked Shots,0
+1172918,2024-10-13T18:45:00+00:00,775,Austria,Norway,shots_insidebox,Shots insidebox,9
+1172918,2024-10-13T18:45:00+00:00,775,Austria,Norway,shots_outsidebox,Shots outsidebox,7
+1172918,2024-10-13T18:45:00+00:00,775,Austria,Norway,fouls,Fouls,8
+1172918,2024-10-13T18:45:00+00:00,775,Austria,Norway,corner_kicks,Corner Kicks,3
+1172918,2024-10-13T18:45:00+00:00,775,Austria,Norway,offsides,Offsides,1
+1172918,2024-10-13T18:45:00+00:00,775,Austria,Norway,ball_possession,Ball Possession,66%
+1172918,2024-10-13T18:45:00+00:00,775,Austria,Norway,yellow_cards,Yellow Cards,1
+1172918,2024-10-13T18:45:00+00:00,775,Austria,Norway,red_cards,Red Cards,
+1172918,2024-10-13T18:45:00+00:00,775,Austria,Norway,goalkeeper_saves,Goalkeeper Saves,0
+1172918,2024-10-13T18:45:00+00:00,775,Austria,Norway,total_passes,Total passes,573
+1172918,2024-10-13T18:45:00+00:00,775,Austria,Norway,passes_accurate,Passes accurate,503
+1172918,2024-10-13T18:45:00+00:00,775,Austria,Norway,passes,Passes %,88%
+1172918,2024-10-13T18:45:00+00:00,775,Austria,Norway,expected_goals,expected_goals,
+1172918,2024-10-13T18:45:00+00:00,775,Austria,Norway,goals_prevented,goals_prevented,
+1172918,2024-10-13T18:45:00+00:00,1090,Norway,Austria,shots_on_goal,Shots on Goal,1
+1172918,2024-10-13T18:45:00+00:00,1090,Norway,Austria,shots_off_goal,Shots off Goal,7
+1172918,2024-10-13T18:45:00+00:00,1090,Norway,Austria,total_shots,Total Shots,8
+1172918,2024-10-13T18:45:00+00:00,1090,Norway,Austria,blocked_shots,Blocked Shots,0
+1172918,2024-10-13T18:45:00+00:00,1090,Norway,Austria,shots_insidebox,Shots insidebox,4
+1172918,2024-10-13T18:45:00+00:00,1090,Norway,Austria,shots_outsidebox,Shots outsidebox,4
+1172918,2024-10-13T18:45:00+00:00,1090,Norway,Austria,fouls,Fouls,7
+1172918,2024-10-13T18:45:00+00:00,1090,Norway,Austria,corner_kicks,Corner Kicks,1
+1172918,2024-10-13T18:45:00+00:00,1090,Norway,Austria,offsides,Offsides,0
+1172918,2024-10-13T18:45:00+00:00,1090,Norway,Austria,ball_possession,Ball Possession,34%
+1172918,2024-10-13T18:45:00+00:00,1090,Norway,Austria,yellow_cards,Yellow Cards,3
+1172918,2024-10-13T18:45:00+00:00,1090,Norway,Austria,red_cards,Red Cards,
+1172918,2024-10-13T18:45:00+00:00,1090,Norway,Austria,goalkeeper_saves,Goalkeeper Saves,5
+1172918,2024-10-13T18:45:00+00:00,1090,Norway,Austria,total_passes,Total passes,298
+1172918,2024-10-13T18:45:00+00:00,1090,Norway,Austria,passes_accurate,Passes accurate,230
+1172918,2024-10-13T18:45:00+00:00,1090,Norway,Austria,passes,Passes %,77%
+1172918,2024-10-13T18:45:00+00:00,1090,Norway,Austria,expected_goals,expected_goals,
+1172918,2024-10-13T18:45:00+00:00,1090,Norway,Austria,goals_prevented,goals_prevented,
+1172923,2024-11-14T15:00:00+00:00,1095,Kazakhstan,Austria,shots_on_goal,Shots on Goal,1
+1172923,2024-11-14T15:00:00+00:00,1095,Kazakhstan,Austria,shots_off_goal,Shots off Goal,3
+1172923,2024-11-14T15:00:00+00:00,1095,Kazakhstan,Austria,total_shots,Total Shots,6
+1172923,2024-11-14T15:00:00+00:00,1095,Kazakhstan,Austria,blocked_shots,Blocked Shots,2
+1172923,2024-11-14T15:00:00+00:00,1095,Kazakhstan,Austria,shots_insidebox,Shots insidebox,1
+1172923,2024-11-14T15:00:00+00:00,1095,Kazakhstan,Austria,shots_outsidebox,Shots outsidebox,5
+1172923,2024-11-14T15:00:00+00:00,1095,Kazakhstan,Austria,fouls,Fouls,12
+1172923,2024-11-14T15:00:00+00:00,1095,Kazakhstan,Austria,corner_kicks,Corner Kicks,1
+1172923,2024-11-14T15:00:00+00:00,1095,Kazakhstan,Austria,offsides,Offsides,0
+1172923,2024-11-14T15:00:00+00:00,1095,Kazakhstan,Austria,ball_possession,Ball Possession,35%
+1172923,2024-11-14T15:00:00+00:00,1095,Kazakhstan,Austria,yellow_cards,Yellow Cards,1
+1172923,2024-11-14T15:00:00+00:00,1095,Kazakhstan,Austria,red_cards,Red Cards,1
+1172923,2024-11-14T15:00:00+00:00,1095,Kazakhstan,Austria,goalkeeper_saves,Goalkeeper Saves,6
+1172923,2024-11-14T15:00:00+00:00,1095,Kazakhstan,Austria,total_passes,Total passes,324
+1172923,2024-11-14T15:00:00+00:00,1095,Kazakhstan,Austria,passes_accurate,Passes accurate,216
+1172923,2024-11-14T15:00:00+00:00,1095,Kazakhstan,Austria,passes,Passes %,67%
+1172923,2024-11-14T15:00:00+00:00,1095,Kazakhstan,Austria,expected_goals,expected_goals,
+1172923,2024-11-14T15:00:00+00:00,1095,Kazakhstan,Austria,goals_prevented,goals_prevented,
+1172923,2024-11-14T15:00:00+00:00,775,Austria,Kazakhstan,shots_on_goal,Shots on Goal,8
+1172923,2024-11-14T15:00:00+00:00,775,Austria,Kazakhstan,shots_off_goal,Shots off Goal,11
+1172923,2024-11-14T15:00:00+00:00,775,Austria,Kazakhstan,total_shots,Total Shots,23
+1172923,2024-11-14T15:00:00+00:00,775,Austria,Kazakhstan,blocked_shots,Blocked Shots,4
+1172923,2024-11-14T15:00:00+00:00,775,Austria,Kazakhstan,shots_insidebox,Shots insidebox,15
+1172923,2024-11-14T15:00:00+00:00,775,Austria,Kazakhstan,shots_outsidebox,Shots outsidebox,8
+1172923,2024-11-14T15:00:00+00:00,775,Austria,Kazakhstan,fouls,Fouls,8
+1172923,2024-11-14T15:00:00+00:00,775,Austria,Kazakhstan,corner_kicks,Corner Kicks,4
+1172923,2024-11-14T15:00:00+00:00,775,Austria,Kazakhstan,offsides,Offsides,3
+1172923,2024-11-14T15:00:00+00:00,775,Austria,Kazakhstan,ball_possession,Ball Possession,65%
+1172923,2024-11-14T15:00:00+00:00,775,Austria,Kazakhstan,yellow_cards,Yellow Cards,0
+1172923,2024-11-14T15:00:00+00:00,775,Austria,Kazakhstan,red_cards,Red Cards,0
+1172923,2024-11-14T15:00:00+00:00,775,Austria,Kazakhstan,goalkeeper_saves,Goalkeeper Saves,1
+1172923,2024-11-14T15:00:00+00:00,775,Austria,Kazakhstan,total_passes,Total passes,600
+1172923,2024-11-14T15:00:00+00:00,775,Austria,Kazakhstan,passes_accurate,Passes accurate,500
+1172923,2024-11-14T15:00:00+00:00,775,Austria,Kazakhstan,passes,Passes %,83%
+1172923,2024-11-14T15:00:00+00:00,775,Austria,Kazakhstan,expected_goals,expected_goals,
+1172923,2024-11-14T15:00:00+00:00,775,Austria,Kazakhstan,goals_prevented,goals_prevented,
+1172933,2024-11-17T17:00:00+00:00,775,Austria,Slovenia,shots_on_goal,Shots on Goal,4
+1172933,2024-11-17T17:00:00+00:00,775,Austria,Slovenia,shots_off_goal,Shots off Goal,14
+1172933,2024-11-17T17:00:00+00:00,775,Austria,Slovenia,total_shots,Total Shots,22
+1172933,2024-11-17T17:00:00+00:00,775,Austria,Slovenia,blocked_shots,Blocked Shots,4
+1172933,2024-11-17T17:00:00+00:00,775,Austria,Slovenia,shots_insidebox,Shots insidebox,15
+1172933,2024-11-17T17:00:00+00:00,775,Austria,Slovenia,shots_outsidebox,Shots outsidebox,7
+1172933,2024-11-17T17:00:00+00:00,775,Austria,Slovenia,fouls,Fouls,12
+1172933,2024-11-17T17:00:00+00:00,775,Austria,Slovenia,corner_kicks,Corner Kicks,3
+1172933,2024-11-17T17:00:00+00:00,775,Austria,Slovenia,offsides,Offsides,4
+1172933,2024-11-17T17:00:00+00:00,775,Austria,Slovenia,ball_possession,Ball Possession,67%
+1172933,2024-11-17T17:00:00+00:00,775,Austria,Slovenia,yellow_cards,Yellow Cards,1
+1172933,2024-11-17T17:00:00+00:00,775,Austria,Slovenia,red_cards,Red Cards,
+1172933,2024-11-17T17:00:00+00:00,775,Austria,Slovenia,goalkeeper_saves,Goalkeeper Saves,2
+1172933,2024-11-17T17:00:00+00:00,775,Austria,Slovenia,total_passes,Total passes,656
+1172933,2024-11-17T17:00:00+00:00,775,Austria,Slovenia,passes_accurate,Passes accurate,558
+1172933,2024-11-17T17:00:00+00:00,775,Austria,Slovenia,passes,Passes %,85%
+1172933,2024-11-17T17:00:00+00:00,775,Austria,Slovenia,expected_goals,expected_goals,
+1172933,2024-11-17T17:00:00+00:00,775,Austria,Slovenia,goals_prevented,goals_prevented,
+1172933,2024-11-17T17:00:00+00:00,1091,Slovenia,Austria,shots_on_goal,Shots on Goal,3
+1172933,2024-11-17T17:00:00+00:00,1091,Slovenia,Austria,shots_off_goal,Shots off Goal,4
+1172933,2024-11-17T17:00:00+00:00,1091,Slovenia,Austria,total_shots,Total Shots,9
+1172933,2024-11-17T17:00:00+00:00,1091,Slovenia,Austria,blocked_shots,Blocked Shots,2
+1172933,2024-11-17T17:00:00+00:00,1091,Slovenia,Austria,shots_insidebox,Shots insidebox,3
+1172933,2024-11-17T17:00:00+00:00,1091,Slovenia,Austria,shots_outsidebox,Shots outsidebox,6
+1172933,2024-11-17T17:00:00+00:00,1091,Slovenia,Austria,fouls,Fouls,9
+1172933,2024-11-17T17:00:00+00:00,1091,Slovenia,Austria,corner_kicks,Corner Kicks,0
+1172933,2024-11-17T17:00:00+00:00,1091,Slovenia,Austria,offsides,Offsides,0
+1172933,2024-11-17T17:00:00+00:00,1091,Slovenia,Austria,ball_possession,Ball Possession,33%
+1172933,2024-11-17T17:00:00+00:00,1091,Slovenia,Austria,yellow_cards,Yellow Cards,2
+1172933,2024-11-17T17:00:00+00:00,1091,Slovenia,Austria,red_cards,Red Cards,
+1172933,2024-11-17T17:00:00+00:00,1091,Slovenia,Austria,goalkeeper_saves,Goalkeeper Saves,3
+1172933,2024-11-17T17:00:00+00:00,1091,Slovenia,Austria,total_passes,Total passes,320
+1172933,2024-11-17T17:00:00+00:00,1091,Slovenia,Austria,passes_accurate,Passes accurate,219
+1172933,2024-11-17T17:00:00+00:00,1091,Slovenia,Austria,passes,Passes %,68%
+1172933,2024-11-17T17:00:00+00:00,1091,Slovenia,Austria,expected_goals,expected_goals,
+1172933,2024-11-17T17:00:00+00:00,1091,Slovenia,Austria,goals_prevented,goals_prevented,
+1173868,2024-06-04T18:45:00+00:00,775,Austria,Serbia,shots_on_goal,Shots on Goal,3
+1173868,2024-06-04T18:45:00+00:00,775,Austria,Serbia,shots_off_goal,Shots off Goal,1
+1173868,2024-06-04T18:45:00+00:00,775,Austria,Serbia,total_shots,Total Shots,5
+1173868,2024-06-04T18:45:00+00:00,775,Austria,Serbia,blocked_shots,Blocked Shots,1
+1173868,2024-06-04T18:45:00+00:00,775,Austria,Serbia,shots_insidebox,Shots insidebox,2
+1173868,2024-06-04T18:45:00+00:00,775,Austria,Serbia,shots_outsidebox,Shots outsidebox,3
+1173868,2024-06-04T18:45:00+00:00,775,Austria,Serbia,fouls,Fouls,19
+1173868,2024-06-04T18:45:00+00:00,775,Austria,Serbia,corner_kicks,Corner Kicks,1
+1173868,2024-06-04T18:45:00+00:00,775,Austria,Serbia,offsides,Offsides,2
+1173868,2024-06-04T18:45:00+00:00,775,Austria,Serbia,ball_possession,Ball Possession,53%
+1173868,2024-06-04T18:45:00+00:00,775,Austria,Serbia,yellow_cards,Yellow Cards,3
+1173868,2024-06-04T18:45:00+00:00,775,Austria,Serbia,red_cards,Red Cards,
+1173868,2024-06-04T18:45:00+00:00,775,Austria,Serbia,goalkeeper_saves,Goalkeeper Saves,0
+1173868,2024-06-04T18:45:00+00:00,775,Austria,Serbia,total_passes,Total passes,462
+1173868,2024-06-04T18:45:00+00:00,775,Austria,Serbia,passes_accurate,Passes accurate,364
+1173868,2024-06-04T18:45:00+00:00,775,Austria,Serbia,passes,Passes %,79%
+1173868,2024-06-04T18:45:00+00:00,775,Austria,Serbia,expected_goals,expected_goals,
+1173868,2024-06-04T18:45:00+00:00,775,Austria,Serbia,goals_prevented,goals_prevented,
+1173868,2024-06-04T18:45:00+00:00,14,Serbia,Austria,shots_on_goal,Shots on Goal,1
+1173868,2024-06-04T18:45:00+00:00,14,Serbia,Austria,shots_off_goal,Shots off Goal,4
+1173868,2024-06-04T18:45:00+00:00,14,Serbia,Austria,total_shots,Total Shots,7
+1173868,2024-06-04T18:45:00+00:00,14,Serbia,Austria,blocked_shots,Blocked Shots,2
+1173868,2024-06-04T18:45:00+00:00,14,Serbia,Austria,shots_insidebox,Shots insidebox,4
+1173868,2024-06-04T18:45:00+00:00,14,Serbia,Austria,shots_outsidebox,Shots outsidebox,3
+1173868,2024-06-04T18:45:00+00:00,14,Serbia,Austria,fouls,Fouls,14
+1173868,2024-06-04T18:45:00+00:00,14,Serbia,Austria,corner_kicks,Corner Kicks,6
+1173868,2024-06-04T18:45:00+00:00,14,Serbia,Austria,offsides,Offsides,1
+1173868,2024-06-04T18:45:00+00:00,14,Serbia,Austria,ball_possession,Ball Possession,47%
+1173868,2024-06-04T18:45:00+00:00,14,Serbia,Austria,yellow_cards,Yellow Cards,1
+1173868,2024-06-04T18:45:00+00:00,14,Serbia,Austria,red_cards,Red Cards,
+1173868,2024-06-04T18:45:00+00:00,14,Serbia,Austria,goalkeeper_saves,Goalkeeper Saves,1
+1173868,2024-06-04T18:45:00+00:00,14,Serbia,Austria,total_passes,Total passes,398
+1173868,2024-06-04T18:45:00+00:00,14,Serbia,Austria,passes_accurate,Passes accurate,311
+1173868,2024-06-04T18:45:00+00:00,14,Serbia,Austria,passes,Passes %,78%
+1173868,2024-06-04T18:45:00+00:00,14,Serbia,Austria,expected_goals,expected_goals,
+1173868,2024-06-04T18:45:00+00:00,14,Serbia,Austria,goals_prevented,goals_prevented,
+1173869,2024-06-08T16:00:00+00:00,15,Switzerland,Austria,shots_on_goal,Shots on Goal,2
+1173869,2024-06-08T16:00:00+00:00,15,Switzerland,Austria,shots_off_goal,Shots off Goal,1
+1173869,2024-06-08T16:00:00+00:00,15,Switzerland,Austria,total_shots,Total Shots,4
+1173869,2024-06-08T16:00:00+00:00,15,Switzerland,Austria,blocked_shots,Blocked Shots,1
+1173869,2024-06-08T16:00:00+00:00,15,Switzerland,Austria,shots_insidebox,Shots insidebox,2
+1173869,2024-06-08T16:00:00+00:00,15,Switzerland,Austria,shots_outsidebox,Shots outsidebox,2
+1173869,2024-06-08T16:00:00+00:00,15,Switzerland,Austria,fouls,Fouls,12
+1173869,2024-06-08T16:00:00+00:00,15,Switzerland,Austria,corner_kicks,Corner Kicks,3
+1173869,2024-06-08T16:00:00+00:00,15,Switzerland,Austria,offsides,Offsides,2
+1173869,2024-06-08T16:00:00+00:00,15,Switzerland,Austria,ball_possession,Ball Possession,58%
+1173869,2024-06-08T16:00:00+00:00,15,Switzerland,Austria,yellow_cards,Yellow Cards,2
+1173869,2024-06-08T16:00:00+00:00,15,Switzerland,Austria,red_cards,Red Cards,
+1173869,2024-06-08T16:00:00+00:00,15,Switzerland,Austria,goalkeeper_saves,Goalkeeper Saves,2
+1173869,2024-06-08T16:00:00+00:00,15,Switzerland,Austria,total_passes,Total passes,560
+1173869,2024-06-08T16:00:00+00:00,15,Switzerland,Austria,passes_accurate,Passes accurate,488
+1173869,2024-06-08T16:00:00+00:00,15,Switzerland,Austria,passes,Passes %,87%
+1173869,2024-06-08T16:00:00+00:00,15,Switzerland,Austria,expected_goals,expected_goals,
+1173869,2024-06-08T16:00:00+00:00,15,Switzerland,Austria,goals_prevented,goals_prevented,
+1173869,2024-06-08T16:00:00+00:00,775,Austria,Switzerland,shots_on_goal,Shots on Goal,3
+1173869,2024-06-08T16:00:00+00:00,775,Austria,Switzerland,shots_off_goal,Shots off Goal,2
+1173869,2024-06-08T16:00:00+00:00,775,Austria,Switzerland,total_shots,Total Shots,11
+1173869,2024-06-08T16:00:00+00:00,775,Austria,Switzerland,blocked_shots,Blocked Shots,6
+1173869,2024-06-08T16:00:00+00:00,775,Austria,Switzerland,shots_insidebox,Shots insidebox,5
+1173869,2024-06-08T16:00:00+00:00,775,Austria,Switzerland,shots_outsidebox,Shots outsidebox,6
+1173869,2024-06-08T16:00:00+00:00,775,Austria,Switzerland,fouls,Fouls,16
+1173869,2024-06-08T16:00:00+00:00,775,Austria,Switzerland,corner_kicks,Corner Kicks,4
+1173869,2024-06-08T16:00:00+00:00,775,Austria,Switzerland,offsides,Offsides,1
+1173869,2024-06-08T16:00:00+00:00,775,Austria,Switzerland,ball_possession,Ball Possession,42%
+1173869,2024-06-08T16:00:00+00:00,775,Austria,Switzerland,yellow_cards,Yellow Cards,2
+1173869,2024-06-08T16:00:00+00:00,775,Austria,Switzerland,red_cards,Red Cards,
+1173869,2024-06-08T16:00:00+00:00,775,Austria,Switzerland,goalkeeper_saves,Goalkeeper Saves,1
+1173869,2024-06-08T16:00:00+00:00,775,Austria,Switzerland,total_passes,Total passes,409
+1173869,2024-06-08T16:00:00+00:00,775,Austria,Switzerland,passes_accurate,Passes accurate,344
+1173869,2024-06-08T16:00:00+00:00,775,Austria,Switzerland,passes,Passes %,84%
+1173869,2024-06-08T16:00:00+00:00,775,Austria,Switzerland,expected_goals,expected_goals,
+1173869,2024-06-08T16:00:00+00:00,775,Austria,Switzerland,goals_prevented,goals_prevented,
+1189850,2024-06-21T16:00:00+00:00,24,Poland,Austria,shots_on_goal,Shots on Goal,3
+1189850,2024-06-21T16:00:00+00:00,24,Poland,Austria,shots_off_goal,Shots off Goal,5
+1189850,2024-06-21T16:00:00+00:00,24,Poland,Austria,total_shots,Total Shots,15
+1189850,2024-06-21T16:00:00+00:00,24,Poland,Austria,blocked_shots,Blocked Shots,7
+1189850,2024-06-21T16:00:00+00:00,24,Poland,Austria,shots_insidebox,Shots insidebox,8
+1189850,2024-06-21T16:00:00+00:00,24,Poland,Austria,shots_outsidebox,Shots outsidebox,7
+1189850,2024-06-21T16:00:00+00:00,24,Poland,Austria,fouls,Fouls,15
+1189850,2024-06-21T16:00:00+00:00,24,Poland,Austria,corner_kicks,Corner Kicks,4
+1189850,2024-06-21T16:00:00+00:00,24,Poland,Austria,offsides,Offsides,0
+1189850,2024-06-21T16:00:00+00:00,24,Poland,Austria,ball_possession,Ball Possession,47%
+1189850,2024-06-21T16:00:00+00:00,24,Poland,Austria,yellow_cards,Yellow Cards,4
+1189850,2024-06-21T16:00:00+00:00,24,Poland,Austria,red_cards,Red Cards,
+1189850,2024-06-21T16:00:00+00:00,24,Poland,Austria,goalkeeper_saves,Goalkeeper Saves,6
+1189850,2024-06-21T16:00:00+00:00,24,Poland,Austria,total_passes,Total passes,390
+1189850,2024-06-21T16:00:00+00:00,24,Poland,Austria,passes_accurate,Passes accurate,311
+1189850,2024-06-21T16:00:00+00:00,24,Poland,Austria,passes,Passes %,80%
+1189850,2024-06-21T16:00:00+00:00,24,Poland,Austria,expected_goals,expected_goals,1.68
+1189850,2024-06-21T16:00:00+00:00,24,Poland,Austria,goals_prevented,goals_prevented,0.27
+1189850,2024-06-21T16:00:00+00:00,775,Austria,Poland,shots_on_goal,Shots on Goal,9
+1189850,2024-06-21T16:00:00+00:00,775,Austria,Poland,shots_off_goal,Shots off Goal,2
+1189850,2024-06-21T16:00:00+00:00,775,Austria,Poland,total_shots,Total Shots,15
+1189850,2024-06-21T16:00:00+00:00,775,Austria,Poland,blocked_shots,Blocked Shots,4
+1189850,2024-06-21T16:00:00+00:00,775,Austria,Poland,shots_insidebox,Shots insidebox,10
+1189850,2024-06-21T16:00:00+00:00,775,Austria,Poland,shots_outsidebox,Shots outsidebox,5
+1189850,2024-06-21T16:00:00+00:00,775,Austria,Poland,fouls,Fouls,15
+1189850,2024-06-21T16:00:00+00:00,775,Austria,Poland,corner_kicks,Corner Kicks,3
+1189850,2024-06-21T16:00:00+00:00,775,Austria,Poland,offsides,Offsides,2
+1189850,2024-06-21T16:00:00+00:00,775,Austria,Poland,ball_possession,Ball Possession,53%
+1189850,2024-06-21T16:00:00+00:00,775,Austria,Poland,yellow_cards,Yellow Cards,2
+1189850,2024-06-21T16:00:00+00:00,775,Austria,Poland,red_cards,Red Cards,
+1189850,2024-06-21T16:00:00+00:00,775,Austria,Poland,goalkeeper_saves,Goalkeeper Saves,2
+1189850,2024-06-21T16:00:00+00:00,775,Austria,Poland,total_passes,Total passes,443
+1189850,2024-06-21T16:00:00+00:00,775,Austria,Poland,passes_accurate,Passes accurate,373
+1189850,2024-06-21T16:00:00+00:00,775,Austria,Poland,passes,Passes %,84%
+1189850,2024-06-21T16:00:00+00:00,775,Austria,Poland,expected_goals,expected_goals,2.13
+1189850,2024-06-21T16:00:00+00:00,775,Austria,Poland,goals_prevented,goals_prevented,0.27
+1215078,2024-07-02T19:00:00+00:00,775,Austria,Türkiye,shots_on_goal,Shots on Goal,5
+1215078,2024-07-02T19:00:00+00:00,775,Austria,Türkiye,shots_off_goal,Shots off Goal,9
+1215078,2024-07-02T19:00:00+00:00,775,Austria,Türkiye,total_shots,Total Shots,21
+1215078,2024-07-02T19:00:00+00:00,775,Austria,Türkiye,blocked_shots,Blocked Shots,7
+1215078,2024-07-02T19:00:00+00:00,775,Austria,Türkiye,shots_insidebox,Shots insidebox,14
+1215078,2024-07-02T19:00:00+00:00,775,Austria,Türkiye,shots_outsidebox,Shots outsidebox,7
+1215078,2024-07-02T19:00:00+00:00,775,Austria,Türkiye,fouls,Fouls,12
+1215078,2024-07-02T19:00:00+00:00,775,Austria,Türkiye,corner_kicks,Corner Kicks,10
+1215078,2024-07-02T19:00:00+00:00,775,Austria,Türkiye,offsides,Offsides,2
+1215078,2024-07-02T19:00:00+00:00,775,Austria,Türkiye,ball_possession,Ball Possession,60%
+1215078,2024-07-02T19:00:00+00:00,775,Austria,Türkiye,yellow_cards,Yellow Cards,2
+1215078,2024-07-02T19:00:00+00:00,775,Austria,Türkiye,red_cards,Red Cards,
+1215078,2024-07-02T19:00:00+00:00,775,Austria,Türkiye,goalkeeper_saves,Goalkeeper Saves,2
+1215078,2024-07-02T19:00:00+00:00,775,Austria,Türkiye,total_passes,Total passes,564
+1215078,2024-07-02T19:00:00+00:00,775,Austria,Türkiye,passes_accurate,Passes accurate,470
+1215078,2024-07-02T19:00:00+00:00,775,Austria,Türkiye,passes,Passes %,83%
+1215078,2024-07-02T19:00:00+00:00,775,Austria,Türkiye,expected_goals,expected_goals,3.14
+1215078,2024-07-02T19:00:00+00:00,775,Austria,Türkiye,goals_prevented,goals_prevented,1.10
+1215078,2024-07-02T19:00:00+00:00,777,Türkiye,Austria,shots_on_goal,Shots on Goal,3
+1215078,2024-07-02T19:00:00+00:00,777,Türkiye,Austria,shots_off_goal,Shots off Goal,2
+1215078,2024-07-02T19:00:00+00:00,777,Türkiye,Austria,total_shots,Total Shots,6
+1215078,2024-07-02T19:00:00+00:00,777,Türkiye,Austria,blocked_shots,Blocked Shots,1
+1215078,2024-07-02T19:00:00+00:00,777,Türkiye,Austria,shots_insidebox,Shots insidebox,5
+1215078,2024-07-02T19:00:00+00:00,777,Türkiye,Austria,shots_outsidebox,Shots outsidebox,1
+1215078,2024-07-02T19:00:00+00:00,777,Türkiye,Austria,fouls,Fouls,5
+1215078,2024-07-02T19:00:00+00:00,777,Türkiye,Austria,corner_kicks,Corner Kicks,4
+1215078,2024-07-02T19:00:00+00:00,777,Türkiye,Austria,offsides,Offsides,1
+1215078,2024-07-02T19:00:00+00:00,777,Türkiye,Austria,ball_possession,Ball Possession,40%
+1215078,2024-07-02T19:00:00+00:00,777,Türkiye,Austria,yellow_cards,Yellow Cards,2
+1215078,2024-07-02T19:00:00+00:00,777,Türkiye,Austria,red_cards,Red Cards,
+1215078,2024-07-02T19:00:00+00:00,777,Türkiye,Austria,goalkeeper_saves,Goalkeeper Saves,4
+1215078,2024-07-02T19:00:00+00:00,777,Türkiye,Austria,total_passes,Total passes,379
+1215078,2024-07-02T19:00:00+00:00,777,Türkiye,Austria,passes_accurate,Passes accurate,303
+1215078,2024-07-02T19:00:00+00:00,777,Türkiye,Austria,passes,Passes %,80%
+1215078,2024-07-02T19:00:00+00:00,777,Türkiye,Austria,expected_goals,expected_goals,0.92
+1215078,2024-07-02T19:00:00+00:00,777,Türkiye,Austria,goals_prevented,goals_prevented,1.10
+1145516,2024-06-17T16:00:00+00:00,1,Belgium,Slovakia,shots_on_goal,Shots on Goal,5
+1145516,2024-06-17T16:00:00+00:00,1,Belgium,Slovakia,shots_off_goal,Shots off Goal,6
+1145516,2024-06-17T16:00:00+00:00,1,Belgium,Slovakia,total_shots,Total Shots,16
+1145516,2024-06-17T16:00:00+00:00,1,Belgium,Slovakia,blocked_shots,Blocked Shots,5
+1145516,2024-06-17T16:00:00+00:00,1,Belgium,Slovakia,shots_insidebox,Shots insidebox,10
+1145516,2024-06-17T16:00:00+00:00,1,Belgium,Slovakia,shots_outsidebox,Shots outsidebox,6
+1145516,2024-06-17T16:00:00+00:00,1,Belgium,Slovakia,fouls,Fouls,14
+1145516,2024-06-17T16:00:00+00:00,1,Belgium,Slovakia,corner_kicks,Corner Kicks,5
+1145516,2024-06-17T16:00:00+00:00,1,Belgium,Slovakia,offsides,Offsides,2
+1145516,2024-06-17T16:00:00+00:00,1,Belgium,Slovakia,ball_possession,Ball Possession,60%
+1145516,2024-06-17T16:00:00+00:00,1,Belgium,Slovakia,yellow_cards,Yellow Cards,3
+1145516,2024-06-17T16:00:00+00:00,1,Belgium,Slovakia,red_cards,Red Cards,
+1145516,2024-06-17T16:00:00+00:00,1,Belgium,Slovakia,goalkeeper_saves,Goalkeeper Saves,3
+1145516,2024-06-17T16:00:00+00:00,1,Belgium,Slovakia,total_passes,Total passes,573
+1145516,2024-06-17T16:00:00+00:00,1,Belgium,Slovakia,passes_accurate,Passes accurate,488
+1145516,2024-06-17T16:00:00+00:00,1,Belgium,Slovakia,passes,Passes %,85%
+1145516,2024-06-17T16:00:00+00:00,1,Belgium,Slovakia,expected_goals,expected_goals,1.70
+1145516,2024-06-17T16:00:00+00:00,1,Belgium,Slovakia,goals_prevented,goals_prevented,1.02
+1145516,2024-06-17T16:00:00+00:00,773,Slovakia,Belgium,shots_on_goal,Shots on Goal,4
+1145516,2024-06-17T16:00:00+00:00,773,Slovakia,Belgium,shots_off_goal,Shots off Goal,4
+1145516,2024-06-17T16:00:00+00:00,773,Slovakia,Belgium,total_shots,Total Shots,10
+1145516,2024-06-17T16:00:00+00:00,773,Slovakia,Belgium,blocked_shots,Blocked Shots,2
+1145516,2024-06-17T16:00:00+00:00,773,Slovakia,Belgium,shots_insidebox,Shots insidebox,6
+1145516,2024-06-17T16:00:00+00:00,773,Slovakia,Belgium,shots_outsidebox,Shots outsidebox,4
+1145516,2024-06-17T16:00:00+00:00,773,Slovakia,Belgium,fouls,Fouls,10
+1145516,2024-06-17T16:00:00+00:00,773,Slovakia,Belgium,corner_kicks,Corner Kicks,7
+1145516,2024-06-17T16:00:00+00:00,773,Slovakia,Belgium,offsides,Offsides,1
+1145516,2024-06-17T16:00:00+00:00,773,Slovakia,Belgium,ball_possession,Ball Possession,40%
+1145516,2024-06-17T16:00:00+00:00,773,Slovakia,Belgium,yellow_cards,Yellow Cards,1
+1145516,2024-06-17T16:00:00+00:00,773,Slovakia,Belgium,red_cards,Red Cards,
+1145516,2024-06-17T16:00:00+00:00,773,Slovakia,Belgium,goalkeeper_saves,Goalkeeper Saves,5
+1145516,2024-06-17T16:00:00+00:00,773,Slovakia,Belgium,total_passes,Total passes,367
+1145516,2024-06-17T16:00:00+00:00,773,Slovakia,Belgium,passes_accurate,Passes accurate,283
+1145516,2024-06-17T16:00:00+00:00,773,Slovakia,Belgium,passes,Passes %,77%
+1145516,2024-06-17T16:00:00+00:00,773,Slovakia,Belgium,expected_goals,expected_goals,0.57
+1145516,2024-06-17T16:00:00+00:00,773,Slovakia,Belgium,goals_prevented,goals_prevented,1.02
+1145525,2024-06-22T19:00:00+00:00,1,Belgium,Romania,shots_on_goal,Shots on Goal,9
+1145525,2024-06-22T19:00:00+00:00,1,Belgium,Romania,shots_off_goal,Shots off Goal,5
+1145525,2024-06-22T19:00:00+00:00,1,Belgium,Romania,total_shots,Total Shots,20
+1145525,2024-06-22T19:00:00+00:00,1,Belgium,Romania,blocked_shots,Blocked Shots,6
+1145525,2024-06-22T19:00:00+00:00,1,Belgium,Romania,shots_insidebox,Shots insidebox,14
+1145525,2024-06-22T19:00:00+00:00,1,Belgium,Romania,shots_outsidebox,Shots outsidebox,6
+1145525,2024-06-22T19:00:00+00:00,1,Belgium,Romania,fouls,Fouls,9
+1145525,2024-06-22T19:00:00+00:00,1,Belgium,Romania,corner_kicks,Corner Kicks,7
+1145525,2024-06-22T19:00:00+00:00,1,Belgium,Romania,offsides,Offsides,5
+1145525,2024-06-22T19:00:00+00:00,1,Belgium,Romania,ball_possession,Ball Possession,55%
+1145525,2024-06-22T19:00:00+00:00,1,Belgium,Romania,yellow_cards,Yellow Cards,1
+1145525,2024-06-22T19:00:00+00:00,1,Belgium,Romania,red_cards,Red Cards,
+1145525,2024-06-22T19:00:00+00:00,1,Belgium,Romania,goalkeeper_saves,Goalkeeper Saves,4
+1145525,2024-06-22T19:00:00+00:00,1,Belgium,Romania,total_passes,Total passes,431
+1145525,2024-06-22T19:00:00+00:00,1,Belgium,Romania,passes_accurate,Passes accurate,365
+1145525,2024-06-22T19:00:00+00:00,1,Belgium,Romania,passes,Passes %,85%
+1145525,2024-06-22T19:00:00+00:00,1,Belgium,Romania,expected_goals,expected_goals,1.76
+1145525,2024-06-22T19:00:00+00:00,1,Belgium,Romania,goals_prevented,goals_prevented,1.21
+1145525,2024-06-22T19:00:00+00:00,774,Romania,Belgium,shots_on_goal,Shots on Goal,5
+1145525,2024-06-22T19:00:00+00:00,774,Romania,Belgium,shots_off_goal,Shots off Goal,7
+1145525,2024-06-22T19:00:00+00:00,774,Romania,Belgium,total_shots,Total Shots,14
+1145525,2024-06-22T19:00:00+00:00,774,Romania,Belgium,blocked_shots,Blocked Shots,2
+1145525,2024-06-22T19:00:00+00:00,774,Romania,Belgium,shots_insidebox,Shots insidebox,7
+1145525,2024-06-22T19:00:00+00:00,774,Romania,Belgium,shots_outsidebox,Shots outsidebox,7
+1145525,2024-06-22T19:00:00+00:00,774,Romania,Belgium,fouls,Fouls,11
+1145525,2024-06-22T19:00:00+00:00,774,Romania,Belgium,corner_kicks,Corner Kicks,7
+1145525,2024-06-22T19:00:00+00:00,774,Romania,Belgium,offsides,Offsides,1
+1145525,2024-06-22T19:00:00+00:00,774,Romania,Belgium,ball_possession,Ball Possession,45%
+1145525,2024-06-22T19:00:00+00:00,774,Romania,Belgium,yellow_cards,Yellow Cards,2
+1145525,2024-06-22T19:00:00+00:00,774,Romania,Belgium,red_cards,Red Cards,
+1145525,2024-06-22T19:00:00+00:00,774,Romania,Belgium,goalkeeper_saves,Goalkeeper Saves,7
+1145525,2024-06-22T19:00:00+00:00,774,Romania,Belgium,total_passes,Total passes,352
+1145525,2024-06-22T19:00:00+00:00,774,Romania,Belgium,passes_accurate,Passes accurate,286
+1145525,2024-06-22T19:00:00+00:00,774,Romania,Belgium,passes,Passes %,81%
+1145525,2024-06-22T19:00:00+00:00,774,Romania,Belgium,expected_goals,expected_goals,0.94
+1145525,2024-06-22T19:00:00+00:00,774,Romania,Belgium,goals_prevented,goals_prevented,1.21
+1155268,2024-03-23T17:00:00+00:00,776,Rep. Of Ireland,Belgium,shots_on_goal,Shots on Goal,1
+1155268,2024-03-23T17:00:00+00:00,776,Rep. Of Ireland,Belgium,shots_off_goal,Shots off Goal,7
+1155268,2024-03-23T17:00:00+00:00,776,Rep. Of Ireland,Belgium,total_shots,Total Shots,11
+1155268,2024-03-23T17:00:00+00:00,776,Rep. Of Ireland,Belgium,blocked_shots,Blocked Shots,3
+1155268,2024-03-23T17:00:00+00:00,776,Rep. Of Ireland,Belgium,shots_insidebox,Shots insidebox,10
+1155268,2024-03-23T17:00:00+00:00,776,Rep. Of Ireland,Belgium,shots_outsidebox,Shots outsidebox,1
+1155268,2024-03-23T17:00:00+00:00,776,Rep. Of Ireland,Belgium,fouls,Fouls,11
+1155268,2024-03-23T17:00:00+00:00,776,Rep. Of Ireland,Belgium,corner_kicks,Corner Kicks,4
+1155268,2024-03-23T17:00:00+00:00,776,Rep. Of Ireland,Belgium,offsides,Offsides,0
+1155268,2024-03-23T17:00:00+00:00,776,Rep. Of Ireland,Belgium,ball_possession,Ball Possession,36%
+1155268,2024-03-23T17:00:00+00:00,776,Rep. Of Ireland,Belgium,yellow_cards,Yellow Cards,
+1155268,2024-03-23T17:00:00+00:00,776,Rep. Of Ireland,Belgium,red_cards,Red Cards,
+1155268,2024-03-23T17:00:00+00:00,776,Rep. Of Ireland,Belgium,goalkeeper_saves,Goalkeeper Saves,2
+1155268,2024-03-23T17:00:00+00:00,776,Rep. Of Ireland,Belgium,total_passes,Total passes,324
+1155268,2024-03-23T17:00:00+00:00,776,Rep. Of Ireland,Belgium,passes_accurate,Passes accurate,241
+1155268,2024-03-23T17:00:00+00:00,776,Rep. Of Ireland,Belgium,passes,Passes %,74%
+1155268,2024-03-23T17:00:00+00:00,776,Rep. Of Ireland,Belgium,expected_goals,expected_goals,
+1155268,2024-03-23T17:00:00+00:00,1,Belgium,Rep. Of Ireland,shots_on_goal,Shots on Goal,2
+1155268,2024-03-23T17:00:00+00:00,1,Belgium,Rep. Of Ireland,shots_off_goal,Shots off Goal,5
+1155268,2024-03-23T17:00:00+00:00,1,Belgium,Rep. Of Ireland,total_shots,Total Shots,9
+1155268,2024-03-23T17:00:00+00:00,1,Belgium,Rep. Of Ireland,blocked_shots,Blocked Shots,2
+1155268,2024-03-23T17:00:00+00:00,1,Belgium,Rep. Of Ireland,shots_insidebox,Shots insidebox,4
+1155268,2024-03-23T17:00:00+00:00,1,Belgium,Rep. Of Ireland,shots_outsidebox,Shots outsidebox,5
+1155268,2024-03-23T17:00:00+00:00,1,Belgium,Rep. Of Ireland,fouls,Fouls,11
+1155268,2024-03-23T17:00:00+00:00,1,Belgium,Rep. Of Ireland,corner_kicks,Corner Kicks,6
+1155268,2024-03-23T17:00:00+00:00,1,Belgium,Rep. Of Ireland,offsides,Offsides,1
+1155268,2024-03-23T17:00:00+00:00,1,Belgium,Rep. Of Ireland,ball_possession,Ball Possession,64%
+1155268,2024-03-23T17:00:00+00:00,1,Belgium,Rep. Of Ireland,yellow_cards,Yellow Cards,
+1155268,2024-03-23T17:00:00+00:00,1,Belgium,Rep. Of Ireland,red_cards,Red Cards,
+1155268,2024-03-23T17:00:00+00:00,1,Belgium,Rep. Of Ireland,goalkeeper_saves,Goalkeeper Saves,1
+1155268,2024-03-23T17:00:00+00:00,1,Belgium,Rep. Of Ireland,total_passes,Total passes,605
+1155268,2024-03-23T17:00:00+00:00,1,Belgium,Rep. Of Ireland,passes_accurate,Passes accurate,524
+1155268,2024-03-23T17:00:00+00:00,1,Belgium,Rep. Of Ireland,passes,Passes %,87%
+1155268,2024-03-23T17:00:00+00:00,1,Belgium,Rep. Of Ireland,expected_goals,expected_goals,
+1155276,2024-03-26T19:45:00+00:00,10,England,Belgium,shots_on_goal,Shots on Goal,7
+1155276,2024-03-26T19:45:00+00:00,10,England,Belgium,shots_off_goal,Shots off Goal,5
+1155276,2024-03-26T19:45:00+00:00,10,England,Belgium,total_shots,Total Shots,19
+1155276,2024-03-26T19:45:00+00:00,10,England,Belgium,blocked_shots,Blocked Shots,7
+1155276,2024-03-26T19:45:00+00:00,10,England,Belgium,shots_insidebox,Shots insidebox,14
+1155276,2024-03-26T19:45:00+00:00,10,England,Belgium,shots_outsidebox,Shots outsidebox,5
+1155276,2024-03-26T19:45:00+00:00,10,England,Belgium,fouls,Fouls,13
+1155276,2024-03-26T19:45:00+00:00,10,England,Belgium,corner_kicks,Corner Kicks,6
+1155276,2024-03-26T19:45:00+00:00,10,England,Belgium,offsides,Offsides,2
+1155276,2024-03-26T19:45:00+00:00,10,England,Belgium,ball_possession,Ball Possession,63%
+1155276,2024-03-26T19:45:00+00:00,10,England,Belgium,yellow_cards,Yellow Cards,2
+1155276,2024-03-26T19:45:00+00:00,10,England,Belgium,red_cards,Red Cards,
+1155276,2024-03-26T19:45:00+00:00,10,England,Belgium,goalkeeper_saves,Goalkeeper Saves,1
+1155276,2024-03-26T19:45:00+00:00,10,England,Belgium,total_passes,Total passes,658
+1155276,2024-03-26T19:45:00+00:00,10,England,Belgium,passes_accurate,Passes accurate,604
+1155276,2024-03-26T19:45:00+00:00,10,England,Belgium,passes,Passes %,92%
+1155276,2024-03-26T19:45:00+00:00,10,England,Belgium,expected_goals,expected_goals,
+1155276,2024-03-26T19:45:00+00:00,1,Belgium,England,shots_on_goal,Shots on Goal,3
+1155276,2024-03-26T19:45:00+00:00,1,Belgium,England,shots_off_goal,Shots off Goal,2
+1155276,2024-03-26T19:45:00+00:00,1,Belgium,England,total_shots,Total Shots,7
+1155276,2024-03-26T19:45:00+00:00,1,Belgium,England,blocked_shots,Blocked Shots,2
+1155276,2024-03-26T19:45:00+00:00,1,Belgium,England,shots_insidebox,Shots insidebox,4
+1155276,2024-03-26T19:45:00+00:00,1,Belgium,England,shots_outsidebox,Shots outsidebox,3
+1155276,2024-03-26T19:45:00+00:00,1,Belgium,England,fouls,Fouls,12
+1155276,2024-03-26T19:45:00+00:00,1,Belgium,England,corner_kicks,Corner Kicks,1
+1155276,2024-03-26T19:45:00+00:00,1,Belgium,England,offsides,Offsides,1
+1155276,2024-03-26T19:45:00+00:00,1,Belgium,England,ball_possession,Ball Possession,37%
+1155276,2024-03-26T19:45:00+00:00,1,Belgium,England,yellow_cards,Yellow Cards,1
+1155276,2024-03-26T19:45:00+00:00,1,Belgium,England,red_cards,Red Cards,
+1155276,2024-03-26T19:45:00+00:00,1,Belgium,England,goalkeeper_saves,Goalkeeper Saves,5
+1155276,2024-03-26T19:45:00+00:00,1,Belgium,England,total_passes,Total passes,389
+1155276,2024-03-26T19:45:00+00:00,1,Belgium,England,passes_accurate,Passes accurate,328
+1155276,2024-03-26T19:45:00+00:00,1,Belgium,England,passes,Passes %,84%
+1155276,2024-03-26T19:45:00+00:00,1,Belgium,England,expected_goals,expected_goals,
+1168423,2024-06-08T18:00:00+00:00,1,Belgium,Luxembourg,shots_on_goal,Shots on Goal,9
+1168423,2024-06-08T18:00:00+00:00,1,Belgium,Luxembourg,shots_off_goal,Shots off Goal,13
+1168423,2024-06-08T18:00:00+00:00,1,Belgium,Luxembourg,total_shots,Total Shots,27
+1168423,2024-06-08T18:00:00+00:00,1,Belgium,Luxembourg,blocked_shots,Blocked Shots,5
+1168423,2024-06-08T18:00:00+00:00,1,Belgium,Luxembourg,shots_insidebox,Shots insidebox,19
+1168423,2024-06-08T18:00:00+00:00,1,Belgium,Luxembourg,shots_outsidebox,Shots outsidebox,8
+1168423,2024-06-08T18:00:00+00:00,1,Belgium,Luxembourg,fouls,Fouls,7
+1168423,2024-06-08T18:00:00+00:00,1,Belgium,Luxembourg,corner_kicks,Corner Kicks,11
+1168423,2024-06-08T18:00:00+00:00,1,Belgium,Luxembourg,offsides,Offsides,1
+1168423,2024-06-08T18:00:00+00:00,1,Belgium,Luxembourg,ball_possession,Ball Possession,72%
+1168423,2024-06-08T18:00:00+00:00,1,Belgium,Luxembourg,yellow_cards,Yellow Cards,0
+1168423,2024-06-08T18:00:00+00:00,1,Belgium,Luxembourg,red_cards,Red Cards,
+1168423,2024-06-08T18:00:00+00:00,1,Belgium,Luxembourg,goalkeeper_saves,Goalkeeper Saves,0
+1168423,2024-06-08T18:00:00+00:00,1,Belgium,Luxembourg,total_passes,Total passes,696
+1168423,2024-06-08T18:00:00+00:00,1,Belgium,Luxembourg,passes_accurate,Passes accurate,636
+1168423,2024-06-08T18:00:00+00:00,1,Belgium,Luxembourg,passes,Passes %,91%
+1168423,2024-06-08T18:00:00+00:00,1,Belgium,Luxembourg,expected_goals,expected_goals,
+1168423,2024-06-08T18:00:00+00:00,1,Belgium,Luxembourg,goals_prevented,goals_prevented,
+1168423,2024-06-08T18:00:00+00:00,1102,Luxembourg,Belgium,shots_on_goal,Shots on Goal,0
+1168423,2024-06-08T18:00:00+00:00,1102,Luxembourg,Belgium,shots_off_goal,Shots off Goal,1
+1168423,2024-06-08T18:00:00+00:00,1102,Luxembourg,Belgium,total_shots,Total Shots,1
+1168423,2024-06-08T18:00:00+00:00,1102,Luxembourg,Belgium,blocked_shots,Blocked Shots,0
+1168423,2024-06-08T18:00:00+00:00,1102,Luxembourg,Belgium,shots_insidebox,Shots insidebox,0
+1168423,2024-06-08T18:00:00+00:00,1102,Luxembourg,Belgium,shots_outsidebox,Shots outsidebox,1
+1168423,2024-06-08T18:00:00+00:00,1102,Luxembourg,Belgium,fouls,Fouls,8
+1168423,2024-06-08T18:00:00+00:00,1102,Luxembourg,Belgium,corner_kicks,Corner Kicks,1
+1168423,2024-06-08T18:00:00+00:00,1102,Luxembourg,Belgium,offsides,Offsides,1
+1168423,2024-06-08T18:00:00+00:00,1102,Luxembourg,Belgium,ball_possession,Ball Possession,28%
+1168423,2024-06-08T18:00:00+00:00,1102,Luxembourg,Belgium,yellow_cards,Yellow Cards,1
+1168423,2024-06-08T18:00:00+00:00,1102,Luxembourg,Belgium,red_cards,Red Cards,
+1168423,2024-06-08T18:00:00+00:00,1102,Luxembourg,Belgium,goalkeeper_saves,Goalkeeper Saves,6
+1168423,2024-06-08T18:00:00+00:00,1102,Luxembourg,Belgium,total_passes,Total passes,276
+1168423,2024-06-08T18:00:00+00:00,1102,Luxembourg,Belgium,passes_accurate,Passes accurate,216
+1168423,2024-06-08T18:00:00+00:00,1102,Luxembourg,Belgium,passes,Passes %,78%
+1168423,2024-06-08T18:00:00+00:00,1102,Luxembourg,Belgium,expected_goals,expected_goals,
+1168423,2024-06-08T18:00:00+00:00,1102,Luxembourg,Belgium,goals_prevented,goals_prevented,
+1169677,2024-06-05T18:30:00+00:00,1,Belgium,Montenegro,shots_on_goal,Shots on Goal,10
+1169677,2024-06-05T18:30:00+00:00,1,Belgium,Montenegro,shots_off_goal,Shots off Goal,4
+1169677,2024-06-05T18:30:00+00:00,1,Belgium,Montenegro,total_shots,Total Shots,20
+1169677,2024-06-05T18:30:00+00:00,1,Belgium,Montenegro,blocked_shots,Blocked Shots,6
+1169677,2024-06-05T18:30:00+00:00,1,Belgium,Montenegro,shots_insidebox,Shots insidebox,13
+1169677,2024-06-05T18:30:00+00:00,1,Belgium,Montenegro,shots_outsidebox,Shots outsidebox,7
+1169677,2024-06-05T18:30:00+00:00,1,Belgium,Montenegro,fouls,Fouls,7
+1169677,2024-06-05T18:30:00+00:00,1,Belgium,Montenegro,corner_kicks,Corner Kicks,9
+1169677,2024-06-05T18:30:00+00:00,1,Belgium,Montenegro,offsides,Offsides,3
+1169677,2024-06-05T18:30:00+00:00,1,Belgium,Montenegro,ball_possession,Ball Possession,70%
+1169677,2024-06-05T18:30:00+00:00,1,Belgium,Montenegro,yellow_cards,Yellow Cards,0
+1169677,2024-06-05T18:30:00+00:00,1,Belgium,Montenegro,red_cards,Red Cards,0
+1169677,2024-06-05T18:30:00+00:00,1,Belgium,Montenegro,goalkeeper_saves,Goalkeeper Saves,2
+1169677,2024-06-05T18:30:00+00:00,1,Belgium,Montenegro,total_passes,Total passes,646
+1169677,2024-06-05T18:30:00+00:00,1,Belgium,Montenegro,passes_accurate,Passes accurate,584
+1169677,2024-06-05T18:30:00+00:00,1,Belgium,Montenegro,passes,Passes %,90%
+1169677,2024-06-05T18:30:00+00:00,1,Belgium,Montenegro,expected_goals,expected_goals,
+1169677,2024-06-05T18:30:00+00:00,1,Belgium,Montenegro,goals_prevented,goals_prevented,
+1169677,2024-06-05T18:30:00+00:00,1109,Montenegro,Belgium,shots_on_goal,Shots on Goal,2
+1169677,2024-06-05T18:30:00+00:00,1109,Montenegro,Belgium,shots_off_goal,Shots off Goal,5
+1169677,2024-06-05T18:30:00+00:00,1109,Montenegro,Belgium,total_shots,Total Shots,10
+1169677,2024-06-05T18:30:00+00:00,1109,Montenegro,Belgium,blocked_shots,Blocked Shots,3
+1169677,2024-06-05T18:30:00+00:00,1109,Montenegro,Belgium,shots_insidebox,Shots insidebox,7
+1169677,2024-06-05T18:30:00+00:00,1109,Montenegro,Belgium,shots_outsidebox,Shots outsidebox,3
+1169677,2024-06-05T18:30:00+00:00,1109,Montenegro,Belgium,fouls,Fouls,14
+1169677,2024-06-05T18:30:00+00:00,1109,Montenegro,Belgium,corner_kicks,Corner Kicks,5
+1169677,2024-06-05T18:30:00+00:00,1109,Montenegro,Belgium,offsides,Offsides,1
+1169677,2024-06-05T18:30:00+00:00,1109,Montenegro,Belgium,ball_possession,Ball Possession,30%
+1169677,2024-06-05T18:30:00+00:00,1109,Montenegro,Belgium,yellow_cards,Yellow Cards,3
+1169677,2024-06-05T18:30:00+00:00,1109,Montenegro,Belgium,red_cards,Red Cards,1
+1169677,2024-06-05T18:30:00+00:00,1109,Montenegro,Belgium,goalkeeper_saves,Goalkeeper Saves,8
+1169677,2024-06-05T18:30:00+00:00,1109,Montenegro,Belgium,total_passes,Total passes,268
+1169677,2024-06-05T18:30:00+00:00,1109,Montenegro,Belgium,passes_accurate,Passes accurate,209
+1169677,2024-06-05T18:30:00+00:00,1109,Montenegro,Belgium,passes,Passes %,78%
+1169677,2024-06-05T18:30:00+00:00,1109,Montenegro,Belgium,expected_goals,expected_goals,
+1169677,2024-06-05T18:30:00+00:00,1109,Montenegro,Belgium,goals_prevented,goals_prevented,
+1172943,2024-09-06T18:45:00+00:00,1,Belgium,Israel,shots_on_goal,Shots on Goal,8
+1172943,2024-09-06T18:45:00+00:00,1,Belgium,Israel,shots_off_goal,Shots off Goal,10
+1172943,2024-09-06T18:45:00+00:00,1,Belgium,Israel,total_shots,Total Shots,25
+1172943,2024-09-06T18:45:00+00:00,1,Belgium,Israel,blocked_shots,Blocked Shots,7
+1172943,2024-09-06T18:45:00+00:00,1,Belgium,Israel,shots_insidebox,Shots insidebox,16
+1172943,2024-09-06T18:45:00+00:00,1,Belgium,Israel,shots_outsidebox,Shots outsidebox,9
+1172943,2024-09-06T18:45:00+00:00,1,Belgium,Israel,fouls,Fouls,9
+1172943,2024-09-06T18:45:00+00:00,1,Belgium,Israel,corner_kicks,Corner Kicks,7
+1172943,2024-09-06T18:45:00+00:00,1,Belgium,Israel,offsides,Offsides,5
+1172943,2024-09-06T18:45:00+00:00,1,Belgium,Israel,ball_possession,Ball Possession,64%
+1172943,2024-09-06T18:45:00+00:00,1,Belgium,Israel,yellow_cards,Yellow Cards,1
+1172943,2024-09-06T18:45:00+00:00,1,Belgium,Israel,red_cards,Red Cards,
+1172943,2024-09-06T18:45:00+00:00,1,Belgium,Israel,goalkeeper_saves,Goalkeeper Saves,2
+1172943,2024-09-06T18:45:00+00:00,1,Belgium,Israel,total_passes,Total passes,578
+1172943,2024-09-06T18:45:00+00:00,1,Belgium,Israel,passes_accurate,Passes accurate,518
+1172943,2024-09-06T18:45:00+00:00,1,Belgium,Israel,passes,Passes %,90%
+1172943,2024-09-06T18:45:00+00:00,1,Belgium,Israel,expected_goals,expected_goals,
+1172943,2024-09-06T18:45:00+00:00,1,Belgium,Israel,goals_prevented,goals_prevented,
+1172943,2024-09-06T18:45:00+00:00,1116,Israel,Belgium,shots_on_goal,Shots on Goal,2
+1172943,2024-09-06T18:45:00+00:00,1116,Israel,Belgium,shots_off_goal,Shots off Goal,4
+1172943,2024-09-06T18:45:00+00:00,1116,Israel,Belgium,total_shots,Total Shots,10
+1172943,2024-09-06T18:45:00+00:00,1116,Israel,Belgium,blocked_shots,Blocked Shots,4
+1172943,2024-09-06T18:45:00+00:00,1116,Israel,Belgium,shots_insidebox,Shots insidebox,7
+1172943,2024-09-06T18:45:00+00:00,1116,Israel,Belgium,shots_outsidebox,Shots outsidebox,3
+1172943,2024-09-06T18:45:00+00:00,1116,Israel,Belgium,fouls,Fouls,7
+1172943,2024-09-06T18:45:00+00:00,1116,Israel,Belgium,corner_kicks,Corner Kicks,1
+1172943,2024-09-06T18:45:00+00:00,1116,Israel,Belgium,offsides,Offsides,3
+1172943,2024-09-06T18:45:00+00:00,1116,Israel,Belgium,ball_possession,Ball Possession,36%
+1172943,2024-09-06T18:45:00+00:00,1116,Israel,Belgium,yellow_cards,Yellow Cards,1
+1172943,2024-09-06T18:45:00+00:00,1116,Israel,Belgium,red_cards,Red Cards,
+1172943,2024-09-06T18:45:00+00:00,1116,Israel,Belgium,goalkeeper_saves,Goalkeeper Saves,5
+1172943,2024-09-06T18:45:00+00:00,1116,Israel,Belgium,total_passes,Total passes,324
+1172943,2024-09-06T18:45:00+00:00,1116,Israel,Belgium,passes_accurate,Passes accurate,260
+1172943,2024-09-06T18:45:00+00:00,1116,Israel,Belgium,passes,Passes %,80%
+1172943,2024-09-06T18:45:00+00:00,1116,Israel,Belgium,expected_goals,expected_goals,
+1172943,2024-09-06T18:45:00+00:00,1116,Israel,Belgium,goals_prevented,goals_prevented,
+1172951,2024-09-09T18:45:00+00:00,2,France,Belgium,shots_on_goal,Shots on Goal,9
+1172951,2024-09-09T18:45:00+00:00,2,France,Belgium,shots_off_goal,Shots off Goal,10
+1172951,2024-09-09T18:45:00+00:00,2,France,Belgium,total_shots,Total Shots,25
+1172951,2024-09-09T18:45:00+00:00,2,France,Belgium,blocked_shots,Blocked Shots,6
+1172951,2024-09-09T18:45:00+00:00,2,France,Belgium,shots_insidebox,Shots insidebox,17
+1172951,2024-09-09T18:45:00+00:00,2,France,Belgium,shots_outsidebox,Shots outsidebox,8
+1172951,2024-09-09T18:45:00+00:00,2,France,Belgium,fouls,Fouls,8
+1172951,2024-09-09T18:45:00+00:00,2,France,Belgium,corner_kicks,Corner Kicks,5
+1172951,2024-09-09T18:45:00+00:00,2,France,Belgium,offsides,Offsides,3
+1172951,2024-09-09T18:45:00+00:00,2,France,Belgium,ball_possession,Ball Possession,47%
+1172951,2024-09-09T18:45:00+00:00,2,France,Belgium,yellow_cards,Yellow Cards,2
+1172951,2024-09-09T18:45:00+00:00,2,France,Belgium,red_cards,Red Cards,
+1172951,2024-09-09T18:45:00+00:00,2,France,Belgium,goalkeeper_saves,Goalkeeper Saves,4
+1172951,2024-09-09T18:45:00+00:00,2,France,Belgium,total_passes,Total passes,445
+1172951,2024-09-09T18:45:00+00:00,2,France,Belgium,passes_accurate,Passes accurate,387
+1172951,2024-09-09T18:45:00+00:00,2,France,Belgium,passes,Passes %,87%
+1172951,2024-09-09T18:45:00+00:00,2,France,Belgium,expected_goals,expected_goals,
+1172951,2024-09-09T18:45:00+00:00,2,France,Belgium,goals_prevented,goals_prevented,
+1172951,2024-09-09T18:45:00+00:00,1,Belgium,France,shots_on_goal,Shots on Goal,4
+1172951,2024-09-09T18:45:00+00:00,1,Belgium,France,shots_off_goal,Shots off Goal,4
+1172951,2024-09-09T18:45:00+00:00,1,Belgium,France,total_shots,Total Shots,9
+1172951,2024-09-09T18:45:00+00:00,1,Belgium,France,blocked_shots,Blocked Shots,1
+1172951,2024-09-09T18:45:00+00:00,1,Belgium,France,shots_insidebox,Shots insidebox,6
+1172951,2024-09-09T18:45:00+00:00,1,Belgium,France,shots_outsidebox,Shots outsidebox,3
+1172951,2024-09-09T18:45:00+00:00,1,Belgium,France,fouls,Fouls,10
+1172951,2024-09-09T18:45:00+00:00,1,Belgium,France,corner_kicks,Corner Kicks,7
+1172951,2024-09-09T18:45:00+00:00,1,Belgium,France,offsides,Offsides,1
+1172951,2024-09-09T18:45:00+00:00,1,Belgium,France,ball_possession,Ball Possession,53%
+1172951,2024-09-09T18:45:00+00:00,1,Belgium,France,yellow_cards,Yellow Cards,2
+1172951,2024-09-09T18:45:00+00:00,1,Belgium,France,red_cards,Red Cards,
+1172951,2024-09-09T18:45:00+00:00,1,Belgium,France,goalkeeper_saves,Goalkeeper Saves,7
+1172951,2024-09-09T18:45:00+00:00,1,Belgium,France,total_passes,Total passes,514
+1172951,2024-09-09T18:45:00+00:00,1,Belgium,France,passes_accurate,Passes accurate,446
+1172951,2024-09-09T18:45:00+00:00,1,Belgium,France,passes,Passes %,87%
+1172951,2024-09-09T18:45:00+00:00,1,Belgium,France,expected_goals,expected_goals,
+1172951,2024-09-09T18:45:00+00:00,1,Belgium,France,goals_prevented,goals_prevented,
+1172956,2024-10-10T18:45:00+00:00,768,Italy,Belgium,shots_on_goal,Shots on Goal,3
+1172956,2024-10-10T18:45:00+00:00,768,Italy,Belgium,shots_off_goal,Shots off Goal,4
+1172956,2024-10-10T18:45:00+00:00,768,Italy,Belgium,total_shots,Total Shots,8
+1172956,2024-10-10T18:45:00+00:00,768,Italy,Belgium,blocked_shots,Blocked Shots,1
+1172956,2024-10-10T18:45:00+00:00,768,Italy,Belgium,shots_insidebox,Shots insidebox,4
+1172956,2024-10-10T18:45:00+00:00,768,Italy,Belgium,shots_outsidebox,Shots outsidebox,4
+1172956,2024-10-10T18:45:00+00:00,768,Italy,Belgium,fouls,Fouls,11
+1172956,2024-10-10T18:45:00+00:00,768,Italy,Belgium,corner_kicks,Corner Kicks,0
+1172956,2024-10-10T18:45:00+00:00,768,Italy,Belgium,offsides,Offsides,1
+1172956,2024-10-10T18:45:00+00:00,768,Italy,Belgium,ball_possession,Ball Possession,38%
+1172956,2024-10-10T18:45:00+00:00,768,Italy,Belgium,yellow_cards,Yellow Cards,2
+1172956,2024-10-10T18:45:00+00:00,768,Italy,Belgium,red_cards,Red Cards,1
+1172956,2024-10-10T18:45:00+00:00,768,Italy,Belgium,goalkeeper_saves,Goalkeeper Saves,2
+1172956,2024-10-10T18:45:00+00:00,768,Italy,Belgium,total_passes,Total passes,359
+1172956,2024-10-10T18:45:00+00:00,768,Italy,Belgium,passes_accurate,Passes accurate,304
+1172956,2024-10-10T18:45:00+00:00,768,Italy,Belgium,passes,Passes %,85%
+1172956,2024-10-10T18:45:00+00:00,768,Italy,Belgium,expected_goals,expected_goals,
+1172956,2024-10-10T18:45:00+00:00,768,Italy,Belgium,goals_prevented,goals_prevented,
+1172956,2024-10-10T18:45:00+00:00,1,Belgium,Italy,shots_on_goal,Shots on Goal,4
+1172956,2024-10-10T18:45:00+00:00,1,Belgium,Italy,shots_off_goal,Shots off Goal,3
+1172956,2024-10-10T18:45:00+00:00,1,Belgium,Italy,total_shots,Total Shots,12
+1172956,2024-10-10T18:45:00+00:00,1,Belgium,Italy,blocked_shots,Blocked Shots,5
+1172956,2024-10-10T18:45:00+00:00,1,Belgium,Italy,shots_insidebox,Shots insidebox,7
+1172956,2024-10-10T18:45:00+00:00,1,Belgium,Italy,shots_outsidebox,Shots outsidebox,5
+1172956,2024-10-10T18:45:00+00:00,1,Belgium,Italy,fouls,Fouls,15
+1172956,2024-10-10T18:45:00+00:00,1,Belgium,Italy,corner_kicks,Corner Kicks,12
+1172956,2024-10-10T18:45:00+00:00,1,Belgium,Italy,offsides,Offsides,1
+1172956,2024-10-10T18:45:00+00:00,1,Belgium,Italy,ball_possession,Ball Possession,62%
+1172956,2024-10-10T18:45:00+00:00,1,Belgium,Italy,yellow_cards,Yellow Cards,1
+1172956,2024-10-10T18:45:00+00:00,1,Belgium,Italy,red_cards,Red Cards,0
+1172956,2024-10-10T18:45:00+00:00,1,Belgium,Italy,goalkeeper_saves,Goalkeeper Saves,2
+1172956,2024-10-10T18:45:00+00:00,1,Belgium,Italy,total_passes,Total passes,573
+1172956,2024-10-10T18:45:00+00:00,1,Belgium,Italy,passes_accurate,Passes accurate,514
+1172956,2024-10-10T18:45:00+00:00,1,Belgium,Italy,passes,Passes %,90%
+1172956,2024-10-10T18:45:00+00:00,1,Belgium,Italy,expected_goals,expected_goals,
+1172956,2024-10-10T18:45:00+00:00,1,Belgium,Italy,goals_prevented,goals_prevented,
+1172963,2024-10-14T18:45:00+00:00,1,Belgium,France,shots_on_goal,Shots on Goal,7
+1172963,2024-10-14T18:45:00+00:00,1,Belgium,France,shots_off_goal,Shots off Goal,8
+1172963,2024-10-14T18:45:00+00:00,1,Belgium,France,total_shots,Total Shots,20
+1172963,2024-10-14T18:45:00+00:00,1,Belgium,France,blocked_shots,Blocked Shots,5
+1172963,2024-10-14T18:45:00+00:00,1,Belgium,France,shots_insidebox,Shots insidebox,13
+1172963,2024-10-14T18:45:00+00:00,1,Belgium,France,shots_outsidebox,Shots outsidebox,7
+1172963,2024-10-14T18:45:00+00:00,1,Belgium,France,fouls,Fouls,10
+1172963,2024-10-14T18:45:00+00:00,1,Belgium,France,corner_kicks,Corner Kicks,9
+1172963,2024-10-14T18:45:00+00:00,1,Belgium,France,offsides,Offsides,3
+1172963,2024-10-14T18:45:00+00:00,1,Belgium,France,ball_possession,Ball Possession,46%
+1172963,2024-10-14T18:45:00+00:00,1,Belgium,France,yellow_cards,Yellow Cards,3
+1172963,2024-10-14T18:45:00+00:00,1,Belgium,France,red_cards,Red Cards,0
+1172963,2024-10-14T18:45:00+00:00,1,Belgium,France,goalkeeper_saves,Goalkeeper Saves,2
+1172963,2024-10-14T18:45:00+00:00,1,Belgium,France,total_passes,Total passes,366
+1172963,2024-10-14T18:45:00+00:00,1,Belgium,France,passes_accurate,Passes accurate,310
+1172963,2024-10-14T18:45:00+00:00,1,Belgium,France,passes,Passes %,85%
+1172963,2024-10-14T18:45:00+00:00,1,Belgium,France,expected_goals,expected_goals,
+1172963,2024-10-14T18:45:00+00:00,1,Belgium,France,goals_prevented,goals_prevented,
+1172963,2024-10-14T18:45:00+00:00,2,France,Belgium,shots_on_goal,Shots on Goal,4
+1172963,2024-10-14T18:45:00+00:00,2,France,Belgium,shots_off_goal,Shots off Goal,6
+1172963,2024-10-14T18:45:00+00:00,2,France,Belgium,total_shots,Total Shots,14
+1172963,2024-10-14T18:45:00+00:00,2,France,Belgium,blocked_shots,Blocked Shots,4
+1172963,2024-10-14T18:45:00+00:00,2,France,Belgium,shots_insidebox,Shots insidebox,8
+1172963,2024-10-14T18:45:00+00:00,2,France,Belgium,shots_outsidebox,Shots outsidebox,6
+1172963,2024-10-14T18:45:00+00:00,2,France,Belgium,fouls,Fouls,14
+1172963,2024-10-14T18:45:00+00:00,2,France,Belgium,corner_kicks,Corner Kicks,4
+1172963,2024-10-14T18:45:00+00:00,2,France,Belgium,offsides,Offsides,0
+1172963,2024-10-14T18:45:00+00:00,2,France,Belgium,ball_possession,Ball Possession,54%
+1172963,2024-10-14T18:45:00+00:00,2,France,Belgium,yellow_cards,Yellow Cards,6
+1172963,2024-10-14T18:45:00+00:00,2,France,Belgium,red_cards,Red Cards,1
+1172963,2024-10-14T18:45:00+00:00,2,France,Belgium,goalkeeper_saves,Goalkeeper Saves,6
+1172963,2024-10-14T18:45:00+00:00,2,France,Belgium,total_passes,Total passes,433
+1172963,2024-10-14T18:45:00+00:00,2,France,Belgium,passes_accurate,Passes accurate,376
+1172963,2024-10-14T18:45:00+00:00,2,France,Belgium,passes,Passes %,87%
+1172963,2024-10-14T18:45:00+00:00,2,France,Belgium,expected_goals,expected_goals,
+1172963,2024-10-14T18:45:00+00:00,2,France,Belgium,goals_prevented,goals_prevented,
+1172971,2024-11-14T19:45:00+00:00,1,Belgium,Italy,shots_on_goal,Shots on Goal,3
+1172971,2024-11-14T19:45:00+00:00,1,Belgium,Italy,shots_off_goal,Shots off Goal,5
+1172971,2024-11-14T19:45:00+00:00,1,Belgium,Italy,total_shots,Total Shots,11
+1172971,2024-11-14T19:45:00+00:00,1,Belgium,Italy,blocked_shots,Blocked Shots,3
+1172971,2024-11-14T19:45:00+00:00,1,Belgium,Italy,shots_insidebox,Shots insidebox,6
+1172971,2024-11-14T19:45:00+00:00,1,Belgium,Italy,shots_outsidebox,Shots outsidebox,5
+1172971,2024-11-14T19:45:00+00:00,1,Belgium,Italy,fouls,Fouls,8
+1172971,2024-11-14T19:45:00+00:00,1,Belgium,Italy,corner_kicks,Corner Kicks,7
+1172971,2024-11-14T19:45:00+00:00,1,Belgium,Italy,offsides,Offsides,0
+1172971,2024-11-14T19:45:00+00:00,1,Belgium,Italy,ball_possession,Ball Possession,47%
+1172971,2024-11-14T19:45:00+00:00,1,Belgium,Italy,yellow_cards,Yellow Cards,3
+1172971,2024-11-14T19:45:00+00:00,1,Belgium,Italy,red_cards,Red Cards,
+1172971,2024-11-14T19:45:00+00:00,1,Belgium,Italy,goalkeeper_saves,Goalkeeper Saves,2
+1172971,2024-11-14T19:45:00+00:00,1,Belgium,Italy,total_passes,Total passes,462
+1172971,2024-11-14T19:45:00+00:00,1,Belgium,Italy,passes_accurate,Passes accurate,390
+1172971,2024-11-14T19:45:00+00:00,1,Belgium,Italy,passes,Passes %,84%
+1172971,2024-11-14T19:45:00+00:00,1,Belgium,Italy,expected_goals,expected_goals,
+1172971,2024-11-14T19:45:00+00:00,1,Belgium,Italy,goals_prevented,goals_prevented,
+1172971,2024-11-14T19:45:00+00:00,768,Italy,Belgium,shots_on_goal,Shots on Goal,4
+1172971,2024-11-14T19:45:00+00:00,768,Italy,Belgium,shots_off_goal,Shots off Goal,3
+1172971,2024-11-14T19:45:00+00:00,768,Italy,Belgium,total_shots,Total Shots,11
+1172971,2024-11-14T19:45:00+00:00,768,Italy,Belgium,blocked_shots,Blocked Shots,4
+1172971,2024-11-14T19:45:00+00:00,768,Italy,Belgium,shots_insidebox,Shots insidebox,9
+1172971,2024-11-14T19:45:00+00:00,768,Italy,Belgium,shots_outsidebox,Shots outsidebox,2
+1172971,2024-11-14T19:45:00+00:00,768,Italy,Belgium,fouls,Fouls,9
+1172971,2024-11-14T19:45:00+00:00,768,Italy,Belgium,corner_kicks,Corner Kicks,1
+1172971,2024-11-14T19:45:00+00:00,768,Italy,Belgium,offsides,Offsides,4
+1172971,2024-11-14T19:45:00+00:00,768,Italy,Belgium,ball_possession,Ball Possession,53%
+1172971,2024-11-14T19:45:00+00:00,768,Italy,Belgium,yellow_cards,Yellow Cards,2
+1172971,2024-11-14T19:45:00+00:00,768,Italy,Belgium,red_cards,Red Cards,
+1172971,2024-11-14T19:45:00+00:00,768,Italy,Belgium,goalkeeper_saves,Goalkeeper Saves,3
+1172971,2024-11-14T19:45:00+00:00,768,Italy,Belgium,total_passes,Total passes,547
+1172971,2024-11-14T19:45:00+00:00,768,Italy,Belgium,passes_accurate,Passes accurate,475
+1172971,2024-11-14T19:45:00+00:00,768,Italy,Belgium,passes,Passes %,87%
+1172971,2024-11-14T19:45:00+00:00,768,Italy,Belgium,expected_goals,expected_goals,
+1172971,2024-11-14T19:45:00+00:00,768,Italy,Belgium,goals_prevented,goals_prevented,
+1172979,2024-11-17T19:45:00+00:00,1116,Israel,Belgium,shots_on_goal,Shots on Goal,4
+1172979,2024-11-17T19:45:00+00:00,1116,Israel,Belgium,shots_off_goal,Shots off Goal,4
+1172979,2024-11-17T19:45:00+00:00,1116,Israel,Belgium,total_shots,Total Shots,10
+1172979,2024-11-17T19:45:00+00:00,1116,Israel,Belgium,blocked_shots,Blocked Shots,2
+1172979,2024-11-17T19:45:00+00:00,1116,Israel,Belgium,shots_insidebox,Shots insidebox,5
+1172979,2024-11-17T19:45:00+00:00,1116,Israel,Belgium,shots_outsidebox,Shots outsidebox,5
+1172979,2024-11-17T19:45:00+00:00,1116,Israel,Belgium,fouls,Fouls,14
+1172979,2024-11-17T19:45:00+00:00,1116,Israel,Belgium,corner_kicks,Corner Kicks,5
+1172979,2024-11-17T19:45:00+00:00,1116,Israel,Belgium,offsides,Offsides,3
+1172979,2024-11-17T19:45:00+00:00,1116,Israel,Belgium,ball_possession,Ball Possession,31%
+1172979,2024-11-17T19:45:00+00:00,1116,Israel,Belgium,yellow_cards,Yellow Cards,2
+1172979,2024-11-17T19:45:00+00:00,1116,Israel,Belgium,red_cards,Red Cards,
+1172979,2024-11-17T19:45:00+00:00,1116,Israel,Belgium,goalkeeper_saves,Goalkeeper Saves,4
+1172979,2024-11-17T19:45:00+00:00,1116,Israel,Belgium,total_passes,Total passes,281
+1172979,2024-11-17T19:45:00+00:00,1116,Israel,Belgium,passes_accurate,Passes accurate,209
+1172979,2024-11-17T19:45:00+00:00,1116,Israel,Belgium,passes,Passes %,74%
+1172979,2024-11-17T19:45:00+00:00,1116,Israel,Belgium,expected_goals,expected_goals,
+1172979,2024-11-17T19:45:00+00:00,1116,Israel,Belgium,goals_prevented,goals_prevented,
+1172979,2024-11-17T19:45:00+00:00,1,Belgium,Israel,shots_on_goal,Shots on Goal,4
+1172979,2024-11-17T19:45:00+00:00,1,Belgium,Israel,shots_off_goal,Shots off Goal,6
+1172979,2024-11-17T19:45:00+00:00,1,Belgium,Israel,total_shots,Total Shots,12
+1172979,2024-11-17T19:45:00+00:00,1,Belgium,Israel,blocked_shots,Blocked Shots,2
+1172979,2024-11-17T19:45:00+00:00,1,Belgium,Israel,shots_insidebox,Shots insidebox,7
+1172979,2024-11-17T19:45:00+00:00,1,Belgium,Israel,shots_outsidebox,Shots outsidebox,5
+1172979,2024-11-17T19:45:00+00:00,1,Belgium,Israel,fouls,Fouls,10
+1172979,2024-11-17T19:45:00+00:00,1,Belgium,Israel,corner_kicks,Corner Kicks,5
+1172979,2024-11-17T19:45:00+00:00,1,Belgium,Israel,offsides,Offsides,3
+1172979,2024-11-17T19:45:00+00:00,1,Belgium,Israel,ball_possession,Ball Possession,69%
+1172979,2024-11-17T19:45:00+00:00,1,Belgium,Israel,yellow_cards,Yellow Cards,3
+1172979,2024-11-17T19:45:00+00:00,1,Belgium,Israel,red_cards,Red Cards,
+1172979,2024-11-17T19:45:00+00:00,1,Belgium,Israel,goalkeeper_saves,Goalkeeper Saves,3
+1172979,2024-11-17T19:45:00+00:00,1,Belgium,Israel,total_passes,Total passes,649
+1172979,2024-11-17T19:45:00+00:00,1,Belgium,Israel,passes_accurate,Passes accurate,581
+1172979,2024-11-17T19:45:00+00:00,1,Belgium,Israel,passes,Passes %,90%
+1172979,2024-11-17T19:45:00+00:00,1,Belgium,Israel,expected_goals,expected_goals,
+1172979,2024-11-17T19:45:00+00:00,1,Belgium,Israel,goals_prevented,goals_prevented,
+1189853,2024-06-26T16:00:00+00:00,772,Ukraine,Belgium,shots_on_goal,Shots on Goal,4
+1189853,2024-06-26T16:00:00+00:00,772,Ukraine,Belgium,shots_off_goal,Shots off Goal,5
+1189853,2024-06-26T16:00:00+00:00,772,Ukraine,Belgium,total_shots,Total Shots,13
+1189853,2024-06-26T16:00:00+00:00,772,Ukraine,Belgium,blocked_shots,Blocked Shots,4
+1189853,2024-06-26T16:00:00+00:00,772,Ukraine,Belgium,shots_insidebox,Shots insidebox,6
+1189853,2024-06-26T16:00:00+00:00,772,Ukraine,Belgium,shots_outsidebox,Shots outsidebox,7
+1189853,2024-06-26T16:00:00+00:00,772,Ukraine,Belgium,fouls,Fouls,9
+1189853,2024-06-26T16:00:00+00:00,772,Ukraine,Belgium,corner_kicks,Corner Kicks,3
+1189853,2024-06-26T16:00:00+00:00,772,Ukraine,Belgium,offsides,Offsides,2
+1189853,2024-06-26T16:00:00+00:00,772,Ukraine,Belgium,ball_possession,Ball Possession,40%
+1189853,2024-06-26T16:00:00+00:00,772,Ukraine,Belgium,yellow_cards,Yellow Cards,1
+1189853,2024-06-26T16:00:00+00:00,772,Ukraine,Belgium,red_cards,Red Cards,
+1189853,2024-06-26T16:00:00+00:00,772,Ukraine,Belgium,goalkeeper_saves,Goalkeeper Saves,4
+1189853,2024-06-26T16:00:00+00:00,772,Ukraine,Belgium,total_passes,Total passes,374
+1189853,2024-06-26T16:00:00+00:00,772,Ukraine,Belgium,passes_accurate,Passes accurate,313
+1189853,2024-06-26T16:00:00+00:00,772,Ukraine,Belgium,passes,Passes %,84%
+1189853,2024-06-26T16:00:00+00:00,772,Ukraine,Belgium,expected_goals,expected_goals,0.82
+1189853,2024-06-26T16:00:00+00:00,772,Ukraine,Belgium,goals_prevented,goals_prevented,0.29
+1189853,2024-06-26T16:00:00+00:00,1,Belgium,Ukraine,shots_on_goal,Shots on Goal,4
+1189853,2024-06-26T16:00:00+00:00,1,Belgium,Ukraine,shots_off_goal,Shots off Goal,4
+1189853,2024-06-26T16:00:00+00:00,1,Belgium,Ukraine,total_shots,Total Shots,12
+1189853,2024-06-26T16:00:00+00:00,1,Belgium,Ukraine,blocked_shots,Blocked Shots,4
+1189853,2024-06-26T16:00:00+00:00,1,Belgium,Ukraine,shots_insidebox,Shots insidebox,6
+1189853,2024-06-26T16:00:00+00:00,1,Belgium,Ukraine,shots_outsidebox,Shots outsidebox,6
+1189853,2024-06-26T16:00:00+00:00,1,Belgium,Ukraine,fouls,Fouls,8
+1189853,2024-06-26T16:00:00+00:00,1,Belgium,Ukraine,corner_kicks,Corner Kicks,7
+1189853,2024-06-26T16:00:00+00:00,1,Belgium,Ukraine,offsides,Offsides,0
+1189853,2024-06-26T16:00:00+00:00,1,Belgium,Ukraine,ball_possession,Ball Possession,60%
+1189853,2024-06-26T16:00:00+00:00,1,Belgium,Ukraine,yellow_cards,Yellow Cards,1
+1189853,2024-06-26T16:00:00+00:00,1,Belgium,Ukraine,red_cards,Red Cards,
+1189853,2024-06-26T16:00:00+00:00,1,Belgium,Ukraine,goalkeeper_saves,Goalkeeper Saves,4
+1189853,2024-06-26T16:00:00+00:00,1,Belgium,Ukraine,total_passes,Total passes,564
+1189853,2024-06-26T16:00:00+00:00,1,Belgium,Ukraine,passes_accurate,Passes accurate,493
+1189853,2024-06-26T16:00:00+00:00,1,Belgium,Ukraine,passes,Passes %,87%
+1189853,2024-06-26T16:00:00+00:00,1,Belgium,Ukraine,expected_goals,expected_goals,0.88
+1189853,2024-06-26T16:00:00+00:00,1,Belgium,Ukraine,goals_prevented,goals_prevented,0.29
+1215073,2024-07-01T16:00:00+00:00,2,France,Belgium,shots_on_goal,Shots on Goal,2
+1215073,2024-07-01T16:00:00+00:00,2,France,Belgium,shots_off_goal,Shots off Goal,16
+1215073,2024-07-01T16:00:00+00:00,2,France,Belgium,total_shots,Total Shots,19
+1215073,2024-07-01T16:00:00+00:00,2,France,Belgium,blocked_shots,Blocked Shots,1
+1215073,2024-07-01T16:00:00+00:00,2,France,Belgium,shots_insidebox,Shots insidebox,13
+1215073,2024-07-01T16:00:00+00:00,2,France,Belgium,shots_outsidebox,Shots outsidebox,6
+1215073,2024-07-01T16:00:00+00:00,2,France,Belgium,fouls,Fouls,7
+1215073,2024-07-01T16:00:00+00:00,2,France,Belgium,corner_kicks,Corner Kicks,5
+1215073,2024-07-01T16:00:00+00:00,2,France,Belgium,offsides,Offsides,1
+1215073,2024-07-01T16:00:00+00:00,2,France,Belgium,ball_possession,Ball Possession,55%
+1215073,2024-07-01T16:00:00+00:00,2,France,Belgium,yellow_cards,Yellow Cards,3
+1215073,2024-07-01T16:00:00+00:00,2,France,Belgium,red_cards,Red Cards,
+1215073,2024-07-01T16:00:00+00:00,2,France,Belgium,goalkeeper_saves,Goalkeeper Saves,3
+1215073,2024-07-01T16:00:00+00:00,2,France,Belgium,total_passes,Total passes,609
+1215073,2024-07-01T16:00:00+00:00,2,France,Belgium,passes_accurate,Passes accurate,562
+1215073,2024-07-01T16:00:00+00:00,2,France,Belgium,passes,Passes %,92%
+1215073,2024-07-01T16:00:00+00:00,2,France,Belgium,expected_goals,expected_goals,1.06
+1215073,2024-07-01T16:00:00+00:00,2,France,Belgium,goals_prevented,goals_prevented,-0.70
+1215073,2024-07-01T16:00:00+00:00,1,Belgium,France,shots_on_goal,Shots on Goal,2
+1215073,2024-07-01T16:00:00+00:00,1,Belgium,France,shots_off_goal,Shots off Goal,1
+1215073,2024-07-01T16:00:00+00:00,1,Belgium,France,total_shots,Total Shots,5
+1215073,2024-07-01T16:00:00+00:00,1,Belgium,France,blocked_shots,Blocked Shots,2
+1215073,2024-07-01T16:00:00+00:00,1,Belgium,France,shots_insidebox,Shots insidebox,3
+1215073,2024-07-01T16:00:00+00:00,1,Belgium,France,shots_outsidebox,Shots outsidebox,2
+1215073,2024-07-01T16:00:00+00:00,1,Belgium,France,fouls,Fouls,10
+1215073,2024-07-01T16:00:00+00:00,1,Belgium,France,corner_kicks,Corner Kicks,2
+1215073,2024-07-01T16:00:00+00:00,1,Belgium,France,offsides,Offsides,0
+1215073,2024-07-01T16:00:00+00:00,1,Belgium,France,ball_possession,Ball Possession,45%
+1215073,2024-07-01T16:00:00+00:00,1,Belgium,France,yellow_cards,Yellow Cards,2
+1215073,2024-07-01T16:00:00+00:00,1,Belgium,France,red_cards,Red Cards,
+1215073,2024-07-01T16:00:00+00:00,1,Belgium,France,goalkeeper_saves,Goalkeeper Saves,2
+1215073,2024-07-01T16:00:00+00:00,1,Belgium,France,total_passes,Total passes,496
+1215073,2024-07-01T16:00:00+00:00,1,Belgium,France,passes_accurate,Passes accurate,442
+1215073,2024-07-01T16:00:00+00:00,1,Belgium,France,passes,Passes %,89%
+1215073,2024-07-01T16:00:00+00:00,1,Belgium,France,expected_goals,expected_goals,0.23
+1215073,2024-07-01T16:00:00+00:00,1,Belgium,France,goals_prevented,goals_prevented,-0.70
+1170219,2024-06-03T18:45:00+00:00,10,England,Bosnia & Herzegovina,shots_on_goal,Shots on Goal,8
+1170219,2024-06-03T18:45:00+00:00,10,England,Bosnia & Herzegovina,shots_off_goal,Shots off Goal,5
+1170219,2024-06-03T18:45:00+00:00,10,England,Bosnia & Herzegovina,total_shots,Total Shots,25
+1170219,2024-06-03T18:45:00+00:00,10,England,Bosnia & Herzegovina,blocked_shots,Blocked Shots,12
+1170219,2024-06-03T18:45:00+00:00,10,England,Bosnia & Herzegovina,shots_insidebox,Shots insidebox,18
+1170219,2024-06-03T18:45:00+00:00,10,England,Bosnia & Herzegovina,shots_outsidebox,Shots outsidebox,7
+1170219,2024-06-03T18:45:00+00:00,10,England,Bosnia & Herzegovina,fouls,Fouls,7
+1170219,2024-06-03T18:45:00+00:00,10,England,Bosnia & Herzegovina,corner_kicks,Corner Kicks,11
+1170219,2024-06-03T18:45:00+00:00,10,England,Bosnia & Herzegovina,offsides,Offsides,1
+1170219,2024-06-03T18:45:00+00:00,10,England,Bosnia & Herzegovina,ball_possession,Ball Possession,71%
+1170219,2024-06-03T18:45:00+00:00,10,England,Bosnia & Herzegovina,yellow_cards,Yellow Cards,2
+1170219,2024-06-03T18:45:00+00:00,10,England,Bosnia & Herzegovina,red_cards,Red Cards,
+1170219,2024-06-03T18:45:00+00:00,10,England,Bosnia & Herzegovina,goalkeeper_saves,Goalkeeper Saves,0
+1170219,2024-06-03T18:45:00+00:00,10,England,Bosnia & Herzegovina,total_passes,Total passes,660
+1170219,2024-06-03T18:45:00+00:00,10,England,Bosnia & Herzegovina,passes_accurate,Passes accurate,596
+1170219,2024-06-03T18:45:00+00:00,10,England,Bosnia & Herzegovina,passes,Passes %,90%
+1170219,2024-06-03T18:45:00+00:00,10,England,Bosnia & Herzegovina,expected_goals,expected_goals,
+1170219,2024-06-03T18:45:00+00:00,10,England,Bosnia & Herzegovina,goals_prevented,goals_prevented,
+1170219,2024-06-03T18:45:00+00:00,1113,Bosnia & Herzegovina,England,shots_on_goal,Shots on Goal,0
+1170219,2024-06-03T18:45:00+00:00,1113,Bosnia & Herzegovina,England,shots_off_goal,Shots off Goal,0
+1170219,2024-06-03T18:45:00+00:00,1113,Bosnia & Herzegovina,England,total_shots,Total Shots,1
+1170219,2024-06-03T18:45:00+00:00,1113,Bosnia & Herzegovina,England,blocked_shots,Blocked Shots,1
+1170219,2024-06-03T18:45:00+00:00,1113,Bosnia & Herzegovina,England,shots_insidebox,Shots insidebox,0
+1170219,2024-06-03T18:45:00+00:00,1113,Bosnia & Herzegovina,England,shots_outsidebox,Shots outsidebox,1
+1170219,2024-06-03T18:45:00+00:00,1113,Bosnia & Herzegovina,England,fouls,Fouls,16
+1170219,2024-06-03T18:45:00+00:00,1113,Bosnia & Herzegovina,England,corner_kicks,Corner Kicks,2
+1170219,2024-06-03T18:45:00+00:00,1113,Bosnia & Herzegovina,England,offsides,Offsides,1
+1170219,2024-06-03T18:45:00+00:00,1113,Bosnia & Herzegovina,England,ball_possession,Ball Possession,29%
+1170219,2024-06-03T18:45:00+00:00,1113,Bosnia & Herzegovina,England,yellow_cards,Yellow Cards,2
+1170219,2024-06-03T18:45:00+00:00,1113,Bosnia & Herzegovina,England,red_cards,Red Cards,
+1170219,2024-06-03T18:45:00+00:00,1113,Bosnia & Herzegovina,England,goalkeeper_saves,Goalkeeper Saves,5
+1170219,2024-06-03T18:45:00+00:00,1113,Bosnia & Herzegovina,England,total_passes,Total passes,277
+1170219,2024-06-03T18:45:00+00:00,1113,Bosnia & Herzegovina,England,passes_accurate,Passes accurate,206
+1170219,2024-06-03T18:45:00+00:00,1113,Bosnia & Herzegovina,England,passes,Passes %,74%
+1170219,2024-06-03T18:45:00+00:00,1113,Bosnia & Herzegovina,England,expected_goals,expected_goals,
+1170219,2024-06-03T18:45:00+00:00,1113,Bosnia & Herzegovina,England,goals_prevented,goals_prevented,
+1172946,2024-09-07T18:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,shots_on_goal,Shots on Goal,9
+1172946,2024-09-07T18:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,shots_off_goal,Shots off Goal,8
+1172946,2024-09-07T18:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,total_shots,Total Shots,28
+1172946,2024-09-07T18:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,blocked_shots,Blocked Shots,11
+1172946,2024-09-07T18:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,shots_insidebox,Shots insidebox,20
+1172946,2024-09-07T18:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,shots_outsidebox,Shots outsidebox,8
+1172946,2024-09-07T18:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,fouls,Fouls,10
+1172946,2024-09-07T18:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,corner_kicks,Corner Kicks,10
+1172946,2024-09-07T18:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,offsides,Offsides,0
+1172946,2024-09-07T18:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,ball_possession,Ball Possession,75%
+1172946,2024-09-07T18:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,yellow_cards,Yellow Cards,0
+1172946,2024-09-07T18:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,red_cards,Red Cards,
+1172946,2024-09-07T18:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,goalkeeper_saves,Goalkeeper Saves,1
+1172946,2024-09-07T18:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,total_passes,Total passes,715
+1172946,2024-09-07T18:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,passes_accurate,Passes accurate,659
+1172946,2024-09-07T18:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,passes,Passes %,92%
+1172946,2024-09-07T18:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,expected_goals,expected_goals,
+1172946,2024-09-07T18:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,goals_prevented,goals_prevented,
+1172946,2024-09-07T18:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,shots_on_goal,Shots on Goal,3
+1172946,2024-09-07T18:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,shots_off_goal,Shots off Goal,1
+1172946,2024-09-07T18:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,total_shots,Total Shots,4
+1172946,2024-09-07T18:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,blocked_shots,Blocked Shots,0
+1172946,2024-09-07T18:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,shots_insidebox,Shots insidebox,4
+1172946,2024-09-07T18:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,shots_outsidebox,Shots outsidebox,0
+1172946,2024-09-07T18:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,fouls,Fouls,15
+1172946,2024-09-07T18:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,corner_kicks,Corner Kicks,1
+1172946,2024-09-07T18:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,offsides,Offsides,1
+1172946,2024-09-07T18:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,ball_possession,Ball Possession,25%
+1172946,2024-09-07T18:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,yellow_cards,Yellow Cards,2
+1172946,2024-09-07T18:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,red_cards,Red Cards,
+1172946,2024-09-07T18:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,goalkeeper_saves,Goalkeeper Saves,4
+1172946,2024-09-07T18:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,total_passes,Total passes,236
+1172946,2024-09-07T18:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,passes_accurate,Passes accurate,162
+1172946,2024-09-07T18:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,passes,Passes %,69%
+1172946,2024-09-07T18:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,expected_goals,expected_goals,
+1172946,2024-09-07T18:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,goals_prevented,goals_prevented,
+1172953,2024-09-10T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,shots_on_goal,Shots on Goal,5
+1172953,2024-09-10T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,shots_off_goal,Shots off Goal,8
+1172953,2024-09-10T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,total_shots,Total Shots,21
+1172953,2024-09-10T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,blocked_shots,Blocked Shots,8
+1172953,2024-09-10T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,shots_insidebox,Shots insidebox,12
+1172953,2024-09-10T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,shots_outsidebox,Shots outsidebox,9
+1172953,2024-09-10T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,fouls,Fouls,10
+1172953,2024-09-10T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,corner_kicks,Corner Kicks,13
+1172953,2024-09-10T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,offsides,Offsides,
+1172953,2024-09-10T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,ball_possession,Ball Possession,65%
+1172953,2024-09-10T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,yellow_cards,Yellow Cards,1
+1172953,2024-09-10T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,red_cards,Red Cards,
+1172953,2024-09-10T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,goalkeeper_saves,Goalkeeper Saves,2
+1172953,2024-09-10T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,total_passes,Total passes,547
+1172953,2024-09-10T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,passes_accurate,Passes accurate,458
+1172953,2024-09-10T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,passes,Passes %,84%
+1172953,2024-09-10T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,expected_goals,expected_goals,
+1172953,2024-09-10T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,goals_prevented,goals_prevented,
+1172953,2024-09-10T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,shots_on_goal,Shots on Goal,2
+1172953,2024-09-10T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,shots_off_goal,Shots off Goal,4
+1172953,2024-09-10T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,total_shots,Total Shots,7
+1172953,2024-09-10T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,blocked_shots,Blocked Shots,1
+1172953,2024-09-10T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,shots_insidebox,Shots insidebox,2
+1172953,2024-09-10T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,shots_outsidebox,Shots outsidebox,5
+1172953,2024-09-10T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,fouls,Fouls,10
+1172953,2024-09-10T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,corner_kicks,Corner Kicks,1
+1172953,2024-09-10T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,offsides,Offsides,
+1172953,2024-09-10T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,ball_possession,Ball Possession,35%
+1172953,2024-09-10T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,yellow_cards,Yellow Cards,2
+1172953,2024-09-10T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,red_cards,Red Cards,
+1172953,2024-09-10T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,goalkeeper_saves,Goalkeeper Saves,5
+1172953,2024-09-10T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,total_passes,Total passes,301
+1172953,2024-09-10T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,passes_accurate,Passes accurate,235
+1172953,2024-09-10T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,passes,Passes %,78%
+1172953,2024-09-10T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,expected_goals,expected_goals,
+1172953,2024-09-10T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,goals_prevented,goals_prevented,
+1172957,2024-10-11T18:45:00+00:00,1113,Bosnia & Herzegovina,Germany,shots_on_goal,Shots on Goal,1
+1172957,2024-10-11T18:45:00+00:00,1113,Bosnia & Herzegovina,Germany,shots_off_goal,Shots off Goal,4
+1172957,2024-10-11T18:45:00+00:00,1113,Bosnia & Herzegovina,Germany,total_shots,Total Shots,8
+1172957,2024-10-11T18:45:00+00:00,1113,Bosnia & Herzegovina,Germany,blocked_shots,Blocked Shots,3
+1172957,2024-10-11T18:45:00+00:00,1113,Bosnia & Herzegovina,Germany,shots_insidebox,Shots insidebox,3
+1172957,2024-10-11T18:45:00+00:00,1113,Bosnia & Herzegovina,Germany,shots_outsidebox,Shots outsidebox,5
+1172957,2024-10-11T18:45:00+00:00,1113,Bosnia & Herzegovina,Germany,fouls,Fouls,10
+1172957,2024-10-11T18:45:00+00:00,1113,Bosnia & Herzegovina,Germany,corner_kicks,Corner Kicks,3
+1172957,2024-10-11T18:45:00+00:00,1113,Bosnia & Herzegovina,Germany,offsides,Offsides,0
+1172957,2024-10-11T18:45:00+00:00,1113,Bosnia & Herzegovina,Germany,ball_possession,Ball Possession,27%
+1172957,2024-10-11T18:45:00+00:00,1113,Bosnia & Herzegovina,Germany,yellow_cards,Yellow Cards,5
+1172957,2024-10-11T18:45:00+00:00,1113,Bosnia & Herzegovina,Germany,red_cards,Red Cards,
+1172957,2024-10-11T18:45:00+00:00,1113,Bosnia & Herzegovina,Germany,goalkeeper_saves,Goalkeeper Saves,2
+1172957,2024-10-11T18:45:00+00:00,1113,Bosnia & Herzegovina,Germany,total_passes,Total passes,251
+1172957,2024-10-11T18:45:00+00:00,1113,Bosnia & Herzegovina,Germany,passes_accurate,Passes accurate,164
+1172957,2024-10-11T18:45:00+00:00,1113,Bosnia & Herzegovina,Germany,passes,Passes %,65%
+1172957,2024-10-11T18:45:00+00:00,1113,Bosnia & Herzegovina,Germany,expected_goals,expected_goals,
+1172957,2024-10-11T18:45:00+00:00,1113,Bosnia & Herzegovina,Germany,goals_prevented,goals_prevented,
+1172957,2024-10-11T18:45:00+00:00,25,Germany,Bosnia & Herzegovina,shots_on_goal,Shots on Goal,4
+1172957,2024-10-11T18:45:00+00:00,25,Germany,Bosnia & Herzegovina,shots_off_goal,Shots off Goal,5
+1172957,2024-10-11T18:45:00+00:00,25,Germany,Bosnia & Herzegovina,total_shots,Total Shots,12
+1172957,2024-10-11T18:45:00+00:00,25,Germany,Bosnia & Herzegovina,blocked_shots,Blocked Shots,3
+1172957,2024-10-11T18:45:00+00:00,25,Germany,Bosnia & Herzegovina,shots_insidebox,Shots insidebox,10
+1172957,2024-10-11T18:45:00+00:00,25,Germany,Bosnia & Herzegovina,shots_outsidebox,Shots outsidebox,2
+1172957,2024-10-11T18:45:00+00:00,25,Germany,Bosnia & Herzegovina,fouls,Fouls,9
+1172957,2024-10-11T18:45:00+00:00,25,Germany,Bosnia & Herzegovina,corner_kicks,Corner Kicks,2
+1172957,2024-10-11T18:45:00+00:00,25,Germany,Bosnia & Herzegovina,offsides,Offsides,4
+1172957,2024-10-11T18:45:00+00:00,25,Germany,Bosnia & Herzegovina,ball_possession,Ball Possession,73%
+1172957,2024-10-11T18:45:00+00:00,25,Germany,Bosnia & Herzegovina,yellow_cards,Yellow Cards,1
+1172957,2024-10-11T18:45:00+00:00,25,Germany,Bosnia & Herzegovina,red_cards,Red Cards,
+1172957,2024-10-11T18:45:00+00:00,25,Germany,Bosnia & Herzegovina,goalkeeper_saves,Goalkeeper Saves,0
+1172957,2024-10-11T18:45:00+00:00,25,Germany,Bosnia & Herzegovina,total_passes,Total passes,705
+1172957,2024-10-11T18:45:00+00:00,25,Germany,Bosnia & Herzegovina,passes_accurate,Passes accurate,627
+1172957,2024-10-11T18:45:00+00:00,25,Germany,Bosnia & Herzegovina,passes,Passes %,89%
+1172957,2024-10-11T18:45:00+00:00,25,Germany,Bosnia & Herzegovina,expected_goals,expected_goals,
+1172957,2024-10-11T18:45:00+00:00,25,Germany,Bosnia & Herzegovina,goals_prevented,goals_prevented,
+1172965,2024-10-14T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,shots_on_goal,Shots on Goal,3
+1172965,2024-10-14T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,shots_off_goal,Shots off Goal,7
+1172965,2024-10-14T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,total_shots,Total Shots,12
+1172965,2024-10-14T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,blocked_shots,Blocked Shots,2
+1172965,2024-10-14T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,shots_insidebox,Shots insidebox,7
+1172965,2024-10-14T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,shots_outsidebox,Shots outsidebox,5
+1172965,2024-10-14T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,fouls,Fouls,10
+1172965,2024-10-14T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,corner_kicks,Corner Kicks,4
+1172965,2024-10-14T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,offsides,Offsides,1
+1172965,2024-10-14T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,ball_possession,Ball Possession,66%
+1172965,2024-10-14T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,yellow_cards,Yellow Cards,3
+1172965,2024-10-14T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,red_cards,Red Cards,
+1172965,2024-10-14T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,goalkeeper_saves,Goalkeeper Saves,3
+1172965,2024-10-14T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,total_passes,Total passes,506
+1172965,2024-10-14T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,passes_accurate,Passes accurate,423
+1172965,2024-10-14T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,passes,Passes %,84%
+1172965,2024-10-14T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,expected_goals,expected_goals,
+1172965,2024-10-14T18:45:00+00:00,1113,Bosnia & Herzegovina,Hungary,goals_prevented,goals_prevented,
+1172965,2024-10-14T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,shots_on_goal,Shots on Goal,5
+1172965,2024-10-14T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,shots_off_goal,Shots off Goal,6
+1172965,2024-10-14T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,total_shots,Total Shots,12
+1172965,2024-10-14T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,blocked_shots,Blocked Shots,1
+1172965,2024-10-14T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,shots_insidebox,Shots insidebox,6
+1172965,2024-10-14T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,shots_outsidebox,Shots outsidebox,6
+1172965,2024-10-14T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,fouls,Fouls,19
+1172965,2024-10-14T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,corner_kicks,Corner Kicks,3
+1172965,2024-10-14T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,offsides,Offsides,0
+1172965,2024-10-14T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,ball_possession,Ball Possession,34%
+1172965,2024-10-14T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,yellow_cards,Yellow Cards,1
+1172965,2024-10-14T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,red_cards,Red Cards,
+1172965,2024-10-14T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,goalkeeper_saves,Goalkeeper Saves,3
+1172965,2024-10-14T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,total_passes,Total passes,261
+1172965,2024-10-14T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,passes_accurate,Passes accurate,180
+1172965,2024-10-14T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,passes,Passes %,69%
+1172965,2024-10-14T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,expected_goals,expected_goals,
+1172965,2024-10-14T18:45:00+00:00,769,Hungary,Bosnia & Herzegovina,goals_prevented,goals_prevented,
+1172977,2024-11-16T19:45:00+00:00,25,Germany,Bosnia & Herzegovina,shots_on_goal,Shots on Goal,13
+1172977,2024-11-16T19:45:00+00:00,25,Germany,Bosnia & Herzegovina,shots_off_goal,Shots off Goal,6
+1172977,2024-11-16T19:45:00+00:00,25,Germany,Bosnia & Herzegovina,total_shots,Total Shots,23
+1172977,2024-11-16T19:45:00+00:00,25,Germany,Bosnia & Herzegovina,blocked_shots,Blocked Shots,4
+1172977,2024-11-16T19:45:00+00:00,25,Germany,Bosnia & Herzegovina,shots_insidebox,Shots insidebox,17
+1172977,2024-11-16T19:45:00+00:00,25,Germany,Bosnia & Herzegovina,shots_outsidebox,Shots outsidebox,6
+1172977,2024-11-16T19:45:00+00:00,25,Germany,Bosnia & Herzegovina,fouls,Fouls,7
+1172977,2024-11-16T19:45:00+00:00,25,Germany,Bosnia & Herzegovina,corner_kicks,Corner Kicks,3
+1172977,2024-11-16T19:45:00+00:00,25,Germany,Bosnia & Herzegovina,offsides,Offsides,1
+1172977,2024-11-16T19:45:00+00:00,25,Germany,Bosnia & Herzegovina,ball_possession,Ball Possession,73%
+1172977,2024-11-16T19:45:00+00:00,25,Germany,Bosnia & Herzegovina,yellow_cards,Yellow Cards,1
+1172977,2024-11-16T19:45:00+00:00,25,Germany,Bosnia & Herzegovina,red_cards,Red Cards,
+1172977,2024-11-16T19:45:00+00:00,25,Germany,Bosnia & Herzegovina,goalkeeper_saves,Goalkeeper Saves,3
+1172977,2024-11-16T19:45:00+00:00,25,Germany,Bosnia & Herzegovina,total_passes,Total passes,757
+1172977,2024-11-16T19:45:00+00:00,25,Germany,Bosnia & Herzegovina,passes_accurate,Passes accurate,694
+1172977,2024-11-16T19:45:00+00:00,25,Germany,Bosnia & Herzegovina,passes,Passes %,92%
+1172977,2024-11-16T19:45:00+00:00,25,Germany,Bosnia & Herzegovina,expected_goals,expected_goals,
+1172977,2024-11-16T19:45:00+00:00,25,Germany,Bosnia & Herzegovina,goals_prevented,goals_prevented,
+1172977,2024-11-16T19:45:00+00:00,1113,Bosnia & Herzegovina,Germany,shots_on_goal,Shots on Goal,3
+1172977,2024-11-16T19:45:00+00:00,1113,Bosnia & Herzegovina,Germany,shots_off_goal,Shots off Goal,2
+1172977,2024-11-16T19:45:00+00:00,1113,Bosnia & Herzegovina,Germany,total_shots,Total Shots,7
+1172977,2024-11-16T19:45:00+00:00,1113,Bosnia & Herzegovina,Germany,blocked_shots,Blocked Shots,2
+1172977,2024-11-16T19:45:00+00:00,1113,Bosnia & Herzegovina,Germany,shots_insidebox,Shots insidebox,5
+1172977,2024-11-16T19:45:00+00:00,1113,Bosnia & Herzegovina,Germany,shots_outsidebox,Shots outsidebox,2
+1172977,2024-11-16T19:45:00+00:00,1113,Bosnia & Herzegovina,Germany,fouls,Fouls,12
+1172977,2024-11-16T19:45:00+00:00,1113,Bosnia & Herzegovina,Germany,corner_kicks,Corner Kicks,0
+1172977,2024-11-16T19:45:00+00:00,1113,Bosnia & Herzegovina,Germany,offsides,Offsides,1
+1172977,2024-11-16T19:45:00+00:00,1113,Bosnia & Herzegovina,Germany,ball_possession,Ball Possession,27%
+1172977,2024-11-16T19:45:00+00:00,1113,Bosnia & Herzegovina,Germany,yellow_cards,Yellow Cards,2
+1172977,2024-11-16T19:45:00+00:00,1113,Bosnia & Herzegovina,Germany,red_cards,Red Cards,
+1172977,2024-11-16T19:45:00+00:00,1113,Bosnia & Herzegovina,Germany,goalkeeper_saves,Goalkeeper Saves,6
+1172977,2024-11-16T19:45:00+00:00,1113,Bosnia & Herzegovina,Germany,total_passes,Total passes,290
+1172977,2024-11-16T19:45:00+00:00,1113,Bosnia & Herzegovina,Germany,passes_accurate,Passes accurate,222
+1172977,2024-11-16T19:45:00+00:00,1113,Bosnia & Herzegovina,Germany,passes,Passes %,77%
+1172977,2024-11-16T19:45:00+00:00,1113,Bosnia & Herzegovina,Germany,expected_goals,expected_goals,
+1172977,2024-11-16T19:45:00+00:00,1113,Bosnia & Herzegovina,Germany,goals_prevented,goals_prevented,
+1172985,2024-11-19T19:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,shots_on_goal,Shots on Goal,3
+1172985,2024-11-19T19:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,shots_off_goal,Shots off Goal,2
+1172985,2024-11-19T19:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,total_shots,Total Shots,8
+1172985,2024-11-19T19:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,blocked_shots,Blocked Shots,3
+1172985,2024-11-19T19:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,shots_insidebox,Shots insidebox,7
+1172985,2024-11-19T19:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,shots_outsidebox,Shots outsidebox,1
+1172985,2024-11-19T19:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,fouls,Fouls,17
+1172985,2024-11-19T19:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,corner_kicks,Corner Kicks,3
+1172985,2024-11-19T19:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,offsides,Offsides,4
+1172985,2024-11-19T19:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,ball_possession,Ball Possession,36%
+1172985,2024-11-19T19:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,yellow_cards,Yellow Cards,1
+1172985,2024-11-19T19:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,red_cards,Red Cards,
+1172985,2024-11-19T19:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,goalkeeper_saves,Goalkeeper Saves,1
+1172985,2024-11-19T19:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,total_passes,Total passes,334
+1172985,2024-11-19T19:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,passes_accurate,Passes accurate,260
+1172985,2024-11-19T19:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,passes,Passes %,78%
+1172985,2024-11-19T19:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,expected_goals,expected_goals,
+1172985,2024-11-19T19:45:00+00:00,1113,Bosnia & Herzegovina,Netherlands,goals_prevented,goals_prevented,
+1172985,2024-11-19T19:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,shots_on_goal,Shots on Goal,2
+1172985,2024-11-19T19:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,shots_off_goal,Shots off Goal,4
+1172985,2024-11-19T19:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,total_shots,Total Shots,12
+1172985,2024-11-19T19:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,blocked_shots,Blocked Shots,6
+1172985,2024-11-19T19:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,shots_insidebox,Shots insidebox,8
+1172985,2024-11-19T19:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,shots_outsidebox,Shots outsidebox,4
+1172985,2024-11-19T19:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,fouls,Fouls,11
+1172985,2024-11-19T19:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,corner_kicks,Corner Kicks,5
+1172985,2024-11-19T19:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,offsides,Offsides,4
+1172985,2024-11-19T19:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,ball_possession,Ball Possession,64%
+1172985,2024-11-19T19:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,yellow_cards,Yellow Cards,0
+1172985,2024-11-19T19:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,red_cards,Red Cards,
+1172985,2024-11-19T19:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,goalkeeper_saves,Goalkeeper Saves,2
+1172985,2024-11-19T19:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,total_passes,Total passes,598
+1172985,2024-11-19T19:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,passes_accurate,Passes accurate,528
+1172985,2024-11-19T19:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,passes,Passes %,88%
+1172985,2024-11-19T19:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,expected_goals,expected_goals,
+1172985,2024-11-19T19:45:00+00:00,1118,Netherlands,Bosnia & Herzegovina,goals_prevented,goals_prevented,
+1173870,2024-06-09T18:45:00+00:00,768,Italy,Bosnia & Herzegovina,shots_on_goal,Shots on Goal,6
+1173870,2024-06-09T18:45:00+00:00,768,Italy,Bosnia & Herzegovina,shots_off_goal,Shots off Goal,6
+1173870,2024-06-09T18:45:00+00:00,768,Italy,Bosnia & Herzegovina,total_shots,Total Shots,17
+1173870,2024-06-09T18:45:00+00:00,768,Italy,Bosnia & Herzegovina,blocked_shots,Blocked Shots,5
+1173870,2024-06-09T18:45:00+00:00,768,Italy,Bosnia & Herzegovina,shots_insidebox,Shots insidebox,13
+1173870,2024-06-09T18:45:00+00:00,768,Italy,Bosnia & Herzegovina,shots_outsidebox,Shots outsidebox,4
+1173870,2024-06-09T18:45:00+00:00,768,Italy,Bosnia & Herzegovina,fouls,Fouls,9
+1173870,2024-06-09T18:45:00+00:00,768,Italy,Bosnia & Herzegovina,corner_kicks,Corner Kicks,10
+1173870,2024-06-09T18:45:00+00:00,768,Italy,Bosnia & Herzegovina,offsides,Offsides,3
+1173870,2024-06-09T18:45:00+00:00,768,Italy,Bosnia & Herzegovina,ball_possession,Ball Possession,64%
+1173870,2024-06-09T18:45:00+00:00,768,Italy,Bosnia & Herzegovina,yellow_cards,Yellow Cards,0
+1173870,2024-06-09T18:45:00+00:00,768,Italy,Bosnia & Herzegovina,red_cards,Red Cards,
+1173870,2024-06-09T18:45:00+00:00,768,Italy,Bosnia & Herzegovina,goalkeeper_saves,Goalkeeper Saves,3
+1173870,2024-06-09T18:45:00+00:00,768,Italy,Bosnia & Herzegovina,total_passes,Total passes,647
+1173870,2024-06-09T18:45:00+00:00,768,Italy,Bosnia & Herzegovina,passes_accurate,Passes accurate,590
+1173870,2024-06-09T18:45:00+00:00,768,Italy,Bosnia & Herzegovina,passes,Passes %,91%
+1173870,2024-06-09T18:45:00+00:00,768,Italy,Bosnia & Herzegovina,expected_goals,expected_goals,
+1173870,2024-06-09T18:45:00+00:00,768,Italy,Bosnia & Herzegovina,goals_prevented,goals_prevented,
+1173870,2024-06-09T18:45:00+00:00,1113,Bosnia & Herzegovina,Italy,shots_on_goal,Shots on Goal,3
+1173870,2024-06-09T18:45:00+00:00,1113,Bosnia & Herzegovina,Italy,shots_off_goal,Shots off Goal,2
+1173870,2024-06-09T18:45:00+00:00,1113,Bosnia & Herzegovina,Italy,total_shots,Total Shots,8
+1173870,2024-06-09T18:45:00+00:00,1113,Bosnia & Herzegovina,Italy,blocked_shots,Blocked Shots,3
+1173870,2024-06-09T18:45:00+00:00,1113,Bosnia & Herzegovina,Italy,shots_insidebox,Shots insidebox,3
+1173870,2024-06-09T18:45:00+00:00,1113,Bosnia & Herzegovina,Italy,shots_outsidebox,Shots outsidebox,5
+1173870,2024-06-09T18:45:00+00:00,1113,Bosnia & Herzegovina,Italy,fouls,Fouls,10
+1173870,2024-06-09T18:45:00+00:00,1113,Bosnia & Herzegovina,Italy,corner_kicks,Corner Kicks,3
+1173870,2024-06-09T18:45:00+00:00,1113,Bosnia & Herzegovina,Italy,offsides,Offsides,0
+1173870,2024-06-09T18:45:00+00:00,1113,Bosnia & Herzegovina,Italy,ball_possession,Ball Possession,36%
+1173870,2024-06-09T18:45:00+00:00,1113,Bosnia & Herzegovina,Italy,yellow_cards,Yellow Cards,1
+1173870,2024-06-09T18:45:00+00:00,1113,Bosnia & Herzegovina,Italy,red_cards,Red Cards,
+1173870,2024-06-09T18:45:00+00:00,1113,Bosnia & Herzegovina,Italy,goalkeeper_saves,Goalkeeper Saves,4
+1173870,2024-06-09T18:45:00+00:00,1113,Bosnia & Herzegovina,Italy,total_passes,Total passes,376
+1173870,2024-06-09T18:45:00+00:00,1113,Bosnia & Herzegovina,Italy,passes_accurate,Passes accurate,316
+1173870,2024-06-09T18:45:00+00:00,1113,Bosnia & Herzegovina,Italy,passes,Passes %,84%
+1173870,2024-06-09T18:45:00+00:00,1113,Bosnia & Herzegovina,Italy,expected_goals,expected_goals,
+1173870,2024-06-09T18:45:00+00:00,1113,Bosnia & Herzegovina,Italy,goals_prevented,goals_prevented,
+1146312,2024-06-29T01:00:00+00:00,2380,Paraguay,Brazil,shots_on_goal,Shots on Goal,6
+1146312,2024-06-29T01:00:00+00:00,2380,Paraguay,Brazil,shots_off_goal,Shots off Goal,7
+1146312,2024-06-29T01:00:00+00:00,2380,Paraguay,Brazil,total_shots,Total Shots,15
+1146312,2024-06-29T01:00:00+00:00,2380,Paraguay,Brazil,blocked_shots,Blocked Shots,2
+1146312,2024-06-29T01:00:00+00:00,2380,Paraguay,Brazil,shots_insidebox,Shots insidebox,5
+1146312,2024-06-29T01:00:00+00:00,2380,Paraguay,Brazil,shots_outsidebox,Shots outsidebox,10
+1146312,2024-06-29T01:00:00+00:00,2380,Paraguay,Brazil,fouls,Fouls,12
+1146312,2024-06-29T01:00:00+00:00,2380,Paraguay,Brazil,corner_kicks,Corner Kicks,4
+1146312,2024-06-29T01:00:00+00:00,2380,Paraguay,Brazil,offsides,Offsides,1
+1146312,2024-06-29T01:00:00+00:00,2380,Paraguay,Brazil,ball_possession,Ball Possession,45%
+1146312,2024-06-29T01:00:00+00:00,2380,Paraguay,Brazil,yellow_cards,Yellow Cards,2
+1146312,2024-06-29T01:00:00+00:00,2380,Paraguay,Brazil,red_cards,Red Cards,1
+1146312,2024-06-29T01:00:00+00:00,2380,Paraguay,Brazil,goalkeeper_saves,Goalkeeper Saves,2
+1146312,2024-06-29T01:00:00+00:00,2380,Paraguay,Brazil,total_passes,Total passes,391
+1146312,2024-06-29T01:00:00+00:00,2380,Paraguay,Brazil,passes_accurate,Passes accurate,331
+1146312,2024-06-29T01:00:00+00:00,2380,Paraguay,Brazil,passes,Passes %,85%
+1146312,2024-06-29T01:00:00+00:00,2380,Paraguay,Brazil,expected_goals,expected_goals,0.87
+1146312,2024-06-29T01:00:00+00:00,2380,Paraguay,Brazil,goals_prevented,goals_prevented,-0.13
+1146312,2024-06-29T01:00:00+00:00,6,Brazil,Paraguay,shots_on_goal,Shots on Goal,6
+1146312,2024-06-29T01:00:00+00:00,6,Brazil,Paraguay,shots_off_goal,Shots off Goal,8
+1146312,2024-06-29T01:00:00+00:00,6,Brazil,Paraguay,total_shots,Total Shots,17
+1146312,2024-06-29T01:00:00+00:00,6,Brazil,Paraguay,blocked_shots,Blocked Shots,3
+1146312,2024-06-29T01:00:00+00:00,6,Brazil,Paraguay,shots_insidebox,Shots insidebox,12
+1146312,2024-06-29T01:00:00+00:00,6,Brazil,Paraguay,shots_outsidebox,Shots outsidebox,5
+1146312,2024-06-29T01:00:00+00:00,6,Brazil,Paraguay,fouls,Fouls,13
+1146312,2024-06-29T01:00:00+00:00,6,Brazil,Paraguay,corner_kicks,Corner Kicks,6
+1146312,2024-06-29T01:00:00+00:00,6,Brazil,Paraguay,offsides,Offsides,0
+1146312,2024-06-29T01:00:00+00:00,6,Brazil,Paraguay,ball_possession,Ball Possession,55%
+1146312,2024-06-29T01:00:00+00:00,6,Brazil,Paraguay,yellow_cards,Yellow Cards,3
+1146312,2024-06-29T01:00:00+00:00,6,Brazil,Paraguay,red_cards,Red Cards,0
+1146312,2024-06-29T01:00:00+00:00,6,Brazil,Paraguay,goalkeeper_saves,Goalkeeper Saves,5
+1146312,2024-06-29T01:00:00+00:00,6,Brazil,Paraguay,total_passes,Total passes,476
+1146312,2024-06-29T01:00:00+00:00,6,Brazil,Paraguay,passes_accurate,Passes accurate,407
+1146312,2024-06-29T01:00:00+00:00,6,Brazil,Paraguay,passes,Passes %,86%
+1146312,2024-06-29T01:00:00+00:00,6,Brazil,Paraguay,expected_goals,expected_goals,3.74
+1146312,2024-06-29T01:00:00+00:00,6,Brazil,Paraguay,goals_prevented,goals_prevented,-0.13
+1146318,2024-07-03T01:00:00+00:00,6,Brazil,Colombia,shots_on_goal,Shots on Goal,3
+1146318,2024-07-03T01:00:00+00:00,6,Brazil,Colombia,shots_off_goal,Shots off Goal,2
+1146318,2024-07-03T01:00:00+00:00,6,Brazil,Colombia,total_shots,Total Shots,7
+1146318,2024-07-03T01:00:00+00:00,6,Brazil,Colombia,blocked_shots,Blocked Shots,2
+1146318,2024-07-03T01:00:00+00:00,6,Brazil,Colombia,shots_insidebox,Shots insidebox,1
+1146318,2024-07-03T01:00:00+00:00,6,Brazil,Colombia,shots_outsidebox,Shots outsidebox,6
+1146318,2024-07-03T01:00:00+00:00,6,Brazil,Colombia,fouls,Fouls,14
+1146318,2024-07-03T01:00:00+00:00,6,Brazil,Colombia,corner_kicks,Corner Kicks,6
+1146318,2024-07-03T01:00:00+00:00,6,Brazil,Colombia,offsides,Offsides,1
+1146318,2024-07-03T01:00:00+00:00,6,Brazil,Colombia,ball_possession,Ball Possession,51%
+1146318,2024-07-03T01:00:00+00:00,6,Brazil,Colombia,yellow_cards,Yellow Cards,3
+1146318,2024-07-03T01:00:00+00:00,6,Brazil,Colombia,red_cards,Red Cards,
+1146318,2024-07-03T01:00:00+00:00,6,Brazil,Colombia,goalkeeper_saves,Goalkeeper Saves,5
+1146318,2024-07-03T01:00:00+00:00,6,Brazil,Colombia,total_passes,Total passes,422
+1146318,2024-07-03T01:00:00+00:00,6,Brazil,Colombia,passes_accurate,Passes accurate,343
+1146318,2024-07-03T01:00:00+00:00,6,Brazil,Colombia,passes,Passes %,81%
+1146318,2024-07-03T01:00:00+00:00,6,Brazil,Colombia,expected_goals,expected_goals,0.25
+1146318,2024-07-03T01:00:00+00:00,6,Brazil,Colombia,goals_prevented,goals_prevented,-0.29
+1146318,2024-07-03T01:00:00+00:00,8,Colombia,Brazil,shots_on_goal,Shots on Goal,6
+1146318,2024-07-03T01:00:00+00:00,8,Colombia,Brazil,shots_off_goal,Shots off Goal,6
+1146318,2024-07-03T01:00:00+00:00,8,Colombia,Brazil,total_shots,Total Shots,13
+1146318,2024-07-03T01:00:00+00:00,8,Colombia,Brazil,blocked_shots,Blocked Shots,1
+1146318,2024-07-03T01:00:00+00:00,8,Colombia,Brazil,shots_insidebox,Shots insidebox,8
+1146318,2024-07-03T01:00:00+00:00,8,Colombia,Brazil,shots_outsidebox,Shots outsidebox,5
+1146318,2024-07-03T01:00:00+00:00,8,Colombia,Brazil,fouls,Fouls,19
+1146318,2024-07-03T01:00:00+00:00,8,Colombia,Brazil,corner_kicks,Corner Kicks,5
+1146318,2024-07-03T01:00:00+00:00,8,Colombia,Brazil,offsides,Offsides,2
+1146318,2024-07-03T01:00:00+00:00,8,Colombia,Brazil,ball_possession,Ball Possession,49%
+1146318,2024-07-03T01:00:00+00:00,8,Colombia,Brazil,yellow_cards,Yellow Cards,2
+1146318,2024-07-03T01:00:00+00:00,8,Colombia,Brazil,red_cards,Red Cards,
+1146318,2024-07-03T01:00:00+00:00,8,Colombia,Brazil,goalkeeper_saves,Goalkeeper Saves,2
+1146318,2024-07-03T01:00:00+00:00,8,Colombia,Brazil,total_passes,Total passes,402
+1146318,2024-07-03T01:00:00+00:00,8,Colombia,Brazil,passes_accurate,Passes accurate,337
+1146318,2024-07-03T01:00:00+00:00,8,Colombia,Brazil,passes,Passes %,84%
+1146318,2024-07-03T01:00:00+00:00,8,Colombia,Brazil,expected_goals,expected_goals,1.17
+1146318,2024-07-03T01:00:00+00:00,8,Colombia,Brazil,goals_prevented,goals_prevented,-0.29
+1155270,2024-03-23T19:00:00+00:00,10,England,Brazil,shots_on_goal,Shots on Goal,3
+1155270,2024-03-23T19:00:00+00:00,10,England,Brazil,shots_off_goal,Shots off Goal,7
+1155270,2024-03-23T19:00:00+00:00,10,England,Brazil,total_shots,Total Shots,14
+1155270,2024-03-23T19:00:00+00:00,10,England,Brazil,blocked_shots,Blocked Shots,4
+1155270,2024-03-23T19:00:00+00:00,10,England,Brazil,shots_insidebox,Shots insidebox,7
+1155270,2024-03-23T19:00:00+00:00,10,England,Brazil,shots_outsidebox,Shots outsidebox,7
+1155270,2024-03-23T19:00:00+00:00,10,England,Brazil,fouls,Fouls,11
+1155270,2024-03-23T19:00:00+00:00,10,England,Brazil,corner_kicks,Corner Kicks,7
+1155270,2024-03-23T19:00:00+00:00,10,England,Brazil,offsides,Offsides,2
+1155270,2024-03-23T19:00:00+00:00,10,England,Brazil,ball_possession,Ball Possession,53%
+1155270,2024-03-23T19:00:00+00:00,10,England,Brazil,yellow_cards,Yellow Cards,1
+1155270,2024-03-23T19:00:00+00:00,10,England,Brazil,red_cards,Red Cards,
+1155270,2024-03-23T19:00:00+00:00,10,England,Brazil,goalkeeper_saves,Goalkeeper Saves,3
+1155270,2024-03-23T19:00:00+00:00,10,England,Brazil,total_passes,Total passes,497
+1155270,2024-03-23T19:00:00+00:00,10,England,Brazil,passes_accurate,Passes accurate,441
+1155270,2024-03-23T19:00:00+00:00,10,England,Brazil,passes,Passes %,89%
+1155270,2024-03-23T19:00:00+00:00,10,England,Brazil,expected_goals,expected_goals,
+1155270,2024-03-23T19:00:00+00:00,6,Brazil,England,shots_on_goal,Shots on Goal,5
+1155270,2024-03-23T19:00:00+00:00,6,Brazil,England,shots_off_goal,Shots off Goal,6
+1155270,2024-03-23T19:00:00+00:00,6,Brazil,England,total_shots,Total Shots,14
+1155270,2024-03-23T19:00:00+00:00,6,Brazil,England,blocked_shots,Blocked Shots,3
+1155270,2024-03-23T19:00:00+00:00,6,Brazil,England,shots_insidebox,Shots insidebox,12
+1155270,2024-03-23T19:00:00+00:00,6,Brazil,England,shots_outsidebox,Shots outsidebox,2
+1155270,2024-03-23T19:00:00+00:00,6,Brazil,England,fouls,Fouls,19
+1155270,2024-03-23T19:00:00+00:00,6,Brazil,England,corner_kicks,Corner Kicks,2
+1155270,2024-03-23T19:00:00+00:00,6,Brazil,England,offsides,Offsides,0
+1155270,2024-03-23T19:00:00+00:00,6,Brazil,England,ball_possession,Ball Possession,47%
+1155270,2024-03-23T19:00:00+00:00,6,Brazil,England,yellow_cards,Yellow Cards,1
+1155270,2024-03-23T19:00:00+00:00,6,Brazil,England,red_cards,Red Cards,
+1155270,2024-03-23T19:00:00+00:00,6,Brazil,England,goalkeeper_saves,Goalkeeper Saves,3
+1155270,2024-03-23T19:00:00+00:00,6,Brazil,England,total_passes,Total passes,458
+1155270,2024-03-23T19:00:00+00:00,6,Brazil,England,passes_accurate,Passes accurate,397
+1155270,2024-03-23T19:00:00+00:00,6,Brazil,England,passes,Passes %,87%
+1155270,2024-03-23T19:00:00+00:00,6,Brazil,England,expected_goals,expected_goals,
+1155282,2024-06-09T01:00:00+00:00,16,Mexico,Brazil,shots_on_goal,Shots on Goal,3
+1155282,2024-06-09T01:00:00+00:00,16,Mexico,Brazil,shots_off_goal,Shots off Goal,3
+1155282,2024-06-09T01:00:00+00:00,16,Mexico,Brazil,total_shots,Total Shots,12
+1155282,2024-06-09T01:00:00+00:00,16,Mexico,Brazil,blocked_shots,Blocked Shots,6
+1155282,2024-06-09T01:00:00+00:00,16,Mexico,Brazil,shots_insidebox,Shots insidebox,5
+1155282,2024-06-09T01:00:00+00:00,16,Mexico,Brazil,shots_outsidebox,Shots outsidebox,7
+1155282,2024-06-09T01:00:00+00:00,16,Mexico,Brazil,fouls,Fouls,14
+1155282,2024-06-09T01:00:00+00:00,16,Mexico,Brazil,corner_kicks,Corner Kicks,9
+1155282,2024-06-09T01:00:00+00:00,16,Mexico,Brazil,offsides,Offsides,2
+1155282,2024-06-09T01:00:00+00:00,16,Mexico,Brazil,ball_possession,Ball Possession,44%
+1155282,2024-06-09T01:00:00+00:00,16,Mexico,Brazil,yellow_cards,Yellow Cards,0
+1155282,2024-06-09T01:00:00+00:00,16,Mexico,Brazil,red_cards,Red Cards,
+1155282,2024-06-09T01:00:00+00:00,16,Mexico,Brazil,goalkeeper_saves,Goalkeeper Saves,2
+1155282,2024-06-09T01:00:00+00:00,16,Mexico,Brazil,total_passes,Total passes,398
+1155282,2024-06-09T01:00:00+00:00,16,Mexico,Brazil,passes_accurate,Passes accurate,335
+1155282,2024-06-09T01:00:00+00:00,16,Mexico,Brazil,passes,Passes %,84%
+1155282,2024-06-09T01:00:00+00:00,16,Mexico,Brazil,expected_goals,expected_goals,
+1155282,2024-06-09T01:00:00+00:00,16,Mexico,Brazil,goals_prevented,goals_prevented,
+1155282,2024-06-09T01:00:00+00:00,6,Brazil,Mexico,shots_on_goal,Shots on Goal,5
+1155282,2024-06-09T01:00:00+00:00,6,Brazil,Mexico,shots_off_goal,Shots off Goal,3
+1155282,2024-06-09T01:00:00+00:00,6,Brazil,Mexico,total_shots,Total Shots,9
+1155282,2024-06-09T01:00:00+00:00,6,Brazil,Mexico,blocked_shots,Blocked Shots,1
+1155282,2024-06-09T01:00:00+00:00,6,Brazil,Mexico,shots_insidebox,Shots insidebox,7
+1155282,2024-06-09T01:00:00+00:00,6,Brazil,Mexico,shots_outsidebox,Shots outsidebox,2
+1155282,2024-06-09T01:00:00+00:00,6,Brazil,Mexico,fouls,Fouls,13
+1155282,2024-06-09T01:00:00+00:00,6,Brazil,Mexico,corner_kicks,Corner Kicks,1
+1155282,2024-06-09T01:00:00+00:00,6,Brazil,Mexico,offsides,Offsides,0
+1155282,2024-06-09T01:00:00+00:00,6,Brazil,Mexico,ball_possession,Ball Possession,56%
+1155282,2024-06-09T01:00:00+00:00,6,Brazil,Mexico,yellow_cards,Yellow Cards,3
+1155282,2024-06-09T01:00:00+00:00,6,Brazil,Mexico,red_cards,Red Cards,
+1155282,2024-06-09T01:00:00+00:00,6,Brazil,Mexico,goalkeeper_saves,Goalkeeper Saves,2
+1155282,2024-06-09T01:00:00+00:00,6,Brazil,Mexico,total_passes,Total passes,519
+1155282,2024-06-09T01:00:00+00:00,6,Brazil,Mexico,passes_accurate,Passes accurate,459
+1155282,2024-06-09T01:00:00+00:00,6,Brazil,Mexico,passes,Passes %,88%
+1155282,2024-06-09T01:00:00+00:00,6,Brazil,Mexico,expected_goals,expected_goals,
+1155282,2024-06-09T01:00:00+00:00,6,Brazil,Mexico,goals_prevented,goals_prevented,
+1160561,2024-03-26T20:30:00+00:00,9,Spain,Brazil,shots_on_goal,Shots on Goal,8
+1160561,2024-03-26T20:30:00+00:00,9,Spain,Brazil,shots_off_goal,Shots off Goal,9
+1160561,2024-03-26T20:30:00+00:00,9,Spain,Brazil,total_shots,Total Shots,19
+1160561,2024-03-26T20:30:00+00:00,9,Spain,Brazil,blocked_shots,Blocked Shots,2
+1160561,2024-03-26T20:30:00+00:00,9,Spain,Brazil,shots_insidebox,Shots insidebox,9
+1160561,2024-03-26T20:30:00+00:00,9,Spain,Brazil,shots_outsidebox,Shots outsidebox,10
+1160561,2024-03-26T20:30:00+00:00,9,Spain,Brazil,fouls,Fouls,20
+1160561,2024-03-26T20:30:00+00:00,9,Spain,Brazil,corner_kicks,Corner Kicks,6
+1160561,2024-03-26T20:30:00+00:00,9,Spain,Brazil,offsides,Offsides,3
+1160561,2024-03-26T20:30:00+00:00,9,Spain,Brazil,ball_possession,Ball Possession,59%
+1160561,2024-03-26T20:30:00+00:00,9,Spain,Brazil,yellow_cards,Yellow Cards,3
+1160561,2024-03-26T20:30:00+00:00,9,Spain,Brazil,red_cards,Red Cards,
+1160561,2024-03-26T20:30:00+00:00,9,Spain,Brazil,goalkeeper_saves,Goalkeeper Saves,3
+1160561,2024-03-26T20:30:00+00:00,9,Spain,Brazil,total_passes,Total passes,539
+1160561,2024-03-26T20:30:00+00:00,9,Spain,Brazil,passes_accurate,Passes accurate,497
+1160561,2024-03-26T20:30:00+00:00,9,Spain,Brazil,passes,Passes %,92%
+1160561,2024-03-26T20:30:00+00:00,9,Spain,Brazil,expected_goals,expected_goals,
+1160561,2024-03-26T20:30:00+00:00,6,Brazil,Spain,shots_on_goal,Shots on Goal,6
+1160561,2024-03-26T20:30:00+00:00,6,Brazil,Spain,shots_off_goal,Shots off Goal,2
+1160561,2024-03-26T20:30:00+00:00,6,Brazil,Spain,total_shots,Total Shots,12
+1160561,2024-03-26T20:30:00+00:00,6,Brazil,Spain,blocked_shots,Blocked Shots,4
+1160561,2024-03-26T20:30:00+00:00,6,Brazil,Spain,shots_insidebox,Shots insidebox,8
+1160561,2024-03-26T20:30:00+00:00,6,Brazil,Spain,shots_outsidebox,Shots outsidebox,4
+1160561,2024-03-26T20:30:00+00:00,6,Brazil,Spain,fouls,Fouls,16
+1160561,2024-03-26T20:30:00+00:00,6,Brazil,Spain,corner_kicks,Corner Kicks,2
+1160561,2024-03-26T20:30:00+00:00,6,Brazil,Spain,offsides,Offsides,1
+1160561,2024-03-26T20:30:00+00:00,6,Brazil,Spain,ball_possession,Ball Possession,41%
+1160561,2024-03-26T20:30:00+00:00,6,Brazil,Spain,yellow_cards,Yellow Cards,6
+1160561,2024-03-26T20:30:00+00:00,6,Brazil,Spain,red_cards,Red Cards,
+1160561,2024-03-26T20:30:00+00:00,6,Brazil,Spain,goalkeeper_saves,Goalkeeper Saves,5
+1160561,2024-03-26T20:30:00+00:00,6,Brazil,Spain,total_passes,Total passes,377
+1160561,2024-03-26T20:30:00+00:00,6,Brazil,Spain,passes_accurate,Passes accurate,320
+1160561,2024-03-26T20:30:00+00:00,6,Brazil,Spain,passes,Passes %,85%
+1160561,2024-03-26T20:30:00+00:00,6,Brazil,Spain,expected_goals,expected_goals,
+1178423,2024-06-12T23:00:00+00:00,2384,USA,Brazil,shots_on_goal,Shots on Goal,7
+1178423,2024-06-12T23:00:00+00:00,2384,USA,Brazil,shots_off_goal,Shots off Goal,3
+1178423,2024-06-12T23:00:00+00:00,2384,USA,Brazil,total_shots,Total Shots,12
+1178423,2024-06-12T23:00:00+00:00,2384,USA,Brazil,blocked_shots,Blocked Shots,2
+1178423,2024-06-12T23:00:00+00:00,2384,USA,Brazil,shots_insidebox,Shots insidebox,6
+1178423,2024-06-12T23:00:00+00:00,2384,USA,Brazil,shots_outsidebox,Shots outsidebox,6
+1178423,2024-06-12T23:00:00+00:00,2384,USA,Brazil,fouls,Fouls,14
+1178423,2024-06-12T23:00:00+00:00,2384,USA,Brazil,corner_kicks,Corner Kicks,0
+1178423,2024-06-12T23:00:00+00:00,2384,USA,Brazil,offsides,Offsides,0
+1178423,2024-06-12T23:00:00+00:00,2384,USA,Brazil,ball_possession,Ball Possession,39%
+1178423,2024-06-12T23:00:00+00:00,2384,USA,Brazil,yellow_cards,Yellow Cards,0
+1178423,2024-06-12T23:00:00+00:00,2384,USA,Brazil,red_cards,Red Cards,
+1178423,2024-06-12T23:00:00+00:00,2384,USA,Brazil,goalkeeper_saves,Goalkeeper Saves,11
+1178423,2024-06-12T23:00:00+00:00,2384,USA,Brazil,total_passes,Total passes,360
+1178423,2024-06-12T23:00:00+00:00,2384,USA,Brazil,passes_accurate,Passes accurate,304
+1178423,2024-06-12T23:00:00+00:00,2384,USA,Brazil,passes,Passes %,84%
+1178423,2024-06-12T23:00:00+00:00,2384,USA,Brazil,expected_goals,expected_goals,
+1178423,2024-06-12T23:00:00+00:00,2384,USA,Brazil,goals_prevented,goals_prevented,
+1178423,2024-06-12T23:00:00+00:00,6,Brazil,USA,shots_on_goal,Shots on Goal,12
+1178423,2024-06-12T23:00:00+00:00,6,Brazil,USA,shots_off_goal,Shots off Goal,10
+1178423,2024-06-12T23:00:00+00:00,6,Brazil,USA,total_shots,Total Shots,25
+1178423,2024-06-12T23:00:00+00:00,6,Brazil,USA,blocked_shots,Blocked Shots,3
+1178423,2024-06-12T23:00:00+00:00,6,Brazil,USA,shots_insidebox,Shots insidebox,16
+1178423,2024-06-12T23:00:00+00:00,6,Brazil,USA,shots_outsidebox,Shots outsidebox,9
+1178423,2024-06-12T23:00:00+00:00,6,Brazil,USA,fouls,Fouls,13
+1178423,2024-06-12T23:00:00+00:00,6,Brazil,USA,corner_kicks,Corner Kicks,9
+1178423,2024-06-12T23:00:00+00:00,6,Brazil,USA,offsides,Offsides,1
+1178423,2024-06-12T23:00:00+00:00,6,Brazil,USA,ball_possession,Ball Possession,61%
+1178423,2024-06-12T23:00:00+00:00,6,Brazil,USA,yellow_cards,Yellow Cards,1
+1178423,2024-06-12T23:00:00+00:00,6,Brazil,USA,red_cards,Red Cards,
+1178423,2024-06-12T23:00:00+00:00,6,Brazil,USA,goalkeeper_saves,Goalkeeper Saves,6
+1178423,2024-06-12T23:00:00+00:00,6,Brazil,USA,total_passes,Total passes,573
+1178423,2024-06-12T23:00:00+00:00,6,Brazil,USA,passes_accurate,Passes accurate,522
+1178423,2024-06-12T23:00:00+00:00,6,Brazil,USA,passes,Passes %,91%
+1178423,2024-06-12T23:00:00+00:00,6,Brazil,USA,expected_goals,expected_goals,
+1178423,2024-06-12T23:00:00+00:00,6,Brazil,USA,goals_prevented,goals_prevented,
+1189121,2024-06-25T01:00:00+00:00,6,Brazil,Costa Rica,shots_on_goal,Shots on Goal,3
+1189121,2024-06-25T01:00:00+00:00,6,Brazil,Costa Rica,shots_off_goal,Shots off Goal,12
+1189121,2024-06-25T01:00:00+00:00,6,Brazil,Costa Rica,total_shots,Total Shots,19
+1189121,2024-06-25T01:00:00+00:00,6,Brazil,Costa Rica,blocked_shots,Blocked Shots,4
+1189121,2024-06-25T01:00:00+00:00,6,Brazil,Costa Rica,shots_insidebox,Shots insidebox,14
+1189121,2024-06-25T01:00:00+00:00,6,Brazil,Costa Rica,shots_outsidebox,Shots outsidebox,5
+1189121,2024-06-25T01:00:00+00:00,6,Brazil,Costa Rica,fouls,Fouls,13
+1189121,2024-06-25T01:00:00+00:00,6,Brazil,Costa Rica,corner_kicks,Corner Kicks,9
+1189121,2024-06-25T01:00:00+00:00,6,Brazil,Costa Rica,offsides,Offsides,3
+1189121,2024-06-25T01:00:00+00:00,6,Brazil,Costa Rica,ball_possession,Ball Possession,74%
+1189121,2024-06-25T01:00:00+00:00,6,Brazil,Costa Rica,yellow_cards,Yellow Cards,1
+1189121,2024-06-25T01:00:00+00:00,6,Brazil,Costa Rica,red_cards,Red Cards,
+1189121,2024-06-25T01:00:00+00:00,6,Brazil,Costa Rica,goalkeeper_saves,Goalkeeper Saves,0
+1189121,2024-06-25T01:00:00+00:00,6,Brazil,Costa Rica,total_passes,Total passes,695
+1189121,2024-06-25T01:00:00+00:00,6,Brazil,Costa Rica,passes_accurate,Passes accurate,630
+1189121,2024-06-25T01:00:00+00:00,6,Brazil,Costa Rica,passes,Passes %,91%
+1189121,2024-06-25T01:00:00+00:00,6,Brazil,Costa Rica,expected_goals,expected_goals,1.71
+1189121,2024-06-25T01:00:00+00:00,6,Brazil,Costa Rica,goals_prevented,goals_prevented,0.97
+1189121,2024-06-25T01:00:00+00:00,29,Costa Rica,Brazil,shots_on_goal,Shots on Goal,0
+1189121,2024-06-25T01:00:00+00:00,29,Costa Rica,Brazil,shots_off_goal,Shots off Goal,0
+1189121,2024-06-25T01:00:00+00:00,29,Costa Rica,Brazil,total_shots,Total Shots,2
+1189121,2024-06-25T01:00:00+00:00,29,Costa Rica,Brazil,blocked_shots,Blocked Shots,2
+1189121,2024-06-25T01:00:00+00:00,29,Costa Rica,Brazil,shots_insidebox,Shots insidebox,0
+1189121,2024-06-25T01:00:00+00:00,29,Costa Rica,Brazil,shots_outsidebox,Shots outsidebox,2
+1189121,2024-06-25T01:00:00+00:00,29,Costa Rica,Brazil,fouls,Fouls,10
+1189121,2024-06-25T01:00:00+00:00,29,Costa Rica,Brazil,corner_kicks,Corner Kicks,1
+1189121,2024-06-25T01:00:00+00:00,29,Costa Rica,Brazil,offsides,Offsides,0
+1189121,2024-06-25T01:00:00+00:00,29,Costa Rica,Brazil,ball_possession,Ball Possession,26%
+1189121,2024-06-25T01:00:00+00:00,29,Costa Rica,Brazil,yellow_cards,Yellow Cards,2
+1189121,2024-06-25T01:00:00+00:00,29,Costa Rica,Brazil,red_cards,Red Cards,
+1189121,2024-06-25T01:00:00+00:00,29,Costa Rica,Brazil,goalkeeper_saves,Goalkeeper Saves,4
+1189121,2024-06-25T01:00:00+00:00,29,Costa Rica,Brazil,total_passes,Total passes,249
+1189121,2024-06-25T01:00:00+00:00,29,Costa Rica,Brazil,passes_accurate,Passes accurate,185
+1189121,2024-06-25T01:00:00+00:00,29,Costa Rica,Brazil,passes,Passes %,74%
+1189121,2024-06-25T01:00:00+00:00,29,Costa Rica,Brazil,expected_goals,expected_goals,0.03
+1189121,2024-06-25T01:00:00+00:00,29,Costa Rica,Brazil,goals_prevented,goals_prevented,0.97
+1222460,2024-07-07T01:00:00+00:00,7,Uruguay,Brazil,shots_on_goal,Shots on Goal,1
+1222460,2024-07-07T01:00:00+00:00,7,Uruguay,Brazil,shots_off_goal,Shots off Goal,7
+1222460,2024-07-07T01:00:00+00:00,7,Uruguay,Brazil,total_shots,Total Shots,12
+1222460,2024-07-07T01:00:00+00:00,7,Uruguay,Brazil,blocked_shots,Blocked Shots,4
+1222460,2024-07-07T01:00:00+00:00,7,Uruguay,Brazil,shots_insidebox,Shots insidebox,6
+1222460,2024-07-07T01:00:00+00:00,7,Uruguay,Brazil,shots_outsidebox,Shots outsidebox,6
+1222460,2024-07-07T01:00:00+00:00,7,Uruguay,Brazil,fouls,Fouls,26
+1222460,2024-07-07T01:00:00+00:00,7,Uruguay,Brazil,corner_kicks,Corner Kicks,6
+1222460,2024-07-07T01:00:00+00:00,7,Uruguay,Brazil,offsides,Offsides,2
+1222460,2024-07-07T01:00:00+00:00,7,Uruguay,Brazil,ball_possession,Ball Possession,40%
+1222460,2024-07-07T01:00:00+00:00,7,Uruguay,Brazil,yellow_cards,Yellow Cards,2
+1222460,2024-07-07T01:00:00+00:00,7,Uruguay,Brazil,red_cards,Red Cards,1
+1222460,2024-07-07T01:00:00+00:00,7,Uruguay,Brazil,goalkeeper_saves,Goalkeeper Saves,3
+1222460,2024-07-07T01:00:00+00:00,7,Uruguay,Brazil,total_passes,Total passes,251
+1222460,2024-07-07T01:00:00+00:00,7,Uruguay,Brazil,passes_accurate,Passes accurate,185
+1222460,2024-07-07T01:00:00+00:00,7,Uruguay,Brazil,passes,Passes %,74%
+1222460,2024-07-07T01:00:00+00:00,7,Uruguay,Brazil,expected_goals,expected_goals,0.89
+1222460,2024-07-07T01:00:00+00:00,7,Uruguay,Brazil,goals_prevented,goals_prevented,0.05
+1222460,2024-07-07T01:00:00+00:00,6,Brazil,Uruguay,shots_on_goal,Shots on Goal,3
+1222460,2024-07-07T01:00:00+00:00,6,Brazil,Uruguay,shots_off_goal,Shots off Goal,0
+1222460,2024-07-07T01:00:00+00:00,6,Brazil,Uruguay,total_shots,Total Shots,7
+1222460,2024-07-07T01:00:00+00:00,6,Brazil,Uruguay,blocked_shots,Blocked Shots,4
+1222460,2024-07-07T01:00:00+00:00,6,Brazil,Uruguay,shots_insidebox,Shots insidebox,1
+1222460,2024-07-07T01:00:00+00:00,6,Brazil,Uruguay,shots_outsidebox,Shots outsidebox,6
+1222460,2024-07-07T01:00:00+00:00,6,Brazil,Uruguay,fouls,Fouls,15
+1222460,2024-07-07T01:00:00+00:00,6,Brazil,Uruguay,corner_kicks,Corner Kicks,2
+1222460,2024-07-07T01:00:00+00:00,6,Brazil,Uruguay,offsides,Offsides,0
+1222460,2024-07-07T01:00:00+00:00,6,Brazil,Uruguay,ball_possession,Ball Possession,60%
+1222460,2024-07-07T01:00:00+00:00,6,Brazil,Uruguay,yellow_cards,Yellow Cards,2
+1222460,2024-07-07T01:00:00+00:00,6,Brazil,Uruguay,red_cards,Red Cards,0
+1222460,2024-07-07T01:00:00+00:00,6,Brazil,Uruguay,goalkeeper_saves,Goalkeeper Saves,1
+1222460,2024-07-07T01:00:00+00:00,6,Brazil,Uruguay,total_passes,Total passes,386
+1222460,2024-07-07T01:00:00+00:00,6,Brazil,Uruguay,passes_accurate,Passes accurate,308
+1222460,2024-07-07T01:00:00+00:00,6,Brazil,Uruguay,passes,Passes %,80%
+1222460,2024-07-07T01:00:00+00:00,6,Brazil,Uruguay,expected_goals,expected_goals,0.58
+1222460,2024-07-07T01:00:00+00:00,6,Brazil,Uruguay,goals_prevented,goals_prevented,0.05
+1182784,2024-06-06T18:45:00+00:00,1118,Netherlands,Canada,shots_on_goal,Shots on Goal,11
+1182784,2024-06-06T18:45:00+00:00,1118,Netherlands,Canada,shots_off_goal,Shots off Goal,5
+1182784,2024-06-06T18:45:00+00:00,1118,Netherlands,Canada,total_shots,Total Shots,20
+1182784,2024-06-06T18:45:00+00:00,1118,Netherlands,Canada,blocked_shots,Blocked Shots,4
+1182784,2024-06-06T18:45:00+00:00,1118,Netherlands,Canada,shots_insidebox,Shots insidebox,17
+1182784,2024-06-06T18:45:00+00:00,1118,Netherlands,Canada,shots_outsidebox,Shots outsidebox,3
+1182784,2024-06-06T18:45:00+00:00,1118,Netherlands,Canada,fouls,Fouls,11
+1182784,2024-06-06T18:45:00+00:00,1118,Netherlands,Canada,corner_kicks,Corner Kicks,4
+1182784,2024-06-06T18:45:00+00:00,1118,Netherlands,Canada,offsides,Offsides,2
+1182784,2024-06-06T18:45:00+00:00,1118,Netherlands,Canada,ball_possession,Ball Possession,61%
+1182784,2024-06-06T18:45:00+00:00,1118,Netherlands,Canada,yellow_cards,Yellow Cards,0
+1182784,2024-06-06T18:45:00+00:00,1118,Netherlands,Canada,red_cards,Red Cards,
+1182784,2024-06-06T18:45:00+00:00,1118,Netherlands,Canada,goalkeeper_saves,Goalkeeper Saves,2
+1182784,2024-06-06T18:45:00+00:00,1118,Netherlands,Canada,total_passes,Total passes,601
+1182784,2024-06-06T18:45:00+00:00,1118,Netherlands,Canada,passes_accurate,Passes accurate,536
+1182784,2024-06-06T18:45:00+00:00,1118,Netherlands,Canada,passes,Passes %,89%
+1182784,2024-06-06T18:45:00+00:00,1118,Netherlands,Canada,expected_goals,expected_goals,
+1182784,2024-06-06T18:45:00+00:00,1118,Netherlands,Canada,goals_prevented,goals_prevented,
+1182784,2024-06-06T18:45:00+00:00,5529,Canada,Netherlands,shots_on_goal,Shots on Goal,2
+1182784,2024-06-06T18:45:00+00:00,5529,Canada,Netherlands,shots_off_goal,Shots off Goal,4
+1182784,2024-06-06T18:45:00+00:00,5529,Canada,Netherlands,total_shots,Total Shots,6
+1182784,2024-06-06T18:45:00+00:00,5529,Canada,Netherlands,blocked_shots,Blocked Shots,0
+1182784,2024-06-06T18:45:00+00:00,5529,Canada,Netherlands,shots_insidebox,Shots insidebox,4
+1182784,2024-06-06T18:45:00+00:00,5529,Canada,Netherlands,shots_outsidebox,Shots outsidebox,2
+1182784,2024-06-06T18:45:00+00:00,5529,Canada,Netherlands,fouls,Fouls,13
+1182784,2024-06-06T18:45:00+00:00,5529,Canada,Netherlands,corner_kicks,Corner Kicks,5
+1182784,2024-06-06T18:45:00+00:00,5529,Canada,Netherlands,offsides,Offsides,2
+1182784,2024-06-06T18:45:00+00:00,5529,Canada,Netherlands,ball_possession,Ball Possession,39%
+1182784,2024-06-06T18:45:00+00:00,5529,Canada,Netherlands,yellow_cards,Yellow Cards,1
+1182784,2024-06-06T18:45:00+00:00,5529,Canada,Netherlands,red_cards,Red Cards,
+1182784,2024-06-06T18:45:00+00:00,5529,Canada,Netherlands,goalkeeper_saves,Goalkeeper Saves,6
+1182784,2024-06-06T18:45:00+00:00,5529,Canada,Netherlands,total_passes,Total passes,386
+1182784,2024-06-06T18:45:00+00:00,5529,Canada,Netherlands,passes_accurate,Passes accurate,316
+1182784,2024-06-06T18:45:00+00:00,5529,Canada,Netherlands,passes,Passes %,82%
+1182784,2024-06-06T18:45:00+00:00,5529,Canada,Netherlands,expected_goals,expected_goals,
+1182784,2024-06-06T18:45:00+00:00,5529,Canada,Netherlands,goals_prevented,goals_prevented,
+1189122,2024-06-26T22:00:00+00:00,30,Peru,Canada,shots_on_goal,Shots on Goal,4
+1189122,2024-06-26T22:00:00+00:00,30,Peru,Canada,shots_off_goal,Shots off Goal,3
+1189122,2024-06-26T22:00:00+00:00,30,Peru,Canada,total_shots,Total Shots,9
+1189122,2024-06-26T22:00:00+00:00,30,Peru,Canada,blocked_shots,Blocked Shots,2
+1189122,2024-06-26T22:00:00+00:00,30,Peru,Canada,shots_insidebox,Shots insidebox,3
+1189122,2024-06-26T22:00:00+00:00,30,Peru,Canada,shots_outsidebox,Shots outsidebox,6
+1189122,2024-06-26T22:00:00+00:00,30,Peru,Canada,fouls,Fouls,17
+1189122,2024-06-26T22:00:00+00:00,30,Peru,Canada,corner_kicks,Corner Kicks,2
+1189122,2024-06-26T22:00:00+00:00,30,Peru,Canada,offsides,Offsides,3
+1189122,2024-06-26T22:00:00+00:00,30,Peru,Canada,ball_possession,Ball Possession,49%
+1189122,2024-06-26T22:00:00+00:00,30,Peru,Canada,yellow_cards,Yellow Cards,0
+1189122,2024-06-26T22:00:00+00:00,30,Peru,Canada,red_cards,Red Cards,1
+1189122,2024-06-26T22:00:00+00:00,30,Peru,Canada,goalkeeper_saves,Goalkeeper Saves,1
+1189122,2024-06-26T22:00:00+00:00,30,Peru,Canada,total_passes,Total passes,347
+1189122,2024-06-26T22:00:00+00:00,30,Peru,Canada,passes_accurate,Passes accurate,251
+1189122,2024-06-26T22:00:00+00:00,30,Peru,Canada,passes,Passes %,72%
+1189122,2024-06-26T22:00:00+00:00,30,Peru,Canada,expected_goals,expected_goals,0.81
+1189122,2024-06-26T22:00:00+00:00,30,Peru,Canada,goals_prevented,goals_prevented,1.00
+1189122,2024-06-26T22:00:00+00:00,5529,Canada,Peru,shots_on_goal,Shots on Goal,2
+1189122,2024-06-26T22:00:00+00:00,5529,Canada,Peru,shots_off_goal,Shots off Goal,3
+1189122,2024-06-26T22:00:00+00:00,5529,Canada,Peru,total_shots,Total Shots,5
+1189122,2024-06-26T22:00:00+00:00,5529,Canada,Peru,blocked_shots,Blocked Shots,0
+1189122,2024-06-26T22:00:00+00:00,5529,Canada,Peru,shots_insidebox,Shots insidebox,5
+1189122,2024-06-26T22:00:00+00:00,5529,Canada,Peru,shots_outsidebox,Shots outsidebox,0
+1189122,2024-06-26T22:00:00+00:00,5529,Canada,Peru,fouls,Fouls,14
+1189122,2024-06-26T22:00:00+00:00,5529,Canada,Peru,corner_kicks,Corner Kicks,1
+1189122,2024-06-26T22:00:00+00:00,5529,Canada,Peru,offsides,Offsides,1
+1189122,2024-06-26T22:00:00+00:00,5529,Canada,Peru,ball_possession,Ball Possession,51%
+1189122,2024-06-26T22:00:00+00:00,5529,Canada,Peru,yellow_cards,Yellow Cards,1
+1189122,2024-06-26T22:00:00+00:00,5529,Canada,Peru,red_cards,Red Cards,0
+1189122,2024-06-26T22:00:00+00:00,5529,Canada,Peru,goalkeeper_saves,Goalkeeper Saves,4
+1189122,2024-06-26T22:00:00+00:00,5529,Canada,Peru,total_passes,Total passes,363
+1189122,2024-06-26T22:00:00+00:00,5529,Canada,Peru,passes_accurate,Passes accurate,282
+1189122,2024-06-26T22:00:00+00:00,5529,Canada,Peru,passes,Passes %,78%
+1189122,2024-06-26T22:00:00+00:00,5529,Canada,Peru,expected_goals,expected_goals,1.78
+1189122,2024-06-26T22:00:00+00:00,5529,Canada,Peru,goals_prevented,goals_prevented,1.00
+1189124,2024-06-30T00:00:00+00:00,5529,Canada,Chile,shots_on_goal,Shots on Goal,3
+1189124,2024-06-30T00:00:00+00:00,5529,Canada,Chile,shots_off_goal,Shots off Goal,3
+1189124,2024-06-30T00:00:00+00:00,5529,Canada,Chile,total_shots,Total Shots,9
+1189124,2024-06-30T00:00:00+00:00,5529,Canada,Chile,blocked_shots,Blocked Shots,3
+1189124,2024-06-30T00:00:00+00:00,5529,Canada,Chile,shots_insidebox,Shots insidebox,7
+1189124,2024-06-30T00:00:00+00:00,5529,Canada,Chile,shots_outsidebox,Shots outsidebox,2
+1189124,2024-06-30T00:00:00+00:00,5529,Canada,Chile,fouls,Fouls,15
+1189124,2024-06-30T00:00:00+00:00,5529,Canada,Chile,corner_kicks,Corner Kicks,8
+1189124,2024-06-30T00:00:00+00:00,5529,Canada,Chile,offsides,Offsides,2
+1189124,2024-06-30T00:00:00+00:00,5529,Canada,Chile,ball_possession,Ball Possession,57%
+1189124,2024-06-30T00:00:00+00:00,5529,Canada,Chile,yellow_cards,Yellow Cards,5
+1189124,2024-06-30T00:00:00+00:00,5529,Canada,Chile,red_cards,Red Cards,0
+1189124,2024-06-30T00:00:00+00:00,5529,Canada,Chile,goalkeeper_saves,Goalkeeper Saves,4
+1189124,2024-06-30T00:00:00+00:00,5529,Canada,Chile,total_passes,Total passes,414
+1189124,2024-06-30T00:00:00+00:00,5529,Canada,Chile,passes_accurate,Passes accurate,342
+1189124,2024-06-30T00:00:00+00:00,5529,Canada,Chile,passes,Passes %,83%
+1189124,2024-06-30T00:00:00+00:00,5529,Canada,Chile,expected_goals,expected_goals,1.08
+1189124,2024-06-30T00:00:00+00:00,5529,Canada,Chile,goals_prevented,goals_prevented,0.49
+1189124,2024-06-30T00:00:00+00:00,2383,Chile,Canada,shots_on_goal,Shots on Goal,4
+1189124,2024-06-30T00:00:00+00:00,2383,Chile,Canada,shots_off_goal,Shots off Goal,2
+1189124,2024-06-30T00:00:00+00:00,2383,Chile,Canada,total_shots,Total Shots,8
+1189124,2024-06-30T00:00:00+00:00,2383,Chile,Canada,blocked_shots,Blocked Shots,2
+1189124,2024-06-30T00:00:00+00:00,2383,Chile,Canada,shots_insidebox,Shots insidebox,5
+1189124,2024-06-30T00:00:00+00:00,2383,Chile,Canada,shots_outsidebox,Shots outsidebox,3
+1189124,2024-06-30T00:00:00+00:00,2383,Chile,Canada,fouls,Fouls,8
+1189124,2024-06-30T00:00:00+00:00,2383,Chile,Canada,corner_kicks,Corner Kicks,4
+1189124,2024-06-30T00:00:00+00:00,2383,Chile,Canada,offsides,Offsides,1
+1189124,2024-06-30T00:00:00+00:00,2383,Chile,Canada,ball_possession,Ball Possession,43%
+1189124,2024-06-30T00:00:00+00:00,2383,Chile,Canada,yellow_cards,Yellow Cards,2
+1189124,2024-06-30T00:00:00+00:00,2383,Chile,Canada,red_cards,Red Cards,1
+1189124,2024-06-30T00:00:00+00:00,2383,Chile,Canada,goalkeeper_saves,Goalkeeper Saves,3
+1189124,2024-06-30T00:00:00+00:00,2383,Chile,Canada,total_passes,Total passes,310
+1189124,2024-06-30T00:00:00+00:00,2383,Chile,Canada,passes_accurate,Passes accurate,223
+1189124,2024-06-30T00:00:00+00:00,2383,Chile,Canada,passes,Passes %,72%
+1189124,2024-06-30T00:00:00+00:00,2383,Chile,Canada,expected_goals,expected_goals,0.54
+1189124,2024-06-30T00:00:00+00:00,2383,Chile,Canada,goals_prevented,goals_prevented,0.49
+1196553,2024-06-09T19:15:00+00:00,2,France,Canada,shots_on_goal,Shots on Goal,4
+1196553,2024-06-09T19:15:00+00:00,2,France,Canada,shots_off_goal,Shots off Goal,6
+1196553,2024-06-09T19:15:00+00:00,2,France,Canada,total_shots,Total Shots,13
+1196553,2024-06-09T19:15:00+00:00,2,France,Canada,blocked_shots,Blocked Shots,3
+1196553,2024-06-09T19:15:00+00:00,2,France,Canada,shots_insidebox,Shots insidebox,10
+1196553,2024-06-09T19:15:00+00:00,2,France,Canada,shots_outsidebox,Shots outsidebox,3
+1196553,2024-06-09T19:15:00+00:00,2,France,Canada,fouls,Fouls,18
+1196553,2024-06-09T19:15:00+00:00,2,France,Canada,corner_kicks,Corner Kicks,7
+1196553,2024-06-09T19:15:00+00:00,2,France,Canada,offsides,Offsides,4
+1196553,2024-06-09T19:15:00+00:00,2,France,Canada,ball_possession,Ball Possession,51%
+1196553,2024-06-09T19:15:00+00:00,2,France,Canada,yellow_cards,Yellow Cards,1
+1196553,2024-06-09T19:15:00+00:00,2,France,Canada,red_cards,Red Cards,
+1196553,2024-06-09T19:15:00+00:00,2,France,Canada,goalkeeper_saves,Goalkeeper Saves,0
+1196553,2024-06-09T19:15:00+00:00,2,France,Canada,total_passes,Total passes,521
+1196553,2024-06-09T19:15:00+00:00,2,France,Canada,passes_accurate,Passes accurate,468
+1196553,2024-06-09T19:15:00+00:00,2,France,Canada,passes,Passes %,90%
+1196553,2024-06-09T19:15:00+00:00,2,France,Canada,expected_goals,expected_goals,
+1196553,2024-06-09T19:15:00+00:00,2,France,Canada,goals_prevented,goals_prevented,
+1196553,2024-06-09T19:15:00+00:00,5529,Canada,France,shots_on_goal,Shots on Goal,0
+1196553,2024-06-09T19:15:00+00:00,5529,Canada,France,shots_off_goal,Shots off Goal,3
+1196553,2024-06-09T19:15:00+00:00,5529,Canada,France,total_shots,Total Shots,7
+1196553,2024-06-09T19:15:00+00:00,5529,Canada,France,blocked_shots,Blocked Shots,4
+1196553,2024-06-09T19:15:00+00:00,5529,Canada,France,shots_insidebox,Shots insidebox,2
+1196553,2024-06-09T19:15:00+00:00,5529,Canada,France,shots_outsidebox,Shots outsidebox,5
+1196553,2024-06-09T19:15:00+00:00,5529,Canada,France,fouls,Fouls,7
+1196553,2024-06-09T19:15:00+00:00,5529,Canada,France,corner_kicks,Corner Kicks,1
+1196553,2024-06-09T19:15:00+00:00,5529,Canada,France,offsides,Offsides,2
+1196553,2024-06-09T19:15:00+00:00,5529,Canada,France,ball_possession,Ball Possession,49%
+1196553,2024-06-09T19:15:00+00:00,5529,Canada,France,yellow_cards,Yellow Cards,1
+1196553,2024-06-09T19:15:00+00:00,5529,Canada,France,red_cards,Red Cards,
+1196553,2024-06-09T19:15:00+00:00,5529,Canada,France,goalkeeper_saves,Goalkeeper Saves,4
+1196553,2024-06-09T19:15:00+00:00,5529,Canada,France,total_passes,Total passes,513
+1196553,2024-06-09T19:15:00+00:00,5529,Canada,France,passes_accurate,Passes accurate,457
+1196553,2024-06-09T19:15:00+00:00,5529,Canada,France,passes,Passes %,89%
+1196553,2024-06-09T19:15:00+00:00,5529,Canada,France,expected_goals,expected_goals,
+1196553,2024-06-09T19:15:00+00:00,5529,Canada,France,goals_prevented,goals_prevented,
+1215627,2024-09-07T20:00:00+00:00,2384,USA,Canada,shots_on_goal,Shots on Goal,5
+1215627,2024-09-07T20:00:00+00:00,2384,USA,Canada,shots_off_goal,Shots off Goal,3
+1215627,2024-09-07T20:00:00+00:00,2384,USA,Canada,total_shots,Total Shots,8
+1215627,2024-09-07T20:00:00+00:00,2384,USA,Canada,blocked_shots,Blocked Shots,0
+1215627,2024-09-07T20:00:00+00:00,2384,USA,Canada,shots_insidebox,Shots insidebox,7
+1215627,2024-09-07T20:00:00+00:00,2384,USA,Canada,shots_outsidebox,Shots outsidebox,1
+1215627,2024-09-07T20:00:00+00:00,2384,USA,Canada,fouls,Fouls,18
+1215627,2024-09-07T20:00:00+00:00,2384,USA,Canada,corner_kicks,Corner Kicks,2
+1215627,2024-09-07T20:00:00+00:00,2384,USA,Canada,offsides,Offsides,1
+1215627,2024-09-07T20:00:00+00:00,2384,USA,Canada,ball_possession,Ball Possession,58%
+1215627,2024-09-07T20:00:00+00:00,2384,USA,Canada,yellow_cards,Yellow Cards,1
+1215627,2024-09-07T20:00:00+00:00,2384,USA,Canada,red_cards,Red Cards,
+1215627,2024-09-07T20:00:00+00:00,2384,USA,Canada,goalkeeper_saves,Goalkeeper Saves,5
+1215627,2024-09-07T20:00:00+00:00,2384,USA,Canada,total_passes,Total passes,510
+1215627,2024-09-07T20:00:00+00:00,2384,USA,Canada,passes_accurate,Passes accurate,446
+1215627,2024-09-07T20:00:00+00:00,2384,USA,Canada,passes,Passes %,87%
+1215627,2024-09-07T20:00:00+00:00,2384,USA,Canada,expected_goals,expected_goals,
+1215627,2024-09-07T20:00:00+00:00,2384,USA,Canada,goals_prevented,goals_prevented,
+1215627,2024-09-07T20:00:00+00:00,5529,Canada,USA,shots_on_goal,Shots on Goal,7
+1215627,2024-09-07T20:00:00+00:00,5529,Canada,USA,shots_off_goal,Shots off Goal,6
+1215627,2024-09-07T20:00:00+00:00,5529,Canada,USA,total_shots,Total Shots,17
+1215627,2024-09-07T20:00:00+00:00,5529,Canada,USA,blocked_shots,Blocked Shots,4
+1215627,2024-09-07T20:00:00+00:00,5529,Canada,USA,shots_insidebox,Shots insidebox,14
+1215627,2024-09-07T20:00:00+00:00,5529,Canada,USA,shots_outsidebox,Shots outsidebox,3
+1215627,2024-09-07T20:00:00+00:00,5529,Canada,USA,fouls,Fouls,11
+1215627,2024-09-07T20:00:00+00:00,5529,Canada,USA,corner_kicks,Corner Kicks,7
+1215627,2024-09-07T20:00:00+00:00,5529,Canada,USA,offsides,Offsides,1
+1215627,2024-09-07T20:00:00+00:00,5529,Canada,USA,ball_possession,Ball Possession,42%
+1215627,2024-09-07T20:00:00+00:00,5529,Canada,USA,yellow_cards,Yellow Cards,1
+1215627,2024-09-07T20:00:00+00:00,5529,Canada,USA,red_cards,Red Cards,
+1215627,2024-09-07T20:00:00+00:00,5529,Canada,USA,goalkeeper_saves,Goalkeeper Saves,4
+1215627,2024-09-07T20:00:00+00:00,5529,Canada,USA,total_passes,Total passes,358
+1215627,2024-09-07T20:00:00+00:00,5529,Canada,USA,passes_accurate,Passes accurate,295
+1215627,2024-09-07T20:00:00+00:00,5529,Canada,USA,passes,Passes %,82%
+1215627,2024-09-07T20:00:00+00:00,5529,Canada,USA,expected_goals,expected_goals,
+1215627,2024-09-07T20:00:00+00:00,5529,Canada,USA,goals_prevented,goals_prevented,
+1219958,2024-07-06T01:00:00+00:00,2379,Venezuela,Canada,shots_on_goal,Shots on Goal,3
+1219958,2024-07-06T01:00:00+00:00,2379,Venezuela,Canada,shots_off_goal,Shots off Goal,8
+1219958,2024-07-06T01:00:00+00:00,2379,Venezuela,Canada,total_shots,Total Shots,16
+1219958,2024-07-06T01:00:00+00:00,2379,Venezuela,Canada,blocked_shots,Blocked Shots,5
+1219958,2024-07-06T01:00:00+00:00,2379,Venezuela,Canada,shots_insidebox,Shots insidebox,12
+1219958,2024-07-06T01:00:00+00:00,2379,Venezuela,Canada,shots_outsidebox,Shots outsidebox,4
+1219958,2024-07-06T01:00:00+00:00,2379,Venezuela,Canada,fouls,Fouls,7
+1219958,2024-07-06T01:00:00+00:00,2379,Venezuela,Canada,corner_kicks,Corner Kicks,7
+1219958,2024-07-06T01:00:00+00:00,2379,Venezuela,Canada,offsides,Offsides,3
+1219958,2024-07-06T01:00:00+00:00,2379,Venezuela,Canada,ball_possession,Ball Possession,55%
+1219958,2024-07-06T01:00:00+00:00,2379,Venezuela,Canada,yellow_cards,Yellow Cards,1
+1219958,2024-07-06T01:00:00+00:00,2379,Venezuela,Canada,red_cards,Red Cards,
+1219958,2024-07-06T01:00:00+00:00,2379,Venezuela,Canada,goalkeeper_saves,Goalkeeper Saves,4
+1219958,2024-07-06T01:00:00+00:00,2379,Venezuela,Canada,total_passes,Total passes,411
+1219958,2024-07-06T01:00:00+00:00,2379,Venezuela,Canada,passes_accurate,Passes accurate,303
+1219958,2024-07-06T01:00:00+00:00,2379,Venezuela,Canada,passes,Passes %,74%
+1219958,2024-07-06T01:00:00+00:00,2379,Venezuela,Canada,expected_goals,expected_goals,0.97
+1219958,2024-07-06T01:00:00+00:00,2379,Venezuela,Canada,goals_prevented,goals_prevented,-0.77
+1219958,2024-07-06T01:00:00+00:00,5529,Canada,Venezuela,shots_on_goal,Shots on Goal,7
+1219958,2024-07-06T01:00:00+00:00,5529,Canada,Venezuela,shots_off_goal,Shots off Goal,8
+1219958,2024-07-06T01:00:00+00:00,5529,Canada,Venezuela,total_shots,Total Shots,16
+1219958,2024-07-06T01:00:00+00:00,5529,Canada,Venezuela,blocked_shots,Blocked Shots,1
+1219958,2024-07-06T01:00:00+00:00,5529,Canada,Venezuela,shots_insidebox,Shots insidebox,12
+1219958,2024-07-06T01:00:00+00:00,5529,Canada,Venezuela,shots_outsidebox,Shots outsidebox,4
+1219958,2024-07-06T01:00:00+00:00,5529,Canada,Venezuela,fouls,Fouls,13
+1219958,2024-07-06T01:00:00+00:00,5529,Canada,Venezuela,corner_kicks,Corner Kicks,3
+1219958,2024-07-06T01:00:00+00:00,5529,Canada,Venezuela,offsides,Offsides,0
+1219958,2024-07-06T01:00:00+00:00,5529,Canada,Venezuela,ball_possession,Ball Possession,45%
+1219958,2024-07-06T01:00:00+00:00,5529,Canada,Venezuela,yellow_cards,Yellow Cards,2
+1219958,2024-07-06T01:00:00+00:00,5529,Canada,Venezuela,red_cards,Red Cards,
+1219958,2024-07-06T01:00:00+00:00,5529,Canada,Venezuela,goalkeeper_saves,Goalkeeper Saves,2
+1219958,2024-07-06T01:00:00+00:00,5529,Canada,Venezuela,total_passes,Total passes,341
+1219958,2024-07-06T01:00:00+00:00,5529,Canada,Venezuela,passes_accurate,Passes accurate,253
+1219958,2024-07-06T01:00:00+00:00,5529,Canada,Venezuela,passes,Passes %,74%
+1219958,2024-07-06T01:00:00+00:00,5529,Canada,Venezuela,expected_goals,expected_goals,1.87
+1219958,2024-07-06T01:00:00+00:00,5529,Canada,Venezuela,goals_prevented,goals_prevented,-0.77
+1234029,2024-07-14T00:00:00+00:00,5529,Canada,Uruguay,shots_on_goal,Shots on Goal,6
+1234029,2024-07-14T00:00:00+00:00,5529,Canada,Uruguay,shots_off_goal,Shots off Goal,5
+1234029,2024-07-14T00:00:00+00:00,5529,Canada,Uruguay,total_shots,Total Shots,14
+1234029,2024-07-14T00:00:00+00:00,5529,Canada,Uruguay,blocked_shots,Blocked Shots,3
+1234029,2024-07-14T00:00:00+00:00,5529,Canada,Uruguay,shots_insidebox,Shots insidebox,11
+1234029,2024-07-14T00:00:00+00:00,5529,Canada,Uruguay,shots_outsidebox,Shots outsidebox,3
+1234029,2024-07-14T00:00:00+00:00,5529,Canada,Uruguay,fouls,Fouls,18
+1234029,2024-07-14T00:00:00+00:00,5529,Canada,Uruguay,corner_kicks,Corner Kicks,7
+1234029,2024-07-14T00:00:00+00:00,5529,Canada,Uruguay,offsides,Offsides,1
+1234029,2024-07-14T00:00:00+00:00,5529,Canada,Uruguay,ball_possession,Ball Possession,51%
+1234029,2024-07-14T00:00:00+00:00,5529,Canada,Uruguay,yellow_cards,Yellow Cards,4
+1234029,2024-07-14T00:00:00+00:00,5529,Canada,Uruguay,red_cards,Red Cards,
+1234029,2024-07-14T00:00:00+00:00,5529,Canada,Uruguay,goalkeeper_saves,Goalkeeper Saves,3
+1234029,2024-07-14T00:00:00+00:00,5529,Canada,Uruguay,total_passes,Total passes,325
+1234029,2024-07-14T00:00:00+00:00,5529,Canada,Uruguay,passes_accurate,Passes accurate,241
+1234029,2024-07-14T00:00:00+00:00,5529,Canada,Uruguay,passes,Passes %,74%
+1234029,2024-07-14T00:00:00+00:00,5529,Canada,Uruguay,expected_goals,expected_goals,1.90
+1234029,2024-07-14T00:00:00+00:00,5529,Canada,Uruguay,goals_prevented,goals_prevented,0.13
+1234029,2024-07-14T00:00:00+00:00,7,Uruguay,Canada,shots_on_goal,Shots on Goal,5
+1234029,2024-07-14T00:00:00+00:00,7,Uruguay,Canada,shots_off_goal,Shots off Goal,3
+1234029,2024-07-14T00:00:00+00:00,7,Uruguay,Canada,total_shots,Total Shots,12
+1234029,2024-07-14T00:00:00+00:00,7,Uruguay,Canada,blocked_shots,Blocked Shots,4
+1234029,2024-07-14T00:00:00+00:00,7,Uruguay,Canada,shots_insidebox,Shots insidebox,10
+1234029,2024-07-14T00:00:00+00:00,7,Uruguay,Canada,shots_outsidebox,Shots outsidebox,2
+1234029,2024-07-14T00:00:00+00:00,7,Uruguay,Canada,fouls,Fouls,17
+1234029,2024-07-14T00:00:00+00:00,7,Uruguay,Canada,corner_kicks,Corner Kicks,6
+1234029,2024-07-14T00:00:00+00:00,7,Uruguay,Canada,offsides,Offsides,1
+1234029,2024-07-14T00:00:00+00:00,7,Uruguay,Canada,ball_possession,Ball Possession,49%
+1234029,2024-07-14T00:00:00+00:00,7,Uruguay,Canada,yellow_cards,Yellow Cards,2
+1234029,2024-07-14T00:00:00+00:00,7,Uruguay,Canada,red_cards,Red Cards,
+1234029,2024-07-14T00:00:00+00:00,7,Uruguay,Canada,goalkeeper_saves,Goalkeeper Saves,3
+1234029,2024-07-14T00:00:00+00:00,7,Uruguay,Canada,total_passes,Total passes,312
+1234029,2024-07-14T00:00:00+00:00,7,Uruguay,Canada,passes_accurate,Passes accurate,233
+1234029,2024-07-14T00:00:00+00:00,7,Uruguay,Canada,passes,Passes %,75%
+1234029,2024-07-14T00:00:00+00:00,7,Uruguay,Canada,expected_goals,expected_goals,1.59
+1234029,2024-07-14T00:00:00+00:00,7,Uruguay,Canada,goals_prevented,goals_prevented,0.13
+1294672,2024-10-15T23:30:00+00:00,5529,Canada,Panama,shots_on_goal,Shots on Goal,10
+1294672,2024-10-15T23:30:00+00:00,5529,Canada,Panama,shots_off_goal,Shots off Goal,2
+1294672,2024-10-15T23:30:00+00:00,5529,Canada,Panama,total_shots,Total Shots,15
+1294672,2024-10-15T23:30:00+00:00,5529,Canada,Panama,blocked_shots,Blocked Shots,3
+1294672,2024-10-15T23:30:00+00:00,5529,Canada,Panama,shots_insidebox,Shots insidebox,8
+1294672,2024-10-15T23:30:00+00:00,5529,Canada,Panama,shots_outsidebox,Shots outsidebox,7
+1294672,2024-10-15T23:30:00+00:00,5529,Canada,Panama,fouls,Fouls,13
+1294672,2024-10-15T23:30:00+00:00,5529,Canada,Panama,corner_kicks,Corner Kicks,8
+1294672,2024-10-15T23:30:00+00:00,5529,Canada,Panama,offsides,Offsides,2
+1294672,2024-10-15T23:30:00+00:00,5529,Canada,Panama,ball_possession,Ball Possession,54%
+1294672,2024-10-15T23:30:00+00:00,5529,Canada,Panama,yellow_cards,Yellow Cards,3
+1294672,2024-10-15T23:30:00+00:00,5529,Canada,Panama,red_cards,Red Cards,
+1294672,2024-10-15T23:30:00+00:00,5529,Canada,Panama,goalkeeper_saves,Goalkeeper Saves,0
+1294672,2024-10-15T23:30:00+00:00,5529,Canada,Panama,total_passes,Total passes,417
+1294672,2024-10-15T23:30:00+00:00,5529,Canada,Panama,passes_accurate,Passes accurate,318
+1294672,2024-10-15T23:30:00+00:00,5529,Canada,Panama,passes,Passes %,76%
+1294672,2024-10-15T23:30:00+00:00,5529,Canada,Panama,expected_goals,expected_goals,
+1294672,2024-10-15T23:30:00+00:00,5529,Canada,Panama,goals_prevented,goals_prevented,
+1294672,2024-10-15T23:30:00+00:00,11,Panama,Canada,shots_on_goal,Shots on Goal,1
+1294672,2024-10-15T23:30:00+00:00,11,Panama,Canada,shots_off_goal,Shots off Goal,2
+1294672,2024-10-15T23:30:00+00:00,11,Panama,Canada,total_shots,Total Shots,6
+1294672,2024-10-15T23:30:00+00:00,11,Panama,Canada,blocked_shots,Blocked Shots,3
+1294672,2024-10-15T23:30:00+00:00,11,Panama,Canada,shots_insidebox,Shots insidebox,4
+1294672,2024-10-15T23:30:00+00:00,11,Panama,Canada,shots_outsidebox,Shots outsidebox,2
+1294672,2024-10-15T23:30:00+00:00,11,Panama,Canada,fouls,Fouls,15
+1294672,2024-10-15T23:30:00+00:00,11,Panama,Canada,corner_kicks,Corner Kicks,4
+1294672,2024-10-15T23:30:00+00:00,11,Panama,Canada,offsides,Offsides,5
+1294672,2024-10-15T23:30:00+00:00,11,Panama,Canada,ball_possession,Ball Possession,46%
+1294672,2024-10-15T23:30:00+00:00,11,Panama,Canada,yellow_cards,Yellow Cards,4
+1294672,2024-10-15T23:30:00+00:00,11,Panama,Canada,red_cards,Red Cards,
+1294672,2024-10-15T23:30:00+00:00,11,Panama,Canada,goalkeeper_saves,Goalkeeper Saves,8
+1294672,2024-10-15T23:30:00+00:00,11,Panama,Canada,total_passes,Total passes,356
+1294672,2024-10-15T23:30:00+00:00,11,Panama,Canada,passes_accurate,Passes accurate,249
+1294672,2024-10-15T23:30:00+00:00,11,Panama,Canada,passes,Passes %,70%
+1294672,2024-10-15T23:30:00+00:00,11,Panama,Canada,expected_goals,expected_goals,
+1294672,2024-10-15T23:30:00+00:00,11,Panama,Canada,goals_prevented,goals_prevented,
+1312098,2024-11-15T23:30:00+00:00,8171,Suriname,Canada,shots_on_goal,Shots on Goal,0
+1312098,2024-11-15T23:30:00+00:00,8171,Suriname,Canada,shots_off_goal,Shots off Goal,2
+1312098,2024-11-15T23:30:00+00:00,8171,Suriname,Canada,total_shots,Total Shots,2
+1312098,2024-11-15T23:30:00+00:00,8171,Suriname,Canada,blocked_shots,Blocked Shots,0
+1312098,2024-11-15T23:30:00+00:00,8171,Suriname,Canada,shots_insidebox,Shots insidebox,2
+1312098,2024-11-15T23:30:00+00:00,8171,Suriname,Canada,shots_outsidebox,Shots outsidebox,0
+1312098,2024-11-15T23:30:00+00:00,8171,Suriname,Canada,fouls,Fouls,15
+1312098,2024-11-15T23:30:00+00:00,8171,Suriname,Canada,corner_kicks,Corner Kicks,1
+1312098,2024-11-15T23:30:00+00:00,8171,Suriname,Canada,offsides,Offsides,2
+1312098,2024-11-15T23:30:00+00:00,8171,Suriname,Canada,ball_possession,Ball Possession,34%
+1312098,2024-11-15T23:30:00+00:00,8171,Suriname,Canada,yellow_cards,Yellow Cards,3
+1312098,2024-11-15T23:30:00+00:00,8171,Suriname,Canada,red_cards,Red Cards,
+1312098,2024-11-15T23:30:00+00:00,8171,Suriname,Canada,goalkeeper_saves,Goalkeeper Saves,4
+1312098,2024-11-15T23:30:00+00:00,8171,Suriname,Canada,total_passes,Total passes,258
+1312098,2024-11-15T23:30:00+00:00,8171,Suriname,Canada,passes_accurate,Passes accurate,179
+1312098,2024-11-15T23:30:00+00:00,8171,Suriname,Canada,passes,Passes %,69%
+1312098,2024-11-15T23:30:00+00:00,8171,Suriname,Canada,expected_goals,expected_goals,
+1312098,2024-11-15T23:30:00+00:00,8171,Suriname,Canada,goals_prevented,goals_prevented,
+1312098,2024-11-15T23:30:00+00:00,5529,Canada,Suriname,shots_on_goal,Shots on Goal,5
+1312098,2024-11-15T23:30:00+00:00,5529,Canada,Suriname,shots_off_goal,Shots off Goal,2
+1312098,2024-11-15T23:30:00+00:00,5529,Canada,Suriname,total_shots,Total Shots,13
+1312098,2024-11-15T23:30:00+00:00,5529,Canada,Suriname,blocked_shots,Blocked Shots,6
+1312098,2024-11-15T23:30:00+00:00,5529,Canada,Suriname,shots_insidebox,Shots insidebox,8
+1312098,2024-11-15T23:30:00+00:00,5529,Canada,Suriname,shots_outsidebox,Shots outsidebox,5
+1312098,2024-11-15T23:30:00+00:00,5529,Canada,Suriname,fouls,Fouls,14
+1312098,2024-11-15T23:30:00+00:00,5529,Canada,Suriname,corner_kicks,Corner Kicks,7
+1312098,2024-11-15T23:30:00+00:00,5529,Canada,Suriname,offsides,Offsides,2
+1312098,2024-11-15T23:30:00+00:00,5529,Canada,Suriname,ball_possession,Ball Possession,66%
+1312098,2024-11-15T23:30:00+00:00,5529,Canada,Suriname,yellow_cards,Yellow Cards,4
+1312098,2024-11-15T23:30:00+00:00,5529,Canada,Suriname,red_cards,Red Cards,
+1312098,2024-11-15T23:30:00+00:00,5529,Canada,Suriname,goalkeeper_saves,Goalkeeper Saves,0
+1312098,2024-11-15T23:30:00+00:00,5529,Canada,Suriname,total_passes,Total passes,493
+1312098,2024-11-15T23:30:00+00:00,5529,Canada,Suriname,passes_accurate,Passes accurate,421
+1312098,2024-11-15T23:30:00+00:00,5529,Canada,Suriname,passes,Passes %,85%
+1312098,2024-11-15T23:30:00+00:00,5529,Canada,Suriname,expected_goals,expected_goals,
+1312098,2024-11-15T23:30:00+00:00,5529,Canada,Suriname,goals_prevented,goals_prevented,
+1312099,2024-11-20T00:30:00+00:00,5529,Canada,Suriname,shots_on_goal,Shots on Goal,4
+1312099,2024-11-20T00:30:00+00:00,5529,Canada,Suriname,shots_off_goal,Shots off Goal,6
+1312099,2024-11-20T00:30:00+00:00,5529,Canada,Suriname,total_shots,Total Shots,12
+1312099,2024-11-20T00:30:00+00:00,5529,Canada,Suriname,blocked_shots,Blocked Shots,2
+1312099,2024-11-20T00:30:00+00:00,5529,Canada,Suriname,shots_insidebox,Shots insidebox,11
+1312099,2024-11-20T00:30:00+00:00,5529,Canada,Suriname,shots_outsidebox,Shots outsidebox,1
+1312099,2024-11-20T00:30:00+00:00,5529,Canada,Suriname,fouls,Fouls,21
+1312099,2024-11-20T00:30:00+00:00,5529,Canada,Suriname,corner_kicks,Corner Kicks,5
+1312099,2024-11-20T00:30:00+00:00,5529,Canada,Suriname,offsides,Offsides,2
+1312099,2024-11-20T00:30:00+00:00,5529,Canada,Suriname,ball_possession,Ball Possession,55%
+1312099,2024-11-20T00:30:00+00:00,5529,Canada,Suriname,yellow_cards,Yellow Cards,0
+1312099,2024-11-20T00:30:00+00:00,5529,Canada,Suriname,red_cards,Red Cards,
+1312099,2024-11-20T00:30:00+00:00,5529,Canada,Suriname,goalkeeper_saves,Goalkeeper Saves,1
+1312099,2024-11-20T00:30:00+00:00,5529,Canada,Suriname,total_passes,Total passes,438
+1312099,2024-11-20T00:30:00+00:00,5529,Canada,Suriname,passes_accurate,Passes accurate,348
+1312099,2024-11-20T00:30:00+00:00,5529,Canada,Suriname,passes,Passes %,79%
+1312099,2024-11-20T00:30:00+00:00,5529,Canada,Suriname,expected_goals,expected_goals,
+1312099,2024-11-20T00:30:00+00:00,5529,Canada,Suriname,goals_prevented,goals_prevented,
+1312099,2024-11-20T00:30:00+00:00,8171,Suriname,Canada,shots_on_goal,Shots on Goal,1
+1312099,2024-11-20T00:30:00+00:00,8171,Suriname,Canada,shots_off_goal,Shots off Goal,1
+1312099,2024-11-20T00:30:00+00:00,8171,Suriname,Canada,total_shots,Total Shots,4
+1312099,2024-11-20T00:30:00+00:00,8171,Suriname,Canada,blocked_shots,Blocked Shots,2
+1312099,2024-11-20T00:30:00+00:00,8171,Suriname,Canada,shots_insidebox,Shots insidebox,2
+1312099,2024-11-20T00:30:00+00:00,8171,Suriname,Canada,shots_outsidebox,Shots outsidebox,2
+1312099,2024-11-20T00:30:00+00:00,8171,Suriname,Canada,fouls,Fouls,14
+1312099,2024-11-20T00:30:00+00:00,8171,Suriname,Canada,corner_kicks,Corner Kicks,2
+1312099,2024-11-20T00:30:00+00:00,8171,Suriname,Canada,offsides,Offsides,1
+1312099,2024-11-20T00:30:00+00:00,8171,Suriname,Canada,ball_possession,Ball Possession,45%
+1312099,2024-11-20T00:30:00+00:00,8171,Suriname,Canada,yellow_cards,Yellow Cards,1
+1312099,2024-11-20T00:30:00+00:00,8171,Suriname,Canada,red_cards,Red Cards,
+1312099,2024-11-20T00:30:00+00:00,8171,Suriname,Canada,goalkeeper_saves,Goalkeeper Saves,1
+1312099,2024-11-20T00:30:00+00:00,8171,Suriname,Canada,total_passes,Total passes,360
+1312099,2024-11-20T00:30:00+00:00,8171,Suriname,Canada,passes_accurate,Passes accurate,272
+1312099,2024-11-20T00:30:00+00:00,8171,Suriname,Canada,passes,Passes %,76%
+1312099,2024-11-20T00:30:00+00:00,8171,Suriname,Canada,expected_goals,expected_goals,
+1312099,2024-11-20T00:30:00+00:00,8171,Suriname,Canada,goals_prevented,goals_prevented,

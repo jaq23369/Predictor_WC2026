@@ -1,0 +1,95 @@
+team,thesportsdb_team_id,event_type,event_id,date,time,competition,season,round,home_team,away_team,opponent,venue,goals_for,goals_against,result
+Algeria,134516,last,2440218,2026-03-31,18:30:00,International Friendlies,2026,12,Algeria,Uruguay,Uruguay,home,0,0,draw
+Algeria,134516,next,2479816,2026-06-11,00:00:00,International Friendlies,2026,18,Bolivia,Algeria,Bolivia,,,,
+Argentina,134509,last,2464802,2026-06-07,00:00:00,International Friendlies,2026,17,Argentina,Honduras,Honduras,home,2,0,win
+Argentina,134509,next,2464804,2026-06-10,01:00:00,International Friendlies,2026,18,Argentina,Iceland,Iceland,home,3,0,win
+Australia,134500,last,2423009,2026-03-31,09:10:00,International Friendlies,2026,12,Australia,Curaçao,Curaçao,home,5,1,win
+Australia,134500,next,2461105,2026-06-14,04:00:00,FIFA World Cup,2026,1,Australia,Turkey,Turkey,,,,
+Austria,135986,last,2421791,2026-06-01,18:45:00,International Friendlies,2026,17,Austria,Tunisia,Tunisia,home,1,0,win
+Austria,135986,next,2467599,2026-06-11,04:00:00,International Friendlies,2026,18,Austria,Guatemala,Guatemala,,,,
+Belgium,134515,last,2423013,2026-06-06,13:00:00,International Friendlies,2026,17,Belgium,Tunisia,Tunisia,home,5,0,win
+Belgium,134515,next,2391736,2026-06-15,19:00:00,FIFA World Cup,2026,1,Belgium,Egypt,Egypt,,,,
+Bosnia and Herzegovina,134510,last,2466316,2026-05-29,18:30:00,International Friendlies,2026,16,Bosnia-Herzegovina,North Macedonia,North Macedonia,home,0,0,draw
+Bosnia and Herzegovina,134510,next,2461104,2026-06-12,19:00:00,FIFA World Cup,2026,1,Canada,Bosnia-Herzegovina,Canada,,,,
+Brazil,134496,last,2440225,2026-06-06,22:00:00,International Friendlies,2026,17,Brazil,Egypt,Egypt,home,2,1,win
+Brazil,134496,next,2391730,2026-06-13,22:00:00,FIFA World Cup,2026,1,Brazil,Morocco,Morocco,,,,
+Canada,140073,last,2440223,2026-06-05,23:30:00,International Friendlies,2026,17,Canada,Ireland,Ireland,home,1,1,draw
+Canada,140073,next,2461104,2026-06-12,19:00:00,FIFA World Cup,2026,1,Canada,Bosnia-Herzegovina,Bosnia-Herzegovina,,,,
+Cape Verde,136477,last,2477159,2026-06-06,20:00:00,International Friendlies,2026,17,Cape Verde,Bermuda,Bermuda,home,3,0,win
+Cape Verde,136477,next,2391739,2026-06-15,16:00:00,FIFA World Cup,2026,1,Spain,Cape Verde,Spain,,,,
+Colombia,134501,last,2440226,2026-06-07,23:00:00,International Friendlies,2026,17,Colombia,Jordan,Jordan,home,2,0,win
+Colombia,134501,next,2391745,2026-06-18,02:00:00,FIFA World Cup,2026,1,Uzbekistan,Colombia,Uzbekistan,,,,
+Croatia,133912,last,2423014,2026-06-07,18:45:00,International Friendlies,2026,17,Croatia,Slovenia,Slovenia,home,2,1,win
+Croatia,133912,next,2391743,2026-06-17,20:00:00,FIFA World Cup,2026,1,England,Croatia,England,,,,
+Curaçao,140271,last,2457843,2026-06-07,00:00:00,International Friendlies,2026,17,Curaçao,Aruba,Aruba,home,4,0,win
+Curaçao,140271,next,2391733,2026-06-14,17:00:00,FIFA World Cup,2026,1,Germany,Curaçao,Germany,,,,
+Czechia,133904,last,2468591,2026-06-05,00:00:00,International Friendlies,2026,17,Czech Republic,Guatemala,Guatemala,home,3,1,win
+Czechia,133904,next,2461103,2026-06-12,02:00:00,FIFA World Cup,2026,1,South Korea,Czech Republic,South Korea,,,,
+Côte d'Ivoire,134502,last,2408060,2026-01-06,19:00:00,African Cup of Nations,2025,16,Ivory Coast,Burkina Faso,Burkina Faso,home,3,0,win
+Côte d'Ivoire,134502,next,2391734,2026-06-14,23:00:00,FIFA World Cup,2026,1,Ivory Coast,Ecuador,Ecuador,,,,
+DR Congo,136475,last,2470316,2026-06-09,16:00:00,International Friendlies,2026,18,DR Congo,Chile,Chile,home,1,2,loss
+DR Congo,136475,next,2461108,2026-06-17,17:00:00,FIFA World Cup,2026,1,Portugal,DR Congo,Portugal,,,,
+Ecuador,134507,last,2467597,2026-06-07,20:00:00,International Friendlies,2026,17,Ecuador,Guatemala,Guatemala,home,3,0,win
+Ecuador,134507,next,2391734,2026-06-14,23:00:00,FIFA World Cup,2026,1,Ivory Coast,Ecuador,Ivory Coast,,,,
+Egypt,136138,last,2469946,2026-05-28,18:00:00,International Friendlies,2026,16,Egypt,Russia,Russia,home,1,0,win
+Egypt,136138,next,2391736,2026-06-15,19:00:00,FIFA World Cup,2026,1,Belgium,Egypt,Belgium,,,,
+England,133914,last,2436069,2026-06-06,20:00:00,International Friendlies,2026,17,England,New Zealand,New Zealand,home,1,0,win
+England,133914,next,2436071,2026-06-10,20:00:00,International Friendlies,2026,18,England,Costa Rica,Costa Rica,home,1,0,win
+France,133913,last,2467598,2026-06-08,19:10:00,International Friendlies,2026,18,France,N.Ireland,N.Ireland,home,3,1,win
+France,133913,next,2391742,2026-06-16,19:00:00,FIFA World Cup,2026,1,France,Senegal,Senegal,,,,
+Germany,133907,last,2407714,2026-05-31,18:45:00,International Friendlies,2026,16,Germany,Finland,Finland,home,4,0,win
+Germany,133907,next,2391733,2026-06-14,17:00:00,FIFA World Cup,2026,1,Germany,Curaçao,Curaçao,,,,
+Ghana,134513,last,1890564,2025-10-12,19:00:00,World Cup Qualifying CAF,2026,10,Ghana,Comoros,Comoros,home,1,0,win
+Ghana,134513,next,2391744,2026-06-17,23:00:00,FIFA World Cup,2026,1,Ghana,Panama,Panama,,,,
+Haiti,140175,last,2472353,2026-06-06,00:00:00,International Friendlies,2026,17,Haiti,Peru,Peru,home,1,2,loss
+Haiti,140175,next,2391731,2026-06-14,01:00:00,FIFA World Cup,2026,1,Haiti,Scotland,Scotland,,,,
+Iran,134511,last,2479792,2026-06-04,16:30:00,International Friendlies,2026,17,Iran,Mali,Mali,home,2,0,win
+Iran,134511,next,2483464,2026-06-11,01:00:00,International Friendlies,2026,18,Iran,Grenada,Grenada,,,,
+Iraq,140148,last,2470305,2026-05-29,16:00:00,International Friendlies,2026,16,Iraq,Andorra,Andorra,home,1,0,win
+Iraq,140148,next,2477168,2026-06-10,01:00:00,International Friendlies,2026,18,Iraq,Venezuela,Venezuela,home,0,2,loss
+Japan,134503,last,2464798,2026-05-31,10:25:00,International Friendlies,2026,16,Japan,Iceland,Iceland,home,1,0,win
+Japan,134503,next,2391735,2026-06-14,20:00:00,FIFA World Cup,2026,1,Netherlands,Japan,Netherlands,,,,
+Mexico,134497,last,2440222,2026-06-05,02:00:00,International Friendlies,2026,17,Mexico,Serbia,Serbia,home,5,1,win
+Mexico,134497,next,2391728,2026-06-11,19:00:00,FIFA World Cup,2026,1,Mexico,South Africa,South Africa,,,,
+Morocco,136139,last,2466319,2026-06-07,19:00:00,International Friendlies,2026,17,Morocco,Norway,Norway,home,1,1,draw
+Morocco,136139,next,2391730,2026-06-13,22:00:00,FIFA World Cup,2026,1,Brazil,Morocco,Brazil,,,,
+Netherlands,133905,last,2472354,2026-06-08,18:45:00,International Friendlies,2026,18,Netherlands,Uzbekistan,Uzbekistan,home,2,1,win
+Netherlands,133905,next,2391735,2026-06-14,20:00:00,FIFA World Cup,2026,1,Netherlands,Japan,Japan,,,,
+New Zealand,137449,last,2424551,2026-03-30,06:15:00,International Friendlies,2026,12,New Zealand,Chile,Chile,home,4,1,win
+New Zealand,137449,next,2391737,2026-06-16,01:00:00,FIFA World Cup,2026,1,Iran,New Zealand,Iran,,,,
+Norway,136516,last,2454914,2026-06-01,17:00:00,International Friendlies,2026,17,Norway,Sweden,Sweden,home,3,1,win
+Norway,136516,next,2461107,2026-06-16,22:00:00,FIFA World Cup,2026,1,Iraq,Norway,Iraq,,,,
+Panama,136141,last,2470309,2026-06-06,19:00:00,International Friendlies,2026,17,Panama,Bosnia-Herzegovina,Bosnia-Herzegovina,home,1,1,draw
+Panama,136141,next,2391744,2026-06-17,23:00:00,FIFA World Cup,2026,1,Ghana,Panama,Ghana,,,,
+Paraguay,136471,last,2469958,2026-06-05,22:15:00,International Friendlies,2026,17,Paraguay,Nicaragua,Nicaragua,home,4,0,win
+Paraguay,136471,next,2391729,2026-06-13,01:00:00,FIFA World Cup,2026,1,USA,Paraguay,USA,,,,
+Portugal,133908,last,2440224,2026-06-06,17:45:00,International Friendlies,2026,17,Portugal,Chile,Chile,home,2,1,win
+Portugal,133908,next,2464805,2026-06-10,19:45:00,International Friendlies,2026,18,Portugal,Nigeria,Nigeria,home,2,1,win
+Qatar,136472,last,2470310,2026-06-06,20:00:00,International Friendlies,2026,17,Qatar,El Salvador,El Salvador,home,0,0,draw
+Qatar,136472,next,2391732,2026-06-13,19:00:00,FIFA World Cup,2026,1,Qatar,Switzerland,Switzerland,,,,
+Saudi Arabia,136137,last,2470317,2026-06-09,23:00:00,International Friendlies,2026,18,Saudi Arabia,Senegal,Senegal,home,0,0,draw
+Saudi Arabia,136137,next,2391738,2026-06-15,22:00:00,FIFA World Cup,2026,1,Saudi Arabia,Uruguay,Uruguay,,,,
+Scotland,136450,last,2422315,2026-05-30,12:00:00,International Friendlies,2026,16,Scotland,Curaçao,Curaçao,home,4,1,win
+Scotland,136450,next,2391731,2026-06-14,01:00:00,FIFA World Cup,2026,1,Haiti,Scotland,Haiti,,,,
+Senegal,136143,last,2440217,2026-03-31,19:00:00,International Friendlies,2026,12,Senegal,Gambia,Gambia,home,3,1,win
+Senegal,136143,next,2391742,2026-06-16,19:00:00,FIFA World Cup,2026,1,France,Senegal,France,,,,
+South Africa,136482,last,2469947,2026-05-29,16:00:00,International Friendlies,2026,16,South Africa,Nicaragua,Nicaragua,home,0,0,draw
+South Africa,136482,next,2391728,2026-06-11,19:00:00,FIFA World Cup,2026,1,Mexico,South Africa,Mexico,,,,
+South Korea,134517,last,2472349,2026-06-04,01:00:00,International Friendlies,2026,17,South Korea,El Salvador,El Salvador,home,1,0,win
+South Korea,134517,next,2461103,2026-06-12,02:00:00,FIFA World Cup,2026,1,South Korea,Czech Republic,Czech Republic,,,,
+Spain,133909,last,2470308,2026-06-04,19:00:00,International Friendlies,2026,17,Spain,Iraq,Iraq,home,1,1,draw
+Spain,133909,next,2391739,2026-06-15,16:00:00,FIFA World Cup,2026,1,Spain,Cape Verde,Cape Verde,,,,
+Sweden,133916,last,2467958,2026-06-04,17:00:00,International Friendlies,2026,17,Sweden,Greece,Greece,home,2,2,draw
+Sweden,133916,next,2461106,2026-06-15,02:00:00,FIFA World Cup,2026,1,Sweden,Tunisia,Tunisia,,,,
+Switzerland,134506,last,2467596,2026-06-06,19:00:00,International Friendlies,2026,17,Switzerland,Australia,Australia,home,1,1,draw
+Switzerland,134506,next,2391732,2026-06-13,19:00:00,FIFA World Cup,2026,1,Qatar,Switzerland,Qatar,,,,
+Tunisia,136142,last,2215525,2025-12-23,20:00:00,African Cup of Nations,2025,1,Tunisia,Uganda,Uganda,home,3,1,win
+Tunisia,136142,next,2461106,2026-06-15,02:00:00,FIFA World Cup,2026,1,Sweden,Tunisia,Sweden,,,,
+Turkey,135985,last,2469951,2026-06-01,17:30:00,International Friendlies,2026,17,Turkey,North Macedonia,North Macedonia,home,4,0,win
+Turkey,135985,next,2461105,2026-06-14,04:00:00,FIFA World Cup,2026,1,Australia,Turkey,Australia,,,,
+United States,134514,last,2408950,2026-06-06,18:30:00,International Friendlies,2026,17,USA,Germany,Germany,home,1,2,loss
+United States,134514,next,2391729,2026-06-13,01:00:00,FIFA World Cup,2026,1,USA,Paraguay,Paraguay,,,,
+Uruguay,134504,last,2343639,2025-10-10,12:45:00,International Friendlies,2025,1,Uruguay,Dominican Republic,Dominican Republic,home,1,0,win
+Uruguay,134504,next,2391738,2026-06-15,22:00:00,FIFA World Cup,2026,1,Saudi Arabia,Uruguay,Saudi Arabia,,,,
+Uzbekistan,140151,last,2456407,2026-03-30,14:00:00,International Friendlies,2026,12,Uzbekistan,Venezuela,Venezuela,home,0,0,draw
+Uzbekistan,140151,next,2391745,2026-06-18,02:00:00,FIFA World Cup,2026,1,Uzbekistan,Colombia,Colombia,,,,

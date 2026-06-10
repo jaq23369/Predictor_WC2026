@@ -1,0 +1,49 @@
+team,api_football_team_id,api_football_team,country,national,logo,match_status
+Algeria,1532,Algeria,,True,https://media.api-sports.io/football/teams/1532.png,exact
+Argentina,26,Argentina,,True,https://media.api-sports.io/football/teams/26.png,exact
+Australia,20,Australia,,True,https://media.api-sports.io/football/teams/20.png,exact
+Austria,775,Austria,,True,https://media.api-sports.io/football/teams/775.png,exact
+Belgium,1,Belgium,,True,https://media.api-sports.io/football/teams/1.png,exact
+Bosnia and Herzegovina,1113,Bosnia & Herzegovina,,True,https://media.api-sports.io/football/teams/1113.png,fallback_national
+Brazil,6,Brazil,,True,https://media.api-sports.io/football/teams/6.png,exact
+Canada,5529,Canada,,True,https://media.api-sports.io/football/teams/5529.png,exact
+Cape Verde,1533,Cape Verde Islands,,True,https://media.api-sports.io/football/teams/1533.png,fallback_national
+Colombia,,,,,,unmatched
+Croatia,,,,,,unmatched
+Curaçao,,,,,,unmatched
+Czechia,,,,,,unmatched
+Côte d'Ivoire,,,,,,unmatched
+DR Congo,,,,,,unmatched
+Ecuador,,,,,,unmatched
+Egypt,,,,,,unmatched
+England,,,,,,unmatched
+France,,,,,,unmatched
+Germany,,,,,,unmatched
+Ghana,,,,,,unmatched
+Haiti,,,,,,unmatched
+Iran,,,,,,unmatched
+Iraq,,,,,,unmatched
+Japan,,,,,,unmatched
+Jordan,,,,,,unmatched
+Mexico,,,,,,unmatched
+Morocco,,,,,,unmatched
+Netherlands,,,,,,unmatched
+New Zealand,,,,,,unmatched
+Norway,,,,,,unmatched
+Panama,,,,,,unmatched
+Paraguay,,,,,,unmatched
+Portugal,,,,,,unmatched
+Qatar,,,,,,unmatched
+Saudi Arabia,,,,,,unmatched
+Scotland,,,,,,unmatched
+Senegal,,,,,,unmatched
+South Africa,1531,South Africa,,True,https://media.api-sports.io/football/teams/1531.png,exact
+South Korea,17,South Korea,,True,https://media.api-sports.io/football/teams/17.png,exact
+Spain,9,Spain,,True,https://media.api-sports.io/football/teams/9.png,exact
+Sweden,5,Sweden,,True,https://media.api-sports.io/football/teams/5.png,exact
+Switzerland,15,Switzerland,,True,https://media.api-sports.io/football/teams/15.png,exact
+Tunisia,,,,,,unmatched
+Turkey,,,,,,unmatched
+United States,,,,,,unmatched
+Uruguay,,,,,,unmatched
+Uzbekistan,,,,,,unmatched

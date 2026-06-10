@@ -107,6 +107,8 @@ Crear un archivo local `.env` con:
 
 ```bash
 FOOTBALL_DATA_API_TOKEN=your_token_here
+THESPORTSDB_API_KEY=123
+THESPORTSDB_BASE_URL=https://www.thesportsdb.com/api/v1/json
 ```
 
 Luego ejecutar:
@@ -124,6 +126,67 @@ Genera CSVs en `data/processed/`:
 Tambien guarda respuestas crudas en `data/api_cache/football_data/`, carpeta ignorada por Git.
 
 El cliente usa el header `X-Auth-Token` y revisa respuestas `429` para respetar throttling con `Retry-After`.
+
+## Sincronizar TheSportsDB V1
+
+TheSportsDB se usa como fuente complementaria offline para forma reciente, plantillas, metadata visual y, opcionalmente, estadisticas de partidos recientes. No reemplaza Elo, FIFA, football-data.org ni Transfermarkt.
+
+Sync basico recomendado:
+
+```bash
+.venv/bin/python scripts/sync_thesportsdb.py
+```
+
+Genera:
+
+- `data/processed/thesportsdb_team_mapping.csv`
+- `data/processed/thesportsdb_players.csv`
+- `data/processed/thesportsdb_events.csv`
+- `data/processed/thesportsdb_recent_form.csv`
+- `data/processed/thesportsdb_coverage.csv`
+
+Tambien guarda respuestas crudas en `data/api_cache/thesportsdb/`, carpeta ignorada por Git.
+
+Para intentar enriquecer eventos recientes con stats, alineaciones y timeline:
+
+```bash
+.venv/bin/python scripts/sync_thesportsdb.py --include-event-enrichment --max-events-per-team 5
+```
+
+Esto puede hacer bastantes requests. Conviene revisar `thesportsdb_coverage.csv` antes de usar estas variables en entrenamiento.
+
+## Sincronizar API-Football
+
+API-Football se usa para obtener estadisticas reales de partidos: tiros, corners, faltas, tarjetas y posesion. En el plan gratis hay dos limites importantes:
+
+- 100 requests por dia.
+- 10 requests por minuto.
+- Fixtures disponibles en temporadas 2022 a 2024 en el plan gratis.
+
+Por eso el sync es incremental y cacheado. Cada corrida completa algunos equipos sin repetir requests ya guardados.
+
+Variables en `.env`:
+
+```bash
+API_FOOTBALL_API_KEY=your_api_football_key_here
+API_FOOTBALL_BASE_URL=https://v3.football.api-sports.io
+```
+
+Sync recomendado:
+
+```bash
+.venv/bin/python scripts/sync_api_football.py --daily-budget 80 --season 2024 --from-date 2024-01-01 --to-date 2024-12-31
+```
+
+Genera:
+
+- `data/processed/api_football_team_mapping.csv`
+- `data/processed/api_football_fixtures.csv`
+- `data/processed/api_football_fixture_statistics.csv`
+- `data/processed/api_football_team_match_stats.csv`
+- `data/processed/api_football_coverage.csv`
+
+Tambien guarda cache crudo en `data/api_cache/api_football/`.
 
 ## Frontend
 

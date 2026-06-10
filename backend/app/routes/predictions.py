@@ -99,3 +99,101 @@ def transfermarkt_national_team_values(
     service: PredictionService = Depends(get_prediction_service),
 ) -> list[dict[str, str]]:
     return service.transfermarkt_national_team_values()
+
+
+@router.get("/world-cup-2026/squads")
+def world_cup_2026_squads(
+    service: PredictionService = Depends(get_prediction_service),
+) -> list[dict[str, str]]:
+    return service.world_cup_2026_squads()
+
+
+@router.get("/world-cup-2026/squad-summary")
+def world_cup_2026_squad_summary(
+    service: PredictionService = Depends(get_prediction_service),
+) -> list[dict[str, str]]:
+    return service.world_cup_2026_squad_summary()
+
+
+@router.get("/world-cup-2026/simulation")
+def world_cup_2026_simulation(
+    service: PredictionService = Depends(get_prediction_service),
+) -> dict:
+    return service.world_cup_2026_simulation()
+
+
+@router.get("/thesportsdb/team-mapping")
+def thesportsdb_team_mapping(
+    service: PredictionService = Depends(get_prediction_service),
+) -> list[dict[str, str]]:
+    return service.thesportsdb_team_mapping()
+
+
+@router.get("/thesportsdb/players")
+def thesportsdb_players(
+    service: PredictionService = Depends(get_prediction_service),
+) -> list[dict[str, str]]:
+    return service.thesportsdb_players()
+
+
+@router.get("/thesportsdb/events")
+def thesportsdb_events(
+    service: PredictionService = Depends(get_prediction_service),
+) -> list[dict[str, str]]:
+    return service.thesportsdb_events()
+
+
+@router.get("/thesportsdb/recent-form")
+def thesportsdb_recent_form(
+    service: PredictionService = Depends(get_prediction_service),
+) -> list[dict[str, str]]:
+    return service.thesportsdb_recent_form()
+
+
+@router.get("/thesportsdb/recent-match-stats")
+def thesportsdb_recent_match_stats(
+    service: PredictionService = Depends(get_prediction_service),
+) -> list[dict[str, str]]:
+    return service.thesportsdb_recent_match_stats()
+
+
+@router.get("/thesportsdb/coverage")
+def thesportsdb_coverage(
+    service: PredictionService = Depends(get_prediction_service),
+) -> list[dict[str, str]]:
+    return service.thesportsdb_coverage()
+
+
+@router.get("/api-football/team-mapping")
+def api_football_team_mapping(
+    service: PredictionService = Depends(get_prediction_service),
+) -> list[dict[str, str]]:
+    return service.api_football_team_mapping()
+
+
+@router.get("/api-football/fixtures")
+def api_football_fixtures(
+    service: PredictionService = Depends(get_prediction_service),
+) -> list[dict[str, str]]:
+    return service.api_football_fixtures()
+
+
+@router.get("/api-football/fixture-statistics")
+def api_football_fixture_statistics(
+    service: PredictionService = Depends(get_prediction_service),
+) -> list[dict[str, str]]:
+    return service.api_football_fixture_statistics()
+
+
+@router.get("/api-football/team-match-stats")
+def api_football_team_match_stats(
+    service: PredictionService = Depends(get_prediction_service),
+) -> list[dict[str, str]]:
+    return service.api_football_team_match_stats()
+
+
+@router.get("/api-football/coverage")
+def api_football_coverage(
+    service: PredictionService = Depends(get_prediction_service),
+) -> list[dict[str, str]]:
+    return service.api_football_coverage()

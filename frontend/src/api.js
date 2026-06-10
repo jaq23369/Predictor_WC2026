@@ -33,6 +33,42 @@ export function getTransfermarktValues() {
   return request("/transfermarkt/national-team-values");
 }
 
+export function getFootballDataTeams() {
+  return request("/football-data/world-cup-2026/teams");
+}
+
+export function getSquads() {
+  return request("/world-cup-2026/squads");
+}
+
+export function getSquadSummary() {
+  return request("/world-cup-2026/squad-summary");
+}
+
+export function getSimulation() {
+  return request("/world-cup-2026/simulation");
+}
+
+export function getTheSportsDBCoverage() {
+  return request("/thesportsdb/coverage");
+}
+
+export function getTheSportsDBRecentForm() {
+  return request("/thesportsdb/recent-form");
+}
+
+export function getTheSportsDBRecentMatchStats() {
+  return request("/thesportsdb/recent-match-stats");
+}
+
+export function getAPIFootballTeamMatchStats() {
+  return request("/api-football/team-match-stats");
+}
+
+export function getAPIFootballCoverage() {
+  return request("/api-football/coverage");
+}
+
 export function predictMatch(payload) {
   return request("/predict", {
     method: "POST",

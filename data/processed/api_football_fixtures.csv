@@ -1,0 +1,72 @@
+team,api_football_team_id,fixture_id,date,timestamp,status,league_id,league,season,round,home_team_id,home_team,away_team_id,away_team,opponent,venue,goals_for,goals_against
+Algeria,1532,1155254,2024-01-09T15:00:00+00:00,1704812400,FT,10,Friendlies,2024,Friendlies 1,1528,Burundi,1532,Algeria,Burundi,away,4,0
+Algeria,1532,1170216,2024-03-22T21:00:00+00:00,1711141200,FT,10,Friendlies,2024,Friendlies 1,1532,Algeria,2381,Bolivia,Bolivia,home,3,2
+Algeria,1532,1170218,2024-03-26T21:00:00+00:00,1711486800,FT,10,Friendlies,2024,Friendlies 1,1532,Algeria,1531,South Africa,South Africa,home,3,3
+Argentina,26,1146307,2024-06-26T01:00:00+00:00,1719363600,FT,9,Copa America,2024,Group Stage - 2,2383,Chile,26,Argentina,Chile,away,1,0
+Argentina,26,1146313,2024-06-30T00:00:00+00:00,1719705600,FT,9,Copa America,2024,Group Stage - 3,26,Argentina,30,Peru,Peru,home,2,0
+Argentina,26,1176913,2024-03-23T00:00:00+00:00,1711152000,FT,10,Friendlies,2024,Friendlies 1,26,Argentina,5159,El Salvador,El Salvador,home,3,0
+Argentina,26,1176914,2024-03-27T02:50:00+00:00,1711507800,FT,10,Friendlies,2024,Friendlies 1,26,Argentina,29,Costa Rica,Costa Rica,home,3,1
+Argentina,26,1178424,2024-06-15T00:00:00+00:00,1718409600,FT,10,Friendlies,2024,Friendlies 1,26,Argentina,5161,Guatemala,Guatemala,home,4,1
+Argentina,26,1189120,2024-06-21T00:00:00+00:00,1718928000,FT,9,Copa America,2024,Group Stage - 1,26,Argentina,5529,Canada,Canada,home,2,0
+Argentina,26,1193462,2024-06-09T23:00:00+00:00,1717974000,FT,10,Friendlies,2024,Friendlies 1,26,Argentina,2382,Ecuador,Ecuador,home,1,0
+Argentina,26,1219957,2024-07-05T01:00:00+00:00,1720141200,PEN,9,Copa America,2024,Quarter-finals,26,Argentina,2382,Ecuador,Ecuador,home,1,1
+Argentina,26,1227537,2024-07-10T00:00:00+00:00,1720569600,FT,9,Copa America,2024,Semi-finals,26,Argentina,5529,Canada,Canada,home,2,0
+Argentina,26,1234030,2024-07-15T00:30:00+00:00,1721003400,AET,9,Copa America,2024,Final,26,Argentina,8,Colombia,Colombia,home,1,0
+Australia,20,1155242,2024-01-06T14:00:00+00:00,1704549600,FT,10,Friendlies,2024,Friendlies 1,1547,Bahrain,20,Australia,Bahrain,away,2,0
+Austria,775,1145515,2024-06-17T19:00:00+00:00,1718650800,FT,4,Euro Championship,2024,Group D - 1,775,Austria,2,France,France,home,0,1
+Austria,775,1145533,2024-06-25T16:00:00+00:00,1719331200,FT,4,Euro Championship,2024,Group D - 3,1118,Netherlands,775,Austria,Netherlands,away,3,2
+Austria,775,1155269,2024-03-23T17:00:00+00:00,1711213200,FT,10,Friendlies,2024,Friendlies 1,773,Slovakia,775,Austria,Slovakia,away,2,0
+Austria,775,1172362,2024-03-26T19:45:00+00:00,1711482300,FT,10,Friendlies,2024,Friendlies 1,775,Austria,777,Türkiye,Türkiye,home,6,1
+Austria,775,1172892,2024-09-06T18:45:00+00:00,1725648300,FT,5,UEFA Nations League,2024,League B - 1,1091,Slovenia,775,Austria,Slovenia,away,1,1
+Austria,775,1172899,2024-09-09T18:45:00+00:00,1725907500,FT,5,UEFA Nations League,2024,League B - 2,1090,Norway,775,Austria,Norway,away,1,2
+Austria,775,1172909,2024-10-10T18:45:00+00:00,1728585900,FT,5,UEFA Nations League,2024,League B - 3,775,Austria,1095,Kazakhstan,Kazakhstan,home,4,0
+Austria,775,1172918,2024-10-13T18:45:00+00:00,1728845100,FT,5,UEFA Nations League,2024,League B - 4,775,Austria,1090,Norway,Norway,home,5,1
+Austria,775,1172923,2024-11-14T15:00:00+00:00,1731596400,FT,5,UEFA Nations League,2024,League B - 5,1095,Kazakhstan,775,Austria,Kazakhstan,away,2,0
+Austria,775,1172933,2024-11-17T17:00:00+00:00,1731862800,FT,5,UEFA Nations League,2024,League B - 6,775,Austria,1091,Slovenia,Slovenia,home,1,1
+Austria,775,1173868,2024-06-04T18:45:00+00:00,1717526700,FT,10,Friendlies,2024,Friendlies 1,775,Austria,14,Serbia,Serbia,home,2,1
+Austria,775,1173869,2024-06-08T16:00:00+00:00,1717862400,FT,10,Friendlies,2024,Friendlies 1,15,Switzerland,775,Austria,Switzerland,away,1,1
+Austria,775,1189850,2024-06-21T16:00:00+00:00,1718985600,FT,4,Euro Championship,2024,Group D - 2,24,Poland,775,Austria,Poland,away,3,1
+Austria,775,1215078,2024-07-02T19:00:00+00:00,1719946800,FT,4,Euro Championship,2024,Round of 16,775,Austria,777,Türkiye,Türkiye,home,1,2
+Belgium,1,1145516,2024-06-17T16:00:00+00:00,1718640000,FT,4,Euro Championship,2024,Group E - 1,1,Belgium,773,Slovakia,Slovakia,home,0,1
+Belgium,1,1145525,2024-06-22T19:00:00+00:00,1719082800,FT,4,Euro Championship,2024,Group E - 2,1,Belgium,774,Romania,Romania,home,2,0
+Belgium,1,1155268,2024-03-23T17:00:00+00:00,1711213200,FT,10,Friendlies,2024,Friendlies 1,776,Rep. Of Ireland,1,Belgium,Rep. Of Ireland,away,0,0
+Belgium,1,1155276,2024-03-26T19:45:00+00:00,1711482300,FT,10,Friendlies,2024,Friendlies 1,10,England,1,Belgium,England,away,2,2
+Belgium,1,1168423,2024-06-08T18:00:00+00:00,1717869600,FT,10,Friendlies,2024,Friendlies 1,1,Belgium,1102,Luxembourg,Luxembourg,home,3,0
+Belgium,1,1169677,2024-06-05T18:30:00+00:00,1717612200,FT,10,Friendlies,2024,Friendlies 1,1,Belgium,1109,Montenegro,Montenegro,home,2,0
+Belgium,1,1172943,2024-09-06T18:45:00+00:00,1725648300,FT,5,UEFA Nations League,2024,League A - 1,1,Belgium,1116,Israel,Israel,home,3,1
+Belgium,1,1172951,2024-09-09T18:45:00+00:00,1725907500,FT,5,UEFA Nations League,2024,League A - 2,2,France,1,Belgium,France,away,0,2
+Belgium,1,1172956,2024-10-10T18:45:00+00:00,1728585900,FT,5,UEFA Nations League,2024,League A - 3,768,Italy,1,Belgium,Italy,away,2,2
+Belgium,1,1172963,2024-10-14T18:45:00+00:00,1728931500,FT,5,UEFA Nations League,2024,League A - 4,1,Belgium,2,France,France,home,1,2
+Belgium,1,1172971,2024-11-14T19:45:00+00:00,1731613500,FT,5,UEFA Nations League,2024,League A - 5,1,Belgium,768,Italy,Italy,home,0,1
+Belgium,1,1172979,2024-11-17T19:45:00+00:00,1731872700,FT,5,UEFA Nations League,2024,League A - 6,1116,Israel,1,Belgium,Israel,away,0,1
+Belgium,1,1189853,2024-06-26T16:00:00+00:00,1719417600,FT,4,Euro Championship,2024,Group E - 3,772,Ukraine,1,Belgium,Ukraine,away,0,0
+Belgium,1,1215073,2024-07-01T16:00:00+00:00,1719849600,FT,4,Euro Championship,2024,Round of 16,2,France,1,Belgium,France,away,0,1
+Bosnia and Herzegovina,1113,1170219,2024-06-03T18:45:00+00:00,1717440300,FT,10,Friendlies,2024,Friendlies 1,10,England,1113,Bosnia & Herzegovina,England,away,0,3
+Bosnia and Herzegovina,1113,1172946,2024-09-07T18:45:00+00:00,1725734700,FT,5,UEFA Nations League,2024,League A - 1,1118,Netherlands,1113,Bosnia & Herzegovina,Netherlands,away,2,5
+Bosnia and Herzegovina,1113,1172953,2024-09-10T18:45:00+00:00,1725993900,FT,5,UEFA Nations League,2024,League A - 2,769,Hungary,1113,Bosnia & Herzegovina,Hungary,away,0,0
+Bosnia and Herzegovina,1113,1172957,2024-10-11T18:45:00+00:00,1728672300,FT,5,UEFA Nations League,2024,League A - 3,1113,Bosnia & Herzegovina,25,Germany,Germany,home,1,2
+Bosnia and Herzegovina,1113,1172965,2024-10-14T18:45:00+00:00,1728931500,FT,5,UEFA Nations League,2024,League A - 4,1113,Bosnia & Herzegovina,769,Hungary,Hungary,home,0,2
+Bosnia and Herzegovina,1113,1172977,2024-11-16T19:45:00+00:00,1731786300,FT,5,UEFA Nations League,2024,League A - 5,25,Germany,1113,Bosnia & Herzegovina,Germany,away,0,7
+Bosnia and Herzegovina,1113,1172985,2024-11-19T19:45:00+00:00,1732045500,FT,5,UEFA Nations League,2024,League A - 6,1113,Bosnia & Herzegovina,1118,Netherlands,Netherlands,home,1,1
+Bosnia and Herzegovina,1113,1173870,2024-06-09T18:45:00+00:00,1717958700,FT,10,Friendlies,2024,Friendlies 1,768,Italy,1113,Bosnia & Herzegovina,Italy,away,0,1
+Brazil,6,1146312,2024-06-29T01:00:00+00:00,1719622800,FT,9,Copa America,2024,Group Stage - 2,2380,Paraguay,6,Brazil,Paraguay,away,4,1
+Brazil,6,1146318,2024-07-03T01:00:00+00:00,1719968400,FT,9,Copa America,2024,Group Stage - 3,6,Brazil,8,Colombia,Colombia,home,1,1
+Brazil,6,1155270,2024-03-23T19:00:00+00:00,1711220400,FT,10,Friendlies,2024,Friendlies 1,10,England,6,Brazil,England,away,1,0
+Brazil,6,1155282,2024-06-09T01:00:00+00:00,1717894800,FT,10,Friendlies,2024,Friendlies 1,16,Mexico,6,Brazil,Mexico,away,3,2
+Brazil,6,1160561,2024-03-26T20:30:00+00:00,1711485000,FT,10,Friendlies,2024,Friendlies 1,9,Spain,6,Brazil,Spain,away,3,3
+Brazil,6,1178423,2024-06-12T23:00:00+00:00,1718233200,FT,10,Friendlies,2024,Friendlies 1,2384,USA,6,Brazil,USA,away,1,1
+Brazil,6,1189121,2024-06-25T01:00:00+00:00,1719277200,FT,9,Copa America,2024,Group Stage - 1,6,Brazil,29,Costa Rica,Costa Rica,home,0,0
+Brazil,6,1222460,2024-07-07T01:00:00+00:00,1720314000,PEN,9,Copa America,2024,Quarter-finals,7,Uruguay,6,Brazil,Uruguay,away,0,0
+Canada,5529,1182784,2024-06-06T18:45:00+00:00,1717699500,FT,10,Friendlies,2024,Friendlies 1,1118,Netherlands,5529,Canada,Netherlands,away,0,4
+Canada,5529,1184586,2024-09-11T01:00:00+00:00,1726016400,FT,10,Friendlies,2024,Friendlies 1,16,Mexico,5529,Canada,Mexico,away,0,0
+Canada,5529,1189120,2024-06-21T00:00:00+00:00,1718928000,FT,9,Copa America,2024,Group Stage - 1,26,Argentina,5529,Canada,Argentina,away,0,2
+Canada,5529,1189122,2024-06-26T22:00:00+00:00,1719439200,FT,9,Copa America,2024,Group Stage - 2,30,Peru,5529,Canada,Peru,away,1,0
+Canada,5529,1189124,2024-06-30T00:00:00+00:00,1719705600,FT,9,Copa America,2024,Group Stage - 3,5529,Canada,2383,Chile,Chile,home,0,0
+Canada,5529,1196553,2024-06-09T19:15:00+00:00,1717960500,FT,10,Friendlies,2024,Friendlies 1,2,France,5529,Canada,France,away,0,0
+Canada,5529,1215627,2024-09-07T20:00:00+00:00,1725739200,FT,10,Friendlies,2024,Friendlies 1,2384,USA,5529,Canada,USA,away,2,1
+Canada,5529,1219958,2024-07-06T01:00:00+00:00,1720227600,PEN,9,Copa America,2024,Quarter-finals,2379,Venezuela,5529,Canada,Venezuela,away,1,1
+Canada,5529,1227537,2024-07-10T00:00:00+00:00,1720569600,FT,9,Copa America,2024,Semi-finals,26,Argentina,5529,Canada,Argentina,away,0,2
+Canada,5529,1234029,2024-07-14T00:00:00+00:00,1720915200,PEN,9,Copa America,2024,3rd Place Final,5529,Canada,7,Uruguay,Uruguay,home,2,2
+Canada,5529,1294672,2024-10-15T23:30:00+00:00,1729035000,FT,10,Friendlies,2024,Friendlies 1,5529,Canada,11,Panama,Panama,home,2,1
+Canada,5529,1312098,2024-11-15T23:30:00+00:00,1731713400,FT,536,CONCACAF Nations League,2024,Quarter-finals,8171,Suriname,5529,Canada,Suriname,away,1,0
+Canada,5529,1312099,2024-11-20T00:30:00+00:00,1732062600,FT,536,CONCACAF Nations League,2024,Quarter-finals,5529,Canada,8171,Suriname,Suriname,home,3,0
