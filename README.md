@@ -218,6 +218,72 @@ La interfaz muestra:
 
 Por ahora solo hay datos concretos para fase de grupos. Octavos, cuartos, semifinales y final quedan marcados como pendientes hasta implementar simulacion Monte Carlo para clasificados y bracket.
 
+## Deploy en Vercel
+
+El proyecto esta preparado para desplegar frontend y backend en Vercel desde el mismo repositorio.
+
+Estructura de deploy:
+
+```text
+frontend/        React + Vite
+api/index.py     entrada serverless para FastAPI
+backend/         aplicacion FastAPI
+data/processed/  CSVs que usa la API
+models/artifacts/ modelos entrenados
+```
+
+Archivos de configuracion:
+
+```text
+vercel.json
+.vercelignore
+.python-version
+api/index.py
+```
+
+En Vercel:
+
+1. Importar el repo:
+
+```text
+jaq23369/Predictor_WC2026
+```
+
+2. Usar la configuracion del repo. `vercel.json` define:
+
+```text
+buildCommand = cd frontend && npm install && npm run build
+outputDirectory = frontend/dist
+```
+
+3. Agregar variables de entorno en Vercel:
+
+```bash
+FOOTBALL_DATA_API_TOKEN=your_token_here
+THESPORTSDB_API_KEY=123
+THESPORTSDB_BASE_URL=https://www.thesportsdb.com/api/v1/json
+API_FOOTBALL_API_KEY=your_api_football_key_here
+API_FOOTBALL_BASE_URL=https://v3.football.api-sports.io
+CORS_ORIGINS=https://tu-proyecto.vercel.app
+```
+
+4. En produccion el frontend usa automaticamente:
+
+```text
+/api
+```
+
+Por eso no necesitas definir `VITE_API_BASE_URL` si frontend y backend viven en el mismo deploy de Vercel.
+
+5. Verificar:
+
+```text
+https://tu-proyecto.vercel.app/api/health
+https://tu-proyecto.vercel.app
+```
+
+Nota: Vercel Functions para Python incluyen archivos usados por el backend. `vercel.json` excluye `data/raw`, `data/api_cache`, `.venv`, `frontend` y scripts para mantener el bundle bajo los limites. Los datos usados en produccion deben estar en `data/processed/` y los modelos en `models/artifacts/`.
+
 ## Nota metodologica
 
 El dataset final evita usar goles reales como features para prevenir fuga de informacion.
