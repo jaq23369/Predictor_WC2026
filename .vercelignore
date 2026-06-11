@@ -1,7 +1,6 @@
 .env
 .venv/
 frontend/node_modules/
-frontend/dist/
 data/raw/
 data/api_cache/
 __pycache__/
