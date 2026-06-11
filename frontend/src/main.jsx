@@ -29,6 +29,7 @@ import {
   getSimulation,
   predictMatch,
 } from "./api";
+import SimulationBracketTree from "./components/simulation-bracket-tree";
 import "./styles.css";
 
 const DEFAULT_REQUEST = {
@@ -104,6 +105,113 @@ function formatDate(value) {
     month: "short",
     year: "numeric",
   }).format(new Date(`${value}T12:00:00`));
+}
+
+const SIMULATION_PHASES = {
+  "Last 32": "R32",
+  "Last 16": "R16",
+  "Quarter-finals": "QF",
+  "Semi-finals": "SF",
+  Final: "Final",
+};
+
+const SIMULATION_MATCH_STARTS = {
+  R32: 73,
+  R16: 89,
+  QF: 97,
+  SF: 101,
+  Final: 104,
+};
+
+const SIMULATION_PHASE_DATES = {
+  R32: "2026-06-28",
+  R16: "2026-07-04",
+  QF: "2026-07-09",
+  SF: "2026-07-14",
+  ThirdPlace: "2026-07-18",
+  Final: "2026-07-19",
+};
+
+function scoreFromTopScore(value) {
+  const [home, away] = String(value || "")
+    .split("-")
+    .map((part) => Number(part.trim()));
+  return {
+    home_score: Number.isFinite(home) ? home : null,
+    away_score: Number.isFinite(away) ? away : null,
+  };
+}
+
+function loserFromMatch(match) {
+  if (!match?.winner) return null;
+  if (match.winner === match.team_a) return match.team_b || null;
+  if (match.winner === match.team_b) return match.team_a || null;
+  return null;
+}
+
+function buildBracketTreeMatches(simulation, crestByTeam) {
+  const matches = [];
+  const rounds = simulation?.bracket || [];
+
+  rounds.forEach((round) => {
+    const phase = SIMULATION_PHASES[round.round] || round.round;
+    const start = SIMULATION_MATCH_STARTS[phase] || 1;
+
+    (round.matches || []).forEach((match, index) => {
+      const score = scoreFromTopScore(match.top_score);
+      matches.push({
+        match_number: Number(match.match_number) || start + index,
+        home_team: match.team_a || null,
+        away_team: match.team_b || null,
+        home_flag: crestByTeam.get(canonicalTeamName(match.team_a)) || null,
+        away_flag: crestByTeam.get(canonicalTeamName(match.team_b)) || null,
+        home_score: score.home_score,
+        away_score: score.away_score,
+        kickoff_at: match.kickoff_at || SIMULATION_PHASE_DATES[phase] || null,
+        phase,
+        winner: match.winner || null,
+        is_finished: Boolean(match.winner),
+      });
+    });
+  });
+
+  if (simulation?.third_place_match) {
+    const match = simulation.third_place_match;
+    const score = scoreFromTopScore(match.top_score);
+    matches.push({
+      match_number: Number(match.match_number) || 103,
+      home_team: match.team_a || null,
+      away_team: match.team_b || null,
+      home_flag: crestByTeam.get(canonicalTeamName(match.team_a)) || null,
+      away_flag: crestByTeam.get(canonicalTeamName(match.team_b)) || null,
+      home_score: score.home_score,
+      away_score: score.away_score,
+      kickoff_at: match.kickoff_at || SIMULATION_PHASE_DATES.ThirdPlace,
+      phase: "ThirdPlace",
+      winner: match.winner || null,
+      is_finished: Boolean(match.winner),
+    });
+  } else {
+    const semiFinal = rounds.find((round) => SIMULATION_PHASES[round.round] === "SF");
+    const thirdPlaceTeams = (semiFinal?.matches || []).map(loserFromMatch).filter(Boolean);
+    if (thirdPlaceTeams.length === 2) {
+      matches.push({
+        match_number: 103,
+        home_team: thirdPlaceTeams[0],
+        away_team: thirdPlaceTeams[1],
+        home_flag: crestByTeam.get(canonicalTeamName(thirdPlaceTeams[0])) || null,
+        away_flag: crestByTeam.get(canonicalTeamName(thirdPlaceTeams[1])) || null,
+        home_score: null,
+        away_score: null,
+        kickoff_at: SIMULATION_PHASE_DATES.ThirdPlace,
+        phase: "ThirdPlace",
+        winner: null,
+        is_finished: false,
+      });
+    }
+  }
+
+  return matches;
 }
 
 function inferGroups(fixtures) {
@@ -563,6 +671,10 @@ function App() {
     : null;
   const selectedMarket = marketByTeam.get(canonicalTeamName(selectedAnalysisTeam));
   const selectedCrest = crestByTeam.get(canonicalTeamName(selectedAnalysisTeam));
+  const simulationBracketMatches = useMemo(
+    () => buildBracketTreeMatches(simulation, crestByTeam),
+    [simulation, crestByTeam]
+  );
 
   return (
     <main className="app-shell">
@@ -997,25 +1109,18 @@ function App() {
             ))}
           </div>
 
-          <div className="bracket-section">
-            {(simulation?.bracket || []).map((round) => (
-              <section className="round-column" key={round.round}>
-                <h3>{round.round}</h3>
-                {round.matches.map((match) => (
-                  <article className="bracket-match" key={`${round.round}-${match.team_a}-${match.team_b}`}>
-                    <div>
-                      <strong>{match.team_a}</strong>
-                      <span>{formatPercent(match.team_a_win)}</span>
-                    </div>
-                    <div>
-                      <strong>{match.team_b}</strong>
-                      <span>{formatPercent(match.team_b_win)}</span>
-                    </div>
-                    <p>Avanza: <strong>{match.winner}</strong> · marcador {match.top_score}</p>
-                  </article>
-                ))}
-              </section>
-            ))}
+          <div className="bracket-tree-section">
+            <div className="section-heading compact inverted">
+              <div>
+                <p className="eyebrow">Árbol de eliminación</p>
+                <h3>Escenario simulado de cruces</h3>
+              </div>
+              <span className="method-badge dark">R32 a final</span>
+            </div>
+            <SimulationBracketTree matches={simulationBracketMatches} />
+            <p className="context-line inverted">
+              {simulation?.bracket_format_note || "El árbol muestra un escenario de simulación con los cruces disponibles del modelo."}
+            </p>
           </div>
         </section>
       )}

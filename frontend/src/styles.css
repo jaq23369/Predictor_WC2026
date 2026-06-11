@@ -991,6 +991,187 @@ input {
   font-size: 0.86rem;
 }
 
+.bracket-tree-section {
+  border-radius: 8px;
+  background:
+    linear-gradient(145deg, rgba(26, 34, 33, 0.98), rgba(18, 24, 25, 0.98)),
+    #182221;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 18px;
+  color: #f7f2e8;
+  overflow: hidden;
+}
+
+.section-heading.inverted h3,
+.section-heading.inverted .eyebrow {
+  color: #f7f2e8;
+}
+
+.method-badge.dark {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.14);
+  color: #f6d891;
+}
+
+.simulation-bracket-shell {
+  display: grid;
+  gap: 18px;
+}
+
+.simulation-bracket-scroll {
+  overflow-x: auto;
+  padding: 8px 0 12px;
+}
+
+.simulation-bracket-tree {
+  position: relative;
+  min-width: 1484px;
+}
+
+.simulation-bracket-connectors {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.simulation-bracket-connectors path {
+  fill: none;
+  stroke: rgba(236, 222, 189, 0.34);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.simulation-bracket-phase-label {
+  position: absolute;
+  width: 220px;
+  color: #f6d891;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.simulation-bracket-node {
+  position: absolute;
+  width: 220px;
+  height: 82px;
+}
+
+.simulation-bracket-box {
+  width: 220px;
+  height: 82px;
+  display: grid;
+  grid-template-rows: auto 1fr 1fr;
+  gap: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.075);
+  color: #f7f2e8;
+  padding: 8px;
+  text-align: left;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22);
+}
+
+.simulation-bracket-box:disabled {
+  cursor: default;
+}
+
+.simulation-bracket-box.gold {
+  border-color: rgba(246, 216, 145, 0.62);
+  background: linear-gradient(145deg, rgba(111, 79, 25, 0.55), rgba(255, 255, 255, 0.08));
+}
+
+.simulation-bracket-box.bronze {
+  border-color: rgba(201, 139, 86, 0.7);
+  background: linear-gradient(145deg, rgba(99, 62, 34, 0.56), rgba(255, 255, 255, 0.07));
+}
+
+.simulation-bracket-meta,
+.bracket-team {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-width: 0;
+}
+
+.simulation-bracket-meta {
+  color: rgba(247, 242, 232, 0.62);
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.bracket-team > div {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+}
+
+.bracket-team strong {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.82rem;
+}
+
+.bracket-team span:last-child {
+  color: #f7f2e8;
+  font-weight: 900;
+}
+
+.bracket-team.winner strong,
+.bracket-team.winner span:last-child {
+  color: #f6d891;
+}
+
+.bracket-flag {
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  object-fit: cover;
+  background: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  flex: 0 0 auto;
+}
+
+.bracket-flag.fallback {
+  display: grid;
+  place-items: center;
+  color: #15201f;
+  font-size: 0.58rem;
+  font-weight: 900;
+}
+
+.third-place-row {
+  display: flex;
+  min-width: 1484px;
+}
+
+.third-place-spacer {
+  flex: 0 0 auto;
+}
+
+.third-place-card {
+  width: 220px;
+}
+
+.third-place-card p {
+  margin: 0 0 8px;
+  color: #d7a66d;
+  font-weight: 900;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.context-line.inverted {
+  color: rgba(247, 242, 232, 0.68);
+}
+
 .team-picker {
   width: min(280px, 100%);
 }

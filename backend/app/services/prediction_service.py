@@ -378,6 +378,55 @@ class PredictionService:
         return read_optional_csv(API_FOOTBALL_COVERAGE_PATH)
 
     def world_cup_2026_simulation(self) -> dict[str, Any]:
+        phase_dates = {
+            "Last 32": "2026-06-28",
+            "Last 16": "2026-07-04",
+            "Quarter-finals": "2026-07-09",
+            "Semi-finals": "2026-07-14",
+            "Third place": "2026-07-18",
+            "Final": "2026-07-19",
+        }
+
+        def group_code(group_name: str) -> str:
+            return group_name.replace("Grupo", "").strip()
+
+        def sort_key(item: dict[str, Any]) -> tuple[float, float, float]:
+            return (
+                float(item["expected_points"]),
+                float(item["expected_goal_difference"]),
+                float(item["expected_goals_for"]),
+            )
+
+        def knockout_winner(team_a: str, team_b: str, round_name: str, match_number: int) -> dict[str, Any]:
+            prediction = self.predict_match(
+                team_a,
+                team_b,
+                match_date=phase_dates[round_name],
+                neutral=1,
+                team_a_is_home=0,
+            )
+            probs = prediction["probabilities"]
+            winner = team_a if probs["team_a_win"] >= probs["team_b_win"] else team_b
+            if probs["draw"] > max(probs["team_a_win"], probs["team_b_win"]):
+                winner = (
+                    team_a
+                    if prediction["expected_goals"]["team_a"] >= prediction["expected_goals"]["team_b"]
+                    else team_b
+                )
+            loser = team_b if winner == team_a else team_a
+            return {
+                "match_number": match_number,
+                "kickoff_at": phase_dates[round_name],
+                "team_a": team_a,
+                "team_b": team_b,
+                "winner": winner,
+                "loser": loser,
+                "team_a_win": probs["team_a_win"],
+                "draw": probs["draw"],
+                "team_b_win": probs["team_b_win"],
+                "top_score": prediction["top_scorelines"][0]["score"],
+            }
+
         predictions = self.world_cup_2026_predictions()
         matches = self.football_data_world_cup_matches()
         group_by_pair = {
@@ -418,6 +467,7 @@ class PredictionService:
         groups = []
         third_places = []
         qualifiers = []
+        positions: dict[tuple[str, int], dict[str, Any]] = {}
         for group, teams in sorted(table.items()):
             standings = sorted(
                 teams.values(),
@@ -429,10 +479,12 @@ class PredictionService:
                 reverse=True,
             )
             formatted = []
+            code = group_code(group)
             for index, item in enumerate(standings, start=1):
                 row = {
                     "position": index,
                     "team": str(item["team"]),
+                    "group": code,
                     "expected_points": round(float(item["expected_points"]), 2),
                     "expected_goal_difference": round(
                         float(item["expected_goals_for"]) - float(item["expected_goals_against"]), 2
@@ -441,6 +493,7 @@ class PredictionService:
                     "expected_goals_against": round(float(item["expected_goals_against"]), 2),
                 }
                 formatted.append(row)
+                positions[(code, index)] = row
                 if index <= 2:
                     qualifiers.append(row)
                 elif index == 3:
@@ -458,59 +511,106 @@ class PredictionService:
         )[:8]
         qualifiers.extend(best_thirds)
 
-        seeded = sorted(
-            qualifiers,
-            key=lambda item: (
-                float(item["expected_points"]),
-                float(item["expected_goal_difference"]),
-                float(item["expected_goals_for"]),
-            ),
-            reverse=True,
-        )
+        seeded = sorted(qualifiers, key=sort_key, reverse=True)
+        available_thirds = {str(row["group"]): row for row in best_thirds}
+        ordered_thirds = sorted(best_thirds, key=sort_key, reverse=True)
 
+        def resolve_slot(slot: tuple[str, str | list[str]]) -> str:
+            position, group_or_groups = slot
+            if position == "1":
+                return str(positions[(str(group_or_groups), 1)]["team"])
+            if position == "2":
+                return str(positions[(str(group_or_groups), 2)]["team"])
+
+            allowed_groups = [str(group) for group in group_or_groups]
+            for row in ordered_thirds:
+                row_group = str(row["group"])
+                if row_group in allowed_groups and row_group in available_thirds:
+                    available_thirds.pop(row_group)
+                    return str(row["team"])
+
+            for row in ordered_thirds:
+                row_group = str(row["group"])
+                if row_group in available_thirds:
+                    available_thirds.pop(row_group)
+                    return str(row["team"])
+
+            return "Por definir"
+
+        r32_specs = [
+            (73, ("2", "A"), ("2", "B")),
+            (74, ("1", "E"), ("3", ["A", "B", "C", "D", "F"])),
+            (75, ("1", "F"), ("2", "C")),
+            (76, ("1", "C"), ("2", "F")),
+            (77, ("1", "I"), ("3", ["C", "D", "F", "G", "H"])),
+            (78, ("2", "E"), ("2", "I")),
+            (79, ("1", "A"), ("3", ["C", "E", "F", "H", "I"])),
+            (80, ("1", "L"), ("3", ["E", "H", "I", "J", "K"])),
+            (81, ("1", "D"), ("3", ["B", "E", "F", "I", "J"])),
+            (82, ("1", "G"), ("3", ["A", "E", "H", "I", "J"])),
+            (83, ("2", "K"), ("2", "L")),
+            (84, ("1", "H"), ("2", "J")),
+            (85, ("1", "B"), ("3", ["E", "F", "G", "I", "J"])),
+            (86, ("1", "J"), ("2", "H")),
+            (87, ("1", "K"), ("3", ["D", "E", "I", "J", "L"])),
+            (88, ("2", "D"), ("2", "G")),
+        ]
+        r16_specs = [(89, 73, 75), (90, 74, 77), (91, 76, 78), (92, 79, 80), (93, 83, 84), (94, 81, 82), (95, 86, 88), (96, 85, 87)]
+        qf_specs = [(97, 89, 90), (98, 93, 94), (99, 91, 92), (100, 95, 96)]
+        sf_specs = [(101, 97, 98), (102, 99, 100)]
+
+        results: dict[int, dict[str, Any]] = {}
         rounds = []
-        current = [item["team"] for item in seeded[:32]]
-        round_names = ["Last 32", "Last 16", "Quarter-finals", "Semi-finals", "Final"]
-        for round_name in round_names:
-            pairings = []
-            winners = []
-            for i in range(len(current) // 2):
-                team_a = current[i]
-                team_b = current[-(i + 1)]
-                prediction = self.predict_match(
-                    str(team_a),
-                    str(team_b),
-                    match_date="2026-07-01",
-                    neutral=1,
-                    team_a_is_home=0,
+
+        r32_matches = []
+        for match_number, slot_a, slot_b in r32_specs:
+            match = knockout_winner(resolve_slot(slot_a), resolve_slot(slot_b), "Last 32", match_number)
+            results[match_number] = match
+            r32_matches.append(match)
+        rounds.append({"round": "Last 32", "matches": r32_matches})
+
+        for round_name, specs in [
+            ("Last 16", r16_specs),
+            ("Quarter-finals", qf_specs),
+            ("Semi-finals", sf_specs),
+        ]:
+            round_matches = []
+            for match_number, previous_a, previous_b in specs:
+                match = knockout_winner(
+                    str(results[previous_a]["winner"]),
+                    str(results[previous_b]["winner"]),
+                    round_name,
+                    match_number,
                 )
-                probs = prediction["probabilities"]
-                winner = str(team_a) if probs["team_a_win"] >= probs["team_b_win"] else str(team_b)
-                if probs["draw"] > max(probs["team_a_win"], probs["team_b_win"]):
-                    winner = str(team_a) if prediction["expected_goals"]["team_a"] >= prediction["expected_goals"]["team_b"] else str(team_b)
-                winners.append(winner)
-                pairings.append(
-                    {
-                        "team_a": team_a,
-                        "team_b": team_b,
-                        "winner": winner,
-                        "team_a_win": probs["team_a_win"],
-                        "draw": probs["draw"],
-                        "team_b_win": probs["team_b_win"],
-                        "top_score": prediction["top_scorelines"][0]["score"],
-                    }
-                )
-            rounds.append({"round": round_name, "matches": pairings})
-            current = winners
-            if len(current) == 1:
-                break
+                results[match_number] = match
+                round_matches.append(match)
+            rounds.append({"round": round_name, "matches": round_matches})
+
+        third_place_match = knockout_winner(
+            str(results[101]["loser"]),
+            str(results[102]["loser"]),
+            "Third place",
+            103,
+        )
+        results[103] = third_place_match
+
+        final_match = knockout_winner(
+            str(results[101]["winner"]),
+            str(results[102]["winner"]),
+            "Final",
+            104,
+        )
+        results[104] = final_match
+        rounds.append({"round": "Final", "matches": [final_match]})
 
         return {
             "groups": groups,
             "best_thirds": best_thirds,
             "qualifiers": seeded[:32],
             "bracket": rounds,
-            "projected_champion": current[0] if current else "",
+            "third_place_match": third_place_match,
+            "projected_champion": final_match["winner"],
+            "bracket_format_note": "R32 usa los slots oficiales publicados para Mundial 2026. Los mejores terceros se asignan al primer slot elegible por rendimiento simulado; falta incorporar la tabla FIFA completa de 495 combinaciones para maxima exactitud.",
         }
 
     def _prediction_groups(self) -> dict[str, list[dict[str, Any]]]:
