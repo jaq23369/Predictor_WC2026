@@ -4,7 +4,6 @@
   "outputDirectory": "frontend/dist",
   "functions": {
     "api/*.py": {
-      "runtime": "python3.12",
       "excludeFiles": "{.venv/**,data/raw/**,data/api_cache/**,frontend/**,scripts/**,Planificación/**,**/__pycache__/**,**/*.pyc}"
     }
   },
