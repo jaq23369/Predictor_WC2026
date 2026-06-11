@@ -51,6 +51,10 @@ export function getSimulation() {
   return request("/world-cup-2026/simulation");
 }
 
+export function getMonteCarloSimulation(simulations = 1000) {
+  return request(`/world-cup-2026/monte-carlo?simulations=${simulations}`);
+}
+
 export function getTheSportsDBCoverage() {
   return request("/thesportsdb/coverage");
 }

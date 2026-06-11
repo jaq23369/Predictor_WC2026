@@ -17,6 +17,7 @@ import {
 import {
   getAPIFootballTeamMatchStats,
   getFootballDataTeams,
+  getMonteCarloSimulation,
   getSquads,
   getSquadSummary,
   getTeams,
@@ -282,6 +283,8 @@ function App() {
   const [theSportsDBRecentStats, setTheSportsDBRecentStats] = useState([]);
   const [apiFootballTeamStats, setAPIFootballTeamStats] = useState([]);
   const [simulation, setSimulation] = useState(null);
+  const [monteCarlo, setMonteCarlo] = useState(null);
+  const [monteCarloLoading, setMonteCarloLoading] = useState(false);
   const [selectedAnalysisTeam, setSelectedAnalysisTeam] = useState("");
   const [form, setForm] = useState(DEFAULT_REQUEST);
   const [prediction, setPrediction] = useState(null);
@@ -351,6 +354,28 @@ function App() {
   useEffect(() => {
     handlePredict(DEFAULT_REQUEST);
   }, []);
+
+  useEffect(() => {
+    let active = true;
+
+    async function loadMonteCarlo() {
+      if (activeView !== "simulation" || monteCarlo || monteCarloLoading) return;
+      setMonteCarloLoading(true);
+      try {
+        const result = await getMonteCarloSimulation(500);
+        if (active) setMonteCarlo(result);
+      } catch (requestError) {
+        if (active) setError(requestError.message);
+      } finally {
+        if (active) setMonteCarloLoading(false);
+      }
+    }
+
+    loadMonteCarlo();
+    return () => {
+      active = false;
+    };
+  }, [activeView, monteCarlo, monteCarloLoading]);
 
   async function handlePredict(payload = form) {
     setPredicting(true);
@@ -910,16 +935,48 @@ function App() {
 
           <div className="simulation-hero">
             <div>
-              <span>Campeón proyectado</span>
-              <strong>{simulation?.projected_champion || "Calculando"}</strong>
-              <p>El bracket usa las probabilidades actuales del modelo para avanzar selecciones desde grupos y cruces.</p>
+              <span>Campeón más probable</span>
+              <strong>{monteCarlo?.top_champions?.[0]?.team || simulation?.projected_champion || "Calculando"}</strong>
+              <p>
+                {monteCarlo
+                  ? `${monteCarlo.simulations} simulaciones Monte Carlo con fase de grupos, mejores terceros y eliminatorias.`
+                  : "Cargando Monte Carlo al abrir esta vista."}
+              </p>
             </div>
             <div className="phase-metrics">
               <StatPill icon={CalendarDays} label="Partidos grupo" value={fixturePredictions.length} />
-              <StatPill icon={Trophy} label="Favoritos 60%+" value={groupSummary.favorites} />
+              <StatPill icon={Trophy} label="Campeón" value={monteCarlo?.top_champions?.[0] ? formatPercent(monteCarlo.top_champions[0].champion_probability) : "Cargando"} />
               <StatPill icon={Activity} label="Partidos parejos" value={groupSummary.closeMatches} />
               <StatPill icon={BarChart3} label="Empate medio" value={formatPercent(groupSummary.avgDraw)} />
             </div>
+          </div>
+
+          <div className="monte-carlo-section">
+            <div className="section-heading compact">
+              <div>
+                <p className="eyebrow">Monte Carlo</p>
+                <h3>Probabilidades por selección</h3>
+              </div>
+              <span className="method-badge">{monteCarloLoading ? "Calculando" : `${monteCarlo?.simulations || 0} simulaciones`}</span>
+            </div>
+
+            <div className="monte-carlo-grid">
+              {(monteCarlo?.top_champions || []).slice(0, 12).map((team) => (
+                <article className="monte-carlo-card" key={team.team}>
+                  <div className="monte-carlo-card-header">
+                    <strong>{team.team}</strong>
+                    <span>{formatPercent(team.champion_probability)}</span>
+                  </div>
+                  <div className="mini-probability-list">
+                    <div><span>Pasa grupo</span><strong>{formatPercent(team.advance_group_probability)}</strong></div>
+                    <div><span>Semifinal</span><strong>{formatPercent(team.semi_final_probability)}</strong></div>
+                    <div><span>Final</span><strong>{formatPercent(team.final_probability)}</strong></div>
+                  </div>
+                </article>
+              ))}
+            </div>
+
+            {monteCarlo?.format_note && <p className="context-line">{monteCarlo.format_note}</p>}
           </div>
 
           <div className="simulation-grid">

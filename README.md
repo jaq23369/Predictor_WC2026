@@ -88,6 +88,7 @@ Endpoints principales:
 - `POST /scores`
 - `GET /world-cup-2026/fixtures`
 - `GET /world-cup-2026/predictions`
+- `GET /world-cup-2026/monte-carlo?simulations=500`
 - `GET /football-data/world-cup-2026/matches`
 - `GET /football-data/world-cup-2026/teams`
 - `GET /football-data/world-cup-2026/standings`
@@ -214,9 +215,9 @@ La interfaz muestra:
 - probabilidades de victoria, empate y derrota
 - goles esperados y marcadores probables
 - predicciones de los 72 partidos de fase de grupos, separadas por grupo
-- estado de fases futuras
+- simulacion Monte Carlo de grupos, mejores terceros, eliminatorias y campeon
 
-Por ahora solo hay datos concretos para fase de grupos. Octavos, cuartos, semifinales y final quedan marcados como pendientes hasta implementar simulacion Monte Carlo para clasificados y bracket.
+La simulacion Monte Carlo usa las probabilidades del modelo para simular fase de grupos, mejores terceros y eliminatorias. El bracket es aproximado y sembrado por rendimiento simulado hasta que se conecten reglas oficiales exactas de cruces.
 
 ## Deploy en Vercel
 

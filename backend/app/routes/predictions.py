@@ -122,6 +122,15 @@ def world_cup_2026_simulation(
     return service.world_cup_2026_simulation()
 
 
+@router.get("/world-cup-2026/monte-carlo")
+def world_cup_2026_monte_carlo(
+    simulations: int = 1000,
+    seed: int = 2026,
+    service: PredictionService = Depends(get_prediction_service),
+) -> dict:
+    return service.world_cup_2026_monte_carlo(simulations=simulations, seed=seed)
+
+
 @router.get("/thesportsdb/team-mapping")
 def thesportsdb_team_mapping(
     service: PredictionService = Depends(get_prediction_service),

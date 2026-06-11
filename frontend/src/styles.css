@@ -846,6 +846,69 @@ input {
   margin-bottom: 18px;
 }
 
+.monte-carlo-section {
+  margin-bottom: 18px;
+}
+
+.method-badge {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--green-dark);
+  padding: 8px 10px;
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.monte-carlo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.monte-carlo-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.monte-carlo-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.monte-carlo-card-header strong {
+  overflow-wrap: anywhere;
+}
+
+.monte-carlo-card-header span {
+  color: var(--green-dark);
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.mini-probability-list {
+  display: grid;
+  gap: 6px;
+}
+
+.mini-probability-list div {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.mini-probability-list strong {
+  color: var(--ink);
+}
+
 .standings-card,
 .bracket-match {
   border: 1px solid var(--line);
@@ -1076,6 +1139,10 @@ input {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .monte-carlo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .scoreline-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -1166,6 +1233,10 @@ input {
   }
 
   .simulation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .monte-carlo-grid {
     grid-template-columns: 1fr;
   }
 

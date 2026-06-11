@@ -2,8 +2,9 @@ from __future__ import annotations
 
 import csv
 import math
+import random
 from bisect import bisect_left, bisect_right
-from collections import defaultdict
+from collections import Counter, defaultdict
 from datetime import date, datetime
 from pathlib import Path
 from typing import Any
@@ -247,6 +248,12 @@ def diff(value_a: float, value_b: float) -> float:
 
 def poisson_probability(expected_goals: float, goals: int) -> float:
     return math.exp(-expected_goals) * expected_goals**goals / math.factorial(goals)
+
+
+def percent(count: int, total: int) -> float:
+    if total <= 0:
+        return 0.0
+    return round(count * 100 / total, 2)
 
 
 class PredictionService:
@@ -504,6 +511,267 @@ class PredictionService:
             "qualifiers": seeded[:32],
             "bracket": rounds,
             "projected_champion": current[0] if current else "",
+        }
+
+    def _prediction_groups(self) -> dict[str, list[dict[str, Any]]]:
+        matches = self.football_data_world_cup_matches()
+        group_by_pair = {
+            (normalize_name(match["home_team"]), normalize_name(match["away_team"])): match["group"].replace("GROUP_", "Grupo ")
+            for match in matches
+            if match.get("group")
+        }
+
+        groups: dict[str, list[dict[str, Any]]] = defaultdict(list)
+        for row in self.world_cup_2026_predictions():
+            group = group_by_pair.get((row["home_team"], row["away_team"]), "Grupo pendiente")
+            groups[group].append(
+                {
+                    "home_team": row["home_team"],
+                    "away_team": row["away_team"],
+                    "home_win_probability": float(row["home_win_probability"]) / 100,
+                    "draw_probability": float(row["draw_probability"]) / 100,
+                    "away_win_probability": float(row["away_win_probability"]) / 100,
+                    "home_expected_goals": float(row["home_expected_goals"]),
+                    "away_expected_goals": float(row["away_expected_goals"]),
+                }
+            )
+        return dict(groups)
+
+    def _sample_goals(self, rng: random.Random, expected_goals: float, max_goals: int = 8) -> int:
+        probabilities = [poisson_probability(expected_goals, goals) for goals in range(max_goals + 1)]
+        total = sum(probabilities)
+        threshold = rng.random() * total
+        cumulative = 0.0
+        for goals, probability in enumerate(probabilities):
+            cumulative += probability
+            if threshold <= cumulative:
+                return goals
+        return max_goals
+
+    def _sample_group_match(self, match: dict[str, Any], rng: random.Random) -> tuple[int, int]:
+        outcome = rng.random()
+        home_xg = float(match["home_expected_goals"])
+        away_xg = float(match["away_expected_goals"])
+
+        for _ in range(20):
+            home_goals = self._sample_goals(rng, home_xg)
+            away_goals = self._sample_goals(rng, away_xg)
+            if outcome < match["home_win_probability"] and home_goals > away_goals:
+                return home_goals, away_goals
+            if outcome < match["home_win_probability"] + match["draw_probability"] and home_goals == away_goals:
+                return home_goals, away_goals
+            if outcome >= match["home_win_probability"] + match["draw_probability"] and away_goals > home_goals:
+                return home_goals, away_goals
+
+        if outcome < match["home_win_probability"]:
+            return max(1, round(home_xg)), min(max(1, round(home_xg)) - 1, round(away_xg))
+        if outcome < match["home_win_probability"] + match["draw_probability"]:
+            goals = round((home_xg + away_xg) / 2)
+            return goals, goals
+        return min(round(home_xg), max(1, round(away_xg)) - 1), max(1, round(away_xg))
+
+    def _empty_table_row(self, team: str) -> dict[str, Any]:
+        return {
+            "team": team,
+            "points": 0,
+            "goals_for": 0,
+            "goals_against": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+        }
+
+    def _sort_table(self, rows: list[dict[str, Any]], rng: random.Random) -> list[dict[str, Any]]:
+        return sorted(
+            rows,
+            key=lambda item: (
+                item["points"],
+                item["goals_for"] - item["goals_against"],
+                item["goals_for"],
+                rng.random(),
+            ),
+            reverse=True,
+        )
+
+    def _head_to_head_win_probability(self, team_a: str, team_b: str) -> float:
+        prediction = self.predict_match(
+            team_a,
+            team_b,
+            match_date="2026-07-01",
+            neutral=1,
+            team_a_is_home=0,
+        )
+        probabilities = prediction["probabilities"]
+        decisive = probabilities["team_a_win"] + probabilities["team_b_win"]
+        if decisive <= 0:
+            return 0.5
+        base = probabilities["team_a_win"] / decisive
+        draw_weight = probabilities["draw"] / 200
+        expected_goals_a = prediction["expected_goals"]["team_a"]
+        expected_goals_b = prediction["expected_goals"]["team_b"]
+        if expected_goals_a > expected_goals_b:
+            base += draw_weight
+        elif expected_goals_b > expected_goals_a:
+            base -= draw_weight
+        return max(0.05, min(0.95, base))
+
+    def world_cup_2026_monte_carlo(self, simulations: int = 1000, seed: int = 2026) -> dict[str, Any]:
+        simulations = max(100, min(simulations, 5000))
+        rng = random.Random(seed)
+        groups = self._prediction_groups()
+
+        group_order = sorted(groups)
+        teams = sorted(
+            {
+                team
+                for matches in groups.values()
+                for match in matches
+                for team in (match["home_team"], match["away_team"])
+            }
+        )
+        group_team_lookup = {
+            group: sorted(
+                {
+                    team
+                    for match in matches
+                    for team in (match["home_team"], match["away_team"])
+                }
+            )
+            for group, matches in groups.items()
+        }
+
+        counters = {
+            "group_winner": Counter(),
+            "runner_up": Counter(),
+            "third_place": Counter(),
+            "advance_group": Counter(),
+            "round_of_32": Counter(),
+            "round_of_16": Counter(),
+            "quarter_final": Counter(),
+            "semi_final": Counter(),
+            "final": Counter(),
+            "champion": Counter(),
+        }
+        points_sum = Counter()
+        head_to_head_cache: dict[tuple[str, str], float] = {}
+
+        def cached_head_to_head_probability(team_a: str, team_b: str) -> float:
+            key = tuple(sorted((team_a, team_b)))
+            if key not in head_to_head_cache:
+                probability = self._head_to_head_win_probability(key[0], key[1])
+                head_to_head_cache[key] = probability
+            probability_for_first = head_to_head_cache[key]
+            return probability_for_first if team_a == key[0] else 1 - probability_for_first
+
+        for _ in range(simulations):
+            qualifiers = []
+            third_places = []
+
+            for group in group_order:
+                table = {
+                    team: self._empty_table_row(team)
+                    for team in group_team_lookup[group]
+                }
+                for match in groups[group]:
+                    home = match["home_team"]
+                    away = match["away_team"]
+                    home_goals, away_goals = self._sample_group_match(match, rng)
+
+                    table[home]["goals_for"] += home_goals
+                    table[home]["goals_against"] += away_goals
+                    table[away]["goals_for"] += away_goals
+                    table[away]["goals_against"] += home_goals
+
+                    if home_goals > away_goals:
+                        table[home]["points"] += 3
+                        table[home]["wins"] += 1
+                        table[away]["losses"] += 1
+                    elif away_goals > home_goals:
+                        table[away]["points"] += 3
+                        table[away]["wins"] += 1
+                        table[home]["losses"] += 1
+                    else:
+                        table[home]["points"] += 1
+                        table[away]["points"] += 1
+                        table[home]["draws"] += 1
+                        table[away]["draws"] += 1
+
+                standings = self._sort_table(list(table.values()), rng)
+                for row in standings:
+                    points_sum[row["team"]] += row["points"]
+
+                winner = standings[0]["team"]
+                runner_up = standings[1]["team"]
+                third = standings[2]
+                counters["group_winner"][winner] += 1
+                counters["runner_up"][runner_up] += 1
+                counters["third_place"][third["team"]] += 1
+                qualifiers.extend(standings[:2])
+                third_places.append(third)
+
+            best_thirds = self._sort_table(third_places, rng)[:8]
+            qualifiers.extend(best_thirds)
+            seeded = self._sort_table(qualifiers, rng)[:32]
+            current = [row["team"] for row in seeded]
+
+            for team in current:
+                counters["advance_group"][team] += 1
+                counters["round_of_32"][team] += 1
+
+            round_counter_keys = ["round_of_16", "quarter_final", "semi_final", "final", "champion"]
+            for round_key in round_counter_keys:
+                winners = []
+                for index in range(len(current) // 2):
+                    team_a = current[index]
+                    team_b = current[-(index + 1)]
+                    team_a_probability = cached_head_to_head_probability(team_a, team_b)
+                    winner = team_a if rng.random() < team_a_probability else team_b
+                    winners.append(winner)
+                for team in winners:
+                    counters[round_key][team] += 1
+                current = winners
+                if len(current) <= 1:
+                    break
+
+        team_probabilities = []
+        for team in teams:
+            team_probabilities.append(
+                {
+                    "team": team,
+                    "avg_group_points": round(points_sum[team] / simulations, 2),
+                    "group_winner_probability": percent(counters["group_winner"][team], simulations),
+                    "runner_up_probability": percent(counters["runner_up"][team], simulations),
+                    "third_place_probability": percent(counters["third_place"][team], simulations),
+                    "advance_group_probability": percent(counters["advance_group"][team], simulations),
+                    "round_of_16_probability": percent(counters["round_of_16"][team], simulations),
+                    "quarter_final_probability": percent(counters["quarter_final"][team], simulations),
+                    "semi_final_probability": percent(counters["semi_final"][team], simulations),
+                    "final_probability": percent(counters["final"][team], simulations),
+                    "champion_probability": percent(counters["champion"][team], simulations),
+                }
+            )
+
+        team_probabilities.sort(
+            key=lambda item: (
+                item["champion_probability"],
+                item["final_probability"],
+                item["semi_final_probability"],
+                item["advance_group_probability"],
+            ),
+            reverse=True,
+        )
+
+        return {
+            "simulations": simulations,
+            "seed": seed,
+            "format_note": "Formato aproximado: top 2 de cada grupo + 8 mejores terceros; bracket sembrado por rendimiento simulado.",
+            "teams": team_probabilities,
+            "top_champions": team_probabilities[:12],
+            "top_group_qualifiers": sorted(
+                team_probabilities,
+                key=lambda item: item["advance_group_probability"],
+                reverse=True,
+            )[:16],
         }
 
     def _history_before(self, team: str, match_date: date) -> list[dict[str, Any]]:
