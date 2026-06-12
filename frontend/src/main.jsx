@@ -868,6 +868,8 @@ function App() {
   const recentStatsB = prediction
     ? apiFootballStatsByTeam.get(canonicalTeamName(prediction.team_b)) || recentStatsByTeam.get(canonicalTeamName(prediction.team_b))
     : null;
+  const fbrefA = prediction ? fbrefFeaturesByTeam.get(canonicalTeamName(prediction.team_a)) : null;
+  const fbrefB = prediction ? fbrefFeaturesByTeam.get(canonicalTeamName(prediction.team_b)) : null;
   const selectedMarket = marketByTeam.get(canonicalTeamName(selectedAnalysisTeam));
   const selectedCrest = crestByTeam.get(canonicalTeamName(selectedAnalysisTeam));
   const selectedFBref = fbrefFeaturesByTeam.get(canonicalTeamName(selectedAnalysisTeam));
@@ -1143,6 +1145,28 @@ function App() {
                   </div>
                   <div>
                     <strong>{formatNumber(metricValue(recentStatsB, "avg_fouls", "avg_fouls_last_available"))}</strong>
+                    <small>{prediction.team_b}</small>
+                  </div>
+                </article>
+                <article className="metric-comparison-card">
+                  <span>Partidos FBref</span>
+                  <div>
+                    <strong>{fbrefA?.matches_with_fbref || "Sin dato"}</strong>
+                    <small>{prediction.team_a}</small>
+                  </div>
+                  <div>
+                    <strong>{fbrefB?.matches_with_fbref || "Sin dato"}</strong>
+                    <small>{prediction.team_b}</small>
+                  </div>
+                </article>
+                <article className="metric-comparison-card">
+                  <span>xG diff FBref</span>
+                  <div>
+                    <strong>{formatNumber(fbrefA?.avg_xg_diff, 2)}</strong>
+                    <small>{prediction.team_a}</small>
+                  </div>
+                  <div>
+                    <strong>{formatNumber(fbrefB?.avg_xg_diff, 2)}</strong>
                     <small>{prediction.team_b}</small>
                   </div>
                 </article>
