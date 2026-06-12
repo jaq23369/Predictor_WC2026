@@ -108,6 +108,11 @@ function formatNumber(value, decimals = 1) {
   return numeric.toFixed(decimals);
 }
 
+function hasPositiveNumber(value) {
+  const numeric = Number(value);
+  return Number.isFinite(numeric) && numeric > 0;
+}
+
 function metricValue(row, primaryKey, fallbackKey) {
   if (!row) return undefined;
   return row[primaryKey] ?? row[fallbackKey];
@@ -856,6 +861,8 @@ function App() {
   const fixtureMeta = prediction ? pickFixtureMeta(fixtures, prediction.team_a, prediction.team_b) : null;
   const marketA = prediction ? marketByTeam.get(canonicalTeamName(prediction.team_a)) : null;
   const marketB = prediction ? marketByTeam.get(canonicalTeamName(prediction.team_b)) : null;
+  const squadA = prediction ? squadSummaryByTeam.get(canonicalTeamName(prediction.team_a)) : null;
+  const squadB = prediction ? squadSummaryByTeam.get(canonicalTeamName(prediction.team_b)) : null;
   const crestA = prediction ? crestByTeam.get(canonicalTeamName(prediction.team_a)) : "";
   const crestB = prediction ? crestByTeam.get(canonicalTeamName(prediction.team_b)) : "";
   const lineupA = prediction ? likelyLineup(squadsByTeam.get(canonicalTeamName(prediction.team_a)) || []) : [];
@@ -873,6 +880,88 @@ function App() {
   const selectedMarket = marketByTeam.get(canonicalTeamName(selectedAnalysisTeam));
   const selectedCrest = crestByTeam.get(canonicalTeamName(selectedAnalysisTeam));
   const selectedFBref = fbrefFeaturesByTeam.get(canonicalTeamName(selectedAnalysisTeam));
+  const matchMetrics = prediction
+    ? [
+        {
+          label: "Goles esperados",
+          home: prediction.expected_goals.team_a,
+          away: prediction.expected_goals.team_b,
+          always: true,
+        },
+        {
+          label: "Partidos FBref",
+          home: fbrefA?.matches_with_fbref,
+          away: fbrefB?.matches_with_fbref,
+          always: true,
+          decimals: 0,
+        },
+        {
+          label: "Convocados",
+          home: squadA?.players_count,
+          away: squadB?.players_count,
+          always: true,
+          decimals: 0,
+        },
+        {
+          label: "Jugadores con valor",
+          home: squadA?.matched_players,
+          away: squadB?.matched_players,
+          always: true,
+          decimals: 0,
+        },
+        {
+          label: "Goles recientes",
+          home: recentFormA?.avg_goals_for_last_available,
+          away: recentFormB?.avg_goals_for_last_available,
+        },
+        {
+          label: "Corners promedio",
+          home: metricValue(recentStatsA, "avg_corners", "avg_corners_last_available"),
+          away: metricValue(recentStatsB, "avg_corners", "avg_corners_last_available"),
+        },
+        {
+          label: "Tiros al arco",
+          home: metricValue(recentStatsA, "avg_shots_on_goal", "avg_shots_on_target_last_available"),
+          away: metricValue(recentStatsB, "avg_shots_on_goal", "avg_shots_on_target_last_available"),
+        },
+        {
+          label: "Posesión promedio",
+          home: metricValue(recentStatsA, "avg_possession", "avg_possession_last_available"),
+          away: metricValue(recentStatsB, "avg_possession", "avg_possession_last_available"),
+        },
+        {
+          label: "Tarjetas amarillas",
+          home: metricValue(recentStatsA, "avg_yellow_cards", "avg_yellow_cards_last_available"),
+          away: metricValue(recentStatsB, "avg_yellow_cards", "avg_yellow_cards_last_available"),
+        },
+        {
+          label: "Tarjetas rojas",
+          home: metricValue(recentStatsA, "avg_red_cards", "avg_red_cards_last_available"),
+          away: metricValue(recentStatsB, "avg_red_cards", "avg_red_cards_last_available"),
+        },
+        {
+          label: "Faltas promedio",
+          home: metricValue(recentStatsA, "avg_fouls", "avg_fouls_last_available"),
+          away: metricValue(recentStatsB, "avg_fouls", "avg_fouls_last_available"),
+        },
+        {
+          label: "xG diff FBref",
+          home: fbrefA?.avg_xg_diff,
+          away: fbrefB?.avg_xg_diff,
+          decimals: 2,
+        },
+      ].filter((metric) => metric.always || (hasPositiveNumber(metric.home) && hasPositiveNumber(metric.away)))
+    : [];
+  const footballDataLastUpdated = useMemo(() => {
+    const timestamps = footballDataMatches
+      .map((match) => Date.parse(match.last_updated))
+      .filter((timestamp) => Number.isFinite(timestamp));
+    if (!timestamps.length) return "";
+    return new Date(Math.max(...timestamps)).toLocaleString("es-GT", {
+      dateStyle: "medium",
+      timeStyle: "short",
+    });
+  }, [footballDataMatches]);
   const simulationBracketMatches = useMemo(
     () => buildBracketTreeMatches(simulation, crestByTeam),
     [simulation, crestByTeam]
@@ -1060,116 +1149,19 @@ function App() {
               </div>
 
               <div className="match-metrics-grid">
-                <article className="metric-comparison-card">
-                  <span>Goles esperados</span>
-                  <div>
-                    <strong>{prediction.expected_goals.team_a}</strong>
-                    <small>{prediction.team_a}</small>
-                  </div>
-                  <div>
-                    <strong>{prediction.expected_goals.team_b}</strong>
-                    <small>{prediction.team_b}</small>
-                  </div>
-                </article>
-                <article className="metric-comparison-card">
-                  <span>Goles recientes</span>
-                  <div>
-                    <strong>{formatNumber(recentFormA?.avg_goals_for_last_available)}</strong>
-                    <small>{prediction.team_a}</small>
-                  </div>
-                  <div>
-                    <strong>{formatNumber(recentFormB?.avg_goals_for_last_available)}</strong>
-                    <small>{prediction.team_b}</small>
-                  </div>
-                </article>
-                <article className="metric-comparison-card">
-                  <span>Corners promedio</span>
-                  <div>
-                    <strong>{formatNumber(metricValue(recentStatsA, "avg_corners", "avg_corners_last_available"))}</strong>
-                    <small>{prediction.team_a}</small>
-                  </div>
-                  <div>
-                    <strong>{formatNumber(metricValue(recentStatsB, "avg_corners", "avg_corners_last_available"))}</strong>
-                    <small>{prediction.team_b}</small>
-                  </div>
-                </article>
-                <article className="metric-comparison-card">
-                  <span>Tiros al arco</span>
-                  <div>
-                    <strong>{formatNumber(metricValue(recentStatsA, "avg_shots_on_goal", "avg_shots_on_target_last_available"))}</strong>
-                    <small>{prediction.team_a}</small>
-                  </div>
-                  <div>
-                    <strong>{formatNumber(metricValue(recentStatsB, "avg_shots_on_goal", "avg_shots_on_target_last_available"))}</strong>
-                    <small>{prediction.team_b}</small>
-                  </div>
-                </article>
-                <article className="metric-comparison-card">
-                  <span>Posesión promedio</span>
-                  <div>
-                    <strong>{formatNumber(metricValue(recentStatsA, "avg_possession", "avg_possession_last_available"))}</strong>
-                    <small>{prediction.team_a}</small>
-                  </div>
-                  <div>
-                    <strong>{formatNumber(metricValue(recentStatsB, "avg_possession", "avg_possession_last_available"))}</strong>
-                    <small>{prediction.team_b}</small>
-                  </div>
-                </article>
-                <article className="metric-comparison-card">
-                  <span>Tarjetas amarillas</span>
-                  <div>
-                    <strong>{formatNumber(metricValue(recentStatsA, "avg_yellow_cards", "avg_yellow_cards_last_available"))}</strong>
-                    <small>{prediction.team_a}</small>
-                  </div>
-                  <div>
-                    <strong>{formatNumber(metricValue(recentStatsB, "avg_yellow_cards", "avg_yellow_cards_last_available"))}</strong>
-                    <small>{prediction.team_b}</small>
-                  </div>
-                </article>
-                <article className="metric-comparison-card">
-                  <span>Tarjetas rojas</span>
-                  <div>
-                    <strong>{formatNumber(metricValue(recentStatsA, "avg_red_cards", "avg_red_cards_last_available"))}</strong>
-                    <small>{prediction.team_a}</small>
-                  </div>
-                  <div>
-                    <strong>{formatNumber(metricValue(recentStatsB, "avg_red_cards", "avg_red_cards_last_available"))}</strong>
-                    <small>{prediction.team_b}</small>
-                  </div>
-                </article>
-                <article className="metric-comparison-card">
-                  <span>Faltas promedio</span>
-                  <div>
-                    <strong>{formatNumber(metricValue(recentStatsA, "avg_fouls", "avg_fouls_last_available"))}</strong>
-                    <small>{prediction.team_a}</small>
-                  </div>
-                  <div>
-                    <strong>{formatNumber(metricValue(recentStatsB, "avg_fouls", "avg_fouls_last_available"))}</strong>
-                    <small>{prediction.team_b}</small>
-                  </div>
-                </article>
-                <article className="metric-comparison-card">
-                  <span>Partidos FBref</span>
-                  <div>
-                    <strong>{fbrefA?.matches_with_fbref || "Sin dato"}</strong>
-                    <small>{prediction.team_a}</small>
-                  </div>
-                  <div>
-                    <strong>{fbrefB?.matches_with_fbref || "Sin dato"}</strong>
-                    <small>{prediction.team_b}</small>
-                  </div>
-                </article>
-                <article className="metric-comparison-card">
-                  <span>xG diff FBref</span>
-                  <div>
-                    <strong>{formatNumber(fbrefA?.avg_xg_diff, 2)}</strong>
-                    <small>{prediction.team_a}</small>
-                  </div>
-                  <div>
-                    <strong>{formatNumber(fbrefB?.avg_xg_diff, 2)}</strong>
-                    <small>{prediction.team_b}</small>
-                  </div>
-                </article>
+                {matchMetrics.map((metric) => (
+                  <article className="metric-comparison-card" key={metric.label}>
+                    <span>{metric.label}</span>
+                    <div>
+                      <strong>{formatNumber(metric.home, metric.decimals ?? 1)}</strong>
+                      <small>{prediction.team_a}</small>
+                    </div>
+                    <div>
+                      <strong>{formatNumber(metric.away, metric.decimals ?? 1)}</strong>
+                      <small>{prediction.team_b}</small>
+                    </div>
+                  </article>
+                ))}
               </div>
 
               <div className="lineups-grid">
@@ -1178,7 +1170,7 @@ function App() {
               </div>
 
               <p className="context-line">
-                Las alineaciones son una proyección visual desde convocatorias disponibles. Corners, tarjetas, faltas, tiros y posesión usan estadísticas históricas disponibles de API-Football 2024 cuando existen.
+                Las alineaciones son una proyección visual desde convocatorias disponibles. Las métricas contextuales solo aparecen cuando hay dato para ambas selecciones; API-Football cubre estadísticas de juego para 11 equipos y FBref cubre partidos para las 48 selecciones.
               </p>
             </section>
           )}
@@ -1359,6 +1351,9 @@ function App() {
             <div>
               <p className="eyebrow">Actualidad</p>
               <h2>Estado vivo del Mundial</h2>
+              {footballDataLastUpdated && (
+                <p className="context-line">Fuente football-data.org actualizada: {footballDataLastUpdated}</p>
+              )}
             </div>
             <Clock3 size={24} aria-hidden="true" />
           </div>
