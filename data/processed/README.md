@@ -103,3 +103,41 @@ Estas variables se usan primero como contexto exploratorio. Antes de agregarlas 
 ## fbref_coverage.csv
 
 Resumen de cobertura y errores de la sincronizacion FBref/soccerdata.
+
+## world_cup_2026_manual_match_stats.csv
+
+Estadisticas curadas manualmente de partidos ya jugados del Mundial 2026, una fila por partido.
+
+Este archivo sirve como fuente post-partido para:
+
+- validar predicciones realizadas antes del partido
+- enriquecer analisis del partido terminado
+- crear features futuras de rendimiento real del torneo
+
+No debe mezclarse con features pre-partido sin transformar, porque incluye informacion que solo se conoce despues del partido.
+
+## world_cup_2026_manual_team_match_stats.csv
+
+Version por seleccion de `world_cup_2026_manual_match_stats.csv`, con una fila por equipo-partido.
+
+Este es el formato mas util para modelado futuro porque permite calcular ventanas dinamicas por seleccion:
+
+- goles recientes en el torneo
+- tiros, tiros al arco y corners recientes
+- faltas, amarillas y rojas recientes
+- posesion y pases recientes
+- diferencial contra el rival
+
+Antes de usarlo para entrenar modelos de eliminatorias, las variables deben agregarse como historico previo al partido objetivo. Es decir, para predecir octavos no se debe usar informacion de octavos, solo grupos y partidos anteriores.
+
+## world_cup_2026_manual_goal_events.csv
+
+Eventos de gol curados manualmente, una fila por gol. Permite analizar goleadores, asistencias y momentos de gol.
+
+## world_cup_2026_manual_h2h.csv
+
+Historial directo curado para cruces relevantes. Se mantiene separado porque puede incluir partidos de torneos o amistosos fuera del dataset principal.
+
+## world_cup_2026_manual_h2h_summary.csv
+
+Resumen del historial directo por par de selecciones. Sirve como contexto exploratorio y posible feature si se calcula sin data leakage.

@@ -1,0 +1,3 @@
+match_id,date,minute,team,player,assist,home_team,away_team,source_type
+MEXICO_SOUTHAFRICA_2026_06_11,2026-06-11,9,Mexico,Julian Quinones,Erik Lira,Mexico,South Africa,manual_curated
+MEXICO_SOUTHAFRICA_2026_06_11,2026-06-11,67,Mexico,Raul Jimenez,Roberto Alvarado,Mexico,South Africa,manual_curated
