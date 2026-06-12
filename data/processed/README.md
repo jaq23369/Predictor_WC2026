@@ -148,6 +148,18 @@ Resultados recientes curados manualmente cuando la fuente del partido aporta con
 
 Se mantiene separado del dataset principal porque puede contener partidos externos al Mundial 2026. Para modelado, debe usarse solo si la fecha del resultado es anterior al partido que se quiere predecir.
 
+## world_cup_2026_manual_recent_form_coverage.csv
+
+Control de cobertura de forma reciente por seleccion en los partidos curados manualmente.
+
+Permite ver si una seleccion tiene:
+
+- forma compacta (`form_last_5`)
+- resultados recientes detallados
+- estadisticas agregadas recientes
+
+Esto evita asumir que todas las selecciones tienen la misma calidad de contexto pre-partido.
+
 ## world_cup_2026_manual_top_players_pre_match.csv
 
 Jugadores destacados antes del partido: goleador, asistidor y portero con mas clean sheets segun la fuente disponible.

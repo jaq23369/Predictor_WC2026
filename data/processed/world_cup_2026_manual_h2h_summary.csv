@@ -1,3 +1,4 @@
 pair_key,team_a,team_b,team_a_wins,draws,team_b_wins,source_type
 Mexico__South Africa,Mexico,South Africa,1,1,1,manual_curated
 South Korea__Czechia,South Korea,Czechia,1,0,0,manual_curated
+Canada__Bosnia and Herzegovina,Canada,Bosnia and Herzegovina,0,1,0,manual_curated

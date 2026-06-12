@@ -1,6 +1,31 @@
 team,date,home_team,away_team,home_score,away_score,result_for_team,source_type
-South Korea,2025-07-15,South Korea,Japan,0,1,loss,manual_curated
-South Korea,2025-07-11,Hong Kong,South Korea,0,2,win,manual_curated
-South Korea,2025-07-07,South Korea,China,3,0,win,manual_curated
-South Korea,2025-06-10,South Korea,Kuwait,4,0,win,manual_curated
+Bosnia and Herzegovina,2025-11-15,Bosnia and Herzegovina,Romania,3,1,win,manual_curated
+Bosnia and Herzegovina,2025-11-18,Austria,Bosnia and Herzegovina,1,1,draw,manual_curated
+Bosnia and Herzegovina,2026-03-26,Wales,Bosnia and Herzegovina,1,1,draw,manual_curated
+Bosnia and Herzegovina,2026-03-31,Bosnia and Herzegovina,Italy,1,1,draw,manual_curated
+Bosnia and Herzegovina,2026-06-12,Canada,Bosnia and Herzegovina,1,1,draw,manual_curated
+Canada,2025-06-17,Canada,Honduras,6,0,win,manual_curated
+Canada,2025-06-21,Curacao,Canada,1,1,draw,manual_curated
+Canada,2025-06-24,Canada,El Salvador,2,0,win,manual_curated
+Canada,2025-06-29,Canada,Guatemala,1,1,draw,manual_curated
+Canada,2026-06-12,Canada,Bosnia and Herzegovina,1,1,draw,manual_curated
+Czechia,2025-10-09,Czechia,Croatia,0,0,draw,manual_curated
+Czechia,2025-10-12,Faroe Islands,Czechia,2,1,loss,manual_curated
+Czechia,2025-11-17,Czechia,Gibraltar,6,0,win,manual_curated
+Czechia,2026-03-26,Czechia,Republic of Ireland,2,2,draw,manual_curated
+Czechia,2026-03-31,Czechia,Denmark,2,2,draw,manual_curated
+Mexico,2025-06-18,Suriname,Mexico,0,2,win,manual_curated
+Mexico,2025-06-22,Mexico,Costa Rica,0,0,draw,manual_curated
+Mexico,2025-06-28,Mexico,Saudi Arabia,2,0,win,manual_curated
+Mexico,2025-07-02,Mexico,Honduras,1,0,win,manual_curated
+Mexico,2025-07-06,United States,Mexico,1,2,win,manual_curated
+South Africa,2025-10-14,South Africa,Rwanda,3,0,win,manual_curated
+South Africa,2025-12-22,South Africa,Angola,2,1,win,manual_curated
+South Africa,2025-12-26,Egypt,South Africa,1,0,loss,manual_curated
+South Africa,2025-12-29,Zimbabwe,South Africa,2,3,win,manual_curated
+South Africa,2026-01-04,South Africa,Cameroon,1,2,loss,manual_curated
 South Korea,2025-06-05,Iraq,South Korea,0,2,win,manual_curated
+South Korea,2025-06-10,South Korea,Kuwait,4,0,win,manual_curated
+South Korea,2025-07-07,South Korea,China,3,0,win,manual_curated
+South Korea,2025-07-11,Hong Kong,South Korea,0,2,win,manual_curated
+South Korea,2025-07-15,South Korea,Japan,0,1,loss,manual_curated
