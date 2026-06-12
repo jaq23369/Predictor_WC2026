@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 export interface SimulationMatch {
   match_number: number;
@@ -46,13 +46,16 @@ function cY(idx: number, k: number) {
 
 function formatKickoff(value?: string | null) {
   if (!value) return "";
-  const datePart = String(value).split("T")[0];
+  const safeValue = String(value);
+  const datePart = safeValue.split("T")[0];
+  const timePart = safeValue.includes("T") ? safeValue.split("T")[1]?.slice(0, 5) : "";
   const parsed = new Date(`${datePart}T12:00:00`);
-  if (Number.isNaN(parsed.getTime())) return datePart;
-  return new Intl.DateTimeFormat("es-GT", {
+  if (Number.isNaN(parsed.getTime())) return timePart ? `${datePart} ${timePart}` : datePart;
+  const dateLabel = new Intl.DateTimeFormat("es-GT", {
     day: "2-digit",
     month: "short",
   }).format(parsed);
+  return timePart ? `${dateLabel} ${timePart}` : dateLabel;
 }
 
 function TeamFlag({ src, name }: { src?: string | null; name?: string | null }) {
@@ -131,6 +134,9 @@ function MatchBox({
 }
 
 export default function SimulationBracketTree({ matches, onMatchClick }: Props) {
+  const scrollRef = useRef<HTMLDivElement | null>(null);
+  const [scrollPercent, setScrollPercent] = useState(0);
+  const [maxScroll, setMaxScroll] = useState(0);
   const byPhase = new Map<string, SimulationMatch[]>();
   PHASES.forEach((phase) => byPhase.set(phase, []));
 
@@ -169,9 +175,46 @@ export default function SimulationBracketTree({ matches, onMatchClick }: Props) 
       .filter(Boolean);
   });
 
+  function syncScrollState() {
+    const element = scrollRef.current;
+    if (!element) return;
+    const nextMax = Math.max(0, element.scrollWidth - element.clientWidth);
+    setMaxScroll(nextMax);
+    setScrollPercent(nextMax ? Math.round((element.scrollLeft / nextMax) * 100) : 0);
+  }
+
+  function handleSliderChange(event: React.ChangeEvent<HTMLInputElement>) {
+    const value = Number(event.target.value);
+    setScrollPercent(value);
+    const element = scrollRef.current;
+    if (!element) return;
+    const nextMax = Math.max(0, element.scrollWidth - element.clientWidth);
+    element.scrollLeft = (nextMax * value) / 100;
+  }
+
+  useEffect(() => {
+    syncScrollState();
+    window.addEventListener("resize", syncScrollState);
+    return () => window.removeEventListener("resize", syncScrollState);
+  }, [matches.length]);
+
   return (
     <div className="simulation-bracket-shell">
-      <div className="simulation-bracket-scroll">
+      <div className="bracket-slider-row">
+        <span>R32</span>
+        <input
+          aria-label="Desplazar bracket"
+          disabled={maxScroll <= 0}
+          max="100"
+          min="0"
+          onChange={handleSliderChange}
+          type="range"
+          value={scrollPercent}
+        />
+        <span>Final</span>
+      </div>
+
+      <div className="simulation-bracket-scroll" ref={scrollRef} onScroll={syncScrollState}>
         <div className="simulation-bracket-tree" style={{ width: TREE_W, height: TREE_H }}>
           <svg
             className="simulation-bracket-connectors"
@@ -206,17 +249,17 @@ export default function SimulationBracketTree({ matches, onMatchClick }: Props) 
             </React.Fragment>
           ))}
         </div>
-      </div>
 
-      {thirdPlace && (
-        <div className="third-place-row" style={{ width: TREE_W }}>
-          <div className="third-place-spacer" style={{ width: cX(4) }} />
-          <div className="third-place-card">
-            <p>Partido por 3er lugar</p>
-            <MatchBox match={thirdPlace} tone="bronze" onMatchClick={onMatchClick} />
+        {thirdPlace && (
+          <div className="third-place-row" style={{ width: TREE_W }}>
+            <div className="third-place-spacer" style={{ width: cX(4) }} />
+            <div className="third-place-card">
+              <p>Partido por 3er lugar</p>
+              <MatchBox match={thirdPlace} tone="bronze" onMatchClick={onMatchClick} />
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }

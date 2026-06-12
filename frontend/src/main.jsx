@@ -470,7 +470,7 @@ function App() {
       if (activeView !== "simulation" || monteCarlo || monteCarloLoading) return;
       setMonteCarloLoading(true);
       try {
-        const result = await getMonteCarloSimulation(500);
+        const result = await getMonteCarloSimulation(200);
         if (active) setMonteCarlo(result);
       } catch (requestError) {
         if (active) setError(requestError.message);
@@ -1057,7 +1057,7 @@ function App() {
             </div>
             <div className="phase-metrics">
               <StatPill icon={CalendarDays} label="Partidos grupo" value={fixturePredictions.length} />
-              <StatPill icon={Trophy} label="Campeón" value={monteCarlo?.top_champions?.[0] ? formatPercent(monteCarlo.top_champions[0].champion_probability) : "Cargando"} />
+              <StatPill icon={Trophy} label="Campeón" value={monteCarlo?.top_champions?.[0] ? formatPercent(monteCarlo.top_champions[0].champion_probability) : "Calculando..."} />
               <StatPill icon={Activity} label="Partidos parejos" value={groupSummary.closeMatches} />
               <StatPill icon={BarChart3} label="Empate medio" value={formatPercent(groupSummary.avgDraw)} />
             </div>

@@ -379,12 +379,12 @@ class PredictionService:
 
     def world_cup_2026_simulation(self) -> dict[str, Any]:
         phase_dates = {
-            "Last 32": "2026-06-28",
-            "Last 16": "2026-07-04",
-            "Quarter-finals": "2026-07-09",
-            "Semi-finals": "2026-07-14",
-            "Third place": "2026-07-18",
-            "Final": "2026-07-19",
+            "Last 32": "2026-06-28T21:00:00",
+            "Last 16": "2026-07-04T19:00:00",
+            "Quarter-finals": "2026-07-09T22:00:00",
+            "Semi-finals": "2026-07-14T21:00:00",
+            "Third place": "2026-07-18T23:00:00",
+            "Final": "2026-07-19T21:00:00",
         }
 
         def group_code(group_name: str) -> str:
@@ -397,11 +397,18 @@ class PredictionService:
                 float(item["expected_goals_for"]),
             )
 
-        def knockout_winner(team_a: str, team_b: str, round_name: str, match_number: int) -> dict[str, Any]:
+        def knockout_winner(
+            team_a: str,
+            team_b: str,
+            round_name: str,
+            match_number: int,
+            kickoff_at: str | None = None,
+        ) -> dict[str, Any]:
+            kickoff_value = kickoff_at or phase_dates[round_name]
             prediction = self.predict_match(
                 team_a,
                 team_b,
-                match_date=phase_dates[round_name],
+                match_date=kickoff_value.split("T")[0],
                 neutral=1,
                 team_a_is_home=0,
             )
@@ -416,7 +423,7 @@ class PredictionService:
             loser = team_b if winner == team_a else team_a
             return {
                 "match_number": match_number,
-                "kickoff_at": phase_dates[round_name],
+                "kickoff_at": kickoff_value,
                 "team_a": team_a,
                 "team_b": team_b,
                 "winner": winner,
@@ -538,33 +545,50 @@ class PredictionService:
             return "Por definir"
 
         r32_specs = [
-            (73, ("2", "A"), ("2", "B")),
-            (74, ("1", "E"), ("3", ["A", "B", "C", "D", "F"])),
-            (75, ("1", "F"), ("2", "C")),
-            (76, ("1", "C"), ("2", "F")),
-            (77, ("1", "I"), ("3", ["C", "D", "F", "G", "H"])),
-            (78, ("2", "E"), ("2", "I")),
-            (79, ("1", "A"), ("3", ["C", "E", "F", "H", "I"])),
-            (80, ("1", "L"), ("3", ["E", "H", "I", "J", "K"])),
-            (81, ("1", "D"), ("3", ["B", "E", "F", "I", "J"])),
-            (82, ("1", "G"), ("3", ["A", "E", "H", "I", "J"])),
-            (83, ("2", "K"), ("2", "L")),
-            (84, ("1", "H"), ("2", "J")),
-            (85, ("1", "B"), ("3", ["E", "F", "G", "I", "J"])),
-            (86, ("1", "J"), ("2", "H")),
-            (87, ("1", "K"), ("3", ["D", "E", "I", "J", "L"])),
-            (88, ("2", "D"), ("2", "G")),
+            (73, ("1", "E"), ("3", ["A", "B", "C", "D", "F"]), "2026-06-29T22:30:00"),
+            (74, ("1", "I"), ("3", ["C", "D", "F", "G", "H"]), "2026-06-30T23:00:00"),
+            (75, ("2", "A"), ("2", "B"), "2026-06-28T21:00:00"),
+            (76, ("1", "F"), ("2", "C"), "2026-06-30T03:00:00"),
+            (77, ("2", "K"), ("2", "L"), "2026-07-03T01:00:00"),
+            (78, ("1", "H"), ("2", "J"), "2026-07-02T21:00:00"),
+            (79, ("1", "D"), ("3", ["B", "E", "F", "I", "J"]), "2026-07-02T02:00:00"),
+            (80, ("1", "G"), ("3", ["A", "E", "H", "I", "J"]), "2026-07-01T22:00:00"),
+            (81, ("1", "C"), ("2", "F"), "2026-06-29T19:00:00"),
+            (82, ("2", "E"), ("2", "I"), "2026-06-30T19:00:00"),
+            (83, ("1", "A"), ("3", ["C", "E", "F", "H", "I"]), "2026-07-01T03:00:00"),
+            (84, ("1", "L"), ("3", ["E", "H", "I", "J", "K"]), "2026-07-01T18:00:00"),
+            (85, ("1", "J"), ("2", "H"), "2026-07-04T00:00:00"),
+            (86, ("2", "D"), ("2", "G"), "2026-07-03T20:00:00"),
+            (87, ("1", "B"), ("3", ["E", "F", "G", "I", "J"]), "2026-07-03T05:00:00"),
+            (88, ("1", "K"), ("3", ["D", "E", "I", "J", "L"]), "2026-07-04T03:30:00"),
         ]
-        r16_specs = [(89, 73, 75), (90, 74, 77), (91, 76, 78), (92, 79, 80), (93, 83, 84), (94, 81, 82), (95, 86, 88), (96, 85, 87)]
-        qf_specs = [(97, 89, 90), (98, 93, 94), (99, 91, 92), (100, 95, 96)]
-        sf_specs = [(101, 97, 98), (102, 99, 100)]
+        r16_specs = [
+            (89, 73, 74, "2026-07-04T23:00:00"),
+            (90, 75, 76, "2026-07-04T19:00:00"),
+            (91, 77, 78, "2026-07-06T21:00:00"),
+            (92, 79, 80, "2026-07-07T02:00:00"),
+            (93, 81, 82, "2026-07-05T22:00:00"),
+            (94, 83, 84, "2026-07-06T02:00:00"),
+            (95, 85, 86, "2026-07-07T18:00:00"),
+            (96, 87, 88, "2026-07-07T22:00:00"),
+        ]
+        qf_specs = [
+            (97, 89, 90, "2026-07-09T22:00:00"),
+            (98, 91, 92, "2026-07-10T21:00:00"),
+            (99, 93, 94, "2026-07-11T23:00:00"),
+            (100, 95, 96, "2026-07-12T03:00:00"),
+        ]
+        sf_specs = [
+            (101, 97, 98, "2026-07-14T21:00:00"),
+            (102, 99, 100, "2026-07-15T21:00:00"),
+        ]
 
         results: dict[int, dict[str, Any]] = {}
         rounds = []
 
         r32_matches = []
-        for match_number, slot_a, slot_b in r32_specs:
-            match = knockout_winner(resolve_slot(slot_a), resolve_slot(slot_b), "Last 32", match_number)
+        for match_number, slot_a, slot_b, kickoff_at in r32_specs:
+            match = knockout_winner(resolve_slot(slot_a), resolve_slot(slot_b), "Last 32", match_number, kickoff_at)
             results[match_number] = match
             r32_matches.append(match)
         rounds.append({"round": "Last 32", "matches": r32_matches})
@@ -575,12 +599,13 @@ class PredictionService:
             ("Semi-finals", sf_specs),
         ]:
             round_matches = []
-            for match_number, previous_a, previous_b in specs:
+            for match_number, previous_a, previous_b, kickoff_at in specs:
                 match = knockout_winner(
                     str(results[previous_a]["winner"]),
                     str(results[previous_b]["winner"]),
                     round_name,
                     match_number,
+                    kickoff_at,
                 )
                 results[match_number] = match
                 round_matches.append(match)

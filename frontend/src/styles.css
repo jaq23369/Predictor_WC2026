@@ -827,7 +827,7 @@ input {
   color: var(--muted);
 }
 
-.simulation-hero strong {
+.simulation-hero > div:first-child > strong {
   display: block;
   margin: 5px 0;
   font-size: clamp(1.8rem, 4vw, 3rem);
@@ -1018,9 +1018,47 @@ input {
   gap: 18px;
 }
 
+.bracket-slider-row {
+  display: grid;
+  grid-template-columns: auto minmax(180px, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  color: rgba(247, 242, 232, 0.72);
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.bracket-slider-row input[type="range"] {
+  width: 100%;
+  accent-color: #f6d891;
+  cursor: pointer;
+}
+
+.bracket-slider-row input[type="range"]:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
 .simulation-bracket-scroll {
   overflow-x: auto;
   padding: 8px 0 12px;
+  scrollbar-color: #f6d891 rgba(255, 255, 255, 0.1);
+  scrollbar-width: thin;
+}
+
+.simulation-bracket-scroll::-webkit-scrollbar {
+  height: 10px;
+}
+
+.simulation-bracket-scroll::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+}
+
+.simulation-bracket-scroll::-webkit-scrollbar-thumb {
+  background: #d4aa63;
+  border-radius: 999px;
 }
 
 .simulation-bracket-tree {
