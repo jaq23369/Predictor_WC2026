@@ -1,0 +1,6 @@
+team,date,home_team,away_team,home_score,away_score,result_for_team,source_type
+South Korea,2025-07-15,South Korea,Japan,0,1,loss,manual_curated
+South Korea,2025-07-11,Hong Kong,South Korea,0,2,win,manual_curated
+South Korea,2025-07-07,South Korea,China,3,0,win,manual_curated
+South Korea,2025-06-10,South Korea,Kuwait,4,0,win,manual_curated
+South Korea,2025-06-05,Iraq,South Korea,0,2,win,manual_curated

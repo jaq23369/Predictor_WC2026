@@ -141,3 +141,15 @@ Historial directo curado para cruces relevantes. Se mantiene separado porque pue
 ## world_cup_2026_manual_h2h_summary.csv
 
 Resumen del historial directo por par de selecciones. Sirve como contexto exploratorio y posible feature si se calcula sin data leakage.
+
+## world_cup_2026_manual_recent_results.csv
+
+Resultados recientes curados manualmente cuando la fuente del partido aporta contexto pre-partido adicional.
+
+Se mantiene separado del dataset principal porque puede contener partidos externos al Mundial 2026. Para modelado, debe usarse solo si la fecha del resultado es anterior al partido que se quiere predecir.
+
+## world_cup_2026_manual_top_players_pre_match.csv
+
+Jugadores destacados antes del partido: goleador, asistidor y portero con mas clean sheets segun la fuente disponible.
+
+Sirve para analisis visual y como posible feature agregada de fortaleza ofensiva/defensiva, pero primero debe validarse cobertura suficiente para todas las selecciones.
