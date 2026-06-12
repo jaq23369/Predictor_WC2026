@@ -259,6 +259,10 @@ def percent(count: int, total: int) -> float:
     return round(count * 100 / total, 2)
 
 
+def clamp(value: float, low: float, high: float) -> float:
+    return max(low, min(high, value))
+
+
 class PredictionService:
     def __init__(
         self,
@@ -975,6 +979,133 @@ class PredictionService:
     def _feature_array(self, features: dict[str, float]) -> np.ndarray:
         return np.array([[features[column] for column in self.feature_columns]], dtype=float)
 
+    def _estimate_match_metrics(
+        self,
+        features_a: dict[str, float],
+        features_b: dict[str, float],
+        expected_goals_a: float,
+        expected_goals_b: float,
+        probabilities: dict[str, float],
+    ) -> list[dict[str, Any]]:
+        total_xg = expected_goals_a + expected_goals_b
+        win_gap = abs(probabilities["win"] - probabilities["loss"])
+        closeness = 1 - clamp(win_gap, 0, 1)
+        elo_diff = features_a["elo_diff"]
+        rank_diff = features_a["fifa_rank_diff"]
+        points_diff = features_a["fifa_points_diff"]
+
+        possession_a = clamp(
+            50 + (elo_diff / 28) - (rank_diff / 18) + (points_diff / 75),
+            35,
+            65,
+        )
+        possession_b = 100 - possession_a
+
+        pressure_a = clamp((expected_goals_b - expected_goals_a) * 0.65 - elo_diff / 420, -1.5, 1.5)
+        pressure_b = clamp((expected_goals_a - expected_goals_b) * 0.65 + elo_diff / 420, -1.5, 1.5)
+        intensity = clamp(0.85 + closeness * 0.28 + min(total_xg, 4.5) * 0.04, 0.8, 1.25)
+
+        fouls_a = clamp((10.2 + pressure_a * 1.9 + closeness * 2.2) * intensity, 7.0, 19.0)
+        fouls_b = clamp((10.2 + pressure_b * 1.9 + closeness * 2.2) * intensity, 7.0, 19.0)
+        yellow_a = clamp(fouls_a * 0.16 + pressure_a * 0.22 + closeness * 0.35, 0.7, 4.6)
+        yellow_b = clamp(fouls_b * 0.16 + pressure_b * 0.22 + closeness * 0.35, 0.7, 4.6)
+        red_a = clamp(yellow_a * 0.045 + max(pressure_a, 0) * 0.04, 0.02, 0.35)
+        red_b = clamp(yellow_b * 0.045 + max(pressure_b, 0) * 0.04, 0.02, 0.35)
+
+        attacking_edge_a = clamp((possession_a - 50) / 18, -0.9, 0.9)
+        attacking_edge_b = -attacking_edge_a
+        corners_a = clamp(2.7 + expected_goals_a * 1.35 + attacking_edge_a * 0.55, 1.8, 8.2)
+        corners_b = clamp(2.7 + expected_goals_b * 1.35 + attacking_edge_b * 0.55, 1.8, 8.2)
+        shots_a = clamp(5.2 + expected_goals_a * 4.1 + max(attacking_edge_a, 0) * 1.2, 5.0, 19.0)
+        shots_b = clamp(5.2 + expected_goals_b * 4.1 + max(attacking_edge_b, 0) * 1.2, 5.0, 19.0)
+        shots_on_target_a = clamp(1.5 + expected_goals_a * 1.75 + shots_a * 0.08, 1.3, 8.5)
+        shots_on_target_b = clamp(1.5 + expected_goals_b * 1.75 + shots_b * 0.08, 1.3, 8.5)
+        availability_risk_a = clamp(6.5 + fouls_b * 0.32 + total_xg * 0.35 + closeness * 2.0, 7.0, 16.0)
+        availability_risk_b = clamp(6.5 + fouls_a * 0.32 + total_xg * 0.35 + closeness * 2.0, 7.0, 16.0)
+
+        def metric(
+            key: str,
+            label: str,
+            value_a: float,
+            value_b: float,
+            note: str,
+            unit: str = "",
+            decimals: int = 1,
+        ) -> dict[str, Any]:
+            return {
+                "key": key,
+                "label": label,
+                "unit": unit,
+                "decimals": decimals,
+                "team_values": {
+                    "team_a": round(value_a, decimals),
+                    "team_b": round(value_b, decimals),
+                },
+                "note": note,
+            }
+
+        return [
+            metric(
+                "estimated_fouls",
+                "Faltas estimadas",
+                fouls_a,
+                fouls_b,
+                "Derivadas de paridad, presión defensiva y xG total.",
+            ),
+            metric(
+                "estimated_yellow_cards",
+                "Amarillas estimadas",
+                yellow_a,
+                yellow_b,
+                "Aumentan en partidos parejos y con más presión defensiva.",
+            ),
+            metric(
+                "estimated_red_cards",
+                "Rojas estimadas",
+                red_a,
+                red_b,
+                "Valor esperado bajo; representa riesgo, no una roja segura.",
+                decimals=2,
+            ),
+            metric(
+                "estimated_corners",
+                "Corners estimados",
+                corners_a,
+                corners_b,
+                "Proyección basada en xG y dominio territorial estimado.",
+            ),
+            metric(
+                "estimated_shots",
+                "Tiros estimados",
+                shots_a,
+                shots_b,
+                "Aproximación desde goles esperados y ventaja ofensiva.",
+            ),
+            metric(
+                "estimated_shots_on_target",
+                "Tiros al arco estimados",
+                shots_on_target_a,
+                shots_on_target_b,
+                "Subconjunto esperado de tiros con mayor probabilidad de gol.",
+            ),
+            metric(
+                "estimated_possession",
+                "Posesión estimada",
+                possession_a,
+                possession_b,
+                "Calculada con Elo, ranking FIFA, puntos FIFA y forma del modelo.",
+                "%",
+            ),
+            metric(
+                "availability_risk",
+                "Riesgo de bajas",
+                availability_risk_a,
+                availability_risk_b,
+                "Riesgo contextual de desgaste o molestias; no son lesiones confirmadas.",
+                "%",
+            ),
+        ]
+
     def predict_match(
         self,
         team_a: str,
@@ -1055,6 +1186,13 @@ class PredictionService:
                 "team_a": round(expected_goals_a, 3),
                 "team_b": round(expected_goals_b, 3),
             },
+            "estimated_match_metrics": self._estimate_match_metrics(
+                features_a,
+                features_b,
+                expected_goals_a,
+                expected_goals_b,
+                probability_by_label,
+            ),
             "top_scorelines": [
                 {
                     "score": row["score"],

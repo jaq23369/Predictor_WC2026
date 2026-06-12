@@ -108,6 +108,12 @@ function formatNumber(value, decimals = 1) {
   return numeric.toFixed(decimals);
 }
 
+function formatMetricValue(value, decimals = 1, unit = "") {
+  const formatted = formatNumber(value, decimals);
+  if (formatted === "Sin dato") return formatted;
+  return `${formatted}${unit}`;
+}
+
 function hasPositiveNumber(value) {
   const numeric = Number(value);
   return Number.isFinite(numeric) && numeric > 0;
@@ -1164,13 +1170,50 @@ function App() {
                 ))}
               </div>
 
+              <div className="estimated-metrics-panel">
+                <div className="section-heading compact">
+                  <div>
+                    <p className="eyebrow">Estimaciones especiales</p>
+                    <h3>Métricas proyectadas del partido</h3>
+                  </div>
+                </div>
+                <div className="estimated-metrics-grid">
+                  {(prediction.estimated_match_metrics || []).map((metric) => (
+                    <article className="estimated-metric-card" key={metric.key}>
+                      <div>
+                        <span>{metric.label}</span>
+                        <p>{metric.note}</p>
+                      </div>
+                      <div className="estimated-metric-values">
+                        <strong>
+                          {formatMetricValue(
+                            metric.team_values?.team_a,
+                            metric.decimals ?? 1,
+                            metric.unit || ""
+                          )}
+                          <small>{prediction.team_a}</small>
+                        </strong>
+                        <strong>
+                          {formatMetricValue(
+                            metric.team_values?.team_b,
+                            metric.decimals ?? 1,
+                            metric.unit || ""
+                          )}
+                          <small>{prediction.team_b}</small>
+                        </strong>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </div>
+
               <div className="lineups-grid">
                 <LineupPitch team={prediction.team_a} crest={crestA} lines={lineupA} tone="home" />
                 <LineupPitch team={prediction.team_b} crest={crestB} lines={lineupB} tone="away" />
               </div>
 
               <p className="context-line">
-                Las alineaciones son una proyección visual desde convocatorias disponibles. Las métricas contextuales solo aparecen cuando hay dato para ambas selecciones; API-Football cubre estadísticas de juego para 11 equipos y FBref cubre partidos para las 48 selecciones.
+                Las alineaciones son una proyección visual desde convocatorias disponibles. Las métricas especiales son estimaciones del modelo, no estadísticas oficiales confirmadas; las lesiones reales solo deben tomarse desde fuentes externas cuando existan.
               </p>
             </section>
           )}

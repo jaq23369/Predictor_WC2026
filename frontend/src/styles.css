@@ -482,6 +482,70 @@ input {
   overflow-wrap: anywhere;
 }
 
+.estimated-metrics-panel {
+  margin: 6px 0 16px;
+  border: 1px solid rgba(20, 87, 65, 0.16);
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(234, 241, 234, 0.72), #fff);
+  padding: 14px;
+}
+
+.estimated-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.estimated-metric-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 12px;
+  display: grid;
+  gap: 12px;
+}
+
+.estimated-metric-card span {
+  color: var(--ink);
+  font-size: 0.86rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.estimated-metric-card p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+.estimated-metric-values {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.estimated-metric-values strong {
+  min-width: 0;
+  display: grid;
+  gap: 2px;
+  color: var(--green);
+  font-size: 1.15rem;
+}
+
+.estimated-metric-values strong:last-child {
+  color: var(--terracotta);
+  justify-items: end;
+  text-align: right;
+}
+
+.estimated-metric-values small {
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
 .lineups-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1562,6 +1626,10 @@ input {
     grid-template-columns: 1fr;
   }
 
+  .estimated-metrics-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .phase-tabs {
     grid-template-columns: 1fr;
   }
@@ -1630,6 +1698,10 @@ input {
 
   .scoreline-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .estimated-metrics-grid {
+    grid-template-columns: 1fr;
   }
 
   .market-comparison {

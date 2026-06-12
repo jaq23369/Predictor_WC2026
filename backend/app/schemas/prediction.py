@@ -29,6 +29,20 @@ class ExpectedGoals(BaseModel):
     team_b: float
 
 
+class EstimatedMetricValue(BaseModel):
+    team_a: float
+    team_b: float
+
+
+class EstimatedMatchMetric(BaseModel):
+    key: str
+    label: str
+    unit: str = ""
+    decimals: int = 1
+    team_values: EstimatedMetricValue
+    note: str
+
+
 class MatchPredictionResponse(BaseModel):
     team_a: str
     team_b: str
@@ -36,6 +50,7 @@ class MatchPredictionResponse(BaseModel):
     winner: str
     probabilities: MatchProbabilities
     expected_goals: ExpectedGoals
+    estimated_match_metrics: list[EstimatedMatchMetric]
     top_scorelines: list[ScorelineProbability]
 
 
