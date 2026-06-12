@@ -6,6 +6,7 @@ __pycache__/
 frontend/node_modules/
 frontend/dist/
 data/api_cache/
+downloaded_files/
 
 # Archivos grandes de Transfermarkt
 data/raw/Football Data from Transfermarkt/game_events.csv

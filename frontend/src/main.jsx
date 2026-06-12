@@ -5,6 +5,7 @@ import {
   BarChart3,
   CalendarDays,
   CircleAlert,
+  Clock3,
   Flag,
   Goal,
   ListChecks,
@@ -16,6 +17,8 @@ import {
 } from "lucide-react";
 import {
   getAPIFootballTeamMatchStats,
+  getFBrefTeamFormFeatures,
+  getFootballDataMatches,
   getFootballDataTeams,
   getMonteCarloSimulation,
   getSquads,
@@ -41,6 +44,18 @@ const DEFAULT_REQUEST = {
 };
 
 const GROUP_LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+const GROUP_ORDER = GROUP_LETTERS.slice(0, 12).map((letter) => `Grupo ${letter}`);
+const FINISHED_STATUSES = new Set(["FINISHED", "AWARDED"]);
+
+const PHASE_CARDS = [
+  { key: "GROUP_STAGE", label: "Fase de Grupos" },
+  { key: "LAST_32", label: "Dieciseisavos" },
+  { key: "LAST_16", label: "Octavos" },
+  { key: "QUARTER_FINALS", label: "Cuartos" },
+  { key: "SEMI_FINALS", label: "Semifinales" },
+  { key: "THIRD_PLACE", label: "Tercer lugar" },
+  { key: "FINAL", label: "Final" },
+];
 
 const TEAM_NAME_ALIASES = {
   "Bosnia-Herzegovina": "Bosnia and Herzegovina",
@@ -105,6 +120,136 @@ function formatDate(value) {
     month: "short",
     year: "numeric",
   }).format(new Date(`${value}T12:00:00`));
+}
+
+function formatDateTime(value) {
+  if (!value) return "Sin fecha";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return formatDate(String(value).slice(0, 10));
+  return new Intl.DateTimeFormat("es-GT", {
+    day: "2-digit",
+    month: "short",
+    hour: "2-digit",
+    minute: "2-digit",
+  }).format(date);
+}
+
+function matchScoreLabel(match) {
+  const homeScore = Number(match.home_score);
+  const awayScore = Number(match.away_score);
+  if (Number.isFinite(homeScore) && Number.isFinite(awayScore)) {
+    return `${homeScore}-${awayScore}`;
+  }
+  if (match.status === "IN_PLAY" || match.status === "PAUSED") return "En vivo";
+  return "Programado";
+}
+
+function groupLabelFromApi(value) {
+  const code = String(value || "").replace("GROUP_", "");
+  return code ? `Grupo ${code}` : "Sin grupo";
+}
+
+function canonicalMatchTeam(value) {
+  return canonicalTeamName(value).replace("Bosnia-Herzegovina", "Bosnia and Herzegovina");
+}
+
+function buildOfficialGroupData(footballDataMatches, fallbackFixtures) {
+  const grouped = new Map(GROUP_ORDER.map((label) => [label, { label, teams: [], matches: [] }]));
+  const teamToGroup = new Map();
+
+  footballDataMatches.forEach((match) => {
+    const label = groupLabelFromApi(match.group);
+    if (!grouped.has(label)) grouped.set(label, { label, teams: [], matches: [] });
+    const group = grouped.get(label);
+    [match.home_team, match.away_team].forEach((team) => {
+      const canonical = canonicalMatchTeam(team);
+      if (!canonical) return;
+      teamToGroup.set(canonical, label);
+      if (!group.teams.includes(canonical)) group.teams.push(canonical);
+    });
+    group.matches.push(match);
+  });
+
+  if (footballDataMatches.length === 0) {
+    return inferGroups(fallbackFixtures);
+  }
+
+  return {
+    groups: Array.from(grouped.values())
+      .filter((group) => group.teams.length > 0)
+      .map((group) => ({
+        ...group,
+        teams: group.teams.sort((a, b) => a.localeCompare(b)),
+      })),
+    teamToGroup,
+  };
+}
+
+function buildLiveStandings(footballDataMatches) {
+  const grouped = new Map(GROUP_ORDER.map((label) => [label, new Map()]));
+
+  function ensureTeam(groupLabel, team) {
+    const canonical = canonicalMatchTeam(team);
+    if (!grouped.has(groupLabel)) grouped.set(groupLabel, new Map());
+    const table = grouped.get(groupLabel);
+    if (!table.has(canonical)) {
+      table.set(canonical, {
+        team: canonical,
+        played: 0,
+        wins: 0,
+        draws: 0,
+        losses: 0,
+        goals_for: 0,
+        goals_against: 0,
+        points: 0,
+      });
+    }
+    return table.get(canonical);
+  }
+
+  footballDataMatches.forEach((match) => {
+    const groupLabel = groupLabelFromApi(match.group);
+    const home = ensureTeam(groupLabel, match.home_team);
+    const away = ensureTeam(groupLabel, match.away_team);
+    const homeScore = Number(match.home_score);
+    const awayScore = Number(match.away_score);
+    if (!FINISHED_STATUSES.has(match.status) || !Number.isFinite(homeScore) || !Number.isFinite(awayScore)) return;
+
+    home.played += 1;
+    away.played += 1;
+    home.goals_for += homeScore;
+    home.goals_against += awayScore;
+    away.goals_for += awayScore;
+    away.goals_against += homeScore;
+
+    if (homeScore > awayScore) {
+      home.wins += 1;
+      away.losses += 1;
+      home.points += 3;
+    } else if (awayScore > homeScore) {
+      away.wins += 1;
+      home.losses += 1;
+      away.points += 3;
+    } else {
+      home.draws += 1;
+      away.draws += 1;
+      home.points += 1;
+      away.points += 1;
+    }
+  });
+
+  return Array.from(grouped.entries())
+    .filter(([, table]) => table.size > 0)
+    .map(([group, table]) => ({
+      group,
+      standings: Array.from(table.values()).sort(
+        (a, b) =>
+          b.points - a.points ||
+          b.goals_for - b.goals_against - (a.goals_for - a.goals_against) ||
+          b.goals_for - a.goals_for ||
+          a.team.localeCompare(b.team)
+      ),
+    }));
 }
 
 const SIMULATION_PHASES = {
@@ -384,12 +529,14 @@ function App() {
   const [fixtures, setFixtures] = useState([]);
   const [fixturePredictions, setFixturePredictions] = useState([]);
   const [transfermarktValues, setTransfermarktValues] = useState([]);
+  const [footballDataMatches, setFootballDataMatches] = useState([]);
   const [footballDataTeams, setFootballDataTeams] = useState([]);
   const [squads, setSquads] = useState([]);
   const [squadSummary, setSquadSummary] = useState([]);
   const [theSportsDBRecentForm, setTheSportsDBRecentForm] = useState([]);
   const [theSportsDBRecentStats, setTheSportsDBRecentStats] = useState([]);
   const [apiFootballTeamStats, setAPIFootballTeamStats] = useState([]);
+  const [fbrefTeamFeatures, setFBrefTeamFeatures] = useState([]);
   const [simulation, setSimulation] = useState(null);
   const [monteCarlo, setMonteCarlo] = useState(null);
   const [monteCarloLoading, setMonteCarloLoading] = useState(false);
@@ -411,24 +558,28 @@ function App() {
           fixturesResponse,
           predictionsResponse,
           transfermarktResponse,
+          footballDataMatchesResponse,
           footballDataTeamsResponse,
           squadsResponse,
           squadSummaryResponse,
           theSportsDBRecentFormResponse,
           theSportsDBRecentStatsResponse,
           apiFootballTeamStatsResponse,
+          fbrefTeamFeaturesResponse,
           simulationResponse,
         ] = await Promise.all([
           getTeams(),
           getWorldCupFixtures(),
           getWorldCupPredictions(),
           getTransfermarktValues(),
+          getFootballDataMatches(),
           getFootballDataTeams(),
           getSquads(),
           getSquadSummary(),
           getTheSportsDBRecentForm(),
           getTheSportsDBRecentMatchStats(),
           getAPIFootballTeamMatchStats(),
+          getFBrefTeamFormFeatures(),
           getSimulation(),
         ]);
 
@@ -438,12 +589,14 @@ function App() {
         setFixtures(fixturesResponse);
         setFixturePredictions(predictionsResponse);
         setTransfermarktValues(transfermarktResponse);
+        setFootballDataMatches(footballDataMatchesResponse);
         setFootballDataTeams(footballDataTeamsResponse);
         setSquads(squadsResponse);
         setSquadSummary(squadSummaryResponse);
         setTheSportsDBRecentForm(theSportsDBRecentFormResponse);
         setTheSportsDBRecentStats(theSportsDBRecentStatsResponse);
         setAPIFootballTeamStats(apiFootballTeamStatsResponse);
+        setFBrefTeamFeatures(fbrefTeamFeaturesResponse);
         setSimulation(simulationResponse);
         setSelectedAnalysisTeam(squadSummaryResponse[0]?.team || "Mexico");
       } catch (requestError) {
@@ -527,13 +680,16 @@ function App() {
     );
   }, [fixturePredictions, search]);
 
-  const groupData = useMemo(() => inferGroups(fixtures), [fixtures]);
+  const groupData = useMemo(
+    () => buildOfficialGroupData(footballDataMatches, fixtures),
+    [footballDataMatches, fixtures]
+  );
 
   const groupedPredictions = useMemo(() => {
     const grouped = new Map(groupData.groups.map((group) => [group.label, { ...group, matches: [] }]));
 
     filteredPredictions.forEach((row) => {
-      const groupLabel = groupData.teamToGroup.get(row.home_team) || "Sin grupo";
+      const groupLabel = groupData.teamToGroup.get(canonicalMatchTeam(row.home_team)) || "Sin grupo";
       if (!grouped.has(groupLabel)) {
         grouped.set(groupLabel, { label: groupLabel, teams: [], matches: [] });
       }
@@ -611,6 +767,12 @@ function App() {
     return map;
   }, [apiFootballTeamStats]);
 
+  const fbrefFeaturesByTeam = useMemo(() => {
+    const map = new Map();
+    fbrefTeamFeatures.forEach((row) => map.set(canonicalTeamName(row.team), row));
+    return map;
+  }, [fbrefTeamFeatures]);
+
   const analysisTeams = useMemo(
     () =>
       [...squadSummary]
@@ -654,6 +816,43 @@ function App() {
     [fixturePredictions, selectedAnalysisTeam]
   );
 
+  const liveStandings = useMemo(
+    () => buildLiveStandings(footballDataMatches),
+    [footballDataMatches]
+  );
+
+  const phaseSummary = useMemo(
+    () =>
+      PHASE_CARDS.map((phase) => {
+        const phaseMatches = footballDataMatches.filter((match) => match.stage === phase.key);
+        const finished = phaseMatches.filter((match) => FINISHED_STATUSES.has(match.status)).length;
+        return {
+          ...phase,
+          matches: phaseMatches.length,
+          finished,
+          status: phaseMatches.length === 0 ? "Pendiente" : finished === phaseMatches.length ? "Completada" : finished > 0 ? "En juego" : "Programada",
+        };
+      }),
+    [footballDataMatches]
+  );
+
+  const actualidadMatchesByGroup = useMemo(() => {
+    const grouped = new Map(GROUP_ORDER.map((group) => [group, []]));
+    footballDataMatches
+      .filter((match) => match.stage === "GROUP_STAGE")
+      .forEach((match) => {
+        const group = groupLabelFromApi(match.group);
+        if (!grouped.has(group)) grouped.set(group, []);
+        grouped.get(group).push(match);
+      });
+    return Array.from(grouped.entries())
+      .filter(([, matches]) => matches.length > 0)
+      .map(([group, matches]) => ({
+        group,
+        matches: matches.sort((a, b) => String(a.utc_date).localeCompare(String(b.utc_date))),
+      }));
+  }, [footballDataMatches]);
+
   const fixtureMeta = prediction ? pickFixtureMeta(fixtures, prediction.team_a, prediction.team_b) : null;
   const marketA = prediction ? marketByTeam.get(canonicalTeamName(prediction.team_a)) : null;
   const marketB = prediction ? marketByTeam.get(canonicalTeamName(prediction.team_b)) : null;
@@ -671,6 +870,7 @@ function App() {
     : null;
   const selectedMarket = marketByTeam.get(canonicalTeamName(selectedAnalysisTeam));
   const selectedCrest = crestByTeam.get(canonicalTeamName(selectedAnalysisTeam));
+  const selectedFBref = fbrefFeaturesByTeam.get(canonicalTeamName(selectedAnalysisTeam));
   const simulationBracketMatches = useMemo(
     () => buildBracketTreeMatches(simulation, crestByTeam),
     [simulation, crestByTeam]
@@ -702,6 +902,10 @@ function App() {
         <button className={activeView === "simulation" ? "nav-button active" : "nav-button"} type="button" onClick={() => setActiveView("simulation")}>
           <ListChecks size={17} />
           Simulación
+        </button>
+        <button className={activeView === "current" ? "nav-button active" : "nav-button"} type="button" onClick={() => setActiveView("current")}>
+          <Clock3 size={17} />
+          Actualidad
         </button>
         <button className={activeView === "analysis" ? "nav-button active" : "nav-button"} type="button" onClick={() => setActiveView("analysis")}>
           <Users size={17} />
@@ -1125,6 +1329,102 @@ function App() {
         </section>
       )}
 
+      {activeView === "current" && (
+        <section className="current-section">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">Actualidad</p>
+              <h2>Estado vivo del Mundial</h2>
+            </div>
+            <Clock3 size={24} aria-hidden="true" />
+          </div>
+
+          <div className="phase-status-grid">
+            {phaseSummary.map((phase) => (
+              <article className={phase.status === "En juego" ? "phase-status-card active" : "phase-status-card"} key={phase.key}>
+                <span>{phase.label}</span>
+                <strong>{phase.status}</strong>
+                <p>{phase.finished}/{phase.matches || 0} partidos</p>
+              </article>
+            ))}
+          </div>
+
+          <div className="current-layout">
+            <section className="current-groups-panel">
+              <div className="section-heading compact">
+                <div>
+                  <p className="eyebrow">Fase de grupos</p>
+                  <h3>Tablas oficiales</h3>
+                </div>
+              </div>
+
+              <div className="current-groups-grid">
+                {liveStandings.map((group) => (
+                  <article className="current-group-card" key={group.group}>
+                    <h3>{group.group}</h3>
+                    <div className="current-standings">
+                      <div className="current-standing-head">
+                        <span>Equipo</span>
+                        <span>PJ</span>
+                        <span>DG</span>
+                        <span>Pts</span>
+                      </div>
+                      {group.standings.map((row, index) => (
+                        <div className={index <= 1 ? "current-standing-row qualifies" : index === 2 ? "current-standing-row third" : "current-standing-row"} key={`${group.group}-${row.team}`}>
+                          <div>
+                            <TeamCrest src={crestByTeam.get(canonicalMatchTeam(row.team))} name={row.team} />
+                            <strong>{row.team}</strong>
+                          </div>
+                          <span>{row.played}</span>
+                          <span>{row.goals_for - row.goals_against}</span>
+                          <strong>{row.points}</strong>
+                        </div>
+                      ))}
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </section>
+
+            <section className="current-matches-panel">
+              <div className="section-heading compact">
+                <div>
+                  <p className="eyebrow">Calendario y resultados</p>
+                  <h3>Partidos por grupo</h3>
+                </div>
+              </div>
+
+              <div className="current-match-groups">
+                {actualidadMatchesByGroup.map((group) => (
+                  <article className="current-match-group" key={group.group}>
+                    <h3>{group.group}</h3>
+                    <div className="current-match-list">
+                      {group.matches.map((match) => (
+                        <div className="current-match-card" key={match.match_id}>
+                          <span>{formatDateTime(match.utc_date)}</span>
+                          <div className="current-match-teams">
+                            <div>
+                              <TeamCrest src={crestByTeam.get(canonicalMatchTeam(match.home_team))} name={match.home_team} />
+                              <strong>{canonicalMatchTeam(match.home_team)}</strong>
+                            </div>
+                            <strong>{matchScoreLabel(match)}</strong>
+                            <div>
+                              <TeamCrest src={crestByTeam.get(canonicalMatchTeam(match.away_team))} name={match.away_team} />
+                              <strong>{canonicalMatchTeam(match.away_team)}</strong>
+                            </div>
+                          </div>
+                          <p>{match.status === "TIMED" ? "Programado" : match.status}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </section>
+          </div>
+        </section>
+      )}
+
       {activeView === "analysis" && (
         <section className="analysis-section">
           <div className="section-heading">
@@ -1157,6 +1457,10 @@ function App() {
               <StatPill icon={BarChart3} label="Valor plantilla" value={formatMoney(selectedSummary?.squad_market_value || selectedMarket?.total_market_value)} />
               <StatPill icon={Trophy} label="Top 11" value={formatMoney(selectedSummary?.top_11_players_value)} />
               <StatPill icon={Flag} label="Ranking TM" value={selectedMarket?.fifa_ranking_transfermarkt || "s/d"} />
+              <StatPill icon={Activity} label="FBref partidos" value={selectedFBref?.matches_with_fbref || "s/d"} />
+              <StatPill icon={Goal} label="xG diff FBref" value={formatNumber(selectedFBref?.avg_xg_diff, 2)} />
+              <StatPill icon={BarChart3} label="Tiros FBref" value={formatNumber(selectedFBref?.avg_shots, 1)} />
+              <StatPill icon={CircleAlert} label="Faltas FBref" value={formatNumber(selectedFBref?.avg_fouls, 1)} />
             </div>
           </div>
 

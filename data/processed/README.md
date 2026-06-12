@@ -69,3 +69,37 @@ Incluye variables dinamicas calculadas solo con partidos anteriores a cada fecha
 - rendimiento contra rivales top 30 y top 50
 - tendencia Elo reciente
 - diferencias de forma entre `team_a` y `team_b`
+
+## fbref_team_match_stats.csv
+
+Archivo opcional generado por:
+
+```bash
+.venv/bin/python scripts/sync_fbref_stats.py
+```
+
+Contiene estadisticas avanzadas descargadas offline con `soccerdata` desde FBref, cuando la liga/temporada solicitada esta disponible.
+
+Campos esperados:
+
+- xG y xGA
+- tiros y tiros al arco
+- tarjetas
+- faltas
+- centros
+- intercepciones
+
+## fbref_team_form_features.csv
+
+Resumen por seleccion calculado desde `fbref_team_match_stats.csv`.
+
+Estas variables se usan primero como contexto exploratorio. Antes de agregarlas al dataset de entrenamiento se debe validar:
+
+- cobertura suficiente de selecciones
+- suficientes partidos por seleccion
+- que cada feature use solo informacion disponible antes del partido
+- mejora real en validacion temporal
+
+## fbref_coverage.csv
+
+Resumen de cobertura y errores de la sincronizacion FBref/soccerdata.

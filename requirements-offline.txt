@@ -1,0 +1,2 @@
+soccerdata>=1.9,<2.0
+pandas>=2.2,<3.0

@@ -206,3 +206,24 @@ def api_football_coverage(
     service: PredictionService = Depends(get_prediction_service),
 ) -> list[dict[str, str]]:
     return service.api_football_coverage()
+
+
+@router.get("/fbref/team-match-stats")
+def fbref_team_match_stats(
+    service: PredictionService = Depends(get_prediction_service),
+) -> list[dict[str, str]]:
+    return service.fbref_team_match_stats()
+
+
+@router.get("/fbref/team-form-features")
+def fbref_team_form_features(
+    service: PredictionService = Depends(get_prediction_service),
+) -> list[dict[str, str]]:
+    return service.fbref_team_form_features()
+
+
+@router.get("/fbref/coverage")
+def fbref_coverage(
+    service: PredictionService = Depends(get_prediction_service),
+) -> list[dict[str, str]]:
+    return service.fbref_coverage()

@@ -39,6 +39,9 @@ API_FOOTBALL_FIXTURES_PATH = PROCESSED_DIR / "api_football_fixtures.csv"
 API_FOOTBALL_FIXTURE_STATISTICS_PATH = PROCESSED_DIR / "api_football_fixture_statistics.csv"
 API_FOOTBALL_TEAM_MATCH_STATS_PATH = PROCESSED_DIR / "api_football_team_match_stats.csv"
 API_FOOTBALL_COVERAGE_PATH = PROCESSED_DIR / "api_football_coverage.csv"
+FBREF_TEAM_MATCH_STATS_PATH = PROCESSED_DIR / "fbref_team_match_stats.csv"
+FBREF_TEAM_FORM_FEATURES_PATH = PROCESSED_DIR / "fbref_team_form_features.csv"
+FBREF_COVERAGE_PATH = PROCESSED_DIR / "fbref_coverage.csv"
 CLASSIFICATION_MODEL_PATH = ARTIFACTS_DIR / "classification_model.pkl"
 SCORE_MODEL_PATH = ARTIFACTS_DIR / "poisson_score_model.pkl"
 
@@ -376,6 +379,15 @@ class PredictionService:
 
     def api_football_coverage(self) -> list[dict[str, str]]:
         return read_optional_csv(API_FOOTBALL_COVERAGE_PATH)
+
+    def fbref_team_match_stats(self) -> list[dict[str, str]]:
+        return read_optional_csv(FBREF_TEAM_MATCH_STATS_PATH)
+
+    def fbref_team_form_features(self) -> list[dict[str, str]]:
+        return read_optional_csv(FBREF_TEAM_FORM_FEATURES_PATH)
+
+    def fbref_coverage(self) -> list[dict[str, str]]:
+        return read_optional_csv(FBREF_COVERAGE_PATH)
 
     def world_cup_2026_simulation(self) -> dict[str, Any]:
         phase_dates = {

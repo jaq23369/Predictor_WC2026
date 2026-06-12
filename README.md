@@ -189,6 +189,50 @@ Genera:
 
 Tambien guarda cache crudo en `data/api_cache/api_football/`.
 
+## Sincronizar FBref con soccerdata
+
+FBref/soccerdata es una fuente opcional offline para metricas avanzadas como xG, tiros, tiros al arco, faltas, tarjetas, centros, intercepciones y otras senales de rendimiento. No se ejecuta en Vercel ni desde el frontend.
+
+Instalar dependencias solo para sync local:
+
+```bash
+.venv/bin/pip install -r requirements-offline.txt
+```
+
+Sync recomendado:
+
+```bash
+.venv/bin/python scripts/sync_fbref_stats.py --league "INT-World Cup" --seasons 2022 2026 --stat-types schedule --delay 4
+```
+
+Para intentar metricas avanzadas de match logs, correrlo de forma separada porque FBref puede tardar bastante:
+
+```bash
+.venv/bin/python scripts/sync_fbref_stats.py --league "INT-World Cup" --seasons 2022 --stat-types shooting misc --delay 6
+```
+
+Si soccerdata/FBref no reconoce esa liga en tu entorno, revisar ligas disponibles con Python local y cambiar `--league`.
+
+Genera:
+
+- `data/processed/fbref_team_match_stats.csv`
+- `data/processed/fbref_team_form_features.csv`
+- `data/processed/fbref_coverage.csv`
+
+Tambien usa cache local en:
+
+```text
+data/api_cache/soccerdata/FBref/
+```
+
+Endpoints para revisar cuando existan los CSVs:
+
+- `GET /fbref/team-match-stats`
+- `GET /fbref/team-form-features`
+- `GET /fbref/coverage`
+
+Estas variables no entran al entrenamiento automaticamente. Primero hay que revisar cobertura y luego probar si mejoran validacion temporal sin data leakage.
+
 ## Frontend
 
 El frontend esta en `frontend/` y consume esta API FastAPI.

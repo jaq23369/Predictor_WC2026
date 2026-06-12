@@ -39,6 +39,10 @@ export function getFootballDataTeams() {
   return request("/football-data/world-cup-2026/teams");
 }
 
+export function getFootballDataMatches() {
+  return request("/football-data/world-cup-2026/matches");
+}
+
 export function getSquads() {
   return request("/world-cup-2026/squads");
 }
@@ -73,6 +77,10 @@ export function getAPIFootballTeamMatchStats() {
 
 export function getAPIFootballCoverage() {
   return request("/api-football/coverage");
+}
+
+export function getFBrefTeamFormFeatures() {
+  return request("/fbref/team-form-features");
 }
 
 export function predictMatch(payload) {
