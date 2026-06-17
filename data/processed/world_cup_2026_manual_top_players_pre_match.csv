@@ -1,3 +1,31 @@
 team,as_of_match_id,top_scorer,top_scorer_goals,top_assist_provider,top_assist_provider_assists,top_goalkeeper_clean_sheets,top_goalkeeper_clean_sheets_count,source_type
 South Korea,SOUTHKOREA_CZECHIA_2026_06_11,Son Heung-min,10,Lee Kang-in,6,Jo Hyeon-woo,6,manual_curated
 Czechia,SOUTHKOREA_CZECHIA_2026_06_11,Patrik Schick,5,Tomas Chory,3,Matej Kovar,4,manual_curated
+Qatar,QATAR_SWITZERLAND_2026_06_13,Almoez Ali,12,Akram Afif,11,Meshaal Barsham,2,manual_curated
+Switzerland,QATAR_SWITZERLAND_2026_06_13,Breel Embolo,4,Ruben Vargas,3,Gregor Kobel,4,manual_curated
+Brazil,BRAZIL_MOROCCO_2026_06_13,Raphinha,5,Neymar,3,Alisson,4,manual_curated
+Morocco,BRAZIL_MOROCCO_2026_06_13,Ayoub El Kaabi,4,Achraf Hakimi,3,Yassine Bounou,6,manual_curated
+Haiti,HAITI_SCOTLAND_2026_06_13,Duckens Nazon,6,Danley Jean Jacques,3,Johny Placide,4,manual_curated
+Scotland,HAITI_SCOTLAND_2026_06_13,Che Adams,2,Andrew Robertson,2,Angus Gunn,2,manual_curated
+Australia,AUSTRALIA_TURKEY_2026_06_13,Kusini Yengi,6,Craig Goodwin,5,Mathew Ryan,7,manual_curated
+Turkey,AUSTRALIA_TURKEY_2026_06_13,Kenan Yildiz,3,Hakan Calhanoglu,4,Ugurcan Cakir,3,manual_curated
+Germany,GERMANY_CURACAO_2026_06_14,Nick Woltemade,4,David Raum,2,Oliver Baumann,4,manual_curated
+Curacao,GERMANY_CURACAO_2026_06_14,Gervane Kastaneer,5,Kenji Gorre,3,Eloy Room,6,manual_curated
+Netherlands,NETHERLANDS_JAPAN_2026_06_14,Memphis Depay,8,Cody Gakpo,4,Bart Verbruggen,3,manual_curated
+Japan,NETHERLANDS_JAPAN_2026_06_14,Ayase Ueda,8,Junya Ito,10,Zion Suzuki,8,manual_curated
+Spain,SPAIN_CAPE_VERDE_2026_06_15,Mikel Merino,6,Mikel Oyarzabal,4,Unai Simon,5,manual_curated
+Cape Verde,SPAIN_CAPE_VERDE_2026_06_15,Livramento,4,Cabral,1,Vozinha,7,manual_curated
+Belgium,BELGIUM_EGYPT_2026_06_15,Kevin De Bruyne,6,Alexis Saelemaekers,4,Thibaut Courtois,3,manual_curated
+Egypt,BELGIUM_EGYPT_2026_06_15,Mohamed Salah,9,Mohamed Salah,3,Mohamed El Shenawy,6,manual_curated
+Saudi Arabia,SAUDI_ARABIA_URUGUAY_2026_06_15,Feras Al Brikan,5,Musab Al Juwayr,3,Mohammed Al Owais,4,manual_curated
+Uruguay,SAUDI_ARABIA_URUGUAY_2026_06_15,Darwin Nunez,5,Maximiliano Araujo,4,Sergio Rochet,8,manual_curated
+Iran,IRAN_NEW_ZEALAND_2026_06_15,Mehdi Taremi,10,Mehdi Taremi,7,Alireza Beiranvand,7,manual_curated
+New Zealand,IRAN_NEW_ZEALAND_2026_06_15,Chris Wood,9,Matthew Garbett,5,Max Crocombe,3,manual_curated
+France,FRANCE_SENEGAL_2026_06_16,Kylian Mbappe,5,Kylian Mbappe,3,Mike Maignan,3,manual_curated
+Senegal,FRANCE_SENEGAL_2026_06_16,Sadio Mane,5,Habib Diallo,3,Edouard Mendy,7,manual_curated
+Ivory Coast,IVORY_COAST_ECUADOR_2026_06_14,Seko Fofana,3,Simon Adingra,3,Yahia Fofana,9,manual_curated
+Ecuador,IVORY_COAST_ECUADOR_2026_06_14,Enner Valencia,6,Moises Caicedo,3,Hernan Galindez,8,manual_curated
+Iraq,IRAQ_NORWAY_2026_06_16,Aymen Hussein,9,Amir Al-Ammari,5,Jalal Hassan,10,manual_curated
+Norway,IRAQ_NORWAY_2026_06_16,Erling Haaland,16,Martin Odegaard,7,Orjan Nyland,4,manual_curated
+Argentina,ARGENTINA_ALGERIA_2026_06_16,Lionel Messi,8,Julian Alvarez,3,Emiliano Martinez,10,manual_curated
+Algeria,ARGENTINA_ALGERIA_2026_06_16,Mohamed Amoura,10,Mohamed Amoura,4,Alexis Guendouz,2,manual_curated

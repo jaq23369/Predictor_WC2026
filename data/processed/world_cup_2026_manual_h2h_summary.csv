@@ -2,3 +2,19 @@ pair_key,team_a,team_b,team_a_wins,draws,team_b_wins,source_type
 Mexico__South Africa,Mexico,South Africa,1,1,1,manual_curated
 South Korea__Czechia,South Korea,Czechia,1,0,0,manual_curated
 Canada__Bosnia and Herzegovina,Canada,Bosnia and Herzegovina,0,1,0,manual_curated
+United States__Paraguay,United States,Paraguay,3,0,1,manual_curated
+Qatar__Switzerland,Qatar,Switzerland,0,1,0,manual_curated
+Brazil__Morocco,Brazil,Morocco,1,1,0,manual_curated
+Haiti__Scotland,Haiti,Scotland,0,0,1,manual_curated
+Australia__Turkey,Australia,Turkey,1,0,0,manual_curated
+Germany__Curacao,Germany,Curacao,1,0,0,manual_curated
+Netherlands__Japan,Netherlands,Japan,1,1,0,manual_curated
+Sweden__Tunisia,Sweden,Tunisia,1,0,0,manual_curated
+Spain__Cape Verde,Spain,Cape Verde,0,1,0,manual_curated
+Belgium__Egypt,Belgium,Egypt,0,1,0,manual_curated
+Saudi Arabia__Uruguay,Saudi Arabia,Uruguay,0,1,1,manual_curated
+Iran__New Zealand,Iran,New Zealand,0,1,0,manual_curated
+France__Senegal,France,Senegal,1,0,1,manual_curated
+Ivory Coast__Ecuador,Ivory Coast,Ecuador,1,0,0,manual_curated
+Iraq__Norway,Iraq,Norway,0,0,1,manual_curated
+Argentina__Algeria,Argentina,Algeria,1,0,0,manual_curated
