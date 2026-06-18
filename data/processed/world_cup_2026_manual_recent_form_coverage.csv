@@ -36,3 +36,9 @@ Austria,TRUE,TRUE,TRUE,complete,BTTS last 5: 2; unbeaten streak: 2; win streak: 
 Jordan,TRUE,TRUE,TRUE,complete,BTTS last 5: 3; unbeaten streak: 0; win streak: 0; largest win: Oman 0-3 Jordan; form rating: good
 Portugal,TRUE,TRUE,TRUE,complete,BTTS last 5: 3; unbeaten streak: 1; win streak: 1; largest win: Portugal 9-1 Armenia; form rating: very good
 DR Congo,TRUE,TRUE,TRUE,complete,BTTS last 5: 1; unbeaten streak: 1; win streak: 1; largest win: Botswana 0-3 DR Congo; form rating: very good
+England,TRUE,TRUE,TRUE,complete,BTTS last 5: 0; unbeaten streak: 5; win streak: 5; defensive streak: 5 consecutive clean sheets; form rating: elite
+Croatia,TRUE,TRUE,TRUE,complete,BTTS last 5: 2; unbeaten streak: 5; win streak: 1; form rating: excellent
+Ghana,TRUE,TRUE,TRUE,complete,BTTS last 5: 1; unbeaten streak: 5; win streak: 1; largest win: Central African Republic 0-5 Ghana; form rating: excellent
+Panama,TRUE,TRUE,TRUE,complete,BTTS last 5: 3; unbeaten streak: 5; win streak: 1; largest win: Panama 3-0 El Salvador; form rating: very good
+Uzbekistan,TRUE,TRUE,TRUE,complete_manual,BTTS last 5: 1; unbeaten streak: 5; win streak: 1; largest win: Uzbekistan 3-0 Qatar; form rating: very good
+Colombia,TRUE,TRUE,TRUE,complete_manual,BTTS last 5: 3; unbeaten streak: 5; win streak: 2; largest win: Venezuela 3-6 Colombia; form rating: very good

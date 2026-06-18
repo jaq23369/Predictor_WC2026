@@ -111,16 +111,16 @@
     "elo_change_last_10_diff"
   ],
   "target": "goals_for",
-  "train_rows": 40636,
-  "test_rows": 10160,
+  "train_rows": 40691,
+  "test_rows": 10173,
   "train_date_min": "1993-01-01",
-  "train_date_max": "2020-11-16",
-  "test_date_min": "2020-11-16",
-  "test_date_max": "2026-06-09",
+  "train_date_max": "2020-11-17",
+  "test_date_min": "2020-11-17",
+  "test_date_max": "2026-06-17",
   "metrics": {
-    "mae": 0.9025580094919008,
-    "rmse": 1.1846722651669102,
-    "actual_goals_mean": 1.3288385826771654,
-    "predicted_goals_mean": 1.340068417015566
+    "mae": 0.901652336659822,
+    "rmse": 1.1823148650938153,
+    "actual_goals_mean": 1.328614961171729,
+    "predicted_goals_mean": 1.3436330642495036
   }
 }

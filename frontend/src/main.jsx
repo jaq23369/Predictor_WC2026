@@ -124,6 +124,10 @@ function metricValue(row, primaryKey, fallbackKey) {
   return row[primaryKey] ?? row[fallbackKey];
 }
 
+function firstMetricValue(...values) {
+  return values.find((value) => hasPositiveNumber(value));
+}
+
 function formatDate(value) {
   if (!value) return "Sin fecha";
   return new Intl.DateTimeFormat("es-GT", {
@@ -501,6 +505,75 @@ function TeamProbabilityCard({ team, crest, probability, tone }) {
   );
 }
 
+function resultTone(result) {
+  if (result === "win") return "win";
+  if (result === "draw") return "draw";
+  return "loss";
+}
+
+function resultLabel(result) {
+  if (result === "win") return "G";
+  if (result === "draw") return "E";
+  return "P";
+}
+
+function RecentResultsPanel({ prediction, selectedSide, onSelectSide }) {
+  if (!prediction) return null;
+
+  const team = selectedSide === "team_a" ? prediction.team_a : prediction.team_b;
+  const results = prediction.recent_results?.[selectedSide] || [];
+  const summary = prediction.recent_summary?.[selectedSide] || {};
+
+  return (
+    <section className="recent-results-panel">
+      <div className="recent-results-header">
+        <div>
+          <p className="eyebrow">Forma reciente</p>
+          <h3>Últimos resultados usados como guía</h3>
+        </div>
+        <div className="recent-team-toggle" role="tablist" aria-label="Elegir selección">
+          {["team_a", "team_b"].map((side) => {
+            const label = side === "team_a" ? prediction.team_a : prediction.team_b;
+            return (
+              <button
+                type="button"
+                key={side}
+                className={selectedSide === side ? "active" : ""}
+                onClick={() => onSelectSide(side)}
+              >
+                {label}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="recent-summary-grid">
+        <StatPill icon={ListChecks} label="Récord" value={`${summary.wins || 0}G ${summary.draws || 0}E ${summary.losses || 0}P`} />
+        <StatPill icon={BarChart3} label="Puntos" value={summary.points ?? 0} />
+        <StatPill icon={Goal} label="Goles" value={`${summary.goals_for || 0}-${summary.goals_against || 0}`} />
+        <StatPill icon={ShieldCheck} label="Porterías en cero" value={summary.clean_sheets ?? 0} />
+      </div>
+
+      <div className="recent-results-list">
+        {results.length > 0 ? (
+          results.map((row) => (
+            <article className="recent-result-row" key={`${team}-${row.date}-${row.home_team}-${row.away_team}`}>
+              <span className={`result-badge ${resultTone(row.result_for_team)}`}>{resultLabel(row.result_for_team)}</span>
+              <div>
+                <strong>{row.home_team} {row.home_score}-{row.away_score} {row.away_team}</strong>
+                <small>{formatDate(row.date)} · vs {row.opponent}</small>
+              </div>
+            </article>
+          ))
+        ) : (
+          <p className="context-line">No hay últimos resultados disponibles antes de esta fecha para {team}.</p>
+        )}
+      </div>
+    </section>
+  );
+}
+
 function LineupPitch({ team, crest, lines, tone }) {
   const totalPlayers = lines.reduce((sum, line) => sum + line.players.length, 0);
 
@@ -552,6 +625,7 @@ function App() {
   const [monteCarlo, setMonteCarlo] = useState(null);
   const [monteCarloLoading, setMonteCarloLoading] = useState(false);
   const [selectedAnalysisTeam, setSelectedAnalysisTeam] = useState("");
+  const [selectedRecentSide, setSelectedRecentSide] = useState("team_a");
   const [form, setForm] = useState(DEFAULT_REQUEST);
   const [prediction, setPrediction] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -655,6 +729,7 @@ function App() {
     try {
       const result = await predictMatch(payload);
       setPrediction(result);
+      setSelectedRecentSide("team_a");
     } catch (requestError) {
       setError(requestError.message);
     } finally {
@@ -883,6 +958,8 @@ function App() {
     : null;
   const fbrefA = prediction ? fbrefFeaturesByTeam.get(canonicalTeamName(prediction.team_a)) : null;
   const fbrefB = prediction ? fbrefFeaturesByTeam.get(canonicalTeamName(prediction.team_b)) : null;
+  const manualStatsA = prediction?.recent_match_stats?.team_a || null;
+  const manualStatsB = prediction?.recent_match_stats?.team_b || null;
   const selectedMarket = marketByTeam.get(canonicalTeamName(selectedAnalysisTeam));
   const selectedCrest = crestByTeam.get(canonicalTeamName(selectedAnalysisTeam));
   const selectedFBref = fbrefFeaturesByTeam.get(canonicalTeamName(selectedAnalysisTeam));
@@ -917,38 +994,44 @@ function App() {
         },
         {
           label: "Goles recientes",
-          home: recentFormA?.avg_goals_for_last_available,
-          away: recentFormB?.avg_goals_for_last_available,
+          home: prediction.recent_summary?.team_a?.avg_goals_for ?? recentFormA?.avg_goals_for_last_available,
+          away: prediction.recent_summary?.team_b?.avg_goals_for ?? recentFormB?.avg_goals_for_last_available,
         },
         {
           label: "Corners promedio",
-          home: metricValue(recentStatsA, "avg_corners", "avg_corners_last_available"),
-          away: metricValue(recentStatsB, "avg_corners", "avg_corners_last_available"),
+          home: firstMetricValue(manualStatsA?.avg_corners, metricValue(recentStatsA, "avg_corners", "avg_corners_last_available")),
+          away: firstMetricValue(manualStatsB?.avg_corners, metricValue(recentStatsB, "avg_corners", "avg_corners_last_available")),
         },
         {
           label: "Tiros al arco",
-          home: metricValue(recentStatsA, "avg_shots_on_goal", "avg_shots_on_target_last_available"),
-          away: metricValue(recentStatsB, "avg_shots_on_goal", "avg_shots_on_target_last_available"),
+          home: firstMetricValue(manualStatsA?.avg_shots_on_target, metricValue(recentStatsA, "avg_shots_on_goal", "avg_shots_on_target_last_available")),
+          away: firstMetricValue(manualStatsB?.avg_shots_on_target, metricValue(recentStatsB, "avg_shots_on_goal", "avg_shots_on_target_last_available")),
         },
         {
           label: "Posesión promedio",
-          home: metricValue(recentStatsA, "avg_possession", "avg_possession_last_available"),
-          away: metricValue(recentStatsB, "avg_possession", "avg_possession_last_available"),
+          home: firstMetricValue(manualStatsA?.avg_possession, metricValue(recentStatsA, "avg_possession", "avg_possession_last_available")),
+          away: firstMetricValue(manualStatsB?.avg_possession, metricValue(recentStatsB, "avg_possession", "avg_possession_last_available")),
         },
         {
           label: "Tarjetas amarillas",
-          home: metricValue(recentStatsA, "avg_yellow_cards", "avg_yellow_cards_last_available"),
-          away: metricValue(recentStatsB, "avg_yellow_cards", "avg_yellow_cards_last_available"),
+          home: firstMetricValue(manualStatsA?.avg_yellow_cards, metricValue(recentStatsA, "avg_yellow_cards", "avg_yellow_cards_last_available")),
+          away: firstMetricValue(manualStatsB?.avg_yellow_cards, metricValue(recentStatsB, "avg_yellow_cards", "avg_yellow_cards_last_available")),
         },
         {
           label: "Tarjetas rojas",
-          home: metricValue(recentStatsA, "avg_red_cards", "avg_red_cards_last_available"),
-          away: metricValue(recentStatsB, "avg_red_cards", "avg_red_cards_last_available"),
+          home: firstMetricValue(manualStatsA?.avg_red_cards, metricValue(recentStatsA, "avg_red_cards", "avg_red_cards_last_available")),
+          away: firstMetricValue(manualStatsB?.avg_red_cards, metricValue(recentStatsB, "avg_red_cards", "avg_red_cards_last_available")),
         },
         {
           label: "Faltas promedio",
-          home: metricValue(recentStatsA, "avg_fouls", "avg_fouls_last_available"),
-          away: metricValue(recentStatsB, "avg_fouls", "avg_fouls_last_available"),
+          home: firstMetricValue(manualStatsA?.avg_fouls, metricValue(recentStatsA, "avg_fouls", "avg_fouls_last_available")),
+          away: firstMetricValue(manualStatsB?.avg_fouls, metricValue(recentStatsB, "avg_fouls", "avg_fouls_last_available")),
+        },
+        {
+          label: "Partidos con stats",
+          home: manualStatsA?.matches,
+          away: manualStatsB?.matches,
+          decimals: 0,
         },
         {
           label: "xG diff FBref",
@@ -1096,6 +1179,21 @@ function App() {
                     <ProbabilityBar label={`${prediction.team_b} gana`} value={prediction.probabilities.team_b_win} tone="away" />
                   </div>
 
+                  <div className="consensus-panel">
+                    <div>
+                      <span>Consenso final</span>
+                      <strong>{prediction.winner}</strong>
+                      <small>Modelo base + Poisson + {prediction.monte_carlo?.simulations || 0} simulaciones Monte Carlo</small>
+                    </div>
+                    <div>
+                      <span>Monte Carlo</span>
+                      <strong>{prediction.monte_carlo?.winner || "s/d"}</strong>
+                      <small>
+                        Marcador más repetido {prediction.monte_carlo?.top_scorelines?.[0]?.score || "s/d"} · {formatPercent(prediction.monte_carlo?.top_scorelines?.[0]?.probability || 0)}
+                      </small>
+                    </div>
+                  </div>
+
                   <div className="stat-row">
                     <StatPill icon={Goal} label={`xG ${prediction.team_a}`} value={prediction.expected_goals.team_a} />
                     <StatPill icon={Goal} label={`xG ${prediction.team_b}`} value={prediction.expected_goals.team_b} />
@@ -1154,6 +1252,30 @@ function App() {
                 />
               </div>
 
+              <div className="model-breakdown-grid">
+                <article>
+                  <span>Modelo entrenado</span>
+                  <strong>
+                    {formatPercent(prediction.model_probabilities?.team_a_win || 0)} / {formatPercent(prediction.model_probabilities?.draw || 0)} / {formatPercent(prediction.model_probabilities?.team_b_win || 0)}
+                  </strong>
+                  <small>Lectura directa del clasificador con la data histórica y Jornada 1.</small>
+                </article>
+                <article>
+                  <span>Monte Carlo</span>
+                  <strong>
+                    {formatPercent(prediction.monte_carlo?.probabilities?.team_a_win || 0)} / {formatPercent(prediction.monte_carlo?.probabilities?.draw || 0)} / {formatPercent(prediction.monte_carlo?.probabilities?.team_b_win || 0)}
+                  </strong>
+                  <small>Escenarios simulados desde xG y probabilidades del modelo.</small>
+                </article>
+                <article>
+                  <span>Consenso usado</span>
+                  <strong>
+                    {formatPercent(prediction.probabilities.team_a_win)} / {formatPercent(prediction.probabilities.draw)} / {formatPercent(prediction.probabilities.team_b_win)}
+                  </strong>
+                  <small>60% modelo entrenado y 40% Monte Carlo para aterrizar el resultado.</small>
+                </article>
+              </div>
+
               <div className="match-metrics-grid">
                 {matchMetrics.map((metric) => (
                   <article className="metric-comparison-card" key={metric.label}>
@@ -1207,6 +1329,12 @@ function App() {
                 </div>
               </div>
 
+              <RecentResultsPanel
+                prediction={prediction}
+                selectedSide={selectedRecentSide}
+                onSelectSide={setSelectedRecentSide}
+              />
+
               <div className="lineups-grid">
                 <LineupPitch team={prediction.team_a} crest={crestA} lines={lineupA} tone="home" />
                 <LineupPitch team={prediction.team_b} crest={crestB} lines={lineupB} tone="away" />
@@ -1227,7 +1355,7 @@ function App() {
               <BarChart3 size={22} aria-hidden="true" />
             </div>
             <div className="scoreline-grid">
-              {(prediction?.top_scorelines || []).slice(0, 8).map((row) => (
+              {(prediction?.monte_carlo?.top_scorelines || prediction?.top_scorelines || []).slice(0, 8).map((row) => (
                 <article className="scoreline-card" key={row.score}>
                   <strong>{row.score}</strong>
                   <span>{formatPercent(row.probability)}</span>

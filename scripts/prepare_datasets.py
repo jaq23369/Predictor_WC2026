@@ -28,6 +28,8 @@ ELO_PATH = (
     / "eloratings.csv"
 )
 FIFA_PATH = RAW_DIR / "FIFA Men's World Ranking" / "fifa_mens_rank.csv"
+MANUAL_MATCH_STATS_PATH = PROCESSED_DIR / "world_cup_2026_manual_match_stats.csv"
+MANUAL_RECENT_RESULTS_PATH = PROCESSED_DIR / "world_cup_2026_manual_recent_results.csv"
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -38,7 +40,7 @@ def read_csv(path: Path) -> list[dict[str, str]]:
 def write_csv(path: Path, rows: list[dict[str, object]], fieldnames: list[str]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8") as file:
-        writer = csv.DictWriter(file, fieldnames=fieldnames)
+        writer = csv.DictWriter(file, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
@@ -121,6 +123,66 @@ def result_for_team(goals_for: int, goals_against: int) -> tuple[int, str]:
     return 0, "loss"
 
 
+def add_result_fields(row: dict[str, object]) -> dict[str, object]:
+    home_score = int(row["home_score"])
+    away_score = int(row["away_score"])
+    home_target, home_result = result_for_team(home_score, away_score)
+    row["home_result"] = home_result
+    row["away_result"] = result_for_team(away_score, home_score)[1]
+    row["result_target_home"] = home_target
+    return row
+
+
+def match_key(row: dict[str, object]) -> tuple[str, str, str, int, int]:
+    return (
+        str(row["date"]),
+        str(row["home_team"]),
+        str(row["away_team"]),
+        int(row["home_score"]),
+        int(row["away_score"]),
+    )
+
+
+def append_manual_context_matches(matches: list[dict[str, object]]) -> list[dict[str, object]]:
+    merged = {match_key(row): row for row in matches}
+
+    if MANUAL_RECENT_RESULTS_PATH.exists():
+        for row in read_csv(MANUAL_RECENT_RESULTS_PATH):
+            clean_row = add_result_fields(
+                {
+                    "date": parse_date(row["date"]).isoformat(),
+                    "home_team": normalize_team(row["home_team"]),
+                    "away_team": normalize_team(row["away_team"]),
+                    "home_score": int(row["home_score"]),
+                    "away_score": int(row["away_score"]),
+                    "tournament": "Manual recent form",
+                    "city": "",
+                    "country": "",
+                    "neutral": 1,
+                }
+            )
+            merged.setdefault(match_key(clean_row), clean_row)
+
+    if MANUAL_MATCH_STATS_PATH.exists():
+        for row in read_csv(MANUAL_MATCH_STATS_PATH):
+            clean_row = add_result_fields(
+                {
+                    "date": parse_date(row["date"]).isoformat(),
+                    "home_team": normalize_team(row["home_team"]),
+                    "away_team": normalize_team(row["away_team"]),
+                    "home_score": int(row["final_score_home"]),
+                    "away_score": int(row["final_score_away"]),
+                    "tournament": clean_name(row["tournament"]),
+                    "city": "",
+                    "country": "",
+                    "neutral": 1,
+                }
+            )
+            merged[match_key(clean_row)] = clean_row
+
+    return sorted(merged.values(), key=lambda row: str(row["date"]))
+
+
 def clean_results() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
     clean_matches: list[dict[str, object]] = []
     fixtures: list[dict[str, object]] = []
@@ -144,11 +206,7 @@ def clean_results() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
         if home_score is None or away_score is None:
             fixtures.append(clean_row)
         else:
-            home_target, home_result = result_for_team(home_score, away_score)
-            clean_row["home_result"] = home_result
-            clean_row["away_result"] = result_for_team(away_score, home_score)[1]
-            clean_row["result_target_home"] = home_target
-            clean_matches.append(clean_row)
+            clean_matches.append(add_result_fields(clean_row))
 
     clean_matches.sort(key=lambda row: row["date"])
     fixtures.sort(key=lambda row: row["date"])
@@ -584,6 +642,7 @@ FINAL_TRAINING_FIELDNAMES = [
 
 def main() -> None:
     matches, fixtures = clean_results()
+    matches = append_manual_context_matches(matches)
     elo_rows = clean_elo()
     fifa_rows = clean_fifa_rankings()
     training_rows = build_training_dataset(matches, elo_rows, fifa_rows)

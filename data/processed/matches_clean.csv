@@ -47710,6 +47710,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,h
 2024-10-10,Bahrain,Indonesia,2,2,FIFA World Cup qualification,Riffa,Bahrain,0,draw,draw,1
 2024-10-10,Australia,China,3,1,FIFA World Cup qualification,Adelaide,Australia,0,win,loss,2
 2024-10-10,Saudi Arabia,Japan,0,2,FIFA World Cup qualification,Jeddah,Saudi Arabia,0,loss,win,0
+2024-10-10,New Zealand,Tahiti,3,0,Manual recent form,,,1,win,loss,2
 2024-10-11,Cambodia,Taiwan,3,2,Friendly,Phnom Penh,Cambodia,0,win,loss,2
 2024-10-11,Madagascar,Gambia,1,1,African Cup of Nations qualification,Casablanca,Morocco,1,draw,draw,1
 2024-10-11,Tunisia,Comoros,0,1,African Cup of Nations qualification,Radès,Tunisia,0,loss,win,0
@@ -47992,6 +47993,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,h
 2024-11-18,Ghana,Niger,1,2,African Cup of Nations qualification,Accra,Ghana,0,loss,win,0
 2024-11-18,Sudan,Angola,0,0,African Cup of Nations qualification,Benghazi,Libya,1,draw,draw,1
 2024-11-18,Malawi,Burkina Faso,3,0,African Cup of Nations qualification,Lilongwe,Malawi,0,win,loss,2
+2024-11-18,Samoa,New Zealand,0,8,Manual recent form,,,1,loss,win,0
 2024-11-19,Bosnia and Herzegovina,Netherlands,1,1,UEFA Nations League,Zenica,Bosnia and Herzegovina,0,draw,draw,1
 2024-11-19,Hungary,Germany,1,1,UEFA Nations League,Budapest,Hungary,0,draw,draw,1
 2024-11-19,Albania,Ukraine,1,2,UEFA Nations League,Tirana,Albania,0,loss,win,0
@@ -48230,6 +48232,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,h
 2025-03-24,San Marino,Romania,1,5,FIFA World Cup qualification,Serravalle,San Marino,0,loss,win,0
 2025-03-24,England,Latvia,3,0,FIFA World Cup qualification,London,England,0,win,loss,2
 2025-03-24,Albania,Andorra,3,0,FIFA World Cup qualification,Tirana,Albania,0,win,loss,2
+2025-03-24,New Caledonia,New Zealand,0,3,Manual recent form,,,1,loss,win,0
 2025-03-25,Tajikistan,Timor-Leste,1,0,AFC Asian Cup qualification,Dushanbe,Tajikistan,0,win,loss,2
 2025-03-25,Philippines,Maldives,4,1,AFC Asian Cup qualification,Capas,Philippines,0,win,loss,2
 2025-03-25,Bhutan,Yemen,0,0,AFC Asian Cup qualification,Thimphu,Bhutan,0,draw,draw,1
@@ -48481,10 +48484,12 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,h
 2025-06-18,Suriname,Mexico,0,2,Gold Cup,Arlington,United States,1,loss,win,0
 2025-06-19,Trinidad and Tobago,Haiti,1,1,Gold Cup,Houston,United States,1,draw,draw,1
 2025-06-19,United States,Saudi Arabia,1,0,Gold Cup,Austin,United States,0,win,loss,2
+2025-06-19,Saudi Arabia,United States,0,1,Manual recent form,,,1,loss,win,0
 2025-06-20,Jamaica,Guadeloupe,2,1,Gold Cup,San Jose,United States,1,win,loss,2
 2025-06-20,Guatemala,Panama,0,1,Gold Cup,Austin,United States,1,loss,win,0
 2025-06-21,Curaçao,Canada,1,1,Gold Cup,Houston,United States,1,draw,draw,1
 2025-06-21,Honduras,El Salvador,2,0,Gold Cup,Houston,United States,1,win,loss,2
+2025-06-21,Curacao,Canada,1,1,Manual recent form,,,1,draw,draw,1
 2025-06-22,Mexico,Costa Rica,0,0,Gold Cup,Paradise,United States,1,draw,draw,1
 2025-06-22,Dominican Republic,Suriname,0,0,Gold Cup,Arlington,United States,1,draw,draw,1
 2025-06-22,Saudi Arabia,Trinidad and Tobago,1,1,Gold Cup,Paradise,United States,1,draw,draw,1
@@ -48504,6 +48509,10 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,h
 2025-07-03,Tibet,East Turkestan,4,6,CONIFA Asia Cup,London,England,1,loss,win,0
 2025-07-04,Tamil Eelam,East Turkestan,5,0,CONIFA Asia Cup,London,England,1,win,loss,2
 2025-07-06,United States,Mexico,1,2,Gold Cup,Houston,United States,0,loss,win,0
+2025-07-07,South Korea,China,3,0,Manual recent form,,,1,win,loss,2
+2025-07-08,Japan,Hong Kong,6,1,Manual recent form,,,1,win,loss,2
+2025-07-11,Hong Kong,South Korea,0,2,Manual recent form,,,1,loss,win,0
+2025-07-12,Japan,China,2,0,Manual recent form,,,1,win,loss,2
 2025-07-13,Hitra,Isle of Man,2,7,Island Games,Finstown,Scotland,1,loss,win,0
 2025-07-13,Orkney,Frøya,3,0,Island Games,Kirkwall,Scotland,0,win,loss,2
 2025-07-13,Gozo,Shetland,0,0,Island Games,Kirkwall,Scotland,1,draw,draw,1
@@ -48514,6 +48523,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,h
 2025-07-15,Orkney,Isle of Man,1,3,Island Games,Kirkwall,Scotland,0,loss,win,0
 2025-07-15,Frøya,Hitra,0,6,Island Games,Finstown,Scotland,1,loss,win,0
 2025-07-15,Jersey,Shetland,2,2,Island Games,Kirkwall,Scotland,1,draw,draw,1
+2025-07-15,South Korea,Japan,0,1,Manual recent form,,,1,loss,win,0
 2025-07-17,Hitra,Frøya,3,0,Island Games,Holm,Scotland,1,win,loss,2
 2025-07-17,Gozo,Western Isles,3,3,Island Games,Dounby,Scotland,1,draw,draw,1
 2025-07-17,Orkney,Shetland,3,2,Island Games,Stromness,Scotland,0,win,loss,2
@@ -48678,6 +48688,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,h
 2025-09-09,Curaçao,Bermuda,3,2,FIFA World Cup qualification,Willemstad,Curaçao,0,win,loss,2
 2025-09-09,Costa Rica,Haiti,3,3,FIFA World Cup qualification,San José,Costa Rica,0,draw,draw,1
 2025-09-09,Honduras,Nicaragua,2,0,FIFA World Cup qualification,Tegucigalpa,Honduras,0,win,loss,2
+2025-09-09,Curacao,Bermuda,3,2,Manual recent form,,,1,win,loss,2
 2025-10-04,Saint Kitts and Nevis,Saint Martin,5,0,Friendly,Basseterre,Saint Kitts and Nevis,0,win,loss,2
 2025-10-05,Saint Kitts and Nevis,Saint Martin,2,1,Friendly,Basseterre,Saint Kitts and Nevis,0,win,loss,2
 2025-10-05,Saint Vincent and the Grenadines,Cuba,7,0,Friendly,Arnos Vale,Saint Vincent and the Grenadines,0,win,loss,2
@@ -48696,6 +48707,8 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,h
 2025-10-08,Chad,Mali,0,2,FIFA World Cup qualification,N'Djamena,Chad,0,loss,win,0
 2025-10-08,Gibraltar,New Caledonia,0,2,Friendly,Gibraltar,Gibraltar,0,loss,win,0
 2025-10-08,Saint Vincent and the Grenadines,Cuba,1,0,Friendly,Arnos Vale,Saint Vincent and the Grenadines,0,win,loss,2
+2025-10-08,Oman,Qatar,0,0,Manual recent form,,,1,draw,draw,1
+2025-10-08,Indonesia,Saudi Arabia,2,3,Manual recent form,,,1,loss,win,0
 2025-10-09,England,Wales,3,0,Friendly,London,England,0,win,loss,2
 2025-10-09,Poland,New Zealand,1,0,Friendly,Chorzów,Poland,0,win,loss,2
 2025-10-09,Romania,Moldova,2,1,Friendly,Bucharest,Romania,0,win,loss,2
@@ -48760,6 +48773,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,h
 2025-10-10,El Salvador,Panama,0,1,FIFA World Cup qualification,San Salvador,El Salvador,0,loss,win,0
 2025-10-10,Bermuda,Trinidad and Tobago,0,3,FIFA World Cup qualification,Devonshire Parish,Bermuda,0,loss,win,0
 2025-10-10,Curaçao,Jamaica,2,0,FIFA World Cup qualification,Willemstad,Curaçao,0,win,loss,2
+2025-10-10,Curacao,Jamaica,2,0,Manual recent form,,,1,win,loss,2
 2025-10-11,Grenada,Cuba,2,0,Friendly,St. George's,Grenada,0,win,loss,2
 2025-10-11,Mexico,Colombia,0,4,Friendly,Arlington,United States,1,loss,win,0
 2025-10-11,United Arab Emirates,Oman,2,1,FIFA World Cup qualification,Al Rayyan,Qatar,1,win,loss,2
@@ -48855,6 +48869,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,h
 2025-10-14,El Salvador,Guatemala,0,1,FIFA World Cup qualification,San Salvador,El Salvador,0,loss,win,0
 2025-10-14,Curaçao,Trinidad and Tobago,1,1,FIFA World Cup qualification,Willemstad,Curaçao,0,draw,draw,1
 2025-10-14,Jamaica,Bermuda,4,0,FIFA World Cup qualification,Kingston,Jamaica,0,win,loss,2
+2025-10-14,Curacao,Trinidad y Tobago,1,1,Manual recent form,,,1,draw,draw,1
 2025-11-12,Tunisia,Mauritania,1,1,Friendly,Radès,Tunisia,0,draw,draw,1
 2025-11-12,Russia,Peru,1,1,Friendly,Saint Petersburg,Russia,0,draw,draw,1
 2025-11-12,Cuba,Saint Lucia,3,0,CONCACAF Series,Santiago de los Caballeros,Dominican Republic,1,win,loss,2
@@ -48892,6 +48907,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,h
 2025-11-13,Trinidad and Tobago,Jamaica,1,1,FIFA World Cup qualification,Port of Spain,Trinidad and Tobago,0,draw,draw,1
 2025-11-13,Haiti,Costa Rica,1,0,FIFA World Cup qualification,Willemstad,Curaçao,1,win,loss,2
 2025-11-13,Nicaragua,Honduras,2,0,FIFA World Cup qualification,Managua,Nicaragua,0,win,loss,2
+2025-11-13,Bermuda,Curacao,0,7,Manual recent form,,,1,loss,win,0
 2025-11-14,Angola,Argentina,0,2,Friendly,Luanda,Angola,0,loss,win,0
 2025-11-14,Australia,Venezuela,0,1,Friendly,Houston,United States,1,loss,win,0
 2025-11-14,South Korea,Bolivia,2,0,Friendly,Daejeon,South Korea,0,win,loss,2
@@ -49014,6 +49030,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,h
 2025-11-18,Trinidad and Tobago,Bermuda,2,2,FIFA World Cup qualification,Port of Spain,Trinidad and Tobago,0,draw,draw,1
 2025-11-18,Costa Rica,Honduras,0,0,FIFA World Cup qualification,San José,Costa Rica,0,draw,draw,1
 2025-11-18,Haiti,Nicaragua,2,0,FIFA World Cup qualification,Willemstad,Curaçao,1,win,loss,2
+2025-11-18,Jamaica,Curacao,0,0,Manual recent form,,,1,draw,draw,1
 2025-11-19,Laos,Vietnam,0,2,AFC Asian Cup qualification,Vientiane,Laos,0,loss,win,0
 2025-11-20,Vanuatu,Solomon Islands,2,1,MSG Prime Minister's Cup,Port Moresby,Papua New Guinea,1,win,loss,2
 2025-11-20,Papua New Guinea,Fiji,2,0,MSG Prime Minister's Cup,Port Moresby,Papua New Guinea,0,win,loss,2
@@ -49084,6 +49101,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,h
 2025-12-29,Comoros,Mali,0,0,African Cup of Nations,Casablanca,Morocco,1,draw,draw,1
 2025-12-29,Angola,Egypt,0,0,African Cup of Nations,Agadir,Morocco,1,draw,draw,1
 2025-12-29,Zimbabwe,South Africa,2,3,African Cup of Nations,Marrakesh,Morocco,1,loss,win,0
+2025-12-29,Zambia,Morocco,0,3,Manual recent form,,,1,loss,win,0
 2025-12-30,Uganda,Nigeria,1,3,African Cup of Nations,Fez,Morocco,1,loss,win,0
 2025-12-30,Tanzania,Tunisia,1,1,African Cup of Nations,Rabat,Morocco,1,draw,draw,1
 2025-12-30,Benin,Senegal,0,3,African Cup of Nations,Tangier,Morocco,1,loss,win,0
@@ -49102,10 +49120,12 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,h
 2026-01-06,Côte d'Ivoire,Burkina Faso,3,0,African Cup of Nations,Marrakesh,Morocco,1,win,loss,2
 2026-01-09,Mali,Senegal,0,1,African Cup of Nations,Tangier,Morocco,1,loss,win,0
 2026-01-09,Morocco,Cameroon,2,0,African Cup of Nations,Rabat,Morocco,0,win,loss,2
+2026-01-09,Cameroon,Morocco,0,2,Manual recent form,,,1,loss,win,0
 2026-01-10,Algeria,Nigeria,0,2,African Cup of Nations,Marrakesh,Morocco,1,loss,win,0
 2026-01-10,Egypt,Côte d'Ivoire,3,2,African Cup of Nations,Agadir,Morocco,1,win,loss,2
 2026-01-14,Senegal,Egypt,1,0,African Cup of Nations,Tangier,Morocco,1,win,loss,2
 2026-01-14,Morocco,Nigeria,0,0,African Cup of Nations,Rabat,Morocco,0,draw,draw,1
+2026-01-14,Nigeria,Morocco,0,0,Manual recent form,,,1,draw,draw,1
 2026-01-17,Egypt,Nigeria,0,0,African Cup of Nations,Casablanca,Morocco,1,draw,draw,1
 2026-01-18,Morocco,Senegal,3,0,African Cup of Nations,Rabat,Morocco,0,win,loss,2
 2026-01-18,Bolivia,Panama,1,1,Friendly,Tarija,Bolivia,0,draw,draw,1
@@ -49350,7 +49370,7 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,h
 2026-06-06,England,New Zealand,1,0,Friendly,Tampa,United States,1,win,loss,2
 2026-06-06,Sierra Leone,Liberia,1,0,Friendly,Bo,Sierra Leone,0,win,loss,2
 2026-06-06,Ethiopia,Malawi,1,0,Friendly,Dire Dawa,Ethiopia,0,win,loss,2
-2026-06-06,Gibraltar,Cayman Islands,4,1,Friendly,Gibraltar,Gibraltar,0,win,loss,2
+2026-06-06,Gibraltar,Cayman Islands,4,1,Friendly,Europa Point,Gibraltar,0,win,loss,2
 2026-06-06,Jamaica,South Africa,0,1,Friendly,Pachuca,Mexico,1,loss,win,0
 2026-06-06,Kyrgyzstan,Palestine,0,0,Friendly,Bishkek,Kyrgyzstan,0,draw,draw,1
 2026-06-06,Panama,Bosnia and Herzegovina,1,1,Friendly,St. Louis,United States,1,draw,draw,1
@@ -49359,7 +49379,6 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,h
 2026-06-06,Romania,Wales,2,1,Friendly,Bucharest,Romania,0,win,loss,2
 2026-06-06,United States,Germany,1,2,Friendly,Chicago,United States,0,loss,win,0
 2026-06-06,British Virgin Islands,Bonaire,2,0,Friendly,Málaga,Spain,1,win,loss,2
-2026-06-06,Gibraltar,Cayman Islands,4,1,Friendly,Europa Point,Gibraltar,0,win,loss,2
 2026-06-06,Venezuela,Turkey,1,2,Friendly,Fort Lauderdale,United States,1,loss,win,0
 2026-06-06,Myanmar,Guam,6,1,Tri-Nations Cup,Manila,Philippines,1,win,loss,2
 2026-06-06,Lithuania,Latvia,1,1,Baltic Cup,Kaunas,Lithuania,0,draw,draw,1
@@ -49399,3 +49418,27 @@ date,home_team,away_team,home_score,away_score,tournament,city,country,neutral,h
 2026-06-09,Togo,Benin,5,1,Friendly,Lomé,Togo,0,win,loss,2
 2026-06-09,Liberia,Sierra Leone,3,1,Friendly,Monrovia,Liberia,0,win,loss,2
 2026-06-09,Iraq,Venezuela,0,2,Friendly,Bridgeview,United States,1,loss,win,0
+2026-06-11,Mexico,South Africa,2,0,FIFA World Cup 2026,,,1,win,loss,2
+2026-06-11,South Korea,Czechia,2,1,FIFA World Cup 2026,,,1,win,loss,2
+2026-06-12,Canada,Bosnia and Herzegovina,1,1,FIFA World Cup 2026,,,1,draw,draw,1
+2026-06-12,United States,Paraguay,4,1,FIFA World Cup 2026,,,1,win,loss,2
+2026-06-13,Qatar,Switzerland,1,1,FIFA World Cup 2026,,,1,draw,draw,1
+2026-06-13,Brazil,Morocco,1,1,FIFA World Cup 2026,,,1,draw,draw,1
+2026-06-13,Haiti,Scotland,0,1,FIFA World Cup 2026,,,1,loss,win,0
+2026-06-13,Australia,Turkey,2,0,FIFA World Cup 2026,,,1,win,loss,2
+2026-06-14,Germany,Curacao,7,1,FIFA World Cup 2026,,,1,win,loss,2
+2026-06-14,Côte d'Ivoire,Ecuador,1,0,FIFA World Cup 2026,,,1,win,loss,2
+2026-06-14,Netherlands,Japan,2,2,FIFA World Cup 2026,,,1,draw,draw,1
+2026-06-14,Sweden,Tunisia,5,1,FIFA World Cup 2026,,,1,win,loss,2
+2026-06-15,Spain,Cape Verde,0,0,FIFA World Cup 2026,,,1,draw,draw,1
+2026-06-15,Belgium,Egypt,1,1,FIFA World Cup 2026,,,1,draw,draw,1
+2026-06-15,Saudi Arabia,Uruguay,1,1,FIFA World Cup 2026,,,1,draw,draw,1
+2026-06-15,Iran,New Zealand,2,2,FIFA World Cup 2026,,,1,draw,draw,1
+2026-06-16,France,Senegal,3,1,FIFA World Cup 2026,,,1,win,loss,2
+2026-06-16,Iraq,Norway,1,4,FIFA World Cup 2026,,,1,loss,win,0
+2026-06-16,Argentina,Algeria,3,0,FIFA World Cup 2026,,,1,win,loss,2
+2026-06-16,Austria,Jordan,3,1,FIFA World Cup 2026,,,1,win,loss,2
+2026-06-17,Portugal,DR Congo,1,1,FIFA World Cup 2026,,,1,draw,draw,1
+2026-06-17,England,Croatia,4,2,FIFA World Cup 2026,,,1,win,loss,2
+2026-06-17,Ghana,Panama,1,0,FIFA World Cup 2026,,,1,win,loss,2
+2026-06-17,Uzbekistan,Colombia,1,3,FIFA World Cup 2026,,,1,loss,win,0

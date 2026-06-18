@@ -39,7 +39,7 @@ def read_csv(path: Path) -> list[dict[str, str]]:
 
 def write_csv(path: Path, rows: list[dict[str, object]]) -> None:
     with path.open("w", newline="", encoding="utf-8") as file:
-        writer = csv.DictWriter(file, fieldnames=FIELDNAMES)
+        writer = csv.DictWriter(file, fieldnames=FIELDNAMES, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 

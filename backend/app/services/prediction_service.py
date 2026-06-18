@@ -42,6 +42,7 @@ API_FOOTBALL_COVERAGE_PATH = PROCESSED_DIR / "api_football_coverage.csv"
 FBREF_TEAM_MATCH_STATS_PATH = PROCESSED_DIR / "fbref_team_match_stats.csv"
 FBREF_TEAM_FORM_FEATURES_PATH = PROCESSED_DIR / "fbref_team_form_features.csv"
 FBREF_COVERAGE_PATH = PROCESSED_DIR / "fbref_coverage.csv"
+MANUAL_TEAM_MATCH_STATS_PATH = PROCESSED_DIR / "world_cup_2026_manual_team_match_stats.csv"
 CLASSIFICATION_MODEL_PATH = ARTIFACTS_DIR / "classification_model.pkl"
 SCORE_MODEL_PATH = ARTIFACTS_DIR / "poisson_score_model.pkl"
 
@@ -284,6 +285,7 @@ class PredictionService:
             ["rank", "total_points"],
         )
         self.team_history = self._build_team_history()
+        self.manual_team_match_stats = read_optional_csv(MANUAL_TEAM_MATCH_STATS_PATH)
 
     def _build_team_history(self) -> dict[str, list[dict[str, Any]]]:
         history: dict[str, list[dict[str, Any]]] = defaultdict(list)
@@ -711,6 +713,100 @@ class PredictionService:
             return goals, goals
         return min(round(home_xg), max(1, round(away_xg)) - 1), max(1, round(away_xg))
 
+    def _match_seed(self, team_a: str, team_b: str, match_date: date) -> int:
+        raw = f"{team_a}|{team_b}|{match_date.isoformat()}"
+        return sum((index + 1) * ord(char) for index, char in enumerate(raw)) + 2026
+
+    def _simulate_match_monte_carlo(
+        self,
+        team_a: str,
+        team_b: str,
+        match_date: date,
+        expected_goals_a: float,
+        expected_goals_b: float,
+        model_probabilities: dict[str, float],
+        simulations: int = 5000,
+        max_goals: int = 8,
+    ) -> dict[str, Any]:
+        rng = random.Random(self._match_seed(team_a, team_b, match_date))
+        outcome_counts = Counter()
+        score_counts = Counter()
+        goals_a_total = 0
+        goals_b_total = 0
+
+        for _ in range(simulations):
+            target = rng.random()
+            sampled_score: tuple[int, int] | None = None
+            for _attempt in range(25):
+                goals_a = self._sample_goals(rng, expected_goals_a, max_goals=max_goals)
+                goals_b = self._sample_goals(rng, expected_goals_b, max_goals=max_goals)
+                if target < model_probabilities["win"] and goals_a > goals_b:
+                    sampled_score = (goals_a, goals_b)
+                    break
+                if (
+                    target < model_probabilities["win"] + model_probabilities["draw"]
+                    and goals_a == goals_b
+                ):
+                    sampled_score = (goals_a, goals_b)
+                    break
+                if (
+                    target >= model_probabilities["win"] + model_probabilities["draw"]
+                    and goals_b > goals_a
+                ):
+                    sampled_score = (goals_a, goals_b)
+                    break
+
+            if sampled_score is None:
+                if target < model_probabilities["win"]:
+                    goals_a = max(1, round(expected_goals_a))
+                    goals_b = min(goals_a - 1, round(expected_goals_b))
+                    sampled_score = (goals_a, max(0, goals_b))
+                elif target < model_probabilities["win"] + model_probabilities["draw"]:
+                    goals = round((expected_goals_a + expected_goals_b) / 2)
+                    sampled_score = (goals, goals)
+                else:
+                    goals_b = max(1, round(expected_goals_b))
+                    goals_a = min(round(expected_goals_a), goals_b - 1)
+                    sampled_score = (max(0, goals_a), goals_b)
+
+            goals_a, goals_b = sampled_score
+            goals_a_total += goals_a
+            goals_b_total += goals_b
+            score_counts[f"{goals_a}-{goals_b}"] += 1
+            if goals_a > goals_b:
+                outcome_counts["team_a_win"] += 1
+            elif goals_a == goals_b:
+                outcome_counts["draw"] += 1
+            else:
+                outcome_counts["team_b_win"] += 1
+
+        top_scorelines = [
+            {"score": score, "probability": percent(count, simulations)}
+            for score, count in score_counts.most_common(10)
+        ]
+        probabilities = {
+            "team_a_win": percent(outcome_counts["team_a_win"], simulations),
+            "draw": percent(outcome_counts["draw"], simulations),
+            "team_b_win": percent(outcome_counts["team_b_win"], simulations),
+        }
+        winner_key = max(probabilities, key=probabilities.get)
+        winner = {
+            "team_a_win": team_a,
+            "draw": "Draw",
+            "team_b_win": team_b,
+        }[winner_key]
+
+        return {
+            "simulations": simulations,
+            "probabilities": probabilities,
+            "winner": winner,
+            "expected_goals": {
+                "team_a": round(goals_a_total / simulations, 3),
+                "team_b": round(goals_b_total / simulations, 3),
+            },
+            "top_scorelines": top_scorelines,
+        }
+
     def _empty_table_row(self, team: str) -> dict[str, Any]:
         return {
             "team": team,
@@ -917,6 +1013,114 @@ class PredictionService:
 
     def _history_before(self, team: str, match_date: date) -> list[dict[str, Any]]:
         return [match for match in self.team_history.get(team, []) if match["date"] < match_date]
+
+    def _recent_results_for_team(
+        self,
+        team: str,
+        match_date: date,
+        limit: int = 5,
+    ) -> list[dict[str, Any]]:
+        team = normalize_name(team)
+        results: list[dict[str, Any]] = []
+        seen: set[tuple[str, str, str, str, str]] = set()
+
+        for match in self.matches:
+            home_team = normalize_name(match["home_team"])
+            away_team = normalize_name(match["away_team"])
+            if team not in (home_team, away_team):
+                continue
+
+            date_value = parse_date(match["date"])
+            if date_value >= match_date:
+                continue
+
+            key = (
+                date_value.isoformat(),
+                home_team,
+                away_team,
+                str(match["home_score"]),
+                str(match["away_score"]),
+            )
+            if key in seen:
+                continue
+            seen.add(key)
+
+            home_score = int(match["home_score"])
+            away_score = int(match["away_score"])
+            goals_for = home_score if team == home_team else away_score
+            goals_against = away_score if team == home_team else home_score
+            results.append(
+                {
+                    "date": date_value.isoformat(),
+                    "home_team": home_team,
+                    "away_team": away_team,
+                    "home_score": home_score,
+                    "away_score": away_score,
+                    "opponent": away_team if team == home_team else home_team,
+                    "goals_for": goals_for,
+                    "goals_against": goals_against,
+                    "result_for_team": result_for_team(goals_for, goals_against),
+                    "tournament": match.get("tournament", ""),
+                }
+            )
+
+        results.sort(key=lambda row: row["date"], reverse=True)
+        return results[:limit]
+
+    def _recent_summary_for_results(self, results: list[dict[str, Any]]) -> dict[str, Any]:
+        points_by_result = {"win": 3, "draw": 1, "loss": 0}
+        total = len(results)
+        goals_for = sum(int(row["goals_for"]) for row in results)
+        goals_against = sum(int(row["goals_against"]) for row in results)
+        return {
+            "matches": total,
+            "wins": sum(1 for row in results if row["result_for_team"] == "win"),
+            "draws": sum(1 for row in results if row["result_for_team"] == "draw"),
+            "losses": sum(1 for row in results if row["result_for_team"] == "loss"),
+            "points": sum(points_by_result[row["result_for_team"]] for row in results),
+            "goals_for": goals_for,
+            "goals_against": goals_against,
+            "avg_goals_for": round(goals_for / total, 2) if total else 0.0,
+            "avg_goals_against": round(goals_against / total, 2) if total else 0.0,
+            "clean_sheets": sum(1 for row in results if int(row["goals_against"]) == 0),
+            "scored_in_matches": sum(1 for row in results if int(row["goals_for"]) > 0),
+        }
+
+    def _manual_recent_match_stats_for_team(
+        self,
+        team: str,
+        match_date: date,
+        limit: int = 5,
+    ) -> dict[str, Any]:
+        team = normalize_name(team)
+        rows = [
+            row
+            for row in self.manual_team_match_stats
+            if normalize_name(row.get("team", "")) == team
+            and parse_date(row.get("date")) < match_date
+        ]
+        rows.sort(key=lambda row: row["date"], reverse=True)
+        rows = rows[:limit]
+
+        def average(key: str) -> float:
+            values = [
+                float(row[key])
+                for row in rows
+                if row.get(key) not in ("", None)
+            ]
+            return round(sum(values) / len(values), 2) if values else 0.0
+
+        return {
+            "matches": len(rows),
+            "avg_possession": average("possession"),
+            "avg_shots": average("shots"),
+            "avg_shots_on_target": average("shots_on_target"),
+            "avg_chances_created": average("chances_created"),
+            "avg_corners": average("corners"),
+            "avg_fouls": average("fouls"),
+            "avg_yellow_cards": average("yellow_cards"),
+            "avg_red_cards": average("red_cards"),
+        }
 
     def build_features(
         self,
@@ -1163,29 +1367,55 @@ class PredictionService:
                 )
         scorelines.sort(key=lambda row: row["probability"], reverse=True)
 
-        winner = team_a
-        if probability_by_label["loss"] > probability_by_label["win"]:
-            winner = team_b
-        if probability_by_label["draw"] > max(
-            probability_by_label["win"],
-            probability_by_label["loss"],
-        ):
-            winner = "Draw"
+        model_probabilities = {
+            "team_a_win": round(probability_by_label["win"] * 100, 2),
+            "draw": round(probability_by_label["draw"] * 100, 2),
+            "team_b_win": round(probability_by_label["loss"] * 100, 2),
+        }
+        monte_carlo = self._simulate_match_monte_carlo(
+            team_a,
+            team_b,
+            date_value,
+            expected_goals_a,
+            expected_goals_b,
+            probability_by_label,
+        )
+        consensus_probabilities = {
+            "team_a_win": round(
+                model_probabilities["team_a_win"] * 0.6
+                + monte_carlo["probabilities"]["team_a_win"] * 0.4,
+                2,
+            ),
+            "draw": round(
+                model_probabilities["draw"] * 0.6
+                + monte_carlo["probabilities"]["draw"] * 0.4,
+                2,
+            ),
+            "team_b_win": round(
+                model_probabilities["team_b_win"] * 0.6
+                + monte_carlo["probabilities"]["team_b_win"] * 0.4,
+                2,
+            ),
+        }
+        consensus_key = max(consensus_probabilities, key=consensus_probabilities.get)
+        winner = {
+            "team_a_win": team_a,
+            "draw": "Draw",
+            "team_b_win": team_b,
+        }[consensus_key]
 
         return {
             "team_a": team_a,
             "team_b": team_b,
             "match_date": date_value.isoformat(),
             "winner": winner,
-            "probabilities": {
-                "team_a_win": round(probability_by_label["win"] * 100, 2),
-                "draw": round(probability_by_label["draw"] * 100, 2),
-                "team_b_win": round(probability_by_label["loss"] * 100, 2),
-            },
+            "probabilities": consensus_probabilities,
+            "model_probabilities": model_probabilities,
             "expected_goals": {
                 "team_a": round(expected_goals_a, 3),
                 "team_b": round(expected_goals_b, 3),
             },
+            "monte_carlo": monte_carlo,
             "estimated_match_metrics": self._estimate_match_metrics(
                 features_a,
                 features_b,
@@ -1200,4 +1430,20 @@ class PredictionService:
                 }
                 for row in scorelines[:10]
             ],
+            "recent_results": {
+                "team_a": self._recent_results_for_team(team_a, date_value),
+                "team_b": self._recent_results_for_team(team_b, date_value),
+            },
+            "recent_summary": {
+                "team_a": self._recent_summary_for_results(
+                    self._recent_results_for_team(team_a, date_value)
+                ),
+                "team_b": self._recent_summary_for_results(
+                    self._recent_results_for_team(team_b, date_value)
+                ),
+            },
+            "recent_match_stats": {
+                "team_a": self._manual_recent_match_stats_for_team(team_a, date_value),
+                "team_b": self._manual_recent_match_stats_for_team(team_b, date_value),
+            },
         }
